@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Oef_4_3.srcs/sources_1/new/Dice.vhd" \
+
+vhdl2008 xil_defaultlib  \
+"../../../../Oef_4_3.srcs/sim_1/new/Dice_tb.vhd" \
+
+# Do not sort compile order
+nosort
