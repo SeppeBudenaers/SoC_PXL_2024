@@ -1,0 +1,24 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-263,-98",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port port-id_sonar_trig_0 -pg 1 -lvl 4 -x 740 -y 140 -defaultsOSRD
+preplace port port-id_sonar_echo_0 -pg 1 -lvl 0 -x -10 -y 160 -defaultsOSRD
+preplace port port-id_clk_in1_0 -pg 1 -lvl 0 -x -10 -y 70 -defaultsOSRD
+preplace inst vio_0 -pg 1 -lvl 3 -x 620 -y 210 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 110 -y 70 -defaultsOSRD
+preplace inst HC_SR04_0 -pg 1 -lvl 2 -x 360 -y 150 -defaultsOSRD
+preplace netloc HC_SR04_0_centimeter 1 2 1 500 160n
+preplace netloc HC_SR04_0_sonar_trig 1 2 2 NJ 140 NJ
+preplace netloc clk_in1_0_1 1 0 1 N 70
+preplace netloc clk_wiz_0_clk_out1 1 1 1 200 60n
+preplace netloc clk_wiz_0_clk_out2 1 1 2 NJ 80 510
+preplace netloc sonar_echo_0_1 1 0 2 NJ 160 NJ
+levelinfo -pg 1 -10 110 360 620 740
+pagesize -pg 1 -db -bbox -sgen -150 0 880 280
+"
+}
+0
