@@ -1,0 +1,191 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xFF0EAAA5ACA7CA2C",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../Neopixel.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "Neopixel_0": "",
+      "clk_wiz_0": "",
+      "button_0": ""
+    },
+    "ports": {
+      "d_out_0": {
+        "direction": "O"
+      },
+      "R_0": {
+        "direction": "I"
+      },
+      "G_0": {
+        "direction": "I"
+      },
+      "B_0": {
+        "direction": "I"
+      },
+      "clk_in1_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_clk_in1_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "Neopixel_0": {
+        "vlnv": "xilinx.com:module_ref:Neopixel:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_Neopixel_0_0",
+        "xci_path": "ip\\design_1_Neopixel_0_0\\design_1_Neopixel_0_0.xci",
+        "inst_hier_path": "Neopixel_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Neopixel",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "50000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "value": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "d_out": {
+            "direction": "O"
+          }
+        }
+      },
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "ip_revision": "13",
+        "xci_name": "design_1_clk_wiz_0_0",
+        "xci_path": "ip\\design_1_clk_wiz_0_0\\design_1_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "parameters": {
+          "CLKOUT1_JITTER": {
+            "value": "151.636"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "50.000"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "20.000"
+          }
+        }
+      },
+      "button_0": {
+        "vlnv": "xilinx.com:module_ref:button:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_button_0_0",
+        "xci_path": "ip\\design_1_button_0_0\\design_1_button_0_0.xci",
+        "inst_hier_path": "button_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "button",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "R": {
+            "direction": "I"
+          },
+          "G": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "Data_out": {
+            "direction": "O",
+            "left": "23",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "B_0_1": {
+        "ports": [
+          "B_0",
+          "button_0/B"
+        ]
+      },
+      "G_0_1": {
+        "ports": [
+          "G_0",
+          "button_0/G"
+        ]
+      },
+      "Neopixel_0_d_out": {
+        "ports": [
+          "Neopixel_0/d_out",
+          "d_out_0"
+        ]
+      },
+      "R_0_1": {
+        "ports": [
+          "R_0",
+          "button_0/R"
+        ]
+      },
+      "button_0_Data_out": {
+        "ports": [
+          "button_0/Data_out",
+          "Neopixel_0/value"
+        ]
+      },
+      "clk_in1_0_1": {
+        "ports": [
+          "clk_in1_0",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "Neopixel_0/clk"
+        ]
+      }
+    }
+  }
+}

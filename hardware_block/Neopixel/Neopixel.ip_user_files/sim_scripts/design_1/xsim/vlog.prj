@@ -1,0 +1,8 @@
+verilog xil_defaultlib --include "../../../../Oef_5_12.gen/sources_1/bd/design_1/ipshared/c2c6" \
+"../../../bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v" \
+"../../../bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

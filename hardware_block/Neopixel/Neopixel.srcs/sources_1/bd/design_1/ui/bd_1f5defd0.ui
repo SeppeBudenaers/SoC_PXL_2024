@@ -1,0 +1,27 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.12774",
+   "Default View_TopLeft":"-228,4",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0 threadsafe
+#  -string -flagsOSRD
+preplace port port-id_d_out_0 -pg 1 -lvl 3 -x 480 -y 70 -defaultsOSRD
+preplace port port-id_R_0 -pg 1 -lvl 0 -x 0 -y 170 -defaultsOSRD
+preplace port port-id_G_0 -pg 1 -lvl 0 -x 0 -y 200 -defaultsOSRD
+preplace port port-id_B_0 -pg 1 -lvl 0 -x 0 -y 230 -defaultsOSRD
+preplace port port-id_clk_in1_0 -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
+preplace inst Neopixel_0 -pg 1 -lvl 2 -x 350 -y 70 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 130 -y 70 -defaultsOSRD
+preplace inst button_0 -pg 1 -lvl 1 -x 130 -y 200 -defaultsOSRD
+preplace netloc B_0_1 1 0 1 20J 220n
+preplace netloc G_0_1 1 0 1 NJ 200
+preplace netloc Neopixel_0_d_out 1 2 1 N 70
+preplace netloc R_0_1 1 0 1 20J 170n
+preplace netloc button_0_Data_out 1 1 1 240 80n
+preplace netloc clk_in1_0_1 1 0 1 NJ 80
+preplace netloc clk_wiz_0_clk_out1 1 1 1 NJ 60
+levelinfo -pg 1 0 130 350 480
+pagesize -pg 1 -db -bbox -sgen -110 0 580 280
+"
+}
+0

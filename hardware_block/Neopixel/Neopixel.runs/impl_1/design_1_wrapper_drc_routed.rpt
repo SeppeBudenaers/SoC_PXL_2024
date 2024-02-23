@@ -1,0 +1,52 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Fri Feb 23 15:36:59 2024
+| Host         : Wheatley running 64-bit major release  (build 9200)
+| Command      : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+| Design       : design_1_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_design_1_wrapper
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 3
++----------+----------+--------------------+------------+
+| Rule     | Severity | Description        | Violations |
++----------+----------+--------------------+------------+
+| PDRC-153 | Warning  | Gated clock check  | 2          |
+| ZPS7-1   | Warning  | PS7 block required | 1          |
++----------+----------+--------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-153#1 Warning
+Gated clock check  
+Net design_1_i/button_0/U0/sel_reg[0]_i_2_n_0 is a gated clock net sourced by a combinational pin design_1_i/button_0/U0/sel_reg[0]_i_2/O, cell design_1_i/button_0/U0/sel_reg[0]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net design_1_i/button_0/U0/sel_reg[2]_i_2_n_0 is a gated clock net sourced by a combinational pin design_1_i/button_0/U0/sel_reg[2]_i_2/O, cell design_1_i/button_0/U0/sel_reg[2]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+
