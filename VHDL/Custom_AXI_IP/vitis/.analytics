@@ -1,0 +1,23 @@
+timestamp=[2024-03-01 14:36:27], mode=WORKBENCH_START, duration=0:00:11.352, duration_ms=11352, data={}
+timestamp=[2024-03-01 14:36:27], mode=WORKBENCH_UI_INIT, duration=0:00:00.011, duration_ms=11, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2024-03-01 14:36:28], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.075, duration_ms=75, data={}
+timestamp=[2024-03-01 14:38:05], mode=APP_CREATION, duration=0:00:45.376, duration_ms=45376, data={name=Custom_IP_Block, project_type=sdk, os=standalone, processor=ps7_cortexa9, runtime=cpp, platform=design_1_wrapper, application_type=application}
+timestamp=[2024-03-01 14:38:49], mode=PLATFORM_GENERATION, duration=0:00:11.866, duration_ms=11866, data={name=design_1_wrapper}
+timestamp=[2024-03-01 14:38:50], mode=BUILD, duration=0:00:00.643, duration_ms=643, data={name=Custom_IP_Block, configuration=Debug, clean_build=false}
+timestamp=[2024-03-01 14:43:49], mode=PLATFORM_GENERATION, duration=0:00:07.531, duration_ms=7531, data={name=design_1_wrapper}
+timestamp=[2024-03-01 14:43:50], mode=BUILD, duration=0:00:00.535, duration_ms=535, data={name=Custom_IP_Block, configuration=Debug, clean_build=false}
+timestamp=[2024-03-01 14:45:06], mode=PLATFORM_GENERATION, duration=0:00:07.513, duration_ms=7513, data={name=design_1_wrapper}
+timestamp=[2024-03-01 14:45:27], mode=PLATFORM_GENERATION, duration=0:00:07.371, duration_ms=7371, data={name=design_1_wrapper}
+timestamp=[2024-03-01 14:45:28], mode=BUILD, duration=0:00:00.480, duration_ms=480, data={name=Custom_IP_Block, configuration=Debug, clean_build=false}
+timestamp=[2024-03-01 14:45:58], mode=PLATFORM_GENERATION, duration=0:00:07.547, duration_ms=7547, data={name=design_1_wrapper}
+timestamp=[2024-03-01 14:45:58], mode=BUILD, duration=0:00:00.480, duration_ms=480, data={name=Custom_IP_Block, configuration=Debug, clean_build=false}
+timestamp=[2024-03-01 14:47:13], mode=PLATFORM_GENERATION, duration=0:00:07.558, duration_ms=7558, data={name=design_1_wrapper}
+timestamp=[2024-03-01 14:47:14], mode=BUILD, duration=0:00:00.537, duration_ms=537, data={name=Custom_IP_Block, configuration=Debug, clean_build=false}
+timestamp=[2024-03-01 14:53:10], mode=PLATFORM_GENERATION, duration=0:00:22.243, duration_ms=22243, data={name=design_1_wrapper}
+timestamp=[2024-03-01 14:53:10], mode=BUILD, duration=0:00:00.613, duration_ms=613, data={name=Custom_IP_Block, configuration=Debug, clean_build=false}
+timestamp=[2024-03-01 14:53:26], mode=BUILD, duration=0:00:01.666, duration_ms=1666, data={name=Custom_IP_Block, configuration=Debug, clean_build=false}
+timestamp=[2024-03-01 15:05:31], mode=BUILD, duration=0:00:00.511, duration_ms=511, data={name=Custom_IP_Block, configuration=Debug, clean_build=false}
+timestamp=[2024-03-01 15:08:07], mode=BUILD, duration=0:00:01.481, duration_ms=1481, data={name=Custom_IP_Block, configuration=Debug, clean_build=false}
+timestamp=[2024-03-01 15:08:24], mode=BUILD, duration=0:00:01.999, duration_ms=1999, data={name=Custom_IP_Block, configuration=Debug, clean_build=false}
+timestamp=[2024-03-01 15:09:24], mode=BUILD, duration=0:00:00.368, duration_ms=368, data={name=Custom_IP_Block, configuration=Debug, clean_build=true}
+timestamp=[2024-03-01 15:10:06], mode=BUILD, duration=0:00:02.090, duration_ms=2090, data={name=Custom_IP_Block, configuration=Debug, clean_build=false}
