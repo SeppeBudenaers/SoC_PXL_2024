@@ -3820,3 +3820,1101 @@ Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.]. Thread: 
 
 !ENTRY com.xilinx.sdk.utils 1 0 2024-03-01 15:10:22.065
 !MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '2'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:27:23.941
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:27:23.951
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:27:23.952
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:27:23.956
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "9.0",
+}]. Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-03-01 15:27:23.956
+!MESSAGE Generating MD5 hash for file: C:\02_PXL\SoC_PXL_2024\VHDL\Custom_AXI_IP\vitis\design_1_wrapper\export\design_1_wrapper\sw\design_1_wrapper\standalone_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:27:23.958
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:27:23.960
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:27:31.528
+!MESSAGE XSCT Command: [disconnect tcfchan#9], Thread: Thread-465
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:27:31.536
+!MESSAGE XSCT command with result: [disconnect tcfchan#9], Result: [null, ]. Thread: Thread-465
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:27:32.537
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-7: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:27:32.548
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#10]. Thread: Worker-7: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:27:32.549
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:27:32.560
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-7: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:27:32.561
+!MESSAGE XSCT Command: [version -server], Thread: Worker-7: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:27:32.563
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2023.2]. Thread: Worker-7: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:27:32.563
+!MESSAGE XSCT Command: [version], Thread: Worker-7: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:27:32.564
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2023.2.0
+SW Build 0 on 2023-10-09-15:37:46
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.]. Thread: Worker-7: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:27:32.565
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:27:32.575
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-7: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:27:32.577
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-7: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:27:32.595
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-7: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:27:32.596
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:27:32.606
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-7: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:27:32.610
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-7: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:27:32.629
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-7: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:27:32.629
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:27:32.639
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-7: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:27:32.639
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-7: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:27:32.665
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-7: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:27:32.667
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:27:32.675
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA (closed)]. Thread: Worker-7: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:27:32.676
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA (closed)" && level==1}], Thread: Worker-7: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:27:35.702
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA (closed)" && level==1}], Result: [null, ]. Thread: Worker-7: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:27:38.702
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA (closed)" && level==1}], Thread: Worker-7: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:27:41.718
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA (closed)" && level==1}], Result: [null, ]. Thread: Worker-7: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:24.849
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:24.851
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#10]. Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:24.851
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:24.863
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:24.866
+!MESSAGE XSCT Command: [version -server], Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:24.868
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2023.2]. Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:24.870
+!MESSAGE XSCT Command: [version], Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:24.872
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2023.2.0
+SW Build 0 on 2023-10-09-15:37:46
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.]. Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:24.874
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:24.879
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:24.880
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:24.901
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:24.902
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:24.909
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:24.910
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:24.930
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:24.932
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:24.941
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:24.942
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:24.958
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:24.960
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:24.967
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:24.968
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:24.994
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:24.995
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:25.002
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:25.003
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:25.028
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:25.028
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:25.035
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:25.035
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:25.058
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:25.061
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:25.087
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Result: [null, ]. Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:25.089
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:25.095
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:25.097
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:25.122
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:25.125
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:25.158
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:25.159
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:28.160
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:28.193
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:28.198
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:28.199
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:28.220
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:28.222
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:28.250
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:28.251
+!MESSAGE XSCT Command: [fpga -file C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/Custom_IP_Block/_ide/bitstream/design_1_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:30.581
+!MESSAGE XSCT command with result: [fpga -file C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/Custom_IP_Block/_ide/bitstream/design_1_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:30.640
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:30.659
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:30.663
+!MESSAGE XSCT Command: [loadhw -hw C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:30.677
+!MESSAGE XSCT command with result: [loadhw -hw C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, design_1_wrapper_1]. Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:30.678
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:30.681
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:30.684
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:30.708
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:30.709
+!MESSAGE XSCT Command: [source C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/Custom_IP_Block/_ide/psinit/ps7_init.tcl], Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:30.715
+!MESSAGE XSCT command with result: [source C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/Custom_IP_Block/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:30.716
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:31.402
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:31.403
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:31.425
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:31.426
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:31.439
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:31.440
+!MESSAGE XSCT Command: [dow C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/Custom_IP_Block/Debug/Custom_IP_Block.elf], Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:31.719
+!MESSAGE XSCT command with result: [dow C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/Custom_IP_Block/Debug/Custom_IP_Block.elf], Result: [null, ]. Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:31.720
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:31.761
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:31.851
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:31.871
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:31.873
+!MESSAGE XSCT Command: [con], Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:28:31.922
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-8: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-03-01 15:28:31.925
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '3'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:30:48.179
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-23: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:30:48.184
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-23: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:30:48.185
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-23: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:30:48.190
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "9.0",
+}]. Thread: Worker-23: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-03-01 15:30:48.190
+!MESSAGE Generating MD5 hash for file: C:\02_PXL\SoC_PXL_2024\VHDL\Custom_AXI_IP\vitis\design_1_wrapper\export\design_1_wrapper\sw\design_1_wrapper\standalone_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:30:48.191
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-23: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:30:48.194
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-23: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:09.564
+!MESSAGE XSCT Command: [disconnect tcfchan#10], Thread: Thread-556
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:09.588
+!MESSAGE XSCT command with result: [disconnect tcfchan#10], Result: [null, ]. Thread: Thread-556
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:10.588
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-22: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:10.592
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#11]. Thread: Worker-22: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:10.593
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-22: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:10.607
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA (closed)]. Thread: Worker-22: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:10.609
+!MESSAGE XSCT Command: [version -server], Thread: Worker-22: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:10.614
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2023.2]. Thread: Worker-22: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:10.615
+!MESSAGE XSCT Command: [version], Thread: Worker-22: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:10.616
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2023.2.0
+SW Build 0 on 2023-10-09-15:37:46
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.]. Thread: Worker-22: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:10.618
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-22: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:10.625
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA (closed)]. Thread: Worker-22: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:10.625
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA (closed)" && level==1}], Thread: Worker-22: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:13.646
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA (closed)" && level==1}], Result: [null, ]. Thread: Worker-22: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:16.647
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA (closed)" && level==1}], Thread: Worker-22: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:19.680
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA (closed)" && level==1}], Result: [null, ]. Thread: Worker-22: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.121
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.125
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#11]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.129
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.140
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.140
+!MESSAGE XSCT Command: [version -server], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.146
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2023.2]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.146
+!MESSAGE XSCT Command: [version], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.147
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2023.2.0
+SW Build 0 on 2023-10-09-15:37:46
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.148
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.152
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.153
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.167
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.168
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.175
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.176
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.197
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.198
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.205
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.205
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.228
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.229
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.236
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.237
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.252
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.253
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.264
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.266
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.285
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.286
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.296
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.298
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.328
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.330
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.358
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Result: [null, ]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.358
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.361
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.363
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.380
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.382
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.414
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:26.416
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:29.420
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:29.443
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:29.449
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:29.450
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:29.468
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:29.470
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:29.501
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:29.503
+!MESSAGE XSCT Command: [fpga -file C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/Custom_IP_Block/_ide/bitstream/design_1_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:31.827
+!MESSAGE XSCT command with result: [fpga -file C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/Custom_IP_Block/_ide/bitstream/design_1_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:31.869
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:31.894
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:31.895
+!MESSAGE XSCT Command: [loadhw -hw C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:31.903
+!MESSAGE XSCT command with result: [loadhw -hw C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, design_1_wrapper_1]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:31.904
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:31.906
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:31.908
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:31.921
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:31.923
+!MESSAGE XSCT Command: [source C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/Custom_IP_Block/_ide/psinit/ps7_init.tcl], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:31.928
+!MESSAGE XSCT command with result: [source C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/Custom_IP_Block/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:31.930
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:32.566
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:32.573
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:32.594
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:32.597
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:32.613
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:32.616
+!MESSAGE XSCT Command: [dow C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/Custom_IP_Block/Debug/Custom_IP_Block.elf], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:32.940
+!MESSAGE XSCT command with result: [dow C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/Custom_IP_Block/Debug/Custom_IP_Block.elf], Result: [null, ]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:32.941
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:32.980
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:33.066
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:33.088
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:33.091
+!MESSAGE XSCT Command: [con], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:31:33.155
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-03-01 15:31:33.158
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '4'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:32:34.754
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:32:34.758
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:32:34.759
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:32:34.764
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "9.0",
+}]. Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-03-01 15:32:34.764
+!MESSAGE Generating MD5 hash for file: C:\02_PXL\SoC_PXL_2024\VHDL\Custom_AXI_IP\vitis\design_1_wrapper\export\design_1_wrapper\sw\design_1_wrapper\standalone_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:32:34.769
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:32:34.809
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:32:45.216
+!MESSAGE XSCT Command: [disconnect tcfchan#11], Thread: Thread-620
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:32:45.238
+!MESSAGE XSCT command with result: [disconnect tcfchan#11], Result: [null, ]. Thread: Thread-620
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:32:46.236
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:32:46.242
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#12]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:32:46.244
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:32:46.261
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:32:46.264
+!MESSAGE XSCT Command: [version -server], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:32:46.269
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2023.2]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:32:46.270
+!MESSAGE XSCT Command: [version], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:32:46.272
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2023.2.0
+SW Build 0 on 2023-10-09-15:37:46
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:32:46.274
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:32:46.286
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:32:46.290
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:32:46.325
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:32:46.326
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:32:46.337
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA (closed)]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:32:46.338
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA (closed)" && level==1}], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:32:49.370
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA (closed)" && level==1}], Result: [null, ]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:32:52.373
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA (closed)" && level==1}], Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:32:55.389
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA (closed)" && level==1}], Result: [null, ]. Thread: Worker-17: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:07.957
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:07.959
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#12]. Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:07.960
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:07.976
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:07.978
+!MESSAGE XSCT Command: [version -server], Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:07.980
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2023.2]. Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:07.982
+!MESSAGE XSCT Command: [version], Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:07.982
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2023.2.0
+SW Build 0 on 2023-10-09-15:37:46
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.]. Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:07.983
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:07.989
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:07.990
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:08.006
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:08.007
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:08.016
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:08.018
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:08.036
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:08.037
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:08.046
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:08.047
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:08.069
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:08.069
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:08.076
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:08.078
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:08.091
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:08.092
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:08.104
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:08.105
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:08.130
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:08.131
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:08.144
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:08.146
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:08.169
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:08.171
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:08.191
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Result: [null, ]. Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:08.193
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:08.196
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:08.198
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:08.210
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:08.214
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:08.250
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:08.253
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:11.257
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:11.280
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:11.286
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:11.286
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:11.305
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:11.307
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:11.348
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:11.349
+!MESSAGE XSCT Command: [fpga -file C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/Custom_IP_Block/_ide/bitstream/design_1_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:13.674
+!MESSAGE XSCT command with result: [fpga -file C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/Custom_IP_Block/_ide/bitstream/design_1_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:13.716
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:13.728
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:13.729
+!MESSAGE XSCT Command: [loadhw -hw C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:13.745
+!MESSAGE XSCT command with result: [loadhw -hw C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, design_1_wrapper_1]. Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:13.746
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:13.748
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:13.749
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:13.762
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:13.764
+!MESSAGE XSCT Command: [source C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/Custom_IP_Block/_ide/psinit/ps7_init.tcl], Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:13.771
+!MESSAGE XSCT command with result: [source C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/Custom_IP_Block/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:13.771
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:14.391
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:14.392
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:14.408
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:14.409
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:14.424
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:14.426
+!MESSAGE XSCT Command: [dow C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/Custom_IP_Block/Debug/Custom_IP_Block.elf], Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:14.693
+!MESSAGE XSCT command with result: [dow C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/Custom_IP_Block/Debug/Custom_IP_Block.elf], Result: [null, ]. Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:14.694
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:14.729
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:14.799
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:14.809
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:14.809
+!MESSAGE XSCT Command: [con], Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 15:33:14.846
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-25: Launching Debugger_Custom_IP_Block-Default
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-03-01 15:33:14.850
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '5'
+
+!ENTRY org.eclipse.tcf 4 0 2024-03-01 15:39:06.211
+!MESSAGE Cannot send datagram packet to /10.181.0.124
+!STACK 0
+java.net.SocketException: Network is unreachable: Datagram send failed
+	at java.base/java.net.TwoStacksPlainDatagramSocketImpl.send0(Native Method)
+	at java.base/java.net.AbstractPlainDatagramSocketImpl.send(AbstractPlainDatagramSocketImpl.java:155)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at org.eclipse.tcf.internal.services.local.LocatorService.sendDatagramPacket(LocatorService.java:965)
+	at org.eclipse.tcf.internal.services.local.LocatorService.sendDatagramPacket(LocatorService.java:960)
+	at org.eclipse.tcf.internal.services.local.LocatorService.sendEmptyPacket(LocatorService.java:1102)
+	at org.eclipse.tcf.internal.services.local.LocatorService.sendAll(LocatorService.java:1119)
+	at org.eclipse.tcf.internal.services.local.LocatorService.refresh_timer(LocatorService.java:715)
+	at org.eclipse.tcf.internal.services.local.LocatorService$1$1.run(LocatorService.java:233)
+	at org.eclipse.tcf.protocol.Protocol$3.run(Protocol.java:243)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-03-01 15:39:06.211
+!MESSAGE Cannot send datagram packet to /10.181.31.255
+!STACK 0
+java.net.SocketException: Network is unreachable: Datagram send failed
+	at java.base/java.net.TwoStacksPlainDatagramSocketImpl.send0(Native Method)
+	at java.base/java.net.AbstractPlainDatagramSocketImpl.send(AbstractPlainDatagramSocketImpl.java:155)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at org.eclipse.tcf.internal.services.local.LocatorService.sendDatagramPacket(LocatorService.java:965)
+	at org.eclipse.tcf.internal.services.local.LocatorService.sendEmptyPacket(LocatorService.java:1102)
+	at org.eclipse.tcf.internal.services.local.LocatorService.sendAll(LocatorService.java:1119)
+	at org.eclipse.tcf.internal.services.local.LocatorService.refresh_timer(LocatorService.java:715)
+	at org.eclipse.tcf.internal.services.local.LocatorService$1$1.run(LocatorService.java:233)
+	at org.eclipse.tcf.protocol.Protocol$3.run(Protocol.java:243)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-03-01 16:10:06.381
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-03-01 16:10:06.386
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-03-01 16:10:06.398
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-03-01 16:10:06.404
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-03-01 16:10:06.405
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-03-01 16:10:06.405
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-03-01 16:10:06.405
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-03-01 16:10:29.135
+!MESSAGE TCF channel terminated
+!STACK 0
+java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:290)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:186)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:85)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:329)

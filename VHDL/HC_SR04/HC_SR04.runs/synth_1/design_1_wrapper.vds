@@ -1,0 +1,309 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Mar 15 13:44:04 2024
+# Process ID: 22920
+# Current directory: C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.runs/synth_1
+# Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.runs/synth_1/design_1_wrapper.vds
+# Journal file: C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.runs/synth_1\vivado.jou
+# Running On: Wheatley, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 4, Host memory: 16969 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 452.883 ; gain = 183.863
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/02_PXL/SoC_PXL_2024/VHDL/ip_repo/HC_SR04_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top design_1_wrapper -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9208
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1354.133 ; gain = 439.590
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:25]
+INFO: [Synth 8-3491] module 'design_1' declared at 'c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/synth/design_1.vhd:1122' bound to instance 'design_1_i' of component 'design_1' [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'design_1' [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/synth/design_1.vhd:1136]
+INFO: [Synth 8-3491] module 'design_1_HC_SR04_0_0' declared at 'C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.runs/synth_1/.Xil/Vivado-22920-Wheatley/realtime/design_1_HC_SR04_0_0_stub.vhdl:6' bound to instance 'HC_SR04_0' of component 'design_1_HC_SR04_0_0' [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/synth/design_1.vhd:1410]
+INFO: [Synth 8-638] synthesizing module 'design_1_HC_SR04_0_0' [C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.runs/synth_1/.Xil/Vivado-22920-Wheatley/realtime/design_1_HC_SR04_0_0_stub.vhdl:37]
+INFO: [Synth 8-3491] module 'design_1_HC_SR04_1_0' declared at 'C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.runs/synth_1/.Xil/Vivado-22920-Wheatley/realtime/design_1_HC_SR04_1_0_stub.vhdl:6' bound to instance 'HC_SR04_1' of component 'design_1_HC_SR04_1_0' [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/synth/design_1.vhd:1438]
+INFO: [Synth 8-638] synthesizing module 'design_1_HC_SR04_1_0' [C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.runs/synth_1/.Xil/Vivado-22920-Wheatley/realtime/design_1_HC_SR04_1_0_stub.vhdl:37]
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_1' declared at 'C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.runs/synth_1/.Xil/Vivado-22920-Wheatley/realtime/design_1_clk_wiz_0_1_stub.vhdl:6' bound to instance 'clk_wiz_0' of component 'design_1_clk_wiz_0_1' [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/synth/design_1.vhd:1466]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_1' [C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.runs/synth_1/.Xil/Vivado-22920-Wheatley/realtime/design_1_clk_wiz_0_1_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at 'C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.runs/synth_1/.Xil/Vivado-22920-Wheatley/realtime/design_1_processing_system7_0_0_stub.vhdl:6' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/synth/design_1.vhd:1471]
+INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.runs/synth_1/.Xil/Vivado-22920-Wheatley/realtime/design_1_processing_system7_0_0_stub.vhdl:74]
+INFO: [Synth 8-638] synthesizing module 'design_1_ps7_0_axi_periph_0' [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/synth/design_1.vhd:642]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_15SPJYW' [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/synth/design_1.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_15SPJYW' (0#1) [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/synth/design_1.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_XU9C55' [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/synth/design_1.vhd:173]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_XU9C55' (0#1) [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/synth/design_1.vhd:173]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_UYSKKA' [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/synth/design_1.vhd:303]
+INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at 'C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.runs/synth_1/.Xil/Vivado-22920-Wheatley/realtime/design_1_auto_pc_0_stub.vhdl:6' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/synth/design_1.vhd:486]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.runs/synth_1/.Xil/Vivado-22920-Wheatley/realtime/design_1_auto_pc_0_stub.vhdl:71]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_UYSKKA' (0#1) [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/synth/design_1.vhd:303]
+INFO: [Synth 8-3491] module 'design_1_xbar_0' declared at 'C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.runs/synth_1/.Xil/Vivado-22920-Wheatley/realtime/design_1_xbar_0_stub.vhdl:6' bound to instance 'xbar' of component 'design_1_xbar_0' [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/synth/design_1.vhd:1055]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.runs/synth_1/.Xil/Vivado-22920-Wheatley/realtime/design_1_xbar_0_stub.vhdl:52]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ps7_0_axi_periph_0' (0#1) [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/synth/design_1.vhd:642]
+INFO: [Synth 8-3491] module 'design_1_rst_ps7_0_50M_0' declared at 'C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.runs/synth_1/.Xil/Vivado-22920-Wheatley/realtime/design_1_rst_ps7_0_50M_0_stub.vhdl:6' bound to instance 'rst_ps7_0_50M' of component 'design_1_rst_ps7_0_50M_0' [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/synth/design_1.vhd:1623]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_50M_0' [C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.runs/synth_1/.Xil/Vivado-22920-Wheatley/realtime/design_1_rst_ps7_0_50M_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'design_1_vio_1_0' declared at 'C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.runs/synth_1/.Xil/Vivado-22920-Wheatley/realtime/design_1_vio_1_0_stub.vhdl:6' bound to instance 'vio_1' of component 'design_1_vio_1_0' [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/synth/design_1.vhd:1636]
+INFO: [Synth 8-638] synthesizing module 'design_1_vio_1_0' [C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.runs/synth_1/.Xil/Vivado-22920-Wheatley/realtime/design_1_vio_1_0_stub.vhdl:15]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (0#1) [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/synth/design_1.vhd:1136]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (0#1) [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:25]
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_UYSKKA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_UYSKKA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m01_couplers_imp_XU9C55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m01_couplers_imp_XU9C55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m01_couplers_imp_XU9C55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m01_couplers_imp_XU9C55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_15SPJYW is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_15SPJYW is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m00_couplers_imp_15SPJYW is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m00_couplers_imp_15SPJYW is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1468.441 ; gain = 553.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1468.441 ; gain = 553.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1468.441 ; gain = 553.898
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1468.441 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/ip/design_1_HC_SR04_0_0/design_1_HC_SR04_0_0/design_1_HC_SR04_0_0_in_context.xdc] for cell 'design_1_i/HC_SR04_0'
+Finished Parsing XDC File [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/ip/design_1_HC_SR04_0_0/design_1_HC_SR04_0_0/design_1_HC_SR04_0_0_in_context.xdc] for cell 'design_1_i/HC_SR04_0'
+Parsing XDC File [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/ip/design_1_HC_SR04_1_0/design_1_HC_SR04_1_0/design_1_HC_SR04_0_0_in_context.xdc] for cell 'design_1_i/HC_SR04_1'
+Finished Parsing XDC File [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/ip/design_1_HC_SR04_1_0/design_1_HC_SR04_1_0/design_1_HC_SR04_0_0_in_context.xdc] for cell 'design_1_i/HC_SR04_1'
+Parsing XDC File [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc] for cell 'design_1_i/processing_system7_0'
+Finished Parsing XDC File [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc] for cell 'design_1_i/processing_system7_0'
+Parsing XDC File [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/xbar'
+Finished Parsing XDC File [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/xbar'
+Parsing XDC File [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_in_context.xdc] for cell 'design_1_i/rst_ps7_0_50M'
+Finished Parsing XDC File [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_in_context.xdc] for cell 'design_1_i/rst_ps7_0_50M'
+Parsing XDC File [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/ip/design_1_vio_1_0/design_1_vio_1_0/design_1_vio_1_0_in_context.xdc] for cell 'design_1_i/vio_1'
+Finished Parsing XDC File [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/ip/design_1_vio_1_0/design_1_vio_1_0/design_1_vio_1_0_in_context.xdc] for cell 'design_1_i/vio_1'
+Parsing XDC File [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
+Finished Parsing XDC File [c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
+Parsing XDC File [C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.srcs/constrs_1/new/io.xdc]
+Finished Parsing XDC File [C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.srcs/constrs_1/new/io.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.srcs/constrs_1/new/io.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1468.441 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1468.441 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1468.441 ; gain = 553.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1468.441 ; gain = 553.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_in1_0. (constraint file  c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_in1_0. (constraint file  c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/HC_SR04_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/HC_SR04_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/processing_system7_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_ps7_0_50M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/vio_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/clk_wiz_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1468.441 ; gain = 553.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1468.441 ; gain = 553.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 1468.441 ; gain = 553.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:25 . Memory (MB): peak = 1468.441 ; gain = 553.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:25 . Memory (MB): peak = 1468.441 ; gain = 553.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:06 ; elapsed = 00:00:25 . Memory (MB): peak = 1468.441 ; gain = 553.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:06 ; elapsed = 00:00:29 . Memory (MB): peak = 1468.441 ; gain = 553.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:06 ; elapsed = 00:00:29 . Memory (MB): peak = 1468.441 ; gain = 553.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:06 ; elapsed = 00:00:29 . Memory (MB): peak = 1468.441 ; gain = 553.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:06 ; elapsed = 00:00:29 . Memory (MB): peak = 1468.441 ; gain = 553.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:29 . Memory (MB): peak = 1468.441 ; gain = 553.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:06 ; elapsed = 00:00:29 . Memory (MB): peak = 1468.441 ; gain = 553.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------------+----------+
+|      |BlackBox name                   |Instances |
++------+--------------------------------+----------+
+|1     |design_1_xbar_0                 |         1|
+|2     |design_1_auto_pc_0              |         1|
+|3     |design_1_HC_SR04_0_0            |         1|
+|4     |design_1_HC_SR04_1_0            |         1|
+|5     |design_1_clk_wiz_0_1            |         1|
+|6     |design_1_processing_system7_0_0 |         1|
+|7     |design_1_rst_ps7_0_50M_0        |         1|
+|8     |design_1_vio_1_0                |         1|
++------+--------------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------------------+------+
+|      |Cell                                 |Count |
++------+-------------------------------------+------+
+|1     |design_1_HC_SR04_0_0_bbox            |     1|
+|2     |design_1_HC_SR04_1_0_bbox            |     1|
+|3     |design_1_auto_pc_0_bbox              |     1|
+|4     |design_1_clk_wiz_0_1_bbox            |     1|
+|5     |design_1_processing_system7_0_0_bbox |     1|
+|6     |design_1_rst_ps7_0_50M_0_bbox        |     1|
+|7     |design_1_vio_1_0_bbox                |     1|
+|8     |design_1_xbar_0_bbox                 |     1|
+|9     |IBUF                                 |     2|
+|10    |OBUF                                 |     2|
++------+-------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:06 ; elapsed = 00:00:29 . Memory (MB): peak = 1468.441 ; gain = 553.898
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:04 ; elapsed = 00:00:27 . Memory (MB): peak = 1468.441 ; gain = 553.898
+Synthesis Optimization Complete : Time (s): cpu = 00:00:06 ; elapsed = 00:00:29 . Memory (MB): peak = 1468.441 ; gain = 553.898
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1472.129 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1475.781 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: e297ce2c
+INFO: [Common 17-83] Releasing license: Synthesis
+51 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:35 . Memory (MB): peak = 1475.781 ; gain = 986.797
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1475.781 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 15 13:44:54 2024...

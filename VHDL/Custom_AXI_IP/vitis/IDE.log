@@ -345,3 +345,193 @@ con
 ----------------End of Script----------------
 
 15:10:22 INFO  : Launch script is exported to file 'C:\02_PXL\SoC_PXL_2024\VHDL\Custom_AXI_IP\vitis\Custom_IP_Block_system\_ide\scripts\debugger_custom_ip_block-default.tcl'
+15:27:23 INFO  : Checking for BSP changes to sync application flags for project 'Custom_IP_Block'...
+15:27:31 INFO  : Disconnected from the channel tcfchan#9.
+15:27:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:27:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:27:41 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+15:28:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:28:25 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:28:25 INFO  : 'jtag frequency' command is executed.
+15:28:25 INFO  : Context for 'APU' is selected.
+15:28:25 INFO  : System reset is completed.
+15:28:28 INFO  : 'after 3000' command is executed.
+15:28:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+15:28:30 INFO  : Device configured successfully with "C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/Custom_IP_Block/_ide/bitstream/design_1_wrapper.bit"
+15:28:30 INFO  : Context for 'APU' is selected.
+15:28:30 INFO  : Hardware design and registers information is loaded from 'C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:28:30 INFO  : 'configparams force-mem-access 1' command is executed.
+15:28:30 INFO  : Context for 'APU' is selected.
+15:28:30 INFO  : Sourcing of 'C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/Custom_IP_Block/_ide/psinit/ps7_init.tcl' is done.
+15:28:31 INFO  : 'ps7_init' command is executed.
+15:28:31 INFO  : 'ps7_post_config' command is executed.
+15:28:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:28:31 INFO  : The application 'C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/Custom_IP_Block/Debug/Custom_IP_Block.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:28:31 INFO  : 'configparams force-mem-access 0' command is executed.
+15:28:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/Custom_IP_Block/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/Custom_IP_Block/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/Custom_IP_Block/Debug/Custom_IP_Block.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:28:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:28:31 INFO  : 'con' command is executed.
+15:28:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:28:31 INFO  : Launch script is exported to file 'C:\02_PXL\SoC_PXL_2024\VHDL\Custom_AXI_IP\vitis\Custom_IP_Block_system\_ide\scripts\debugger_custom_ip_block-default.tcl'
+15:30:48 INFO  : Checking for BSP changes to sync application flags for project 'Custom_IP_Block'...
+15:31:09 INFO  : Disconnected from the channel tcfchan#10.
+15:31:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:31:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:31:19 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+15:31:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:31:26 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:31:26 INFO  : 'jtag frequency' command is executed.
+15:31:26 INFO  : Context for 'APU' is selected.
+15:31:26 INFO  : System reset is completed.
+15:31:29 INFO  : 'after 3000' command is executed.
+15:31:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+15:31:31 INFO  : Device configured successfully with "C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/Custom_IP_Block/_ide/bitstream/design_1_wrapper.bit"
+15:31:31 INFO  : Context for 'APU' is selected.
+15:31:31 INFO  : Hardware design and registers information is loaded from 'C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:31:31 INFO  : 'configparams force-mem-access 1' command is executed.
+15:31:31 INFO  : Context for 'APU' is selected.
+15:31:31 INFO  : Sourcing of 'C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/Custom_IP_Block/_ide/psinit/ps7_init.tcl' is done.
+15:31:32 INFO  : 'ps7_init' command is executed.
+15:31:32 INFO  : 'ps7_post_config' command is executed.
+15:31:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:31:32 INFO  : The application 'C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/Custom_IP_Block/Debug/Custom_IP_Block.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:31:32 INFO  : 'configparams force-mem-access 0' command is executed.
+15:31:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/Custom_IP_Block/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/Custom_IP_Block/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/Custom_IP_Block/Debug/Custom_IP_Block.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:31:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:31:33 INFO  : 'con' command is executed.
+15:31:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:31:33 INFO  : Launch script is exported to file 'C:\02_PXL\SoC_PXL_2024\VHDL\Custom_AXI_IP\vitis\Custom_IP_Block_system\_ide\scripts\debugger_custom_ip_block-default.tcl'
+15:32:34 INFO  : Checking for BSP changes to sync application flags for project 'Custom_IP_Block'...
+15:32:45 INFO  : Disconnected from the channel tcfchan#11.
+15:32:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:32:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:32:55 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+15:33:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:33:08 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:33:08 INFO  : 'jtag frequency' command is executed.
+15:33:08 INFO  : Context for 'APU' is selected.
+15:33:08 INFO  : System reset is completed.
+15:33:11 INFO  : 'after 3000' command is executed.
+15:33:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+15:33:13 INFO  : Device configured successfully with "C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/Custom_IP_Block/_ide/bitstream/design_1_wrapper.bit"
+15:33:13 INFO  : Context for 'APU' is selected.
+15:33:13 INFO  : Hardware design and registers information is loaded from 'C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:33:13 INFO  : 'configparams force-mem-access 1' command is executed.
+15:33:13 INFO  : Context for 'APU' is selected.
+15:33:13 INFO  : Sourcing of 'C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/Custom_IP_Block/_ide/psinit/ps7_init.tcl' is done.
+15:33:14 INFO  : 'ps7_init' command is executed.
+15:33:14 INFO  : 'ps7_post_config' command is executed.
+15:33:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:33:14 INFO  : The application 'C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/Custom_IP_Block/Debug/Custom_IP_Block.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:33:14 INFO  : 'configparams force-mem-access 0' command is executed.
+15:33:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/Custom_IP_Block/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/Custom_IP_Block/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/02_PXL/SoC_PXL_2024/VHDL/Custom_AXI_IP/vitis/Custom_IP_Block/Debug/Custom_IP_Block.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:33:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:33:14 INFO  : 'con' command is executed.
+15:33:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:33:14 INFO  : Launch script is exported to file 'C:\02_PXL\SoC_PXL_2024\VHDL\Custom_AXI_IP\vitis\Custom_IP_Block_system\_ide\scripts\debugger_custom_ip_block-default.tcl'
+16:10:29 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\02_PXL\SoC_PXL_2024\VHDL\Custom_AXI_IP\vitis\temp_xsdb_launch_script.tcl

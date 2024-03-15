@@ -1,0 +1,29 @@
+
+*** Running vivado
+    with args -log design_1_HC_SR04_1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_HC_SR04_1_0.tcl
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_HC_SR04_1_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 452.750 ; gain = 181.898
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/02_PXL/SoC_PXL_2024/VHDL/ip_repo/HC_SR04_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_HC_SR04_1_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry ebe15bc00f8e5921 to dir: C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.runs/design_1_HC_SR04_1_0_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.cache/ip/2023.2/e/b/ebe15bc00f8e5921/design_1_HC_SR04_0_0.dcp to C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.runs/design_1_HC_SR04_1_0_synth_1/design_1_HC_SR04_1_0.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.cache/ip/2023.2/e/b/ebe15bc00f8e5921/design_1_HC_SR04_0_0_sim_netlist.v to C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.runs/design_1_HC_SR04_1_0_synth_1/design_1_HC_SR04_1_0_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.cache/ip/2023.2/e/b/ebe15bc00f8e5921/design_1_HC_SR04_0_0_sim_netlist.vhdl to C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.runs/design_1_HC_SR04_1_0_synth_1/design_1_HC_SR04_1_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.cache/ip/2023.2/e/b/ebe15bc00f8e5921/design_1_HC_SR04_0_0_stub.v to C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.runs/design_1_HC_SR04_1_0_synth_1/design_1_HC_SR04_1_0_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.cache/ip/2023.2/e/b/ebe15bc00f8e5921/design_1_HC_SR04_0_0_stub.vhdl to C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/HC_SR04.runs/design_1_HC_SR04_1_0_synth_1/design_1_HC_SR04_1_0_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_HC_SR04_1_0, cache-ID = ebe15bc00f8e5921.
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 15 12:11:45 2024...
