@@ -1,0 +1,37 @@
+15:17:11 **** Incremental Build of configuration Debug for project Ultrasoon ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:37:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   37 |     printf("data = %i\n",x);
+      |     ^~~~~~
+../src/helloworld.c:25:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   24 | #include "HC_SR04.h"
+  +++ |+#include <stdio.h>
+   25 | 
+../src/helloworld.c:37:5: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+   37 |     printf("data = %i\n",x);
+      |     ^~~~~~
+../src/helloworld.c:37:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Ultrasoon.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "Ultrasoon.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Ultrasoon.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Ultrasoon.elf  |tee "Ultrasoon.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  50307	   2552	  22632	  75491	  126e3	Ultrasoon.elf
+'Finished building: Ultrasoon.elf.size'
+' '
+
+15:17:12 Build Finished (took 912ms)
+
