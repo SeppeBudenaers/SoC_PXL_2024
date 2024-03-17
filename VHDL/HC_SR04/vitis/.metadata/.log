@@ -6845,3 +6845,1512 @@ Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.]. Thread: 
 
 !ENTRY com.xilinx.sdk.utils 0 0 2024-03-15 15:20:54.151
 !MESSAGE XSCT command with result: [disconnect tcfchan#7], Result: [null, ]. Thread: Thread-634
+!SESSION 2024-03-17 11:25:27.811 -----------------------------------------------
+eclipse.buildId=2023.2
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\02_PXL\SoC_PXL_2024\VHDL\HC_SR04\vitis
+
+!ENTRY org.eclipse.ui 4 4 2024-03-17 11:25:31.790
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:36.407
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:36.407
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-20
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:36.414
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:36.415
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-20
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:36.422
+!MESSAGE XSCT Command: [setws C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis], Thread: Thread-20
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:36.423
+!MESSAGE XSCT command with result: [setws C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis], Result: [null, ]. Thread: Thread-20
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:37.138
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:37.350
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:37.352
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:37.354
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/Vitis/2023.2/data]. Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-03-17 11:25:39.309
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-03-17 11:25:39.310
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-03-17 11:25:39.310
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:41.228
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.463
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Result: [null, ]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.465
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.468
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Result: [null, {"device": "7z020",
+"family": "zynq",
+"timestamp": "Fri Mar 15 14:37:02 2024",
+"vivado_version": "2023.2",
+"part": "xc7z020clg400-1",
+}]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.555
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.565
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Result: [null, {"HC_SR04_0": {"hier_name": "HC_SR04_0",
+"type": "HC_SR04",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"HC_SR04_1": {"hier_name": "HC_SR04_1",
+"type": "HC_SR04",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"clk_wiz_0": {"hier_name": "clk_wiz_0",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"processing_system7_0": {"hier_name": "processing_system7_0",
+"type": "processing_system7",
+"version": "5.5",
+"ip_type": "",
+},
+"ps7_0_axi_periph": {"hier_name": "ps7_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"rst_ps7_0_100M": {"hier_name": "rst_ps7_0_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"vio_0": {"hier_name": "vio_0",
+"type": "vio",
+"version": "3.0",
+"ip_type": "PERIPHERAL",
+},
+"ps7_clockc_0": {"hier_name": "ps7_clockc_0",
+"type": "ps7_clockc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_uart_0": {"hier_name": "ps7_uart_0",
+"type": "ps7_uart",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pl310_0": {"hier_name": "ps7_pl310_0",
+"type": "ps7_pl310",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pmu_0": {"hier_name": "ps7_pmu_0",
+"type": "ps7_pmu",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_0": {"hier_name": "ps7_qspi_0",
+"type": "ps7_qspi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_linear_0": {"hier_name": "ps7_qspi_linear_0",
+"type": "ps7_qspi_linear",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_axi_interconnect_0": {"hier_name": "ps7_axi_interconnect_0",
+"type": "ps7_axi_interconnect",
+"version": "1.00.a",
+"ip_type": "BUS",
+},
+"ps7_cortexa9_0": {"hier_name": "ps7_cortexa9_0",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_cortexa9_1": {"hier_name": "ps7_cortexa9_1",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_ddr_0": {"hier_name": "ps7_ddr_0",
+"type": "ps7_ddr",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ethernet_0": {"hier_name": "ps7_ethernet_0",
+"type": "ps7_ethernet",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_usb_0": {"hier_name": "ps7_usb_0",
+"type": "ps7_usb",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_sd_0": {"hier_name": "ps7_sd_0",
+"type": "ps7_sdio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpio_0": {"hier_name": "ps7_gpio_0",
+"type": "ps7_gpio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ddrc_0": {"hier_name": "ps7_ddrc_0",
+"type": "ps7_ddrc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dev_cfg_0": {"hier_name": "ps7_dev_cfg_0",
+"type": "ps7_dev_cfg",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_xadc_0": {"hier_name": "ps7_xadc_0",
+"type": "ps7_xadc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ocmc_0": {"hier_name": "ps7_ocmc_0",
+"type": "ps7_ocmc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_coresight_comp_0": {"hier_name": "ps7_coresight_comp_0",
+"type": "ps7_coresight_comp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpv_0": {"hier_name": "ps7_gpv_0",
+"type": "ps7_gpv",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuc_0": {"hier_name": "ps7_scuc_0",
+"type": "ps7_scuc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_globaltimer_0": {"hier_name": "ps7_globaltimer_0",
+"type": "ps7_globaltimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_intc_dist_0": {"hier_name": "ps7_intc_dist_0",
+"type": "ps7_intc_dist",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_l2cachec_0": {"hier_name": "ps7_l2cachec_0",
+"type": "ps7_l2cachec",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_s": {"hier_name": "ps7_dma_s",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_iop_bus_config_0": {"hier_name": "ps7_iop_bus_config_0",
+"type": "ps7_iop_bus_config",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ram_0": {"hier_name": "ps7_ram_0",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ram_1": {"hier_name": "ps7_ram_1",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_scugic_0": {"hier_name": "ps7_scugic_0",
+"type": "ps7_scugic",
+"version": "1.00.a",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"ps7_scutimer_0": {"hier_name": "ps7_scutimer_0",
+"type": "ps7_scutimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuwdt_0": {"hier_name": "ps7_scuwdt_0",
+"type": "ps7_scuwdt",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_slcr_0": {"hier_name": "ps7_slcr_0",
+"type": "ps7_slcr",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_ns": {"hier_name": "ps7_dma_ns",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_0": {"hier_name": "ps7_afi_0",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_1": {"hier_name": "ps7_afi_1",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_2": {"hier_name": "ps7_afi_2",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_3": {"hier_name": "ps7_afi_3",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_m_axi_gp0": {"hier_name": "ps7_m_axi_gp0",
+"type": "ps7_m_axi_gp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.570
+!MESSAGE XSCT Command: [::hsi::utils::get_ps_config_params -json C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.579
+!MESSAGE XSCT command with result: [::hsi::utils::get_ps_config_params -json C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Result: [null, {"PCW_APU_PERIPHERAL_FREQMHZ": "650",
+"PCW_DDR_HPRLPR_QUEUE_PARTITION": "HPR(0)/LPR(32)",
+"PCW_DDR_HPR_TO_CRITICAL_PRIORITY_LEVEL": "15",
+"PCW_DDR_LPR_TO_CRITICAL_PRIORITY_LEVEL": "2",
+"PCW_DDR_PORT0_HPR_ENABLE": "0",
+"PCW_DDR_PORT1_HPR_ENABLE": "0",
+"PCW_DDR_PORT2_HPR_ENABLE": "0",
+"PCW_DDR_PORT3_HPR_ENABLE": "0",
+"PCW_DDR_WRITE_TO_CRITICAL_PRIORITY_LEVEL": "2",
+"PCW_FPGA0_PERIPHERAL_FREQMHZ": "100",
+"PCW_UIPARAM_DDR_BUS_WIDTH": "16 Bit",
+"PCW_UIPARAM_DDR_FREQ_MHZ": "525",
+}]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.580
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.611
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0], Result: [null, {"HC_SR04_0": {},
+"HC_SR04_1": {},
+"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_ethernet_0": {},
+"ps7_globaltimer_0": {},
+"ps7_gpio_0": {},
+"ps7_gpv_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_qspi_0": {},
+"ps7_qspi_linear_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_sd_0": {},
+"ps7_slcr_0": {},
+"ps7_uart_0": {},
+"ps7_usb_0": {},
+"ps7_xadc_0": {},
+}]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.612
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.627
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0], Result: [null, {"HC_SR04_0_S00_AXI": {"name": "HC_SR04_0",
+"base": "0x43C00000",
+"high": "0x43C0FFFF",
+"size": "65536",
+"slaveintf": "S00_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"HC_SR04_1_S00_AXI": {"name": "HC_SR04_1",
+"base": "0x43C10000",
+"high": "0x43C1FFFF",
+"size": "65536",
+"slaveintf": "S00_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ethernet_0": {"name": "ps7_ethernet_0",
+"base": "0xE000B000",
+"high": "0xE000BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpio_0": {"name": "ps7_gpio_0",
+"base": "0xE000A000",
+"high": "0xE000AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_0": {"name": "ps7_qspi_0",
+"base": "0xE000D000",
+"high": "0xE000DFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_linear_0": {"name": "ps7_qspi_linear_0",
+"base": "0xFC000000",
+"high": "0xFCFFFFFF",
+"size": "16777216",
+"slaveintf": "",
+"type": "FLASH",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_sd_0": {"name": "ps7_sd_0",
+"base": "0xE0100000",
+"high": "0xE0100FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_0": {"name": "ps7_uart_0",
+"base": "0xE0000000",
+"high": "0xE0000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_usb_0": {"name": "ps7_usb_0",
+"base": "0xE0002000",
+"high": "0xE0002FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x1FFFFFFF",
+"size": "535822336",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.629
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0 C_DEBUG_ENABLED], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.632
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.633
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.639
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.646
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.648
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.649
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.655
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.656
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0 C_FREQ], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.658
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0 C_FREQ], Result: [null, ]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.659
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.662
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Result: [null, 650000000]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.662
+!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.673
+!MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Result: [null, {"ps7_cortexa9_0": {"bscan": "",
+"index": "0",
+},
+"ps7_cortexa9_1": {"bscan": "",
+"index": "1",
+},
+}]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.674
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.684
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1], Result: [null, {"HC_SR04_0": {},
+"HC_SR04_1": {},
+"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_ethernet_0": {},
+"ps7_globaltimer_0": {},
+"ps7_gpio_0": {},
+"ps7_gpv_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_qspi_0": {},
+"ps7_qspi_linear_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_sd_0": {},
+"ps7_slcr_0": {},
+"ps7_uart_0": {},
+"ps7_usb_0": {},
+"ps7_xadc_0": {},
+}]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.684
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.696
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1], Result: [null, {"HC_SR04_0_S00_AXI": {"name": "HC_SR04_0",
+"base": "0x43C00000",
+"high": "0x43C0FFFF",
+"size": "65536",
+"slaveintf": "S00_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"HC_SR04_1_S00_AXI": {"name": "HC_SR04_1",
+"base": "0x43C10000",
+"high": "0x43C1FFFF",
+"size": "65536",
+"slaveintf": "S00_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ethernet_0": {"name": "ps7_ethernet_0",
+"base": "0xE000B000",
+"high": "0xE000BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpio_0": {"name": "ps7_gpio_0",
+"base": "0xE000A000",
+"high": "0xE000AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_0": {"name": "ps7_qspi_0",
+"base": "0xE000D000",
+"high": "0xE000DFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_linear_0": {"name": "ps7_qspi_linear_0",
+"base": "0xFC000000",
+"high": "0xFCFFFFFF",
+"size": "16777216",
+"slaveintf": "",
+"type": "FLASH",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_sd_0": {"name": "ps7_sd_0",
+"base": "0xE0100000",
+"high": "0xE0100FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_0": {"name": "ps7_uart_0",
+"base": "0xE0000000",
+"high": "0xE0000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_usb_0": {"name": "ps7_usb_0",
+"base": "0xE0002000",
+"high": "0xE0002FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x1FFFFFFF",
+"size": "535822336",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.697
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1 C_DEBUG_ENABLED], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.699
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.700
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.705
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.706
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.708
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.709
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.710
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.711
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1 C_FREQ], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.713
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1 C_FREQ], Result: [null, ]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.713
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.725
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Result: [null, 650000000]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.726
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.729
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0], Result: [null, HC_SR04_0 HC_SR04_1 ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_ethernet_0 ps7_globaltimer_0 ps7_gpio_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_qspi_0 ps7_qspi_linear_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_sd_0 ps7_slcr_0 ps7_uart_0 ps7_usb_0 ps7_xadc_0]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.731
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_files_on_hw C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa bit], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.733
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_files_on_hw C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa bit], Result: [null, design_1_wrapper.bit]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:43.735
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:45.841
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:45.843
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:45.971
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:45.972
+!MESSAGE XSCT Command: [version -server], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:45.979
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2023.2]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:45.979
+!MESSAGE XSCT Command: [version], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:45.980
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2023.2.0
+SW Build 0 on 2023-10-09-15:37:46
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:45.984
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:45.990
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:45.991
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:46.004
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:46.009
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:46.015
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:46.016
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:46.027
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:46.029
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:46.034
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:46.035
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:46.046
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:46.049
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:46.054
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:46.056
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:46.069
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:46.070
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:46.077
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:46.077
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:46.093
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:46.095
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:46.100
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:46.100
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:46.114
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:46.115
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:46.127
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Result: [null, ]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:46.128
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:46.130
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:46.135
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:46.146
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:46.148
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:46.177
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:46.177
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:49.180
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:49.208
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:49.213
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:49.213
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:49.229
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:49.241
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:49.271
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:49.272
+!MESSAGE XSCT Command: [fpga -file C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/Ultrasoon/_ide/bitstream/design_1_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:51.608
+!MESSAGE XSCT command with result: [fpga -file C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/Ultrasoon/_ide/bitstream/design_1_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:51.638
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:51.651
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:51.652
+!MESSAGE XSCT Command: [loadhw -hw C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:51.698
+!MESSAGE XSCT command with result: [loadhw -hw C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, design_1_wrapper]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:51.699
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:51.700
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:51.702
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:51.712
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:51.713
+!MESSAGE XSCT Command: [source C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/Ultrasoon/_ide/psinit/ps7_init.tcl], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:51.725
+!MESSAGE XSCT command with result: [source C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/Ultrasoon/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:51.726
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:52.131
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:52.132
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:52.140
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:52.141
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:52.158
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:52.159
+!MESSAGE XSCT Command: [dow C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/Ultrasoon/Debug/Ultrasoon.elf], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:52.383
+!MESSAGE XSCT command with result: [dow C:/02_PXL/SoC_PXL_2024/VHDL/HC_SR04/vitis/Ultrasoon/Debug/Ultrasoon.elf], Result: [null, ]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:52.384
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:52.410
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:52.477
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:52.493
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:52.494
+!MESSAGE XSCT Command: [con], Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-17 11:25:52.514
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-2: Launching Debugger_Ultrasoon-Default
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-03-17 11:25:52.517
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '1'

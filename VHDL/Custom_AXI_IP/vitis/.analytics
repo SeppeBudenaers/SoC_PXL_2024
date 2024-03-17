@@ -27,3 +27,6 @@ timestamp=[2024-03-01 15:32:36], mode=BUILD, duration=0:00:01.596, duration_ms=1
 timestamp=[2024-03-15 15:13:12], mode=WORKBENCH_START, duration=0:00:07.221, duration_ms=7221, data={}
 timestamp=[2024-03-15 15:13:12], mode=WORKBENCH_UI_INIT, duration=0:00:00.224, duration_ms=224, data={editors_count=4, platform_editors_count=3, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=Custom_IP_Block,Custom_IP_Block_system,RemoteSystemsTempFiles,design_1_wrapper}
 timestamp=[2024-03-15 15:13:13], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.106, duration_ms=106, data={}
+timestamp=[2024-03-17 11:21:07], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.108, duration_ms=108, data={}
+timestamp=[2024-03-17 11:24:21], mode=WORKBENCH_START, duration=0:03:23.077, duration_ms=203077, data={}
+timestamp=[2024-03-17 11:24:21], mode=WORKBENCH_UI_INIT, duration=0:00:00.325, duration_ms=325, data={editors_count=4, platform_editors_count=3, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=Custom_IP_Block,Custom_IP_Block_system,RemoteSystemsTempFiles,design_1_wrapper}
