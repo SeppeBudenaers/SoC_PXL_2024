@@ -1,6 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../Speed_Sensor.srcs/sources_1/new/Speed_Sensor.vhd" \
-
-# Do not sort compile order
-nosort

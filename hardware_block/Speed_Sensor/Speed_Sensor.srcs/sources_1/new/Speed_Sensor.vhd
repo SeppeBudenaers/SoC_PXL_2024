@@ -47,30 +47,44 @@ signal timer_sig            : unsigned(31 downto 0) := (others => '0');
 signal distance_speed_sig     : unsigned(31 downto 0) := (others => '0');
 signal distance_sig     : unsigned(31 downto 0) := (others => '0');
 signal speed_sig : unsigned(31 downto 0) := (others => '0');
+signal speed_clk_sig : std_logic := '0';
+
         
 begin
   
-  process(clk_in,SpeedCLK, reset)
+  process(clk_in, reset)
   begin
-    
-    if rising_edge (SpeedCLK)then
-        distance_speed_sig <= distance_speed_sig + 1;
-        distance_sig <= distance_sig + 1 ;  
-    end if;
-    
-    if rising_edge(clk_in)then
+      
+    if (rising_edge(clk_in))then
          timer_sig <= timer_sig + 1;
-         if unsigned(timer_sig) >= 1000000 then
-            Speed <= std_logic_vector(distance_speed_sig);
+
+         if (SpeedCLK = not(speed_clk_sig)) then
+            if ((SpeedCLK = '1' ) and (speed_clk_sig = '0')) then
+                distance_speed_sig <= distance_speed_sig + 1;
+                distance_sig <= distance_sig + 1 ;
+            end if;
+            speed_clk_sig <= SpeedCLK;
+         end if;
+         
+         if (timer_sig >= 10000000) then
+            speed_sig <= distance_speed_sig;
             distance_speed_sig<=(others => '0');
             timer_sig <=(others => '0');    
         end if;
+        
+        if (reset = '1') then
+            timer_sig <=(others => '0');
+            distance_speed_sig <=(others => '0');
+            distance_sig <=(others => '0');
+            speed_sig <=(others => '0');
+        end if;
+        
     end if;
     
     
 
   end process;  
   
-  
+  Speed <= std_logic_vector(speed_sig);
   Distance <= std_logic_vector(distance_sig);
 end Behavioral;

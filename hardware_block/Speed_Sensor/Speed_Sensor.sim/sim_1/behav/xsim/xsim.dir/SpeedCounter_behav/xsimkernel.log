@@ -1,4 +1,0 @@
-Running: xsim.dir/SpeedCounter_behav/xsimk.exe -simmode gui -wdb SpeedCounter_behav.wdb -simrunnum 0 -socket 63464
-Design successfully loaded
-Design Loading Memory Usage: 7864 KB (Peak: 7864 KB)
-Design Loading CPU Usage: 0 ms
