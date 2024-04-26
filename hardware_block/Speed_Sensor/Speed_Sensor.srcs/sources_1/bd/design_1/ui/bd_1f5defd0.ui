@@ -1,23 +1,23 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"1.25",
-   "Default View_TopLeft":"-461,-117",
+   "Default View_ScaleFactor":"1.46205",
+   "Default View_TopLeft":"-57,-203",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
 #  -string -flagsOSRD
-preplace port port-id_clk_in1_0 -pg 1 -lvl 0 -x 0 -y 70 -defaultsOSRD
-preplace port port-id_SpeedCLK_0 -pg 1 -lvl 0 -x 0 -y 170 -defaultsOSRD
-preplace inst SpeedCounter_0 -pg 1 -lvl 2 -x 430 -y 190 -defaultsOSRD
-preplace inst vio_0 -pg 1 -lvl 1 -x 160 -y 90 -defaultsOSRD
-preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 160 -y 230 -defaultsOSRD
-preplace netloc vio_0_probe_out0 1 1 1 290 90n
-preplace netloc SpeedCounter_0_Distance 1 0 3 30 10 NJ 10 560
-preplace netloc SpeedCounter_0_Speed 1 0 3 30 290 NJ 290 560
-preplace netloc clk_in1_0_1 1 0 1 20 70n
-preplace netloc SpeedCLK_0_1 1 0 2 NJ 170 NJ
-preplace netloc clk_wiz_0_clk_out1 1 1 1 300J 190n
-levelinfo -pg 1 0 160 430 580
-pagesize -pg 1 -db -bbox -sgen -130 0 580 300
+preplace port port-id_clk_in -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
+preplace port port-id_SpeedCLK -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
+preplace port port-id_reset -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
+preplace portBus Distance_0 -pg 1 -lvl 2 -x 390 -y 70 -defaultsOSRD
+preplace portBus Speed_0 -pg 1 -lvl 2 -x 390 -y 90 -defaultsOSRD
+preplace inst SpeedSensor -pg 1 -lvl 1 -x 240 -y 80 -defaultsOSRD
+preplace netloc SpeedCLK_0_1 1 0 1 NJ 80
+preplace netloc clk_in1_0_1 1 0 1 NJ 60
+preplace netloc reset_0_1 1 0 1 NJ 100
+preplace netloc SpeedCounter_0_Distance 1 1 1 NJ 70
+preplace netloc SpeedCounter_0_Speed 1 1 1 NJ 90
+levelinfo -pg 1 0 240 390
+pagesize -pg 1 -db -bbox -sgen -120 0 950 280
 "
 }
-
+0

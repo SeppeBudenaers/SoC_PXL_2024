@@ -1,0 +1,284 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Fri Apr 26 09:27:37 2024
+| Host         : Beta running 64-bit major release  (build 9200)
+| Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+| Design       : design_1_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 49
++-----------+------------------+------------------------------------------------+------------+
+| Rule      | Severity         | Description                                    | Violations |
++-----------+------------------+------------------------------------------------+------------+
+| TIMING-6  | Critical Warning | No common primary clock between related clocks | 2          |
+| TIMING-7  | Critical Warning | No common node between related clocks          | 2          |
+| TIMING-18 | Warning          | Missing input or output delay                  | 12         |
+| TIMING-20 | Warning          | Non-clocked latch                              | 32         |
+| LATCH-1   | Advisory         | Existing latches in the design                 | 1          |
++-----------+------------------+------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-6#1 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_fpga_0 and clk_out1_design_1_clk_wiz_0_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_fpga_0] -to [get_clocks clk_out1_design_1_clk_wiz_0_0]
+Related violations: <none>
+
+TIMING-6#2 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_out1_design_1_clk_wiz_0_0 and clk_fpga_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_design_1_clk_wiz_0_0] -to [get_clocks clk_fpga_0]
+Related violations: <none>
+
+TIMING-7#1 Critical Warning
+No common node between related clocks  
+The clocks clk_fpga_0 and clk_out1_design_1_clk_wiz_0_0 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_fpga_0] -to [get_clocks clk_out1_design_1_clk_wiz_0_0]
+Related violations: <none>
+
+TIMING-7#2 Critical Warning
+No common node between related clocks  
+The clocks clk_out1_design_1_clk_wiz_0_0 and clk_fpga_0 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_design_1_clk_wiz_0_0] -to [get_clocks clk_fpga_0]
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An output delay is missing on Direction_0_tri_o[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An output delay is missing on Direction_0_tri_o[1] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An output delay is missing on Direction_1_tri_o[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on Direction_1_tri_o[1] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on Direction_2_tri_o[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An output delay is missing on Direction_2_tri_o[1] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on Direction_3_tri_o[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on Direction_3_tri_o[1] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on PWM_0 relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on PWM_1 relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An output delay is missing on PWM_2 relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An output delay is missing on PWM_3 relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[0] cannot be properly analyzed as its control pin design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[10] cannot be properly analyzed as its control pin design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[11] cannot be properly analyzed as its control pin design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[12] cannot be properly analyzed as its control pin design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[13] cannot be properly analyzed as its control pin design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[14] cannot be properly analyzed as its control pin design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[15] cannot be properly analyzed as its control pin design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[16] cannot be properly analyzed as its control pin design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[17] cannot be properly analyzed as its control pin design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[18] cannot be properly analyzed as its control pin design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[19] cannot be properly analyzed as its control pin design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[1] cannot be properly analyzed as its control pin design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[20] cannot be properly analyzed as its control pin design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[21] cannot be properly analyzed as its control pin design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[22] cannot be properly analyzed as its control pin design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[23] cannot be properly analyzed as its control pin design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[24] cannot be properly analyzed as its control pin design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[24]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[25] cannot be properly analyzed as its control pin design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[25]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[26] cannot be properly analyzed as its control pin design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[26]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[27] cannot be properly analyzed as its control pin design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[27]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[28] cannot be properly analyzed as its control pin design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[28]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[29] cannot be properly analyzed as its control pin design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[29]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[2] cannot be properly analyzed as its control pin design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[30] cannot be properly analyzed as its control pin design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[30]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[31] cannot be properly analyzed as its control pin design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[31]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[3] cannot be properly analyzed as its control pin design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[4] cannot be properly analyzed as its control pin design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#28 Warning
+Non-clocked latch  
+The latch design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[5] cannot be properly analyzed as its control pin design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#29 Warning
+Non-clocked latch  
+The latch design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[6] cannot be properly analyzed as its control pin design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#30 Warning
+Non-clocked latch  
+The latch design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[7] cannot be properly analyzed as its control pin design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#31 Warning
+Non-clocked latch  
+The latch design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[8] cannot be properly analyzed as its control pin design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#32 Warning
+Non-clocked latch  
+The latch design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[9] cannot be properly analyzed as its control pin design_1_i/Motors/Motor_0/Speedsensor_0/U0/Speedsensor_v1_0_S00_AXI_inst/reg_data_out_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+LATCH-1#1 Advisory
+Existing latches in the design  
+There are 32 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
+Related violations: <none>
+
+
