@@ -48,9 +48,14 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
+<<<<<<< Updated upstream
     <Option Name="IPRepoPath" Val="$PPRDIR/../../VHDL/ip_repo/Speedsensor_1_0"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../VHDL/ip_repo/Speedsensor_1_0"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo/SpeedSensor_1_0"/>
+=======
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../VHDL/ip_repo/Speed_Sensor_1_0"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../VHDL/ip_repo/Speed_Sensor_1_0"/>
+>>>>>>> Stashed changes
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPDefaultOutputPath" Val="$PGENDIR/sources_1"/>
     <Option Name="IPCachePermission" Val="read"/>
@@ -101,6 +106,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+<<<<<<< Updated upstream
       <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -117,9 +123,11 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+=======
+>>>>>>> Stashed changes
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="design_1_wrapper"/>
+        <Option Name="TopModule" Val="SpeedCounter"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
@@ -139,7 +147,7 @@
       <Filter Type="Srcs"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="design_1_wrapper"/>
+        <Option Name="TopModule" Val="SpeedCounter"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="TransportPathDelay" Val="0"/>
@@ -166,12 +174,15 @@
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
+<<<<<<< Updated upstream
     <FileSet Name="design_1_clk_wiz_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_1_clk_wiz_0_1" RelGenDir="$PGENDIR/design_1_clk_wiz_0_1">
       <Config>
         <Option Name="TopModule" Val="design_1_clk_wiz_0_1"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
+=======
+>>>>>>> Stashed changes
   </FileSets>
   <Simulators>
     <Simulator Name="XSim">
@@ -202,6 +213,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
+<<<<<<< Updated upstream
     <Run Id="design_1_clk_wiz_0_1_synth_1" Type="Ft3:Synth" SrcSet="design_1_clk_wiz_0_1" Part="xc7z020clg400-1" ConstrsSet="design_1_clk_wiz_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/design_1_clk_wiz_0_1_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/design_1_clk_wiz_0_1_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/design_1_clk_wiz_0_1_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
@@ -212,6 +224,8 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
+=======
+>>>>>>> Stashed changes
     <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_1" LaunchOptions="-jobs 8 " AutoRQSDir="$PSRCDIR/utils_1/imports/impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
@@ -230,6 +244,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
+<<<<<<< Updated upstream
     <Run Id="design_1_clk_wiz_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="design_1_clk_wiz_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="design_1_clk_wiz_0_1_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/design_1_clk_wiz_0_1_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/design_1_clk_wiz_0_1_impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
@@ -247,6 +262,8 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
+=======
+>>>>>>> Stashed changes
   </Runs>
   <Board>
     <Jumpers/>
