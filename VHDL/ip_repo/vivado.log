@@ -3,6 +3,7 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+<<<<<<< Updated upstream
 # Start of session at: Fri Apr 19 13:29:24 2024
 # Process ID: 23480
 # Current directory: C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/ip_repo
@@ -13,6 +14,18 @@
 #-----------------------------------------------------------
 start_gui
 open_project C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/ip_repo/edit_Speedsensor_v1_0.xpr
+=======
+# Start of session at: Fri Apr 19 13:40:48 2024
+# Process ID: 5916
+# Current directory: C:/02_PXL/SoC_PXL_2024/VHDL/ip_repo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9908 C:\02_PXL\SoC_PXL_2024\VHDL\ip_repo\edit_HC_SR04_v1_0.xpr
+# Log file: C:/02_PXL/SoC_PXL_2024/VHDL/ip_repo/vivado.log
+# Journal file: C:/02_PXL/SoC_PXL_2024/VHDL/ip_repo\vivado.jou
+# Running On: Wheatley, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 4, Host memory: 16969 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/02_PXL/SoC_PXL_2024/VHDL/ip_repo/edit_HC_SR04_v1_0.xpr
+>>>>>>> Stashed changes
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:ac701:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/ac701/1.4/board.xml as part xc7a200tfbg676-2 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24c/1.0/board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24i:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24i/1.0/board.xml as part xck24-ubva530-2lvi-i specified in board_part file is either invalid or not available
@@ -92,6 +105,7 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+<<<<<<< Updated upstream
 WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/XilinxDev/SOC/Seppe-en-Kobe/hardware_block/ip_repo/SpeedSensor_1_0'.
 INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/ip_repo/edit_Speedsensor_v1_0.gen/sources_1'.
 Scanning sources...
@@ -286,3 +300,16 @@ Successfully read diagram <design_1> from block design file <C:/XilinxDev/SOC/Mo
 open_bd_design: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1692.148 ; gain = 102.281
 exit
 INFO: [Common 17-206] Exiting Vivado at Fri Apr 19 16:19:48 2024...
+=======
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/02_PXL/SoC_PXL_2024/VHDL/ip_repo/edit_HC_SR04_v1_0.gen/sources_1'.
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/02_PXL/SoC_PXL_2024/VHDL/ip_repo/edit_HC_SR04_v1_0.ip_user_files'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/02_PXL/SoC_PXL_2024/VHDL/ip_repo/HC_SR04_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1429.145 ; gain = 261.914
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 19 17:01:40 2024...
+>>>>>>> Stashed changes

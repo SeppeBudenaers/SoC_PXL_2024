@@ -18,10 +18,20 @@
   <File Type="BITSTR-MMI" Name="design_1_wrapper.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="design_1_wrapper_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-SYSDEF" Name="design_1_wrapper.sysdef"/>
+<<<<<<< Updated upstream
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="design_1_wrapper.ltx"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+=======
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="design_1_wrapper_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="design_1_wrapper.ltx"/>
+  <File Type="BOOT-PDI-FILE" Name="design_1_wrapper_boot.pdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="NPI_FILE" Name="design_1_wrapper.npi"/>
+>>>>>>> Stashed changes
   <File Type="OPT-DRC" Name="design_1_wrapper_drc_opted.rpt"/>
+  <File Type="RBD_FILE" Name="design_1_wrapper.rbd"/>
   <File Type="OPT-HWDEF" Name="design_1_wrapper.hwdef"/>
   <File Type="PLACE-IO" Name="design_1_wrapper_io_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="design_1_wrapper_utilization_placed.rpt"/>
@@ -55,17 +65,22 @@
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="design_1_wrapper_timing_summary_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="design_1_wrapper_bus_skew_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="design_1_wrapper_bus_skew_postroute_physopted.rpx"/>
+<<<<<<< Updated upstream
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="design_1_wrapper_methodology_drc_routed.pb"/>
+=======
+>>>>>>> Stashed changes
   <File Type="ROUTE-DRC-RPX" Name="design_1_wrapper_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="design_1_wrapper_methodology_drc_routed.rpx"/>
   <File Type="PDI-FILE" Name="design_1_wrapper.pdi"/>
-  <File Type="BOOT-PDI-FILE" Name="design_1_wrapper_boot.pdi"/>
   <File Type="PL-PDI-FILE" Name="design_1_wrapper_pld.pdi"/>
   <File Type="RCFI_FILE" Name="design_1_wrapper.rcfi"/>
   <File Type="CFI_FILE" Name="design_1_wrapper.cfi"/>
   <File Type="RNPI_FILE" Name="design_1_wrapper.rnpi"/>
+<<<<<<< Updated upstream
   <File Type="NPI_FILE" Name="design_1_wrapper.npi"/>
   <File Type="RBD_FILE" Name="design_1_wrapper.rbd"/>
+=======
+>>>>>>> Stashed changes
   <File Type="ROUTE-RQS" Name="design_1_wrapper_routed.rqs"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="design_1_wrapper_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
