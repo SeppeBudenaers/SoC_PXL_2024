@@ -136,7 +136,7 @@ ARCHITECTURE design_1_axi_timer_0_0_arch OF design_1_axi_timer_0_0 IS
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF design_1_axi_timer_0_0_arch : ARCHITECTURE IS "design_1_axi_timer_0_0,axi_timer,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design_1_axi_timer_0_0_arch: ARCHITECTURE IS "design_1_axi_timer_0_0,axi_timer,{x_ipProduct=Vivado 2023.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_timer,x_ipVersion=2.0,x_ipCoreRevision=31,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_FAMILY=zynq,C_COUNT_WIDTH=32,C_ONE_TIMER_ONLY=1,C_TRIG0_ASSERT=1,C_TRIG1_ASSERT=1,C_GEN0_ASSERT=1,C_GEN1_ASSERT=1,C_S_AXI_DATA_WIDTH=32,C_S_AXI_ADDR_WIDTH=5}";
+  ATTRIBUTE CORE_GENERATION_INFO OF design_1_axi_timer_0_0_arch: ARCHITECTURE IS "design_1_axi_timer_0_0,axi_timer,{x_ipProduct=Vivado 2023.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_timer,x_ipVersion=2.0,x_ipCoreRevision=31,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_FAMILY=zynq,C_COUNT_WIDTH=32,C_ONE_TIMER_ONLY=0,C_TRIG0_ASSERT=1,C_TRIG1_ASSERT=1,C_GEN0_ASSERT=1,C_GEN1_ASSERT=1,C_S_AXI_DATA_WIDTH=32,C_S_AXI_ADDR_WIDTH=5}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER OF interrupt: SIGNAL IS "XIL_INTERFACENAME INTERRUPT, SENSITIVITY LEVEL_HIGH, PORTWIDTH 1";
@@ -169,7 +169,7 @@ BEGIN
     GENERIC MAP (
       C_FAMILY => "zynq",
       C_COUNT_WIDTH => 32,
-      C_ONE_TIMER_ONLY => 1,
+      C_ONE_TIMER_ONLY => 0,
       C_TRIG0_ASSERT => '1',
       C_TRIG1_ASSERT => '1',
       C_GEN0_ASSERT => '1',

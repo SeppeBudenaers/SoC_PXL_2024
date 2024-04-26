@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x991BC400927FF673",
+      "boundary_crc": "0x7E7079E7B7278160",
       "device": "xc7z020clg400-1",
       "gen_directory": "../../../../MotorControl.gen/sources_1/bd/design_1",
       "name": "design_1",
@@ -31,15 +31,18 @@
         "m10_couplers": {},
         "m11_couplers": {},
         "m12_couplers": {},
-        "m13_couplers": {}
+        "m13_couplers": {},
+        "m14_couplers": {}
       },
       "Ultrasone": {
         "HC_SR04_0": "",
         "HC_SR04_1": ""
       },
       "clk_wiz_0": "",
+      "axi_iic_0": "",
       "Motors": {
-        "Motor_1": {
+        "xlconcat_0": "",
+        "Motor_0": {
           "Speedsensor_0": "",
           "axi_gpio_0": "",
           "axi_timer_0": ""
@@ -54,12 +57,13 @@
           "axi_gpio_0": "",
           "axi_timer_0": ""
         },
-        "Motor_0": {
+        "Motor_1": {
           "Speedsensor_0": "",
           "axi_gpio_0": "",
           "axi_timer_0": ""
         }
-      }
+      },
+      "xlconcat_0": ""
     },
     "interface_ports": {
       "Direction_0": {
@@ -281,6 +285,37 @@
             "right": "0"
           }
         }
+      },
+      "IIC_0": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:iic:1.0",
+        "vlnv": "xilinx.com:interface:iic_rtl:1.0",
+        "port_maps": {
+          "SCL_I": {
+            "physical_name": "IIC_0_scl_i",
+            "direction": "I"
+          },
+          "SCL_O": {
+            "physical_name": "IIC_0_scl_o",
+            "direction": "O"
+          },
+          "SCL_T": {
+            "physical_name": "IIC_0_scl_t",
+            "direction": "O"
+          },
+          "SDA_I": {
+            "physical_name": "IIC_0_sda_i",
+            "direction": "I"
+          },
+          "SDA_O": {
+            "physical_name": "IIC_0_sda_o",
+            "direction": "O"
+          },
+          "SDA_T": {
+            "physical_name": "IIC_0_sda_t",
+            "direction": "O"
+          }
+        }
       }
     },
     "ports": {
@@ -470,6 +505,18 @@
           },
           "PCW_CLK3_FREQ": {
             "value": "10000000"
+          },
+          "PCW_CORE0_FIQ_INTR": {
+            "value": "0"
+          },
+          "PCW_CORE0_IRQ_INTR": {
+            "value": "0"
+          },
+          "PCW_CORE1_FIQ_INTR": {
+            "value": "0"
+          },
+          "PCW_CORE1_IRQ_INTR": {
+            "value": "0"
           },
           "PCW_CPU_CPU_6X4X_MAX_RANGE": {
             "value": "667"
@@ -803,6 +850,12 @@
           },
           "PCW_INCLUDE_ACP_TRANS_CHECK": {
             "value": "0"
+          },
+          "PCW_IRQ_F2P_INTR": {
+            "value": "1"
+          },
+          "PCW_IRQ_F2P_MODE": {
+            "value": "DIRECT"
           },
           "PCW_MIO_0_IOTYPE": {
             "value": "LVCMOS 3.3V"
@@ -1404,6 +1457,24 @@
           "PCW_OVERRIDE_BASIC_CLOCK": {
             "value": "0"
           },
+          "PCW_P2F_ENET0_INTR": {
+            "value": "0"
+          },
+          "PCW_P2F_GPIO_INTR": {
+            "value": "0"
+          },
+          "PCW_P2F_QSPI_INTR": {
+            "value": "0"
+          },
+          "PCW_P2F_SDIO0_INTR": {
+            "value": "0"
+          },
+          "PCW_P2F_UART0_INTR": {
+            "value": "0"
+          },
+          "PCW_P2F_USB0_INTR": {
+            "value": "0"
+          },
           "PCW_PACKAGE_DDR_BOARD_DELAY0": {
             "value": "0.279"
           },
@@ -1438,7 +1509,7 @@
             "value": "200"
           },
           "PCW_PERIPHERAL_BOARD_PRESET": {
-            "value": "None"
+            "value": "part0"
           },
           "PCW_PLL_BYPASSMODE_ENABLE": {
             "value": "0"
@@ -1562,6 +1633,18 @@
           },
           "PCW_SPI_PERIPHERAL_VALID": {
             "value": "0"
+          },
+          "PCW_S_AXI_HP0_DATA_WIDTH": {
+            "value": "64"
+          },
+          "PCW_S_AXI_HP1_DATA_WIDTH": {
+            "value": "64"
+          },
+          "PCW_S_AXI_HP2_DATA_WIDTH": {
+            "value": "64"
+          },
+          "PCW_S_AXI_HP3_DATA_WIDTH": {
+            "value": "64"
           },
           "PCW_TPIU_PERIPHERAL_CLKSRC": {
             "value": "External"
@@ -1882,7 +1965,7 @@
             "value": "0"
           },
           "PCW_USE_FABRIC_INTERRUPT": {
-            "value": "0"
+            "value": "1"
           },
           "PCW_USE_HIGH_OCM": {
             "value": "0"
@@ -2078,7 +2161,7 @@
         "xci_name": "design_1_ps7_0_axi_periph_0",
         "parameters": {
           "NUM_MI": {
-            "value": "14"
+            "value": "15"
           }
         },
         "interface_ports": {
@@ -2153,6 +2236,11 @@
             "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
           },
           "M13_AXI": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+          },
+          "M14_AXI": {
             "mode": "Master",
             "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
             "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
@@ -2411,6 +2499,22 @@
           "M13_ARESETN": {
             "type": "rst",
             "direction": "I"
+          },
+          "M14_ACLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_BUSIF": {
+                "value": "M14_AXI"
+              },
+              "ASSOCIATED_RESET": {
+                "value": "M14_ARESETN"
+              }
+            }
+          },
+          "M14_ARESETN": {
+            "type": "rst",
+            "direction": "I"
           }
         },
         "components": {
@@ -2422,7 +2526,7 @@
             "inst_hier_path": "ps7_0_axi_periph/xbar",
             "parameters": {
               "NUM_MI": {
-                "value": "14"
+                "value": "15"
               },
               "NUM_SI": {
                 "value": "1"
@@ -2449,7 +2553,8 @@
                   "M10_AXI",
                   "M11_AXI",
                   "M12_AXI",
-                  "M13_AXI"
+                  "M13_AXI",
+                  "M14_AXI"
                 ]
               }
             }
@@ -3339,6 +3444,62 @@
                 ]
               }
             }
+          },
+          "m14_couplers": {
+            "interface_ports": {
+              "M_AXI": {
+                "mode": "Master",
+                "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+                "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+              },
+              "S_AXI": {
+                "mode": "Slave",
+                "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+                "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+              }
+            },
+            "ports": {
+              "M_ACLK": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "ASSOCIATED_BUSIF": {
+                    "value": "M_AXI"
+                  },
+                  "ASSOCIATED_RESET": {
+                    "value": "M_ARESETN"
+                  }
+                }
+              },
+              "M_ARESETN": {
+                "type": "rst",
+                "direction": "I"
+              },
+              "S_ACLK": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "ASSOCIATED_BUSIF": {
+                    "value": "S_AXI"
+                  },
+                  "ASSOCIATED_RESET": {
+                    "value": "S_ARESETN"
+                  }
+                }
+              },
+              "S_ARESETN": {
+                "type": "rst",
+                "direction": "I"
+              }
+            },
+            "interface_nets": {
+              "m14_couplers_to_m14_couplers": {
+                "interface_ports": [
+                  "S_AXI",
+                  "M_AXI"
+                ]
+              }
+            }
           }
         },
         "interface_nets": {
@@ -3424,6 +3585,12 @@
             "interface_ports": [
               "m13_couplers/M_AXI",
               "M13_AXI"
+            ]
+          },
+          "m14_couplers_to_ps7_0_axi_periph": {
+            "interface_ports": [
+              "m14_couplers/M_AXI",
+              "M14_AXI"
             ]
           },
           "ps7_0_axi_periph_to_s00_couplers": {
@@ -3521,6 +3688,12 @@
               "xbar/M13_AXI",
               "m13_couplers/S_AXI"
             ]
+          },
+          "xbar_to_m14_couplers": {
+            "interface_ports": [
+              "xbar/M14_AXI",
+              "m14_couplers/S_AXI"
+            ]
           }
         },
         "nets": {
@@ -3544,6 +3717,7 @@
               "m11_couplers/M_ACLK",
               "m12_couplers/M_ACLK",
               "m13_couplers/M_ACLK",
+              "m14_couplers/M_ACLK",
               "m00_couplers/S_ACLK",
               "m01_couplers/S_ACLK",
               "m02_couplers/S_ACLK",
@@ -3557,7 +3731,8 @@
               "m10_couplers/S_ACLK",
               "m11_couplers/S_ACLK",
               "m12_couplers/S_ACLK",
-              "m13_couplers/S_ACLK"
+              "m13_couplers/S_ACLK",
+              "m14_couplers/S_ACLK"
             ]
           },
           "ps7_0_axi_periph_ARESETN_net": {
@@ -3580,6 +3755,7 @@
               "m11_couplers/M_ARESETN",
               "m12_couplers/M_ARESETN",
               "m13_couplers/M_ARESETN",
+              "m14_couplers/M_ARESETN",
               "m00_couplers/S_ARESETN",
               "m01_couplers/S_ARESETN",
               "m02_couplers/S_ARESETN",
@@ -3593,7 +3769,8 @@
               "m10_couplers/S_ARESETN",
               "m11_couplers/S_ARESETN",
               "m12_couplers/S_ARESETN",
-              "m13_couplers/S_ARESETN"
+              "m13_couplers/S_ARESETN",
+              "m14_couplers/S_ARESETN"
             ]
           }
         }
@@ -3748,6 +3925,13 @@
           }
         }
       },
+      "axi_iic_0": {
+        "vlnv": "xilinx.com:ip:axi_iic:2.1",
+        "ip_revision": "5",
+        "xci_name": "design_1_axi_iic_0_0",
+        "xci_path": "ip\\design_1_axi_iic_0_0\\design_1_axi_iic_0_0.xci",
+        "inst_hier_path": "axi_iic_0"
+      },
       "Motors": {
         "interface_ports": {
           "S00_AXI": {
@@ -3760,7 +3944,7 @@
             "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
             "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
           },
-          "Direction_1": {
+          "Direction_0": {
             "mode": "Master",
             "vlnv_bus_definition": "xilinx.com:interface:gpio:1.0",
             "vlnv": "xilinx.com:interface:gpio_rtl:1.0"
@@ -3820,7 +4004,7 @@
             "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
             "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
           },
-          "Direction_0": {
+          "Direction_1": {
             "mode": "Master",
             "vlnv_bus_definition": "xilinx.com:interface:gpio:1.0",
             "vlnv": "xilinx.com:interface:gpio_rtl:1.0"
@@ -3832,7 +4016,15 @@
           }
         },
         "ports": {
-          "SpeedClockData_1": {
+          "Interupts": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "SpeedClockData_0": {
+            "direction": "I"
+          },
+          "ClockData": {
             "direction": "I"
           },
           "s_axi_aclk": {
@@ -3843,7 +4035,7 @@
             "type": "rst",
             "direction": "I"
           },
-          "PWM_1": {
+          "PWM_0": {
             "direction": "O"
           },
           "SpeedClockData_2": {
@@ -3858,18 +4050,27 @@
           "PWM_3": {
             "direction": "O"
           },
-          "SpeedClockData_0": {
+          "SpeedClockData_1": {
             "direction": "I"
           },
-          "ClockData": {
-            "direction": "I"
-          },
-          "PWM_0": {
+          "PWM_1": {
             "direction": "O"
           }
         },
         "components": {
-          "Motor_1": {
+          "xlconcat_0": {
+            "vlnv": "xilinx.com:ip:xlconcat:2.1",
+            "ip_revision": "5",
+            "xci_name": "design_1_xlconcat_0_0",
+            "xci_path": "ip\\design_1_xlconcat_0_0\\design_1_xlconcat_0_0.xci",
+            "inst_hier_path": "Motors/xlconcat_0",
+            "parameters": {
+              "NUM_PORTS": {
+                "value": "4"
+              }
+            }
+          },
+          "Motor_0": {
             "interface_ports": {
               "S00_AXI": {
                 "mode": "Slave",
@@ -3909,22 +4110,26 @@
               },
               "PWM": {
                 "direction": "O"
+              },
+              "interrupt": {
+                "type": "intr",
+                "direction": "O"
               }
             },
             "components": {
               "Speedsensor_0": {
                 "vlnv": "xilinx.com:user:Speedsensor:1.0",
                 "ip_revision": "3",
-                "xci_name": "design_1_Speedsensor_0_8",
-                "xci_path": "ip\\design_1_Speedsensor_0_8\\design_1_Speedsensor_0_8.xci",
-                "inst_hier_path": "Motors/Motor_1/Speedsensor_0"
+                "xci_name": "design_1_Speedsensor_0_1",
+                "xci_path": "ip\\design_1_Speedsensor_0_1\\design_1_Speedsensor_0_1.xci",
+                "inst_hier_path": "Motors/Motor_0/Speedsensor_0"
               },
               "axi_gpio_0": {
                 "vlnv": "xilinx.com:ip:axi_gpio:2.0",
                 "ip_revision": "31",
-                "xci_name": "design_1_axi_gpio_0_7",
-                "xci_path": "ip\\design_1_axi_gpio_0_7\\design_1_axi_gpio_0_7.xci",
-                "inst_hier_path": "Motors/Motor_1/axi_gpio_0",
+                "xci_name": "design_1_axi_gpio_0_0",
+                "xci_path": "ip\\design_1_axi_gpio_0_0\\design_1_axi_gpio_0_0.xci",
+                "inst_hier_path": "Motors/Motor_0/axi_gpio_0",
                 "parameters": {
                   "C_ALL_OUTPUTS": {
                     "value": "1"
@@ -3937,12 +4142,12 @@
               "axi_timer_0": {
                 "vlnv": "xilinx.com:ip:axi_timer:2.0",
                 "ip_revision": "31",
-                "xci_name": "design_1_axi_timer_0_7",
-                "xci_path": "ip\\design_1_axi_timer_0_7\\design_1_axi_timer_0_7.xci",
-                "inst_hier_path": "Motors/Motor_1/axi_timer_0",
+                "xci_name": "design_1_axi_timer_0_0",
+                "xci_path": "ip\\design_1_axi_timer_0_0\\design_1_axi_timer_0_0.xci",
+                "inst_hier_path": "Motors/Motor_0/axi_timer_0",
                 "parameters": {
                   "enable_timer2": {
-                    "value": "0"
+                    "value": "1"
                   }
                 }
               }
@@ -3980,6 +4185,12 @@
                   "Speedsensor_0/SpeedClockData"
                 ]
               },
+              "axi_timer_0_interrupt": {
+                "ports": [
+                  "axi_timer_0/interrupt",
+                  "interrupt"
+                ]
+              },
               "axi_timer_0_pwm0": {
                 "ports": [
                   "axi_timer_0/pwm0",
@@ -4000,7 +4211,7 @@
                   "Speedsensor_0/s00_axi_aclk"
                 ]
               },
-              "s_axi_aresetn_1": {
+              "rst_ps7_0_100M_peripheral_aresetn": {
                 "ports": [
                   "s_axi_aresetn",
                   "axi_gpio_0/s_axi_aresetn",
@@ -4050,21 +4261,25 @@
               },
               "PWM": {
                 "direction": "O"
+              },
+              "interrupt": {
+                "type": "intr",
+                "direction": "O"
               }
             },
             "components": {
               "Speedsensor_0": {
                 "vlnv": "xilinx.com:user:Speedsensor:1.0",
                 "ip_revision": "3",
-                "xci_name": "design_1_Speedsensor_0_9",
-                "xci_path": "ip\\design_1_Speedsensor_0_9\\design_1_Speedsensor_0_9.xci",
+                "xci_name": "design_1_Speedsensor_0_12",
+                "xci_path": "ip\\design_1_Speedsensor_0_12\\design_1_Speedsensor_0_12.xci",
                 "inst_hier_path": "Motors/Motor_2/Speedsensor_0"
               },
               "axi_gpio_0": {
                 "vlnv": "xilinx.com:ip:axi_gpio:2.0",
                 "ip_revision": "31",
-                "xci_name": "design_1_axi_gpio_0_8",
-                "xci_path": "ip\\design_1_axi_gpio_0_8\\design_1_axi_gpio_0_8.xci",
+                "xci_name": "design_1_axi_gpio_0_11",
+                "xci_path": "ip\\design_1_axi_gpio_0_11\\design_1_axi_gpio_0_11.xci",
                 "inst_hier_path": "Motors/Motor_2/axi_gpio_0",
                 "parameters": {
                   "C_ALL_OUTPUTS": {
@@ -4078,12 +4293,12 @@
               "axi_timer_0": {
                 "vlnv": "xilinx.com:ip:axi_timer:2.0",
                 "ip_revision": "31",
-                "xci_name": "design_1_axi_timer_0_8",
-                "xci_path": "ip\\design_1_axi_timer_0_8\\design_1_axi_timer_0_8.xci",
+                "xci_name": "design_1_axi_timer_0_11",
+                "xci_path": "ip\\design_1_axi_timer_0_11\\design_1_axi_timer_0_11.xci",
                 "inst_hier_path": "Motors/Motor_2/axi_timer_0",
                 "parameters": {
                   "enable_timer2": {
-                    "value": "0"
+                    "value": "1"
                   }
                 }
               }
@@ -4119,6 +4334,12 @@
                 "ports": [
                   "SpeedClockData_0",
                   "Speedsensor_0/SpeedClockData"
+                ]
+              },
+              "axi_timer_0_interrupt": {
+                "ports": [
+                  "axi_timer_0/interrupt",
+                  "interrupt"
                 ]
               },
               "axi_timer_0_pwm0": {
@@ -4191,21 +4412,25 @@
               },
               "PWM": {
                 "direction": "O"
+              },
+              "interrupt": {
+                "type": "intr",
+                "direction": "O"
               }
             },
             "components": {
               "Speedsensor_0": {
                 "vlnv": "xilinx.com:user:Speedsensor:1.0",
                 "ip_revision": "3",
-                "xci_name": "design_1_Speedsensor_0_10",
-                "xci_path": "ip\\design_1_Speedsensor_0_10\\design_1_Speedsensor_0_10.xci",
+                "xci_name": "design_1_Speedsensor_0_13",
+                "xci_path": "ip\\design_1_Speedsensor_0_13\\design_1_Speedsensor_0_13.xci",
                 "inst_hier_path": "Motors/Motor_3/Speedsensor_0"
               },
               "axi_gpio_0": {
                 "vlnv": "xilinx.com:ip:axi_gpio:2.0",
                 "ip_revision": "31",
-                "xci_name": "design_1_axi_gpio_0_9",
-                "xci_path": "ip\\design_1_axi_gpio_0_9\\design_1_axi_gpio_0_9.xci",
+                "xci_name": "design_1_axi_gpio_0_12",
+                "xci_path": "ip\\design_1_axi_gpio_0_12\\design_1_axi_gpio_0_12.xci",
                 "inst_hier_path": "Motors/Motor_3/axi_gpio_0",
                 "parameters": {
                   "C_ALL_OUTPUTS": {
@@ -4219,12 +4444,12 @@
               "axi_timer_0": {
                 "vlnv": "xilinx.com:ip:axi_timer:2.0",
                 "ip_revision": "31",
-                "xci_name": "design_1_axi_timer_0_9",
-                "xci_path": "ip\\design_1_axi_timer_0_9\\design_1_axi_timer_0_9.xci",
+                "xci_name": "design_1_axi_timer_0_12",
+                "xci_path": "ip\\design_1_axi_timer_0_12\\design_1_axi_timer_0_12.xci",
                 "inst_hier_path": "Motors/Motor_3/axi_timer_0",
                 "parameters": {
                   "enable_timer2": {
-                    "value": "0"
+                    "value": "1"
                   }
                 }
               }
@@ -4262,6 +4487,12 @@
                   "Speedsensor_0/SpeedClockData"
                 ]
               },
+              "axi_timer_0_interrupt": {
+                "ports": [
+                  "axi_timer_0/interrupt",
+                  "interrupt"
+                ]
+              },
               "axi_timer_0_pwm0": {
                 "ports": [
                   "axi_timer_0/pwm0",
@@ -4292,7 +4523,7 @@
               }
             }
           },
-          "Motor_0": {
+          "Motor_1": {
             "interface_ports": {
               "S00_AXI": {
                 "mode": "Slave",
@@ -4332,22 +4563,26 @@
               },
               "PWM": {
                 "direction": "O"
+              },
+              "interrupt": {
+                "type": "intr",
+                "direction": "O"
               }
             },
             "components": {
               "Speedsensor_0": {
                 "vlnv": "xilinx.com:user:Speedsensor:1.0",
                 "ip_revision": "3",
-                "xci_name": "design_1_Speedsensor_0_1",
-                "xci_path": "ip\\design_1_Speedsensor_0_1\\design_1_Speedsensor_0_1.xci",
-                "inst_hier_path": "Motors/Motor_0/Speedsensor_0"
+                "xci_name": "design_1_Speedsensor_0_11",
+                "xci_path": "ip\\design_1_Speedsensor_0_11\\design_1_Speedsensor_0_11.xci",
+                "inst_hier_path": "Motors/Motor_1/Speedsensor_0"
               },
               "axi_gpio_0": {
                 "vlnv": "xilinx.com:ip:axi_gpio:2.0",
                 "ip_revision": "31",
-                "xci_name": "design_1_axi_gpio_0_0",
-                "xci_path": "ip\\design_1_axi_gpio_0_0\\design_1_axi_gpio_0_0.xci",
-                "inst_hier_path": "Motors/Motor_0/axi_gpio_0",
+                "xci_name": "design_1_axi_gpio_0_10",
+                "xci_path": "ip\\design_1_axi_gpio_0_10\\design_1_axi_gpio_0_10.xci",
+                "inst_hier_path": "Motors/Motor_1/axi_gpio_0",
                 "parameters": {
                   "C_ALL_OUTPUTS": {
                     "value": "1"
@@ -4360,12 +4595,12 @@
               "axi_timer_0": {
                 "vlnv": "xilinx.com:ip:axi_timer:2.0",
                 "ip_revision": "31",
-                "xci_name": "design_1_axi_timer_0_0",
-                "xci_path": "ip\\design_1_axi_timer_0_0\\design_1_axi_timer_0_0.xci",
-                "inst_hier_path": "Motors/Motor_0/axi_timer_0",
+                "xci_name": "design_1_axi_timer_0_10",
+                "xci_path": "ip\\design_1_axi_timer_0_10\\design_1_axi_timer_0_10.xci",
+                "inst_hier_path": "Motors/Motor_1/axi_timer_0",
                 "parameters": {
                   "enable_timer2": {
-                    "value": "0"
+                    "value": "1"
                   }
                 }
               }
@@ -4403,6 +4638,12 @@
                   "Speedsensor_0/SpeedClockData"
                 ]
               },
+              "axi_timer_0_interrupt": {
+                "ports": [
+                  "axi_timer_0/interrupt",
+                  "interrupt"
+                ]
+              },
               "axi_timer_0_pwm0": {
                 "ports": [
                   "axi_timer_0/pwm0",
@@ -4423,7 +4664,7 @@
                   "Speedsensor_0/s00_axi_aclk"
                 ]
               },
-              "rst_ps7_0_100M_peripheral_aresetn": {
+              "s_axi_aresetn_1": {
                 "ports": [
                   "s_axi_aresetn",
                   "axi_gpio_0/s_axi_aresetn",
@@ -4461,37 +4702,37 @@
           },
           "ps7_0_axi_periph_M00_AXI": {
             "interface_ports": [
-              "S_AXI6",
+              "S_AXI",
               "Motor_0/S_AXI"
             ]
           },
           "ps7_0_axi_periph_M01_AXI": {
             "interface_ports": [
-              "S_AXI7",
+              "S_AXI1",
               "Motor_0/S_AXI1"
             ]
           },
           "ps7_0_axi_periph_M02_AXI": {
             "interface_ports": [
-              "S00_AXI3",
+              "S00_AXI",
               "Motor_0/S00_AXI"
             ]
           },
           "ps7_0_axi_periph_M03_AXI": {
             "interface_ports": [
-              "S_AXI",
+              "S_AXI6",
               "Motor_1/S_AXI"
             ]
           },
           "ps7_0_axi_periph_M04_AXI": {
             "interface_ports": [
-              "S_AXI1",
+              "S_AXI7",
               "Motor_1/S_AXI1"
             ]
           },
           "ps7_0_axi_periph_M05_AXI": {
             "interface_ports": [
-              "S00_AXI",
+              "S00_AXI3",
               "Motor_1/S00_AXI"
             ]
           },
@@ -4539,10 +4780,22 @@
               "PWM_0"
             ]
           },
+          "Motor_0_interrupt": {
+            "ports": [
+              "Motor_0/interrupt",
+              "xlconcat_0/In0"
+            ]
+          },
           "Motor_1_PWM": {
             "ports": [
               "Motor_1/PWM",
               "PWM_1"
+            ]
+          },
+          "Motor_1_interrupt": {
+            "ports": [
+              "Motor_1/interrupt",
+              "xlconcat_0/In1"
             ]
           },
           "Motor_2_PWM": {
@@ -4551,10 +4804,22 @@
               "PWM_2"
             ]
           },
+          "Motor_2_interrupt": {
+            "ports": [
+              "Motor_2/interrupt",
+              "xlconcat_0/In2"
+            ]
+          },
           "Motor_3_PWM": {
             "ports": [
               "Motor_3/PWM",
               "PWM_3"
+            ]
+          },
+          "Motor_3_interrupt": {
+            "ports": [
+              "Motor_3/interrupt",
+              "xlconcat_0/In3"
             ]
           },
           "SpeedClockData_0_1": {
@@ -4563,47 +4828,68 @@
               "Motor_0/SpeedClockData_0"
             ]
           },
-          "SpeedClockData_0_3_1": {
-            "ports": [
-              "SpeedClockData_3",
-              "Motor_3/SpeedClockData_0"
-            ]
-          },
-          "SpeedClockData_0_4_1": {
-            "ports": [
-              "SpeedClockData_2",
-              "Motor_2/SpeedClockData_0"
-            ]
-          },
-          "SpeedClockData_0_5_1": {
+          "SpeedClockData_1_1": {
             "ports": [
               "SpeedClockData_1",
               "Motor_1/SpeedClockData_0"
             ]
           },
+          "SpeedClockData_2_1": {
+            "ports": [
+              "SpeedClockData_2",
+              "Motor_2/SpeedClockData_0"
+            ]
+          },
+          "SpeedClockData_3_1": {
+            "ports": [
+              "SpeedClockData_3",
+              "Motor_3/SpeedClockData_0"
+            ]
+          },
           "clk_1_1": {
             "ports": [
               "ClockData",
+              "Motor_3/ClockData",
+              "Motor_2/ClockData",
+              "Motor_1/ClockData",
               "Motor_0/ClockData"
             ]
           },
           "processing_system7_0_FCLK_CLK0": {
             "ports": [
               "s_axi_aclk",
-              "Motor_0/s_axi_aclk",
               "Motor_3/s_axi_aclk",
               "Motor_2/s_axi_aclk",
-              "Motor_1/s_axi_aclk"
+              "Motor_1/s_axi_aclk",
+              "Motor_0/s_axi_aclk"
             ]
           },
           "rst_ps7_0_100M_peripheral_aresetn": {
             "ports": [
               "s_axi_aresetn",
-              "Motor_0/s_axi_aresetn",
               "Motor_3/s_axi_aresetn",
               "Motor_2/s_axi_aresetn",
-              "Motor_1/s_axi_aresetn"
+              "Motor_1/s_axi_aresetn",
+              "Motor_0/s_axi_aresetn"
             ]
+          },
+          "xlconcat_0_dout": {
+            "ports": [
+              "xlconcat_0/dout",
+              "Interupts"
+            ]
+          }
+        }
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "ip_revision": "5",
+        "xci_name": "design_1_xlconcat_0_1",
+        "xci_path": "ip\\design_1_xlconcat_0_1\\design_1_xlconcat_0_1.xci",
+        "inst_hier_path": "xlconcat_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "4"
           }
         }
       }
@@ -4633,6 +4919,12 @@
           "Motors/Direction_0"
         ]
       },
+      "axi_iic_0_IIC": {
+        "interface_ports": [
+          "IIC_0",
+          "axi_iic_0/IIC"
+        ]
+      },
       "processing_system7_0_DDR": {
         "interface_ports": [
           "DDR",
@@ -4654,37 +4946,37 @@
       "ps7_0_axi_periph_M00_AXI": {
         "interface_ports": [
           "ps7_0_axi_periph/M00_AXI",
-          "Motors/S_AXI6"
+          "Motors/S_AXI"
         ]
       },
       "ps7_0_axi_periph_M01_AXI": {
         "interface_ports": [
           "ps7_0_axi_periph/M01_AXI",
-          "Motors/S_AXI7"
+          "Motors/S_AXI1"
         ]
       },
       "ps7_0_axi_periph_M02_AXI": {
         "interface_ports": [
           "ps7_0_axi_periph/M02_AXI",
-          "Motors/S00_AXI3"
+          "Motors/S00_AXI"
         ]
       },
       "ps7_0_axi_periph_M03_AXI": {
         "interface_ports": [
           "ps7_0_axi_periph/M03_AXI",
-          "Motors/S_AXI"
+          "Motors/S_AXI6"
         ]
       },
       "ps7_0_axi_periph_M04_AXI": {
         "interface_ports": [
           "ps7_0_axi_periph/M04_AXI",
-          "Motors/S_AXI1"
+          "Motors/S_AXI7"
         ]
       },
       "ps7_0_axi_periph_M05_AXI": {
         "interface_ports": [
           "ps7_0_axi_periph/M05_AXI",
-          "Motors/S00_AXI"
+          "Motors/S00_AXI3"
         ]
       },
       "ps7_0_axi_periph_M06_AXI": {
@@ -4734,6 +5026,12 @@
           "ps7_0_axi_periph/M13_AXI",
           "Ultrasone/S00_AXI1"
         ]
+      },
+      "ps7_0_axi_periph_M14_AXI": {
+        "interface_ports": [
+          "ps7_0_axi_periph/M14_AXI",
+          "axi_iic_0/S_AXI"
+        ]
       }
     },
     "nets": {
@@ -4773,28 +5071,40 @@
           "PWM_3"
         ]
       },
+      "Motors_Interupts": {
+        "ports": [
+          "Motors/Interupts",
+          "xlconcat_0/In0"
+        ]
+      },
       "SpeedClockData_0_1": {
         "ports": [
           "SpeedClockData_0",
           "Motors/SpeedClockData_0"
         ]
       },
-      "SpeedClockData_0_3_1": {
+      "SpeedClockData_1_1": {
         "ports": [
-          "SpeedClockData_3",
-          "Motors/SpeedClockData_3"
+          "SpeedClockData_1",
+          "Motors/SpeedClockData_1"
         ]
       },
-      "SpeedClockData_0_4_1": {
+      "SpeedClockData_2_1": {
         "ports": [
           "SpeedClockData_2",
           "Motors/SpeedClockData_2"
         ]
       },
-      "SpeedClockData_0_5_1": {
+      "SpeedClockData_3_1": {
         "ports": [
-          "SpeedClockData_1",
-          "Motors/SpeedClockData_1"
+          "SpeedClockData_3",
+          "Motors/SpeedClockData_3"
+        ]
+      },
+      "axi_iic_0_gpo": {
+        "ports": [
+          "axi_iic_0/gpo",
+          "xlconcat_0/In1"
         ]
       },
       "clk_1_1": {
@@ -4832,6 +5142,8 @@
           "ps7_0_axi_periph/M12_ACLK",
           "ps7_0_axi_periph/M13_ACLK",
           "Ultrasone/s00_axi_aclk",
+          "axi_iic_0/s_axi_aclk",
+          "ps7_0_axi_periph/M14_ACLK",
           "Motors/s_axi_aclk"
         ]
       },
@@ -4861,6 +5173,8 @@
           "ps7_0_axi_periph/M12_ARESETN",
           "ps7_0_axi_periph/M13_ARESETN",
           "Ultrasone/s00_axi_aresetn",
+          "axi_iic_0/s_axi_aresetn",
+          "ps7_0_axi_periph/M14_ARESETN",
           "Motors/s_axi_aresetn"
         ]
       },
@@ -4874,6 +5188,12 @@
         "ports": [
           "sonar_echo_1",
           "Ultrasone/sonar_echo_1"
+        ]
+      },
+      "xlconcat_0_dout": {
+        "ports": [
+          "xlconcat_0/dout",
+          "processing_system7_0/IRQ_F2P"
         ]
       }
     },
@@ -4942,6 +5262,11 @@
               "SEG_axi_gpio_0_Reg_3": {
                 "address_block": "/Motors/Motor_3/axi_gpio_0/S_AXI/Reg",
                 "offset": "0x41230000",
+                "range": "64K"
+              },
+              "SEG_axi_iic_0_Reg": {
+                "address_block": "/axi_iic_0/S_AXI/Reg",
+                "offset": "0x41600000",
                 "range": "64K"
               },
               "SEG_axi_timer_0_Reg": {

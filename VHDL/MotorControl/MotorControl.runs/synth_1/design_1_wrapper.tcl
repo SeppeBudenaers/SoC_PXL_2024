@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 2
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 
@@ -98,30 +97,32 @@ set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe
 set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc]
 set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_7/design_1_axi_gpio_0_7_board.xdc]
-set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_7/design_1_axi_gpio_0_7_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_7/design_1_axi_gpio_0_7.xdc]
-set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_7/design_1_axi_timer_0_7.xdc]
-set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_7/design_1_axi_timer_0_7_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_8/design_1_axi_gpio_0_8_board.xdc]
-set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_8/design_1_axi_gpio_0_8_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_8/design_1_axi_gpio_0_8.xdc]
-set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_8/design_1_axi_timer_0_8.xdc]
-set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_8/design_1_axi_timer_0_8_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_9/design_1_axi_gpio_0_9_board.xdc]
-set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_9/design_1_axi_gpio_0_9_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_9/design_1_axi_gpio_0_9.xdc]
-set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_9/design_1_axi_timer_0_9.xdc]
-set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_9/design_1_axi_timer_0_9_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/design_1_axi_timer_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/design_1_axi_timer_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_11/design_1_axi_gpio_0_11_board.xdc]
+set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_11/design_1_axi_gpio_0_11_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_11/design_1_axi_gpio_0_11.xdc]
+set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_11/design_1_axi_timer_0_11.xdc]
+set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_11/design_1_axi_timer_0_11_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_12/design_1_axi_gpio_0_12_board.xdc]
+set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_12/design_1_axi_gpio_0_12_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_12/design_1_axi_gpio_0_12.xdc]
+set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_12/design_1_axi_timer_0_12.xdc]
+set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_12/design_1_axi_timer_0_12_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_10/design_1_axi_gpio_0_10_board.xdc]
+set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_10/design_1_axi_gpio_0_10_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_10/design_1_axi_gpio_0_10.xdc]
+set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_10/design_1_axi_timer_0_10.xdc]
+set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_10/design_1_axi_timer_0_10_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/design_1_ooc.xdc]
 
 OPTRACE "Adding files" END { }

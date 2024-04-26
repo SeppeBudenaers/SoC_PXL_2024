@@ -10,17 +10,17 @@
       "component_parameters": {
         "Component_Name": [ { "value": "design_1_axi_timer_0_0", "resolve_type": "user", "usage": "all" } ],
         "TRIG0_ASSERT": [ { "value": "Active_High", "resolve_type": "user", "usage": "all" } ],
-        "TRIG1_ASSERT": [ { "value": "Active_High", "resolve_type": "user", "enabled": false, "usage": "all" } ],
+        "TRIG1_ASSERT": [ { "value": "Active_High", "resolve_type": "user", "usage": "all" } ],
         "GEN0_ASSERT": [ { "value": "Active_High", "resolve_type": "user", "usage": "all" } ],
-        "GEN1_ASSERT": [ { "value": "Active_High", "resolve_type": "user", "enabled": false, "usage": "all" } ],
+        "GEN1_ASSERT": [ { "value": "Active_High", "resolve_type": "user", "usage": "all" } ],
         "COUNT_WIDTH": [ { "value": "32", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "mode_64bit": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "enable_timer2": [ { "value": "0", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ]
+        "enable_timer2": [ { "value": "1", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ]
       },
       "model_parameters": {
         "C_FAMILY": [ { "value": "zynq", "resolve_type": "generated", "usage": "all" } ],
         "C_COUNT_WIDTH": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "C_ONE_TIMER_ONLY": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "C_ONE_TIMER_ONLY": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_TRIG0_ASSERT": [ { "value": "1", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
         "C_TRIG1_ASSERT": [ { "value": "1", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
         "C_GEN0_ASSERT": [ { "value": "1", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
@@ -175,7 +175,7 @@
           "mode": "master",
           "parameters": {
             "SENSITIVITY": [ { "value": "LEVEL_HIGH", "value_src": "constant", "value_permission": "bd", "usage": "all" } ],
-            "PortWidth": [ { "value": "1", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ]
+            "PortWidth": [ { "value": "1", "value_src": "default_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ]
           },
           "port_maps": {
             "INTERRUPT": [ { "physical_name": "interrupt" } ]

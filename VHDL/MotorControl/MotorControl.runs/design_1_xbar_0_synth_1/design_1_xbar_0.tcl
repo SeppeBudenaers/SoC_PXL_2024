@@ -92,7 +92,7 @@ set_property ip_output_repo c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/Mot
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.xci
+read_ip -quiet C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.xci
 set_property used_in_implementation false [get_files -all c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc]
 
 OPTRACE "Adding files" END { }

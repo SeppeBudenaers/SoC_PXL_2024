@@ -79,3 +79,7 @@ set_property src_info {type:XDC file:1 line:61 export:INPUT save:INPUT read:READ
 set_property PACKAGE_PIN U10 [get_ports sonar_trig_1]
 set_property src_info {type:XDC file:1 line:63 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN H16 [get_ports clk_in1_0]
+set_property src_info {type:XDC file:1 line:65 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN Y11 [get_ports IIC_0_scl_io]
+set_property src_info {type:XDC file:1 line:66 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN Y12 [get_ports IIC_0_sda_io]

@@ -2,7 +2,7 @@
 --Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
---Date        : Fri Apr 19 16:47:40 2024
+--Date        : Fri Apr 26 10:25:37 2024
 --Host        : Beta running 64-bit major release  (build 9200)
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
@@ -39,6 +39,8 @@ entity design_1_wrapper is
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
+    IIC_0_scl_io : inout STD_LOGIC;
+    IIC_0_sda_io : inout STD_LOGIC;
     PWM_0 : out STD_LOGIC;
     PWM_1 : out STD_LOGIC;
     PWM_2 : out STD_LOGIC;
@@ -80,25 +82,59 @@ architecture STRUCTURE of design_1_wrapper is
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
+    Direction_1_tri_o : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    Direction_2_tri_o : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    Direction_3_tri_o : out STD_LOGIC_VECTOR ( 1 downto 0 );
     SpeedClockData_0 : in STD_LOGIC;
     sonar_trig_0 : out STD_LOGIC;
     sonar_echo_0 : in STD_LOGIC;
     sonar_trig_1 : out STD_LOGIC;
     sonar_echo_1 : in STD_LOGIC;
     clk_in1_0 : in STD_LOGIC;
-    Direction_1_tri_o : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    Direction_2_tri_o : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    Direction_3_tri_o : out STD_LOGIC_VECTOR ( 1 downto 0 );
     PWM_0 : out STD_LOGIC;
     PWM_3 : out STD_LOGIC;
     PWM_2 : out STD_LOGIC;
     PWM_1 : out STD_LOGIC;
     SpeedClockData_3 : in STD_LOGIC;
     SpeedClockData_2 : in STD_LOGIC;
-    SpeedClockData_1 : in STD_LOGIC
+    SpeedClockData_1 : in STD_LOGIC;
+    IIC_0_scl_i : in STD_LOGIC;
+    IIC_0_scl_o : out STD_LOGIC;
+    IIC_0_scl_t : out STD_LOGIC;
+    IIC_0_sda_i : in STD_LOGIC;
+    IIC_0_sda_o : out STD_LOGIC;
+    IIC_0_sda_t : out STD_LOGIC
   );
   end component design_1;
+  component IOBUF is
+  port (
+    I : in STD_LOGIC;
+    O : out STD_LOGIC;
+    T : in STD_LOGIC;
+    IO : inout STD_LOGIC
+  );
+  end component IOBUF;
+  signal IIC_0_scl_i : STD_LOGIC;
+  signal IIC_0_scl_o : STD_LOGIC;
+  signal IIC_0_scl_t : STD_LOGIC;
+  signal IIC_0_sda_i : STD_LOGIC;
+  signal IIC_0_sda_o : STD_LOGIC;
+  signal IIC_0_sda_t : STD_LOGIC;
 begin
+IIC_0_scl_iobuf: component IOBUF
+     port map (
+      I => IIC_0_scl_o,
+      IO => IIC_0_scl_io,
+      O => IIC_0_scl_i,
+      T => IIC_0_scl_t
+    );
+IIC_0_sda_iobuf: component IOBUF
+     port map (
+      I => IIC_0_sda_o,
+      IO => IIC_0_sda_io,
+      O => IIC_0_sda_i,
+      T => IIC_0_sda_t
+    );
 design_1_i: component design_1
      port map (
       DDR_addr(14 downto 0) => DDR_addr(14 downto 0),
@@ -126,6 +162,12 @@ design_1_i: component design_1
       FIXED_IO_ps_clk => FIXED_IO_ps_clk,
       FIXED_IO_ps_porb => FIXED_IO_ps_porb,
       FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
+      IIC_0_scl_i => IIC_0_scl_i,
+      IIC_0_scl_o => IIC_0_scl_o,
+      IIC_0_scl_t => IIC_0_scl_t,
+      IIC_0_sda_i => IIC_0_sda_i,
+      IIC_0_sda_o => IIC_0_sda_o,
+      IIC_0_sda_t => IIC_0_sda_t,
       PWM_0 => PWM_0,
       PWM_1 => PWM_1,
       PWM_2 => PWM_2,

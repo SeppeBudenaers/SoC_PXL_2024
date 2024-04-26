@@ -2,11 +2,11 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-// Date        : Fri Apr 19 16:20:44 2024
+// Date        : Fri Apr 26 10:27:17 2024
 // Host        : Beta running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub -rename_top design_1_axi_timer_0_0 -prefix
-//               design_1_axi_timer_0_0_ design_1_axi_timer_0_5_stub.v
-// Design      : design_1_axi_timer_0_5
+// Command     : write_verilog -force -mode synth_stub
+//               c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/design_1_axi_timer_0_0_stub.v
+// Design      : design_1_axi_timer_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1
 // --------------------------------------------------------------------------------

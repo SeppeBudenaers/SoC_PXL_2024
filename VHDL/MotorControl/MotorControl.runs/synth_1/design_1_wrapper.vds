@@ -3,8 +3,8 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Fri Apr 26 09:24:20 2024
-# Process ID: 1792
+# Start of session at: Fri Apr 26 10:35:35 2024
+# Process ID: 1044
 # Current directory: C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/design_1_wrapper.vds
@@ -12,7 +12,6 @@
 # Running On: Beta, OS: Windows, CPU Frequency: 3493 MHz, CPU Physical cores: 11, Host memory: 16312 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 452.211 ; gain = 185.332
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
@@ -28,211 +27,231 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 10868
+INFO: [Synth 8-7075] Helper process launched with PID 15300
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1349.391 ; gain = 440.410
+Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:04 . Memory (MB): peak = 1350.773 ; gain = 439.434
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:58]
-INFO: [Synth 8-3491] module 'design_1' declared at 'c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:6616' bound to instance 'design_1_i' of component 'design_1' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:102]
-INFO: [Synth 8-638] synthesizing module 'design_1' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:6663]
-INFO: [Synth 8-638] synthesizing module 'Motors_imp_6GYYKK' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:3736]
-INFO: [Synth 8-638] synthesizing module 'Motor_0_imp_1K3L2D9' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:79]
-INFO: [Synth 8-3491] module 'design_1_Speedsensor_0_1' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_Speedsensor_0_1_stub.vhdl:6' bound to instance 'Speedsensor_0' of component 'design_1_Speedsensor_0_1' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:288]
-INFO: [Synth 8-638] synthesizing module 'design_1_Speedsensor_0_1' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_Speedsensor_0_1_stub.vhdl:38]
-INFO: [Synth 8-3491] module 'design_1_axi_gpio_0_0' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_axi_gpio_0_0_stub.vhdl:6' bound to instance 'axi_gpio_0' of component 'design_1_axi_gpio_0_0' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:317]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_0' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_axi_gpio_0_0_stub.vhdl:32]
-INFO: [Synth 8-3491] module 'design_1_axi_timer_0_0' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_axi_timer_0_0_stub.vhdl:6' bound to instance 'axi_timer_0' of component 'design_1_axi_timer_0_0' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:340]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_timer_0_0' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_axi_timer_0_0_stub.vhdl:38]
-INFO: [Synth 8-256] done synthesizing module 'Motor_0_imp_1K3L2D9' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:79]
-INFO: [Synth 8-638] synthesizing module 'Motor_1_imp_1PETFNI' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:438]
-INFO: [Synth 8-3491] module 'design_1_Speedsensor_0_8' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_Speedsensor_0_8_stub.vhdl:6' bound to instance 'Speedsensor_0' of component 'design_1_Speedsensor_0_8' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:647]
-INFO: [Synth 8-638] synthesizing module 'design_1_Speedsensor_0_8' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_Speedsensor_0_8_stub.vhdl:38]
-INFO: [Synth 8-3491] module 'design_1_axi_gpio_0_7' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_axi_gpio_0_7_stub.vhdl:6' bound to instance 'axi_gpio_0' of component 'design_1_axi_gpio_0_7' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:676]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_7' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_axi_gpio_0_7_stub.vhdl:32]
-INFO: [Synth 8-3491] module 'design_1_axi_timer_0_7' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_axi_timer_0_7_stub.vhdl:6' bound to instance 'axi_timer_0' of component 'design_1_axi_timer_0_7' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:699]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_timer_0_7' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_axi_timer_0_7_stub.vhdl:38]
-INFO: [Synth 8-256] done synthesizing module 'Motor_1_imp_1PETFNI' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:438]
-INFO: [Synth 8-638] synthesizing module 'Motor_2_imp_1RHXIUZ' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:797]
-INFO: [Synth 8-3491] module 'design_1_Speedsensor_0_9' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_Speedsensor_0_9_stub.vhdl:6' bound to instance 'Speedsensor_0' of component 'design_1_Speedsensor_0_9' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:1006]
-INFO: [Synth 8-638] synthesizing module 'design_1_Speedsensor_0_9' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_Speedsensor_0_9_stub.vhdl:38]
-INFO: [Synth 8-3491] module 'design_1_axi_gpio_0_8' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_axi_gpio_0_8_stub.vhdl:6' bound to instance 'axi_gpio_0' of component 'design_1_axi_gpio_0_8' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:1035]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_8' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_axi_gpio_0_8_stub.vhdl:32]
-INFO: [Synth 8-3491] module 'design_1_axi_timer_0_8' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_axi_timer_0_8_stub.vhdl:6' bound to instance 'axi_timer_0' of component 'design_1_axi_timer_0_8' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:1058]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_timer_0_8' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_axi_timer_0_8_stub.vhdl:38]
-INFO: [Synth 8-256] done synthesizing module 'Motor_2_imp_1RHXIUZ' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:797]
-INFO: [Synth 8-638] synthesizing module 'Motor_3_imp_1VLMAD4' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:1156]
-INFO: [Synth 8-3491] module 'design_1_Speedsensor_0_10' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_Speedsensor_0_10_stub.vhdl:6' bound to instance 'Speedsensor_0' of component 'design_1_Speedsensor_0_10' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:1365]
-INFO: [Synth 8-638] synthesizing module 'design_1_Speedsensor_0_10' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_Speedsensor_0_10_stub.vhdl:38]
-INFO: [Synth 8-3491] module 'design_1_axi_gpio_0_9' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_axi_gpio_0_9_stub.vhdl:6' bound to instance 'axi_gpio_0' of component 'design_1_axi_gpio_0_9' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:1394]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_9' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_axi_gpio_0_9_stub.vhdl:32]
-INFO: [Synth 8-3491] module 'design_1_axi_timer_0_9' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_axi_timer_0_9_stub.vhdl:6' bound to instance 'axi_timer_0' of component 'design_1_axi_timer_0_9' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:1417]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_timer_0_9' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_axi_timer_0_9_stub.vhdl:38]
-INFO: [Synth 8-256] done synthesizing module 'Motor_3_imp_1VLMAD4' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:1156]
-INFO: [Synth 8-256] done synthesizing module 'Motors_imp_6GYYKK' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:3736]
-INFO: [Synth 8-638] synthesizing module 'Ultrasone_imp_1TV33M8' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:1501]
-INFO: [Synth 8-3491] module 'design_1_HC_SR04_0_1' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_HC_SR04_0_1_stub.vhdl:6' bound to instance 'HC_SR04_0' of component 'design_1_HC_SR04_0_1' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:1653]
-INFO: [Synth 8-638] synthesizing module 'design_1_HC_SR04_0_1' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_HC_SR04_0_1_stub.vhdl:37]
-INFO: [Synth 8-3491] module 'design_1_HC_SR04_0_2' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_HC_SR04_0_2_stub.vhdl:6' bound to instance 'HC_SR04_1' of component 'design_1_HC_SR04_0_2' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:1681]
-INFO: [Synth 8-638] synthesizing module 'design_1_HC_SR04_0_2' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_HC_SR04_0_2_stub.vhdl:37]
-INFO: [Synth 8-256] done synthesizing module 'Ultrasone_imp_1TV33M8' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:1501]
-INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_0' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_clk_wiz_0_0_stub.vhdl:6' bound to instance 'clk_wiz_0' of component 'design_1_clk_wiz_0_0' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:7416]
-INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_clk_wiz_0_0_stub.vhdl:14]
-INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_processing_system7_0_0_stub.vhdl:6' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:7421]
-INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_processing_system7_0_0_stub.vhdl:77]
-INFO: [Synth 8-638] synthesizing module 'design_1_ps7_0_axi_periph_0' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:4770]
-INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_15SPJYW' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:1757]
-INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_15SPJYW' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:1757]
-INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_XU9C55' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:1858]
-INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_XU9C55' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:1858]
-INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_14WQB4R' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:1963]
-INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_14WQB4R' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:1963]
-INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_YFYJ3U' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:2070]
-INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_YFYJ3U' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:2070]
-INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_17KQ732' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:2171]
-INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_17KQ732' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:2171]
-INFO: [Synth 8-638] synthesizing module 'm05_couplers_imp_VQEDA7' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:2276]
-INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_VQEDA7' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:2276]
-INFO: [Synth 8-638] synthesizing module 'm06_couplers_imp_16EQN6L' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:2383]
-INFO: [Synth 8-256] done synthesizing module 'm06_couplers_imp_16EQN6L' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:2383]
-INFO: [Synth 8-638] synthesizing module 'm07_couplers_imp_X61OAK' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:2484]
-INFO: [Synth 8-256] done synthesizing module 'm07_couplers_imp_X61OAK' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:2484]
-INFO: [Synth 8-638] synthesizing module 'm08_couplers_imp_1024TAS' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:2589]
-INFO: [Synth 8-256] done synthesizing module 'm08_couplers_imp_1024TAS' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:2589]
-INFO: [Synth 8-638] synthesizing module 'm09_couplers_imp_UP9YUT' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:2696]
-INFO: [Synth 8-256] done synthesizing module 'm09_couplers_imp_UP9YUT' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:2696]
-INFO: [Synth 8-638] synthesizing module 'm10_couplers_imp_I40Q9S' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:2797]
-INFO: [Synth 8-256] done synthesizing module 'm10_couplers_imp_I40Q9S' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:2797]
-INFO: [Synth 8-638] synthesizing module 'm11_couplers_imp_1CATNTT' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:2902]
-INFO: [Synth 8-256] done synthesizing module 'm11_couplers_imp_1CATNTT' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:2902]
-INFO: [Synth 8-638] synthesizing module 'm12_couplers_imp_J0YUF7' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:3013]
-INFO: [Synth 8-256] done synthesizing module 'm12_couplers_imp_J0YUF7' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:3013]
-INFO: [Synth 8-638] synthesizing module 'm13_couplers_imp_1BNKOKI' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:3124]
-INFO: [Synth 8-256] done synthesizing module 'm13_couplers_imp_1BNKOKI' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:3124]
-INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_UYSKKA' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:3254]
-INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_auto_pc_0_stub.vhdl:6' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:3437]
-INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_auto_pc_0_stub.vhdl:71]
-INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_UYSKKA' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:3254]
-INFO: [Synth 8-3491] module 'design_1_xbar_0' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_xbar_0_stub.vhdl:6' bound to instance 'xbar' of component 'design_1_xbar_0' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:6329]
-INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_xbar_0_stub.vhdl:52]
-INFO: [Synth 8-256] done synthesizing module 'design_1_ps7_0_axi_periph_0' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:4770]
-INFO: [Synth 8-3491] module 'design_1_rst_ps7_0_100M_0' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_rst_ps7_0_100M_0_stub.vhdl:6' bound to instance 'rst_ps7_0_100M' of component 'design_1_rst_ps7_0_100M_0' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:7812]
-INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_100M_0' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1792-Beta/realtime/design_1_rst_ps7_0_100M_0_stub.vhdl:22]
-INFO: [Synth 8-256] done synthesizing module 'design_1' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:6663]
-INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (0#1) [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:58]
-WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_UYSKKA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_UYSKKA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ACLK in module m13_couplers_imp_1BNKOKI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ARESETN in module m13_couplers_imp_1BNKOKI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ACLK in module m13_couplers_imp_1BNKOKI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ARESETN in module m13_couplers_imp_1BNKOKI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ACLK in module m12_couplers_imp_J0YUF7 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ARESETN in module m12_couplers_imp_J0YUF7 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ACLK in module m12_couplers_imp_J0YUF7 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ARESETN in module m12_couplers_imp_J0YUF7 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ACLK in module m11_couplers_imp_1CATNTT is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ARESETN in module m11_couplers_imp_1CATNTT is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ACLK in module m11_couplers_imp_1CATNTT is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ARESETN in module m11_couplers_imp_1CATNTT is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ACLK in module m10_couplers_imp_I40Q9S is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ARESETN in module m10_couplers_imp_I40Q9S is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ACLK in module m10_couplers_imp_I40Q9S is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ARESETN in module m10_couplers_imp_I40Q9S is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ACLK in module m09_couplers_imp_UP9YUT is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ARESETN in module m09_couplers_imp_UP9YUT is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ACLK in module m09_couplers_imp_UP9YUT is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ARESETN in module m09_couplers_imp_UP9YUT is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ACLK in module m08_couplers_imp_1024TAS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ARESETN in module m08_couplers_imp_1024TAS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ACLK in module m08_couplers_imp_1024TAS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ARESETN in module m08_couplers_imp_1024TAS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ACLK in module m07_couplers_imp_X61OAK is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ARESETN in module m07_couplers_imp_X61OAK is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ACLK in module m07_couplers_imp_X61OAK is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ARESETN in module m07_couplers_imp_X61OAK is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ACLK in module m06_couplers_imp_16EQN6L is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ARESETN in module m06_couplers_imp_16EQN6L is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ACLK in module m06_couplers_imp_16EQN6L is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ARESETN in module m06_couplers_imp_16EQN6L is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ACLK in module m05_couplers_imp_VQEDA7 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ARESETN in module m05_couplers_imp_VQEDA7 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ACLK in module m05_couplers_imp_VQEDA7 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ARESETN in module m05_couplers_imp_VQEDA7 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ACLK in module m04_couplers_imp_17KQ732 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ARESETN in module m04_couplers_imp_17KQ732 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ACLK in module m04_couplers_imp_17KQ732 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ARESETN in module m04_couplers_imp_17KQ732 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ACLK in module m03_couplers_imp_YFYJ3U is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ARESETN in module m03_couplers_imp_YFYJ3U is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ACLK in module m03_couplers_imp_YFYJ3U is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ARESETN in module m03_couplers_imp_YFYJ3U is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ACLK in module m02_couplers_imp_14WQB4R is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ARESETN in module m02_couplers_imp_14WQB4R is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ACLK in module m02_couplers_imp_14WQB4R is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ARESETN in module m02_couplers_imp_14WQB4R is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ACLK in module m01_couplers_imp_XU9C55 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ARESETN in module m01_couplers_imp_XU9C55 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ACLK in module m01_couplers_imp_XU9C55 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ARESETN in module m01_couplers_imp_XU9C55 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_15SPJYW is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_15SPJYW is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ACLK in module m00_couplers_imp_15SPJYW is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ARESETN in module m00_couplers_imp_15SPJYW is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_ACLK in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_ARESETN in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M02_ACLK in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M02_ARESETN in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M03_ACLK in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M03_ARESETN in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M04_ACLK in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M04_ARESETN in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M05_ACLK in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M05_ARESETN in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M06_ACLK in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M06_ARESETN in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M07_ACLK in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M07_ARESETN in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M08_ACLK in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M08_ARESETN in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M09_ACLK in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M09_ARESETN in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M10_ACLK in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M10_ARESETN in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M11_ACLK in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M11_ARESETN in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M12_ACLK in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M12_ARESETN in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M13_ACLK in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M13_ARESETN in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S00_ACLK in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S00_ARESETN in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S00_AXI1_araddr[31] in module Ultrasone_imp_1TV33M8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S00_AXI1_araddr[30] in module Ultrasone_imp_1TV33M8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S00_AXI1_araddr[29] in module Ultrasone_imp_1TV33M8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S00_AXI1_araddr[28] in module Ultrasone_imp_1TV33M8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S00_AXI1_araddr[27] in module Ultrasone_imp_1TV33M8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S00_AXI1_araddr[26] in module Ultrasone_imp_1TV33M8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S00_AXI1_araddr[25] in module Ultrasone_imp_1TV33M8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S00_AXI1_araddr[24] in module Ultrasone_imp_1TV33M8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S00_AXI1_araddr[23] in module Ultrasone_imp_1TV33M8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S00_AXI1_araddr[22] in module Ultrasone_imp_1TV33M8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S00_AXI1_araddr[21] in module Ultrasone_imp_1TV33M8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S00_AXI1_araddr[20] in module Ultrasone_imp_1TV33M8 is either unconnected or has no load
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:60]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78197' bound to instance 'IIC_0_scl_iobuf' of component 'IOBUF' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:124]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78197]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78197]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78197' bound to instance 'IIC_0_sda_iobuf' of component 'IOBUF' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:131]
+INFO: [Synth 8-3491] module 'design_1' declared at 'c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:6883' bound to instance 'design_1_i' of component 'design_1' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'design_1' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:6936]
+INFO: [Synth 8-638] synthesizing module 'Motors_imp_6GYYKK' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:3846]
+INFO: [Synth 8-638] synthesizing module 'Motor_0_imp_1K3L2D9' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:80]
+INFO: [Synth 8-3491] module 'design_1_Speedsensor_0_1' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_Speedsensor_0_1_stub.vhdl:6' bound to instance 'Speedsensor_0' of component 'design_1_Speedsensor_0_1' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:290]
+INFO: [Synth 8-638] synthesizing module 'design_1_Speedsensor_0_1' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_Speedsensor_0_1_stub.vhdl:38]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_0_0' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_axi_gpio_0_0_stub.vhdl:6' bound to instance 'axi_gpio_0' of component 'design_1_axi_gpio_0_0' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:319]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_0' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_axi_gpio_0_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'design_1_axi_timer_0_0' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_axi_timer_0_0_stub.vhdl:6' bound to instance 'axi_timer_0' of component 'design_1_axi_timer_0_0' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:342]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_timer_0_0' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_axi_timer_0_0_stub.vhdl:38]
+INFO: [Synth 8-256] done synthesizing module 'Motor_0_imp_1K3L2D9' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:80]
+INFO: [Synth 8-638] synthesizing module 'Motor_1_imp_1PETFNI' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:441]
+INFO: [Synth 8-3491] module 'design_1_Speedsensor_0_11' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_Speedsensor_0_11_stub.vhdl:6' bound to instance 'Speedsensor_0' of component 'design_1_Speedsensor_0_11' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:651]
+INFO: [Synth 8-638] synthesizing module 'design_1_Speedsensor_0_11' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_Speedsensor_0_11_stub.vhdl:38]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_0_10' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_axi_gpio_0_10_stub.vhdl:6' bound to instance 'axi_gpio_0' of component 'design_1_axi_gpio_0_10' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:680]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_10' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_axi_gpio_0_10_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'design_1_axi_timer_0_10' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_axi_timer_0_10_stub.vhdl:6' bound to instance 'axi_timer_0' of component 'design_1_axi_timer_0_10' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:703]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_timer_0_10' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_axi_timer_0_10_stub.vhdl:38]
+INFO: [Synth 8-256] done synthesizing module 'Motor_1_imp_1PETFNI' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:441]
+INFO: [Synth 8-638] synthesizing module 'Motor_2_imp_1RHXIUZ' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:802]
+INFO: [Synth 8-3491] module 'design_1_Speedsensor_0_12' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_Speedsensor_0_12_stub.vhdl:6' bound to instance 'Speedsensor_0' of component 'design_1_Speedsensor_0_12' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:1012]
+INFO: [Synth 8-638] synthesizing module 'design_1_Speedsensor_0_12' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_Speedsensor_0_12_stub.vhdl:38]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_0_11' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_axi_gpio_0_11_stub.vhdl:6' bound to instance 'axi_gpio_0' of component 'design_1_axi_gpio_0_11' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:1041]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_11' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_axi_gpio_0_11_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'design_1_axi_timer_0_11' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_axi_timer_0_11_stub.vhdl:6' bound to instance 'axi_timer_0' of component 'design_1_axi_timer_0_11' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:1064]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_timer_0_11' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_axi_timer_0_11_stub.vhdl:38]
+INFO: [Synth 8-256] done synthesizing module 'Motor_2_imp_1RHXIUZ' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:802]
+INFO: [Synth 8-638] synthesizing module 'Motor_3_imp_1VLMAD4' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:1163]
+INFO: [Synth 8-3491] module 'design_1_Speedsensor_0_13' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_Speedsensor_0_13_stub.vhdl:6' bound to instance 'Speedsensor_0' of component 'design_1_Speedsensor_0_13' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:1373]
+INFO: [Synth 8-638] synthesizing module 'design_1_Speedsensor_0_13' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_Speedsensor_0_13_stub.vhdl:38]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_0_12' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_axi_gpio_0_12_stub.vhdl:6' bound to instance 'axi_gpio_0' of component 'design_1_axi_gpio_0_12' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:1402]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_12' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_axi_gpio_0_12_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'design_1_axi_timer_0_12' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_axi_timer_0_12_stub.vhdl:6' bound to instance 'axi_timer_0' of component 'design_1_axi_timer_0_12' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:1425]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_timer_0_12' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_axi_timer_0_12_stub.vhdl:38]
+INFO: [Synth 8-256] done synthesizing module 'Motor_3_imp_1VLMAD4' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:1163]
+INFO: [Synth 8-3491] module 'design_1_xlconcat_0_0' declared at 'c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:53' bound to instance 'xlconcat_0' of component 'design_1_xlconcat_0_0' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:4569]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconcat_0_0' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_5_xlconcat' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ipshared/147b/hdl/xlconcat_v2_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_5_xlconcat' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ipshared/147b/hdl/xlconcat_v2_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconcat_0_0' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:53]
+INFO: [Synth 8-256] done synthesizing module 'Motors_imp_6GYYKK' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:3846]
+INFO: [Synth 8-638] synthesizing module 'Ultrasone_imp_1TV33M8' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:1509]
+INFO: [Synth 8-3491] module 'design_1_HC_SR04_0_1' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_HC_SR04_0_1_stub.vhdl:6' bound to instance 'HC_SR04_0' of component 'design_1_HC_SR04_0_1' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:1661]
+INFO: [Synth 8-638] synthesizing module 'design_1_HC_SR04_0_1' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_HC_SR04_0_1_stub.vhdl:37]
+INFO: [Synth 8-3491] module 'design_1_HC_SR04_0_2' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_HC_SR04_0_2_stub.vhdl:6' bound to instance 'HC_SR04_1' of component 'design_1_HC_SR04_0_2' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:1689]
+INFO: [Synth 8-638] synthesizing module 'design_1_HC_SR04_0_2' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_HC_SR04_0_2_stub.vhdl:37]
+INFO: [Synth 8-256] done synthesizing module 'Ultrasone_imp_1TV33M8' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:1509]
+INFO: [Synth 8-3491] module 'design_1_axi_iic_0_0' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_axi_iic_0_0_stub.vhdl:6' bound to instance 'axi_iic_0' of component 'design_1_axi_iic_0_0' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:7768]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_iic_0_0' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_axi_iic_0_0_stub.vhdl:39]
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_0' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_clk_wiz_0_0_stub.vhdl:6' bound to instance 'clk_wiz_0' of component 'design_1_clk_wiz_0_0' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:7798]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_clk_wiz_0_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_processing_system7_0_0_stub.vhdl:6' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:7803]
+INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_processing_system7_0_0_stub.vhdl:78]
+INFO: [Synth 8-638] synthesizing module 'design_1_ps7_0_axi_periph_0' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:4926]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_15SPJYW' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:1765]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_15SPJYW' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:1765]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_XU9C55' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:1866]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_XU9C55' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:1866]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_14WQB4R' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:1971]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_14WQB4R' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:1971]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_YFYJ3U' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:2078]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_YFYJ3U' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:2078]
+INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_17KQ732' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:2179]
+INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_17KQ732' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:2179]
+INFO: [Synth 8-638] synthesizing module 'm05_couplers_imp_VQEDA7' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:2284]
+INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_VQEDA7' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:2284]
+INFO: [Synth 8-638] synthesizing module 'm06_couplers_imp_16EQN6L' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:2391]
+INFO: [Synth 8-256] done synthesizing module 'm06_couplers_imp_16EQN6L' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:2391]
+INFO: [Synth 8-638] synthesizing module 'm07_couplers_imp_X61OAK' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:2492]
+INFO: [Synth 8-256] done synthesizing module 'm07_couplers_imp_X61OAK' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:2492]
+INFO: [Synth 8-638] synthesizing module 'm08_couplers_imp_1024TAS' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:2597]
+INFO: [Synth 8-256] done synthesizing module 'm08_couplers_imp_1024TAS' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:2597]
+INFO: [Synth 8-638] synthesizing module 'm09_couplers_imp_UP9YUT' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:2704]
+INFO: [Synth 8-256] done synthesizing module 'm09_couplers_imp_UP9YUT' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:2704]
+INFO: [Synth 8-638] synthesizing module 'm10_couplers_imp_I40Q9S' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:2805]
+INFO: [Synth 8-256] done synthesizing module 'm10_couplers_imp_I40Q9S' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:2805]
+INFO: [Synth 8-638] synthesizing module 'm11_couplers_imp_1CATNTT' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:2910]
+INFO: [Synth 8-256] done synthesizing module 'm11_couplers_imp_1CATNTT' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:2910]
+INFO: [Synth 8-638] synthesizing module 'm12_couplers_imp_J0YUF7' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:3021]
+INFO: [Synth 8-256] done synthesizing module 'm12_couplers_imp_J0YUF7' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:3021]
+INFO: [Synth 8-638] synthesizing module 'm13_couplers_imp_1BNKOKI' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:3132]
+INFO: [Synth 8-256] done synthesizing module 'm13_couplers_imp_1BNKOKI' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:3132]
+INFO: [Synth 8-638] synthesizing module 'm14_couplers_imp_KSGNBA' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:3239]
+INFO: [Synth 8-256] done synthesizing module 'm14_couplers_imp_KSGNBA' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:3239]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_UYSKKA' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:3363]
+INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_auto_pc_0_stub.vhdl:6' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:3546]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_auto_pc_0_stub.vhdl:71]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_UYSKKA' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:3363]
+INFO: [Synth 8-3491] module 'design_1_xbar_0' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_xbar_0_stub.vhdl:6' bound to instance 'xbar' of component 'design_1_xbar_0' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:6577]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_xbar_0_stub.vhdl:52]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ps7_0_axi_periph_0' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:4926]
+INFO: [Synth 8-3491] module 'design_1_rst_ps7_0_100M_0' declared at 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_rst_ps7_0_100M_0_stub.vhdl:6' bound to instance 'rst_ps7_0_100M' of component 'design_1_rst_ps7_0_100M_0' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:8214]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_100M_0' [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/.Xil/Vivado-1044-Beta/realtime/design_1_rst_ps7_0_100M_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'design_1_xlconcat_0_1' declared at 'c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_1/synth/design_1_xlconcat_0_1.v:53' bound to instance 'xlconcat_0' of component 'design_1_xlconcat_0_1' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:8227]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconcat_0_1' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_1/synth/design_1_xlconcat_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_5_xlconcat__parameterized0' [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ipshared/147b/hdl/xlconcat_v2_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_5_xlconcat__parameterized0' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ipshared/147b/hdl/xlconcat_v2_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconcat_0_1' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_1/synth/design_1_xlconcat_0_1.v:53]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (0#1) [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/synth/design_1.vhd:6936]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (0#1) [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:60]
+WARNING: [Synth 8-7129] Port In2[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In3[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In61[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In62[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In63[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In64[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In65[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In66[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In67[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In70[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In71[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In72[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In73[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In76[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In77[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In78[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In79[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In80[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In81[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In82[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In83[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In84[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In85[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In86[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In87[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In88[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In89[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In90[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In91[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In92[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In93[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In94[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In95[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In96[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In97[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In98[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In99[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1481.262 ; gain = 572.281
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1486.453 ; gain = 575.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1481.262 ; gain = 572.281
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1486.453 ; gain = 575.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1481.262 ; gain = 572.281
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1486.453 ; gain = 575.113
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.113 . Memory (MB): peak = 1481.262 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 1486.453 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -251,30 +270,32 @@ Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.
 Finished Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_HC_SR04_0_2/design_1_HC_SR04_0_2/design_1_HC_SR04_0_1_in_context.xdc] for cell 'design_1_i/Ultrasone/HC_SR04_1'
 Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
 Finished Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
-Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_8/design_1_Speedsensor_0_8/design_1_Speedsensor_0_6_in_context.xdc] for cell 'design_1_i/Motors/Motor_1/Speedsensor_0'
-Finished Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_8/design_1_Speedsensor_0_8/design_1_Speedsensor_0_6_in_context.xdc] for cell 'design_1_i/Motors/Motor_1/Speedsensor_0'
-Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_7/design_1_axi_gpio_0_7/design_1_axi_gpio_0_5_in_context.xdc] for cell 'design_1_i/Motors/Motor_1/axi_gpio_0'
-Finished Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_7/design_1_axi_gpio_0_7/design_1_axi_gpio_0_5_in_context.xdc] for cell 'design_1_i/Motors/Motor_1/axi_gpio_0'
-Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_7/design_1_axi_timer_0_7/design_1_axi_timer_0_5_in_context.xdc] for cell 'design_1_i/Motors/Motor_1/axi_timer_0'
-Finished Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_7/design_1_axi_timer_0_7/design_1_axi_timer_0_5_in_context.xdc] for cell 'design_1_i/Motors/Motor_1/axi_timer_0'
-Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_9/design_1_Speedsensor_0_9/design_1_Speedsensor_0_6_in_context.xdc] for cell 'design_1_i/Motors/Motor_2/Speedsensor_0'
-Finished Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_9/design_1_Speedsensor_0_9/design_1_Speedsensor_0_6_in_context.xdc] for cell 'design_1_i/Motors/Motor_2/Speedsensor_0'
-Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_8/design_1_axi_gpio_0_8/design_1_axi_gpio_0_5_in_context.xdc] for cell 'design_1_i/Motors/Motor_2/axi_gpio_0'
-Finished Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_8/design_1_axi_gpio_0_8/design_1_axi_gpio_0_5_in_context.xdc] for cell 'design_1_i/Motors/Motor_2/axi_gpio_0'
-Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_8/design_1_axi_timer_0_8/design_1_axi_timer_0_5_in_context.xdc] for cell 'design_1_i/Motors/Motor_2/axi_timer_0'
-Finished Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_8/design_1_axi_timer_0_8/design_1_axi_timer_0_5_in_context.xdc] for cell 'design_1_i/Motors/Motor_2/axi_timer_0'
-Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_10/design_1_Speedsensor_0_10/design_1_Speedsensor_0_6_in_context.xdc] for cell 'design_1_i/Motors/Motor_3/Speedsensor_0'
-Finished Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_10/design_1_Speedsensor_0_10/design_1_Speedsensor_0_6_in_context.xdc] for cell 'design_1_i/Motors/Motor_3/Speedsensor_0'
-Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_9/design_1_axi_gpio_0_9/design_1_axi_gpio_0_5_in_context.xdc] for cell 'design_1_i/Motors/Motor_3/axi_gpio_0'
-Finished Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_9/design_1_axi_gpio_0_9/design_1_axi_gpio_0_5_in_context.xdc] for cell 'design_1_i/Motors/Motor_3/axi_gpio_0'
-Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_9/design_1_axi_timer_0_9/design_1_axi_timer_0_5_in_context.xdc] for cell 'design_1_i/Motors/Motor_3/axi_timer_0'
-Finished Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_9/design_1_axi_timer_0_9/design_1_axi_timer_0_5_in_context.xdc] for cell 'design_1_i/Motors/Motor_3/axi_timer_0'
+Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0/design_1_axi_iic_0_0_in_context.xdc] for cell 'design_1_i/axi_iic_0'
+Finished Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0/design_1_axi_iic_0_0_in_context.xdc] for cell 'design_1_i/axi_iic_0'
 Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_1/design_1_Speedsensor_0_1/design_1_Speedsensor_0_6_in_context.xdc] for cell 'design_1_i/Motors/Motor_0/Speedsensor_0'
 Finished Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_1/design_1_Speedsensor_0_1/design_1_Speedsensor_0_6_in_context.xdc] for cell 'design_1_i/Motors/Motor_0/Speedsensor_0'
 Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_5_in_context.xdc] for cell 'design_1_i/Motors/Motor_0/axi_gpio_0'
 Finished Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_5_in_context.xdc] for cell 'design_1_i/Motors/Motor_0/axi_gpio_0'
-Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/design_1_axi_timer_0_0/design_1_axi_timer_0_5_in_context.xdc] for cell 'design_1_i/Motors/Motor_0/axi_timer_0'
-Finished Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/design_1_axi_timer_0_0/design_1_axi_timer_0_5_in_context.xdc] for cell 'design_1_i/Motors/Motor_0/axi_timer_0'
+Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/design_1_axi_timer_0_0/design_1_axi_timer_0_0_in_context.xdc] for cell 'design_1_i/Motors/Motor_0/axi_timer_0'
+Finished Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/design_1_axi_timer_0_0/design_1_axi_timer_0_0_in_context.xdc] for cell 'design_1_i/Motors/Motor_0/axi_timer_0'
+Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_12/design_1_Speedsensor_0_12/design_1_Speedsensor_0_6_in_context.xdc] for cell 'design_1_i/Motors/Motor_2/Speedsensor_0'
+Finished Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_12/design_1_Speedsensor_0_12/design_1_Speedsensor_0_6_in_context.xdc] for cell 'design_1_i/Motors/Motor_2/Speedsensor_0'
+Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_11/design_1_axi_gpio_0_11/design_1_axi_gpio_0_5_in_context.xdc] for cell 'design_1_i/Motors/Motor_2/axi_gpio_0'
+Finished Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_11/design_1_axi_gpio_0_11/design_1_axi_gpio_0_5_in_context.xdc] for cell 'design_1_i/Motors/Motor_2/axi_gpio_0'
+Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_11/design_1_axi_timer_0_11/design_1_axi_timer_0_0_in_context.xdc] for cell 'design_1_i/Motors/Motor_2/axi_timer_0'
+Finished Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_11/design_1_axi_timer_0_11/design_1_axi_timer_0_0_in_context.xdc] for cell 'design_1_i/Motors/Motor_2/axi_timer_0'
+Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_13/design_1_Speedsensor_0_13/design_1_Speedsensor_0_6_in_context.xdc] for cell 'design_1_i/Motors/Motor_3/Speedsensor_0'
+Finished Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_13/design_1_Speedsensor_0_13/design_1_Speedsensor_0_6_in_context.xdc] for cell 'design_1_i/Motors/Motor_3/Speedsensor_0'
+Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_12/design_1_axi_gpio_0_12/design_1_axi_gpio_0_5_in_context.xdc] for cell 'design_1_i/Motors/Motor_3/axi_gpio_0'
+Finished Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_12/design_1_axi_gpio_0_12/design_1_axi_gpio_0_5_in_context.xdc] for cell 'design_1_i/Motors/Motor_3/axi_gpio_0'
+Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_12/design_1_axi_timer_0_12/design_1_axi_timer_0_0_in_context.xdc] for cell 'design_1_i/Motors/Motor_3/axi_timer_0'
+Finished Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_12/design_1_axi_timer_0_12/design_1_axi_timer_0_0_in_context.xdc] for cell 'design_1_i/Motors/Motor_3/axi_timer_0'
+Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_11/design_1_Speedsensor_0_11/design_1_Speedsensor_0_6_in_context.xdc] for cell 'design_1_i/Motors/Motor_1/Speedsensor_0'
+Finished Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_11/design_1_Speedsensor_0_11/design_1_Speedsensor_0_6_in_context.xdc] for cell 'design_1_i/Motors/Motor_1/Speedsensor_0'
+Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_10/design_1_axi_gpio_0_10/design_1_axi_gpio_0_5_in_context.xdc] for cell 'design_1_i/Motors/Motor_1/axi_gpio_0'
+Finished Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_10/design_1_axi_gpio_0_10/design_1_axi_gpio_0_5_in_context.xdc] for cell 'design_1_i/Motors/Motor_1/axi_gpio_0'
+Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_10/design_1_axi_timer_0_10/design_1_axi_timer_0_0_in_context.xdc] for cell 'design_1_i/Motors/Motor_1/axi_timer_0'
+Finished Parsing XDC File [c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_10/design_1_axi_timer_0_10/design_1_axi_timer_0_0_in_context.xdc] for cell 'design_1_i/Motors/Motor_1/axi_timer_0'
 Parsing XDC File [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.srcs/constrs_1/new/Constraints.xdc]
 WARNING: [Vivado 12-584] No ports matched 'arduino_a0_a5_tri_o[1]'. [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.srcs/constrs_1/new/Constraints.xdc:2]
 WARNING: [Vivado 12-584] No ports matched 'arduino_a0_a5_tri_o[0]'. [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.srcs/constrs_1/new/Constraints.xdc:3]
@@ -303,22 +324,23 @@ Parsing XDC File [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.
 Finished Parsing XDC File [C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1481.262 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1520.816 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1481.262 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1520.816 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:24 . Memory (MB): peak = 1481.262 ; gain = 572.281
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1520.816 ; gain = 609.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:24 . Memory (MB): peak = 1481.262 ; gain = 572.281
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1520.816 ; gain = 609.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -594,23 +616,26 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph. (con
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/Ultrasone/HC_SR04_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/Ultrasone/HC_SR04_1. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/clk_wiz_0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/Motors/Motor_1/Speedsensor_0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/Motors/Motor_1/axi_gpio_0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/Motors/Motor_1/axi_timer_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_iic_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/Motors/xlconcat_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/Motors/Motor_0/Speedsensor_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/Motors/Motor_0/axi_gpio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/Motors/Motor_0/axi_timer_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/Motors/Motor_2/Speedsensor_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/Motors/Motor_2/axi_gpio_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/Motors/Motor_2/axi_timer_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/Motors/Motor_3/Speedsensor_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/Motors/Motor_3/axi_gpio_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/Motors/Motor_3/axi_timer_0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/Motors/Motor_0/Speedsensor_0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/Motors/Motor_0/axi_gpio_0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/Motors/Motor_0/axi_timer_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/Motors/Motor_1/Speedsensor_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/Motors/Motor_1/axi_gpio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/Motors/Motor_1/axi_timer_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlconcat_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:24 . Memory (MB): peak = 1481.262 ; gain = 572.281
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1520.816 ; gain = 609.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:25 . Memory (MB): peak = 1481.262 ; gain = 572.281
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1520.816 ; gain = 609.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -633,25 +658,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:28 . Memory (MB): peak = 1481.262 ; gain = 572.281
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1520.816 ; gain = 609.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:34 . Memory (MB): peak = 1481.262 ; gain = 572.281
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1520.816 ; gain = 609.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:34 . Memory (MB): peak = 1481.262 ; gain = 572.281
+Finished Timing Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1520.816 ; gain = 609.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:34 . Memory (MB): peak = 1481.262 ; gain = 572.281
+Finished Technology Mapping : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1520.816 ; gain = 609.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -669,37 +694,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:40 . Memory (MB): peak = 1481.262 ; gain = 572.281
+Finished IO Insertion : Time (s): cpu = 00:00:07 ; elapsed = 00:00:22 . Memory (MB): peak = 1520.816 ; gain = 609.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:40 . Memory (MB): peak = 1481.262 ; gain = 572.281
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:07 ; elapsed = 00:00:22 . Memory (MB): peak = 1520.816 ; gain = 609.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:40 . Memory (MB): peak = 1481.262 ; gain = 572.281
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:07 ; elapsed = 00:00:22 . Memory (MB): peak = 1520.816 ; gain = 609.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:40 . Memory (MB): peak = 1481.262 ; gain = 572.281
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:07 ; elapsed = 00:00:22 . Memory (MB): peak = 1520.816 ; gain = 609.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:40 . Memory (MB): peak = 1481.262 ; gain = 572.281
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:22 . Memory (MB): peak = 1520.816 ; gain = 609.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:40 . Memory (MB): peak = 1481.262 ; gain = 572.281
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:07 ; elapsed = 00:00:22 . Memory (MB): peak = 1520.816 ; gain = 609.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -711,23 +736,24 @@ Report BlackBoxes:
 +------+--------------------------------+----------+
 |1     |design_1_xbar_0                 |         1|
 |2     |design_1_auto_pc_0              |         1|
-|3     |design_1_clk_wiz_0_0            |         1|
-|4     |design_1_processing_system7_0_0 |         1|
-|5     |design_1_rst_ps7_0_100M_0       |         1|
-|6     |design_1_Speedsensor_0_1        |         1|
-|7     |design_1_axi_gpio_0_0           |         1|
-|8     |design_1_axi_timer_0_0          |         1|
-|9     |design_1_Speedsensor_0_8        |         1|
-|10    |design_1_axi_gpio_0_7           |         1|
-|11    |design_1_axi_timer_0_7          |         1|
-|12    |design_1_Speedsensor_0_9        |         1|
-|13    |design_1_axi_gpio_0_8           |         1|
-|14    |design_1_axi_timer_0_8          |         1|
-|15    |design_1_Speedsensor_0_10       |         1|
-|16    |design_1_axi_gpio_0_9           |         1|
-|17    |design_1_axi_timer_0_9          |         1|
-|18    |design_1_HC_SR04_0_1            |         1|
-|19    |design_1_HC_SR04_0_2            |         1|
+|3     |design_1_axi_iic_0_0            |         1|
+|4     |design_1_clk_wiz_0_0            |         1|
+|5     |design_1_processing_system7_0_0 |         1|
+|6     |design_1_rst_ps7_0_100M_0       |         1|
+|7     |design_1_Speedsensor_0_1        |         1|
+|8     |design_1_axi_gpio_0_0           |         1|
+|9     |design_1_axi_timer_0_0          |         1|
+|10    |design_1_Speedsensor_0_11       |         1|
+|11    |design_1_axi_gpio_0_10          |         1|
+|12    |design_1_axi_timer_0_10         |         1|
+|13    |design_1_Speedsensor_0_12       |         1|
+|14    |design_1_axi_gpio_0_11          |         1|
+|15    |design_1_axi_timer_0_11         |         1|
+|16    |design_1_Speedsensor_0_13       |         1|
+|17    |design_1_axi_gpio_0_12          |         1|
+|18    |design_1_axi_timer_0_12         |         1|
+|19    |design_1_HC_SR04_0_1            |         1|
+|20    |design_1_HC_SR04_0_2            |         1|
 +------+--------------------------------+----------+
 
 Report Cell Usage: 
@@ -736,46 +762,51 @@ Report Cell Usage:
 +------+-------------------------------------+------+
 |1     |design_1_HC_SR04_0_1_bbox            |     1|
 |2     |design_1_HC_SR04_0_2_bbox            |     1|
-|3     |design_1_Speedsensor_0_10_bbox       |     1|
-|4     |design_1_Speedsensor_0_1_bbox        |     1|
-|5     |design_1_Speedsensor_0_8_bbox        |     1|
-|6     |design_1_Speedsensor_0_9_bbox        |     1|
+|3     |design_1_Speedsensor_0_11_bbox       |     1|
+|4     |design_1_Speedsensor_0_12_bbox       |     1|
+|5     |design_1_Speedsensor_0_13_bbox       |     1|
+|6     |design_1_Speedsensor_0_1_bbox        |     1|
 |7     |design_1_auto_pc_0_bbox              |     1|
 |8     |design_1_axi_gpio_0_0_bbox           |     1|
-|9     |design_1_axi_gpio_0_7_bbox           |     1|
-|10    |design_1_axi_gpio_0_8_bbox           |     1|
-|11    |design_1_axi_gpio_0_9_bbox           |     1|
-|12    |design_1_axi_timer_0_0_bbox          |     1|
-|13    |design_1_axi_timer_0_7_bbox          |     1|
-|14    |design_1_axi_timer_0_8_bbox          |     1|
-|15    |design_1_axi_timer_0_9_bbox          |     1|
-|16    |design_1_clk_wiz_0_0_bbox            |     1|
-|17    |design_1_processing_system7_0_0_bbox |     1|
-|18    |design_1_rst_ps7_0_100M_0_bbox       |     1|
-|19    |design_1_xbar_0_bbox                 |     1|
-|20    |IBUF                                 |     6|
-|21    |OBUF                                 |    14|
+|9     |design_1_axi_gpio_0_10_bbox          |     1|
+|10    |design_1_axi_gpio_0_11_bbox          |     1|
+|11    |design_1_axi_gpio_0_12_bbox          |     1|
+|12    |design_1_axi_iic_0_0_bbox            |     1|
+|13    |design_1_axi_timer_0_0_bbox          |     1|
+|14    |design_1_axi_timer_0_10_bbox         |     1|
+|15    |design_1_axi_timer_0_11_bbox         |     1|
+|16    |design_1_axi_timer_0_12_bbox         |     1|
+|17    |design_1_clk_wiz_0_0_bbox            |     1|
+|18    |design_1_processing_system7_0_0_bbox |     1|
+|19    |design_1_rst_ps7_0_100M_0_bbox       |     1|
+|20    |design_1_xbar_0_bbox                 |     1|
+|21    |IBUF                                 |     6|
+|22    |IOBUF                                |     2|
+|23    |OBUF                                 |    14|
 +------+-------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:40 . Memory (MB): peak = 1481.262 ; gain = 572.281
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:07 ; elapsed = 00:00:22 . Memory (MB): peak = 1520.816 ; gain = 609.477
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 31 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:37 . Memory (MB): peak = 1481.262 ; gain = 572.281
-Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:41 . Memory (MB): peak = 1481.262 ; gain = 572.281
+Synthesis finished with 0 errors, 0 critical warnings and 33 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 1520.816 ; gain = 575.113
+Synthesis Optimization Complete : Time (s): cpu = 00:00:07 ; elapsed = 00:00:22 . Memory (MB): peak = 1520.816 ; gain = 609.477
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 1481.262 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1520.816 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1481.262 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1520.816 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
 
-Synth Design complete | Checksum: cdd11722
+Synth Design complete | Checksum: bf66244d
 INFO: [Common 17-83] Releasing license: Synthesis
-110 Infos, 121 Warnings, 0 Critical Warnings and 0 Errors encountered.
+132 Infos, 121 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:48 . Memory (MB): peak = 1481.262 ; gain = 995.789
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1481.262 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:27 . Memory (MB): peak = 1520.816 ; gain = 1034.098
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1520.816 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Apr 26 09:25:23 2024...
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 26 10:36:09 2024...

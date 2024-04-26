@@ -1,79 +1,87 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.717936",
-   "Default View_TopLeft":"-219,482",
+   "Default View_ScaleFactor":"0.556062",
+   "Default View_TopLeft":"-1208,4",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
 #  -string -flagsOSRD
-preplace port Direction_0 -pg 1 -lvl 4 -x 1150 -y 650 -defaultsOSRD
-preplace port DDR -pg 1 -lvl 4 -x 1150 -y 930 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 4 -x 1150 -y 960 -defaultsOSRD
-preplace port Direction_1 -pg 1 -lvl 4 -x 1150 -y 560 -defaultsOSRD
-preplace port Direction_2 -pg 1 -lvl 4 -x 1150 -y 590 -defaultsOSRD
-preplace port Direction_3 -pg 1 -lvl 4 -x 1150 -y 620 -defaultsOSRD
-preplace port port-id_SpeedClockData_0 -pg 1 -lvl 0 -x 0 -y 110 -defaultsOSRD
-preplace port port-id_sonar_trig_0 -pg 1 -lvl 4 -x 1150 -y 1060 -defaultsOSRD
-preplace port port-id_sonar_echo_0 -pg 1 -lvl 0 -x 0 -y 1100 -defaultsOSRD
-preplace port port-id_sonar_trig_1 -pg 1 -lvl 4 -x 1150 -y 1090 -defaultsOSRD
-preplace port port-id_sonar_echo_1 -pg 1 -lvl 0 -x 0 -y 1130 -defaultsOSRD
-preplace port port-id_clk_in1_0 -pg 1 -lvl 0 -x 0 -y 140 -defaultsOSRD
-preplace port port-id_PWM_0 -pg 1 -lvl 4 -x 1150 -y 770 -defaultsOSRD
-preplace port port-id_PWM_3 -pg 1 -lvl 4 -x 1150 -y 740 -defaultsOSRD
-preplace port port-id_PWM_2 -pg 1 -lvl 4 -x 1150 -y 710 -defaultsOSRD
-preplace port port-id_PWM_1 -pg 1 -lvl 4 -x 1150 -y 680 -defaultsOSRD
-preplace port port-id_SpeedClockData_3 -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
-preplace port port-id_SpeedClockData_2 -pg 1 -lvl 0 -x 0 -y 50 -defaultsOSRD
-preplace port port-id_SpeedClockData_1 -pg 1 -lvl 0 -x 0 -y 20 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 1 -x 220 -y 990 -defaultsOSRD
-preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 220 -y 1250 -defaultsOSRD
-preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 570 -y 560 -defaultsOSRD
-preplace inst Ultrasone -pg 1 -lvl 3 -x 960 -y 1080 -defaultsOSRD
-preplace inst clk_wiz_0 -pg 1 -lvl 2 -x 570 -y 140 -defaultsOSRD
-preplace inst Motors -pg 1 -lvl 3 -x 960 -y 650 -defaultsOSRD
-preplace netloc HC_SR04_0_sonar_trig 1 3 1 1100J 1060n
-preplace netloc HC_SR04_1_sonar_trig 1 3 1 NJ 1090
-preplace netloc Motor_0_PWM 1 3 1 1100J 720n
-preplace netloc Motor_1_PWM 1 3 1 1130J 660n
-preplace netloc Motor_2_PWM 1 3 1 1120J 680n
-preplace netloc Motor_3_PWM 1 3 1 1110J 700n
-preplace netloc SpeedClockData_0_1 1 0 3 NJ 110 420J 80 760J
-preplace netloc SpeedClockData_0_3_1 1 0 3 NJ 80 400J 70 780J
-preplace netloc SpeedClockData_0_4_1 1 0 3 NJ 50 NJ 50 810J
-preplace netloc SpeedClockData_0_5_1 1 0 3 NJ 20 NJ 20 820J
-preplace netloc clk_1_1 1 2 1 730 140n
-preplace netloc clk_in1_0_1 1 0 2 NJ 140 NJ
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 30 1140 420 970 790
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 40 1150 400
-preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 2 430 980 800
-preplace netloc sonar_echo_0_1 1 0 3 NJ 1100 NJ 1100 710J
-preplace netloc sonar_echo_1_1 1 0 3 NJ 1130 NJ 1130 820J
-preplace netloc Motor_1_Direction 1 3 1 1130J 560n
-preplace netloc Motor_2_Direction 1 3 1 1130J 590n
-preplace netloc Motor_3_Direction 1 3 1 NJ 620
-preplace netloc axi_gpio_0_GPIO 1 3 1 1130J 640n
-preplace netloc processing_system7_0_DDR 1 1 3 NJ 940 NJ 940 1130J
-preplace netloc processing_system7_0_FIXED_IO 1 1 3 NJ 960 NJ 960 NJ
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 400 240n
-preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 800 430n
-preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 770 450n
-preplace netloc ps7_0_axi_periph_M02_AXI 1 2 1 710 470n
-preplace netloc ps7_0_axi_periph_M03_AXI 1 2 1 N 490
-preplace netloc ps7_0_axi_periph_M04_AXI 1 2 1 N 510
-preplace netloc ps7_0_axi_periph_M05_AXI 1 2 1 720 470n
-preplace netloc ps7_0_axi_periph_M06_AXI 1 2 1 N 550
-preplace netloc ps7_0_axi_periph_M07_AXI 1 2 1 N 570
-preplace netloc ps7_0_axi_periph_M08_AXI 1 2 1 740 530n
-preplace netloc ps7_0_axi_periph_M09_AXI 1 2 1 N 610
-preplace netloc ps7_0_axi_periph_M10_AXI 1 2 1 N 630
-preplace netloc ps7_0_axi_periph_M11_AXI 1 2 1 750 590n
-preplace netloc ps7_0_axi_periph_M12_AXI 1 2 1 720 670n
-preplace netloc ps7_0_axi_periph_M13_AXI 1 2 1 710 690n
-levelinfo -pg 1 0 220 570 960 1150
-pagesize -pg 1 -db -bbox -sgen -170 0 1290 1350
+preplace port Direction_0 -pg 1 -lvl 5 -x 1480 -y 600 -defaultsOSRD
+preplace port DDR -pg 1 -lvl 5 -x 1480 -y 240 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 5 -x 1480 -y 270 -defaultsOSRD
+preplace port Direction_1 -pg 1 -lvl 5 -x 1480 -y 690 -defaultsOSRD
+preplace port Direction_2 -pg 1 -lvl 5 -x 1480 -y 630 -defaultsOSRD
+preplace port Direction_3 -pg 1 -lvl 5 -x 1480 -y 660 -defaultsOSRD
+preplace port IIC_0 -pg 1 -lvl 5 -x 1480 -y 1000 -defaultsOSRD
+preplace port port-id_SpeedClockData_0 -pg 1 -lvl 0 -x 0 -y 180 -defaultsOSRD
+preplace port port-id_sonar_trig_0 -pg 1 -lvl 5 -x 1480 -y 120 -defaultsOSRD
+preplace port port-id_sonar_echo_0 -pg 1 -lvl 0 -x 0 -y 90 -defaultsOSRD
+preplace port port-id_sonar_trig_1 -pg 1 -lvl 5 -x 1480 -y 150 -defaultsOSRD
+preplace port port-id_sonar_echo_1 -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
+preplace port port-id_clk_in1_0 -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
+preplace port port-id_PWM_0 -pg 1 -lvl 5 -x 1480 -y 720 -defaultsOSRD
+preplace port port-id_PWM_3 -pg 1 -lvl 5 -x 1480 -y 780 -defaultsOSRD
+preplace port port-id_PWM_2 -pg 1 -lvl 5 -x 1480 -y 750 -defaultsOSRD
+preplace port port-id_PWM_1 -pg 1 -lvl 5 -x 1480 -y 810 -defaultsOSRD
+preplace port port-id_SpeedClockData_3 -pg 1 -lvl 0 -x 0 -y 240 -defaultsOSRD
+preplace port port-id_SpeedClockData_2 -pg 1 -lvl 0 -x 0 -y 210 -defaultsOSRD
+preplace port port-id_SpeedClockData_1 -pg 1 -lvl 0 -x 0 -y 150 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -x 420 -y 290 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 2 -x 420 -y 530 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 3 -x 800 -y 680 -defaultsOSRD
+preplace inst Ultrasone -pg 1 -lvl 4 -x 1300 -y 130 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 3 -x 800 -y 60 -defaultsOSRD
+preplace inst axi_iic_0 -pg 1 -lvl 4 -x 1300 -y 1020 -defaultsOSRD
+preplace inst Motors -pg 1 -lvl 4 -x 1300 -y 700 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 1 -x 110 -y 340 -defaultsOSRD
+preplace netloc HC_SR04_0_sonar_trig 1 4 1 NJ 120
+preplace netloc HC_SR04_1_sonar_trig 1 4 1 1440J 140n
+preplace netloc Motor_0_PWM 1 4 1 NJ 720
+preplace netloc SpeedClockData_0_1 1 0 4 NJ 180 200J 160 NJ 160 1100J
+preplace netloc clk_1_1 1 3 1 1140 60n
+preplace netloc clk_in1_0_1 1 0 3 NJ 60 NJ 60 NJ
+preplace netloc processing_system7_0_FCLK_CLK0 1 1 3 220 420 630 1080 1090
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 2 230 430 610
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 2 2 660 1090 1110
+preplace netloc sonar_echo_0_1 1 0 4 NJ 90 NJ 90 630J 120 1160J
+preplace netloc sonar_echo_1_1 1 0 4 NJ 120 NJ 120 620J 130 1150J
+preplace netloc Motor_1_PWM 1 4 1 1450J 780n
+preplace netloc Motor_2_PWM 1 4 1 1460J 740n
+preplace netloc Motor_3_PWM 1 4 1 1460J 760n
+preplace netloc SpeedClockData_1_1 1 0 4 NJ 150 NJ 150 NJ 150 1080J
+preplace netloc SpeedClockData_2_1 1 0 4 NJ 210 210J 170 NJ 170 1070J
+preplace netloc SpeedClockData_3_1 1 0 4 NJ 240 220J 180 NJ 180 1030J
+preplace netloc xlconcat_0_dout 1 1 1 210 300n
+preplace netloc axi_iic_0_gpo 1 0 5 20 410 NJ 410 650J 280 950J 940 1440
+preplace netloc Motors_Interupts 1 0 5 20 270 200J 400 620J 270 960J 930 1440
+preplace netloc axi_gpio_0_GPIO 1 4 1 1440J 600n
+preplace netloc processing_system7_0_DDR 1 2 3 NJ 240 NJ 240 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 2 3 NJ 260 1120J 270 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 1 640 300n
+preplace netloc ps7_0_axi_periph_M00_AXI 1 3 1 N 540
+preplace netloc ps7_0_axi_periph_M01_AXI 1 3 1 N 560
+preplace netloc ps7_0_axi_periph_M02_AXI 1 3 1 970 520n
+preplace netloc ps7_0_axi_periph_M12_AXI 1 3 1 990 70n
+preplace netloc ps7_0_axi_periph_M13_AXI 1 3 1 1050 90n
+preplace netloc axi_iic_0_IIC 1 4 1 NJ 1000
+preplace netloc ps7_0_axi_periph_M14_AXI 1 3 1 940 820n
+preplace netloc Motor_1_Direction 1 4 1 1440J 680n
+preplace netloc Motor_2_Direction 1 4 1 1440J 630n
+preplace netloc Motor_3_Direction 1 4 1 NJ 660
+preplace netloc ps7_0_axi_periph_M03_AXI 1 3 1 1000 600n
+preplace netloc ps7_0_axi_periph_M04_AXI 1 3 1 970 620n
+preplace netloc ps7_0_axi_periph_M05_AXI 1 3 1 1020 640n
+preplace netloc ps7_0_axi_periph_M06_AXI 1 3 1 1010 600n
+preplace netloc ps7_0_axi_periph_M07_AXI 1 3 1 1060 620n
+preplace netloc ps7_0_axi_periph_M08_AXI 1 3 1 980 580n
+preplace netloc ps7_0_axi_periph_M09_AXI 1 3 1 1120 660n
+preplace netloc ps7_0_axi_periph_M10_AXI 1 3 1 1130 680n
+preplace netloc ps7_0_axi_periph_M11_AXI 1 3 1 1040 640n
+levelinfo -pg 1 0 110 420 800 1300 1480
+pagesize -pg 1 -db -bbox -sgen -170 0 1610 1100
 "
 }
 {
-   "da_axi4_cnt":"23",
+   "da_axi4_cnt":"33",
    "da_board_cnt":"9",
    "da_ps7_cnt":"1"
 }
