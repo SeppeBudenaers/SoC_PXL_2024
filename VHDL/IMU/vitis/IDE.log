@@ -377,3 +377,131 @@ con
 
 12:01:31 INFO  : Launch script is exported to file 'C:\02_PXL\SoC_PXL_2024\VHDL\IMU\vitis\IMU_TEST_system\_ide\scripts\debugger_imu_test-default.tcl'
 12:05:15 INFO  : Disconnected from the channel tcfchan#9.
+13:12:11 DEBUG : Logs will be stored at 'C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IDE.log'.
+13:12:12 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\02_PXL\SoC_PXL_2024\VHDL\IMU\vitis\temp_xsdb_launch_script.tcl
+13:12:16 INFO  : XSCT server has started successfully.
+13:12:16 INFO  : Successfully done setting XSCT server connection channel  
+13:12:16 INFO  : plnx-install-location is set to ''
+13:12:16 INFO  : Successfully done setting workspace for the tool. 
+13:13:23 DEBUG : Logs will be stored at 'C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IDE.log'.
+13:13:24 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\02_PXL\SoC_PXL_2024\VHDL\IMU\vitis\temp_xsdb_launch_script.tcl
+13:13:27 INFO  : XSCT server has started successfully.
+13:13:27 INFO  : plnx-install-location is set to ''
+13:13:27 INFO  : Successfully done setting XSCT server connection channel  
+13:13:27 INFO  : Successfully done setting workspace for the tool. 
+13:13:28 INFO  : Platform repository initialization has completed.
+13:13:28 INFO  : Registering command handlers for Vitis TCF services
+13:13:32 INFO  : Successfully done query RDI_DATADIR 
+13:17:20 INFO  : Result from executing command 'getProjects': IMU
+13:17:20 INFO  : Result from executing command 'getPlatforms': IMU|C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/IMU.xpfm
+13:18:09 INFO  : Checking for BSP changes to sync application flags for project 'IMU_TEST'...
+13:18:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:18:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+13:18:10 ERROR : null
+13:18:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:18:21 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+13:18:21 INFO  : 'jtag frequency' command is executed.
+13:18:21 INFO  : Context for 'APU' is selected.
+13:18:21 INFO  : System reset is completed.
+13:18:24 INFO  : 'after 3000' command is executed.
+13:18:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+13:18:26 INFO  : Device configured successfully with "C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST/_ide/bitstream/IMU.bit"
+13:18:26 INFO  : Context for 'APU' is selected.
+13:18:26 INFO  : Hardware design and registers information is loaded from 'C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa'.
+13:18:26 INFO  : 'configparams force-mem-access 1' command is executed.
+13:18:26 INFO  : Context for 'APU' is selected.
+13:18:26 INFO  : Sourcing of 'C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST/_ide/psinit/ps7_init.tcl' is done.
+13:18:27 INFO  : 'ps7_init' command is executed.
+13:18:27 INFO  : 'ps7_post_config' command is executed.
+13:18:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:18:27 INFO  : The application 'C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST/Debug/IMU_TEST.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:18:27 INFO  : 'configparams force-mem-access 0' command is executed.
+13:18:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST/_ide/bitstream/IMU.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST/Debug/IMU_TEST.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:18:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:18:27 INFO  : 'con' command is executed.
+13:18:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:18:27 INFO  : Launch script is exported to file 'C:\02_PXL\SoC_PXL_2024\VHDL\IMU\vitis\IMU_TEST_system\_ide\scripts\debugger_imu_test-default.tcl'
+13:20:09 INFO  : Checking for BSP changes to sync application flags for project 'IMU_TEST'...
+13:20:15 INFO  : Disconnected from the channel tcfchan#2.
+13:20:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:20:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+13:20:25 ERROR : Could not find Jtag device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+13:20:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:20:45 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+13:20:45 INFO  : 'jtag frequency' command is executed.
+13:20:45 INFO  : Context for 'APU' is selected.
+13:20:45 INFO  : System reset is completed.
+13:20:48 INFO  : 'after 3000' command is executed.
+13:20:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+13:20:51 INFO  : Device configured successfully with "C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST/_ide/bitstream/IMU.bit"
+13:20:51 INFO  : Context for 'APU' is selected.
+13:20:51 INFO  : Hardware design and registers information is loaded from 'C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa'.
+13:20:51 INFO  : 'configparams force-mem-access 1' command is executed.
+13:20:51 INFO  : Context for 'APU' is selected.
+13:20:51 INFO  : Sourcing of 'C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST/_ide/psinit/ps7_init.tcl' is done.
+13:20:51 INFO  : 'ps7_init' command is executed.
+13:20:51 INFO  : 'ps7_post_config' command is executed.
+13:20:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:20:51 INFO  : The application 'C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST/Debug/IMU_TEST.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:20:51 INFO  : 'configparams force-mem-access 0' command is executed.
+13:20:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST/_ide/bitstream/IMU.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST/Debug/IMU_TEST.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:20:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:20:51 INFO  : 'con' command is executed.
+13:20:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:20:51 INFO  : Launch script is exported to file 'C:\02_PXL\SoC_PXL_2024\VHDL\IMU\vitis\IMU_TEST_system\_ide\scripts\debugger_imu_test-default.tcl'

@@ -1,4 +1,4 @@
-12:01:17 **** Incremental Build of configuration Debug for project IMU_TEST ****
+13:20:09 **** Incremental Build of configuration Debug for project IMU_TEST ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -7,16 +7,6 @@ make --no-print-directory main-build
 'Building file: ../src/helloworld.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/sw/IMU/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'getAngle':
-../src/helloworld.c:46:12: warning: unused variable 'z' [-Wunused-variable]
-   46 |     double z = Az;
-      |            ^
-../src/helloworld.c:45:12: warning: unused variable 'y' [-Wunused-variable]
-   45 |     double y = Ay;
-      |            ^
-../src/helloworld.c:44:12: warning: unused variable 'x' [-Wunused-variable]
-   44 |     double x = Ax;
-      |            ^
 ../src/helloworld.c: In function 'main':
 ../src/helloworld.c:58:22: warning: variable 'result' set but not used [-Wunused-but-set-variable]
    58 |         unsigned int result;
@@ -25,15 +15,15 @@ arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcp
 ' '
 'Building target: IMU_TEST.elf'
 'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/sw/IMU/standalone_ps7_cortexa9_0/bsplib/lib -o "IMU_TEST.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/sw/IMU/standalone_ps7_cortexa9_0/bsplib/lib -o "IMU_TEST.elf"  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 'Finished building target: IMU_TEST.elf'
 ' '
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size IMU_TEST.elf  |tee "IMU_TEST.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  53115	   2560	  22728	  78403	  13243	IMU_TEST.elf
+  54099	   2560	  22728	  79387	  1361b	IMU_TEST.elf
 'Finished building: IMU_TEST.elf.size'
 ' '
 
-12:01:17 Build Finished (took 768ms)
+13:20:10 Build Finished (took 776ms)
 

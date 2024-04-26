@@ -45,8 +45,8 @@ void getAngle(int Ax,int Ay,int Az)
     double y = Ay;
     double z = Az;
 
-//    pitch = atan(x/sqrt((y*y) + (z*z))); //pitch calculation
-//    roll = atan(y/sqrt((x*x) + (z*z))); //roll calculation
+    pitch = atan(x/sqrt((y*y) + (z*z))); //pitch calculation
+    roll = atan(y/sqrt((x*x) + (z*z))); //roll calculation
 
     //converting radians into degrees
     pitch = pitch * (180.0/3.14);
@@ -104,11 +104,11 @@ int main()
         getAngle(AcX,AcY,AcZ);
 
         //printing values to serial port
-//        printf("Angle: Pitch = %.2f Roll = %.2f\n\r", pitch, roll);
+        printf("Angle: Pitch = %.2f Roll = %.2f\n\r", pitch, roll);
         printf("Accelerometer: X = %d Y = %d Z = %d\n\r", (AcX + AcXcal), (AcY + AcYcal), (AcZ + AcZcal));
         printf("Temperature in celsius = %.2f\n\r", t);
         printf("Gyroscope: X = %d Y = %d Z = %d\n\r", (GyX + GyXcal), (GyY + GyYcal), (GyZ + GyZcal));
-
+        printf("\033[H");
 
     	sleep(1);
     }

@@ -6547,3 +6547,3920 @@ Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.]. Thread: 
 
 !ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 12:05:15.405
 !MESSAGE XSCT command with result: [disconnect tcfchan#9], Result: [null, ]. Thread: Thread-1077
+!SESSION 2024-04-26 13:11:36.961 -----------------------------------------------
+eclipse.buildId=2023.2
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2024-04-26 13:12:09.449
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY org.eclipse.ui 4 4 2024-04-26 13:12:13.346
+!MESSAGE To avoid deadlock while executing Display.syncExec() with argument: org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator$1@3f33cded, thread Worker-2: Decoration Calculation will interrupt UI thread.
+!SUBENTRY 1 org.eclipse.ui 4 4 2024-04-26 13:12:13.346
+!MESSAGE Worker-2: Decoration Calculation thread is an instance of Worker or owns an ILock
+!STACK 0
+java.lang.IllegalStateException: Call stack for thread Worker-2: Decoration Calculation
+	at java.management@11.0.16.1/sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at java.management@11.0.16.1/sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:485)
+	at org.eclipse.ui.internal.UILockListener.reportInterruption(UILockListener.java:209)
+	at org.eclipse.ui.internal.UILockListener.interruptUI(UILockListener.java:179)
+	at org.eclipse.ui.internal.PendingSyncExec.waitUntilExecuted(PendingSyncExec.java:92)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:142)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4561)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.ensureFontAndColorsCreated(GitLightweightDecorator.java:130)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.<init>(GitLightweightDecorator.java:110)
+	at java.base@11.0.16.1/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base@11.0.16.1/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base@11.0.16.1/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base@11.0.16.1/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:204)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:923)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.lambda$0(WorkbenchPlugin.java:286)
+	at org.eclipse.ui.internal.WorkbenchPlugin$$Lambda$541/0x000000005ab07500.run(Unknown Source)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:284)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition$1.run(LightweightDecoratorDefinition.java:123)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.internalGetDecorator(LightweightDecoratorDefinition.java:119)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:237)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:386)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:362)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.ui 4 4 2024-04-26 13:12:13.346
+!MESSAGE UI thread waiting on a job or lock.
+!STACK 0
+java.lang.IllegalStateException: Call stack for thread main
+	at java.base@11.0.16.1/java.lang.Object.wait(Native Method)
+	at org.eclipse.core.internal.jobs.Semaphore.acquire(Semaphore.java:44)
+	at org.eclipse.core.internal.jobs.OrderedLock.doAcquire(OrderedLock.java:173)
+	at org.eclipse.core.internal.jobs.OrderedLock.acquire(OrderedLock.java:109)
+	at org.eclipse.core.internal.jobs.OrderedLock.acquire(OrderedLock.java:85)
+	at org.eclipse.core.internal.resources.WorkManager.checkIn(WorkManager.java:125)
+	at org.eclipse.core.internal.resources.Workspace.prepareOperation(Workspace.java:2242)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1549)
+	at org.eclipse.core.internal.resources.File.refreshLocal(File.java:314)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper.createPlatformResourceInputStream(PlatformResourceURIHandlerImpl.java:206)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl.createInputStream(PlatformResourceURIHandlerImpl.java:568)
+	at org.eclipse.emf.ecore.resource.impl.ExtensibleURIConverterImpl.createInputStream(ExtensibleURIConverterImpl.java:358)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1314)
+	at com.xilinx.sdx.system.core.SystemProjectHelper$1.findSettings(SystemProjectHelper.java:82)
+	at com.xilinx.sdx.core.project.SDXProjectManager.internalGetProjectSettings(SDXProjectManager.java:293)
+	at com.xilinx.sdx.core.project.SDXProjectManager.getProjectSettings(SDXProjectManager.java:287)
+	at com.xilinx.sdx.system.core.SystemProjectHelper.getSystemProject(SystemProjectHelper.java:125)
+	at com.xilinx.sdx.system.core.SystemProjectHelper.getActiveConfigApplications(SystemProjectHelper.java:211)
+	at com.xilinx.sdx.system.explorer.SystemProjectLabelProvider.getImage(SystemProjectLabelProvider.java:91)
+	at org.eclipse.ui.internal.navigator.extensions.SafeDelegateCommonLabelProvider.getImage(SafeDelegateCommonLabelProvider.java:112)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceLabelProvider.findImage(NavigatorContentServiceLabelProvider.java:204)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceLabelProvider.getColumnImage(NavigatorContentServiceLabelProvider.java:112)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceLabelProvider.getImage(NavigatorContentServiceLabelProvider.java:104)
+	at org.eclipse.ui.internal.navigator.NavigatorDecoratingLabelProvider$StyledLabelProviderAdapter.getImage(NavigatorDecoratingLabelProvider.java:63)
+	at org.eclipse.jface.viewers.DelegatingStyledCellLabelProvider.getImage(DelegatingStyledCellLabelProvider.java:198)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider.getImage(DecoratingStyledCellLabelProvider.java:171)
+	at org.eclipse.jface.viewers.DelegatingStyledCellLabelProvider.update(DelegatingStyledCellLabelProvider.java:124)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider.update(DecoratingStyledCellLabelProvider.java:134)
+	at org.eclipse.jface.viewers.ViewerColumn.refresh(ViewerColumn.java:144)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:954)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$UpdateItemSafeRunnable.run(AbstractTreeViewer.java:121)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.JFaceUtil.lambda$0(JFaceUtil.java:47)
+	at org.eclipse.ui.internal.JFaceUtil$$Lambda$77/0x0000000050ff3440.run(Unknown Source)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:1032)
+	at org.eclipse.jface.viewers.StructuredViewer$UpdateItemSafeRunnable.run(StructuredViewer.java:427)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.JFaceUtil.lambda$0(JFaceUtil.java:47)
+	at org.eclipse.ui.internal.JFaceUtil$$Lambda$77/0x0000000050ff3440.run(Unknown Source)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.updateItem(StructuredViewer.java:2108)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createTreeItem(AbstractTreeViewer.java:848)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:826)
+	at org.eclipse.jface.viewers.TreeViewer.createChildren(TreeViewer.java:604)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:774)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalInitializeTree(AbstractTreeViewer.java:1594)
+	at org.eclipse.jface.viewers.TreeViewer.internalInitializeTree(TreeViewer.java:780)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.lambda$1(AbstractTreeViewer.java:1579)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$$Lambda$522/0x000000005a2a2c40.run(Unknown Source)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1397)
+	at org.eclipse.jface.viewers.TreeViewer.preservingSelection(TreeViewer.java:363)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1358)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.inputChanged(AbstractTreeViewer.java:1573)
+	at org.eclipse.jface.viewers.ContentViewer.setInput(ContentViewer.java:282)
+	at org.eclipse.jface.viewers.StructuredViewer.setInput(StructuredViewer.java:1631)
+	at org.eclipse.ui.navigator.CommonNavigator.createPartControl(CommonNavigator.java:205)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:154)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.createPartControl(CompatibilityView.java:155)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:361)
+	at java.base@11.0.16.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.16.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.16.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.16.1/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1002)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:967)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:408)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:331)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1002)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:547)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:531)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:73)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1002)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.createElement(PartServiceImpl.java:1309)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1270)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(WorkbenchPartReference.java:396)
+	at org.eclipse.ui.internal.ViewReference.getView(ViewReference.java:88)
+	at com.xilinx.ide.application.ui.ApplicationWorkbenchWindowAdvisor.setLinkingEnabledForExplorers(ApplicationWorkbenchWindowAdvisor.java:201)
+	at com.xilinx.ide.application.ui.ApplicationWorkbenchWindowAdvisor.postWindowOpen(ApplicationWorkbenchWindowAdvisor.java:120)
+	at org.eclipse.ui.internal.WorkbenchWindow.fireWindowOpened(WorkbenchWindow.java:1803)
+	at org.eclipse.ui.internal.Workbench.createWorkbenchWindow(Workbench.java:1516)
+	at org.eclipse.ui.internal.Workbench.openWorkbenchWindow(Workbench.java:2524)
+	at org.eclipse.ui.internal.Workbench.getWorkbenchPage(Workbench.java:1995)
+	at org.eclipse.ui.internal.Workbench.setReference(Workbench.java:2040)
+	at org.eclipse.ui.internal.Workbench.lambda$11(Workbench.java:1931)
+	at org.eclipse.ui.internal.Workbench$$Lambda$290/0x0000000055e8c440.handleEvent(Unknown Source)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$$Lambda$297/0x0000000055e884a8.run(Unknown Source)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4561)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.basic.impl.PartImpl.setContext(PartImpl.java:469)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:637)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:547)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:531)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:73)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1002)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1297)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:105)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:680)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:148)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:148)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:51)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:82)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:105)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:64)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:680)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:148)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:666)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1086)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.ui.internal.Workbench$$Lambda$234/0x00000000552920a8.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:80)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base@11.0.16.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.16.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.16.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.16.1/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at app//org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at app//org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:12:16.058
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:12:16.059
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:12:16.068
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:12:16.068
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:12:16.069
+!MESSAGE XSCT Command: [setws C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:12:16.071
+!MESSAGE XSCT command with result: [setws C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis], Result: [null, ]. Thread: Thread-18
+!SESSION 2024-04-26 13:13:16.373 -----------------------------------------------
+eclipse.buildId=2023.2
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2024-04-26 13:13:22.590
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:13:27.162
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:13:27.162
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-22
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:13:27.170
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:13:27.170
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-22
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:13:27.172
+!MESSAGE XSCT Command: [setws C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis], Thread: Thread-22
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:13:27.178
+!MESSAGE XSCT command with result: [setws C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis], Result: [null, ]. Thread: Thread-22
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:13:28.360
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-04-26 13:13:31.996
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-04-26 13:13:31.997
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-04-26 13:13:31.997
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:13:32.719
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:13:32.720
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:13:32.721
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/Vitis/2023.2/data]. Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:05.978
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa], Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:07.903
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa], Result: [null, ]. Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:07.904
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa], Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:07.906
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa], Result: [null, {"device": "7z020",
+"family": "zynq",
+"timestamp": "Fri Apr 26 10:24:44 2024",
+"vivado_version": "2023.2",
+"part": "xc7z020clg400-1",
+}]. Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:07.997
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa], Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.006
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa], Result: [null, {"axi_iic_0": {"hier_name": "axi_iic_0",
+"type": "axi_iic",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"processing_system7_0": {"hier_name": "processing_system7_0",
+"type": "processing_system7",
+"version": "5.5",
+"ip_type": "",
+},
+"ps7_0_axi_periph": {"hier_name": "ps7_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"rst_ps7_0_50M": {"hier_name": "rst_ps7_0_50M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"ps7_clockc_0": {"hier_name": "ps7_clockc_0",
+"type": "ps7_clockc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_uart_0": {"hier_name": "ps7_uart_0",
+"type": "ps7_uart",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pl310_0": {"hier_name": "ps7_pl310_0",
+"type": "ps7_pl310",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pmu_0": {"hier_name": "ps7_pmu_0",
+"type": "ps7_pmu",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_0": {"hier_name": "ps7_qspi_0",
+"type": "ps7_qspi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_linear_0": {"hier_name": "ps7_qspi_linear_0",
+"type": "ps7_qspi_linear",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_axi_interconnect_0": {"hier_name": "ps7_axi_interconnect_0",
+"type": "ps7_axi_interconnect",
+"version": "1.00.a",
+"ip_type": "BUS",
+},
+"ps7_cortexa9_0": {"hier_name": "ps7_cortexa9_0",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_cortexa9_1": {"hier_name": "ps7_cortexa9_1",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_ddr_0": {"hier_name": "ps7_ddr_0",
+"type": "ps7_ddr",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ethernet_0": {"hier_name": "ps7_ethernet_0",
+"type": "ps7_ethernet",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_usb_0": {"hier_name": "ps7_usb_0",
+"type": "ps7_usb",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_sd_0": {"hier_name": "ps7_sd_0",
+"type": "ps7_sdio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpio_0": {"hier_name": "ps7_gpio_0",
+"type": "ps7_gpio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ddrc_0": {"hier_name": "ps7_ddrc_0",
+"type": "ps7_ddrc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dev_cfg_0": {"hier_name": "ps7_dev_cfg_0",
+"type": "ps7_dev_cfg",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_xadc_0": {"hier_name": "ps7_xadc_0",
+"type": "ps7_xadc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ocmc_0": {"hier_name": "ps7_ocmc_0",
+"type": "ps7_ocmc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_coresight_comp_0": {"hier_name": "ps7_coresight_comp_0",
+"type": "ps7_coresight_comp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpv_0": {"hier_name": "ps7_gpv_0",
+"type": "ps7_gpv",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuc_0": {"hier_name": "ps7_scuc_0",
+"type": "ps7_scuc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_globaltimer_0": {"hier_name": "ps7_globaltimer_0",
+"type": "ps7_globaltimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_intc_dist_0": {"hier_name": "ps7_intc_dist_0",
+"type": "ps7_intc_dist",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_l2cachec_0": {"hier_name": "ps7_l2cachec_0",
+"type": "ps7_l2cachec",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_s": {"hier_name": "ps7_dma_s",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_iop_bus_config_0": {"hier_name": "ps7_iop_bus_config_0",
+"type": "ps7_iop_bus_config",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ram_0": {"hier_name": "ps7_ram_0",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ram_1": {"hier_name": "ps7_ram_1",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_scugic_0": {"hier_name": "ps7_scugic_0",
+"type": "ps7_scugic",
+"version": "1.00.a",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"ps7_scutimer_0": {"hier_name": "ps7_scutimer_0",
+"type": "ps7_scutimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuwdt_0": {"hier_name": "ps7_scuwdt_0",
+"type": "ps7_scuwdt",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_slcr_0": {"hier_name": "ps7_slcr_0",
+"type": "ps7_slcr",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_ns": {"hier_name": "ps7_dma_ns",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_0": {"hier_name": "ps7_afi_0",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_1": {"hier_name": "ps7_afi_1",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_2": {"hier_name": "ps7_afi_2",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_3": {"hier_name": "ps7_afi_3",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_m_axi_gp0": {"hier_name": "ps7_m_axi_gp0",
+"type": "ps7_m_axi_gp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.010
+!MESSAGE XSCT Command: [::hsi::utils::get_ps_config_params -json C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa], Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.020
+!MESSAGE XSCT command with result: [::hsi::utils::get_ps_config_params -json C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa], Result: [null, {"PCW_APU_PERIPHERAL_FREQMHZ": "650",
+"PCW_DDR_HPRLPR_QUEUE_PARTITION": "HPR(0)/LPR(32)",
+"PCW_DDR_HPR_TO_CRITICAL_PRIORITY_LEVEL": "15",
+"PCW_DDR_LPR_TO_CRITICAL_PRIORITY_LEVEL": "2",
+"PCW_DDR_PORT0_HPR_ENABLE": "0",
+"PCW_DDR_PORT1_HPR_ENABLE": "0",
+"PCW_DDR_PORT2_HPR_ENABLE": "0",
+"PCW_DDR_PORT3_HPR_ENABLE": "0",
+"PCW_DDR_WRITE_TO_CRITICAL_PRIORITY_LEVEL": "2",
+"PCW_FPGA0_PERIPHERAL_FREQMHZ": "100",
+"PCW_UIPARAM_DDR_BUS_WIDTH": "16 Bit",
+"PCW_UIPARAM_DDR_FREQ_MHZ": "525",
+}]. Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.020
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa ps7_cortexa9_0], Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.074
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa ps7_cortexa9_0], Result: [null, {"axi_iic_0": {"GIE": {"description": "Global Interrupt Enable Register",
+"address_offset": "0x1c",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"GIE": {"access": "read-write",
+"bit_offset": "31",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Global Interrupt Enable
+0 - All Interrupts disabled; no interrupt (even if unmasked in IER) possible from AXI IIC core
+1 - Unmasked AXI IIC core interrupts are passed to processor
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810524,
+},
+"ISR": {"description": "Interrupt Status Register",
+"address_offset": "0x020",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"int0": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt0 - Arbitration Lost
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int1": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt1 - Transmit Error/Slave Transmit Complete
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int2": {"access": "read-write",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt2 - Transmit FIFO Empty
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int3": {"access": "read-write",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt3 - Recieve FIFO FULL
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int4": {"access": "read-write",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt4 - IIC Bus is Not Busy
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int5": {"access": "read-write",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt5 - Addressed As Slave
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int6": {"access": "read-write",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt6 - Not Addessed As Slave
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int7": {"access": "read-write",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt7 - Transmit FIFO Half Empty
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810528,
+},
+"IER": {"description": "Interrupt Enable Register",
+"address_offset": "0x028",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"int0": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt0 - Arbitration Lost
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int1": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt1 - Transmit Error/Slave Transmit Complete
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int2": {"access": "read-write",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt2 - Transmit FIFO Empty
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int3": {"access": "read-write",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt3 - Recieve FIFO FULL
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int4": {"access": "read-write",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt4 - IIC Bus is Not Busy
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int5": {"access": "read-write",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt5 - Addressed As Slave
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int6": {"access": "read-write",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt6 - Not Addessed As Slave
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int7": {"access": "read-write",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt7 - Transmit FIFO Half Empty
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810536,
+},
+"SOFTR": {"description": "Soft Reset Register",
+"address_offset": "0x040",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"RKEY": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "Reset Key - Firmware must write a value of 0xA to this field to
+            cause a soft reset of the Interrupt registers of AXI IIC controller.
+            Writing any other value results in an AXI transaction
+            acknowledgement with SLVERR and no reset occurs.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810560,
+},
+"CR": {"description": "Control Register",
+"address_offset": "0x100",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"EN": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This bit must be set before any other CR bits have any effect
+0 - resets and disables the AXI IIC controller but not the registers or FIFOs
+1 - enables the AXI IIC controller
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Reset": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This bit must be set to flush the FIFO if either (a) arbitration is lost or (b) if a transmit error occurs
+0 - transmit FIFO normal operation
+1 - resets the transmit FIFO
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"MSMS": {"access": "read-write",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "When this bit is changed from 0 to 1, the
+AXI IIC bus interface generates a START condition in master mode. When
+this bit is cleared, a STOP condition is generated and the AXI IIC bus
+interface switches to slave mode. When this bit is cleared by the
+hardware, because arbitration for the bus has been lost, a STOP
+condition is not generated
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX": {"access": "read-write",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This bit selects the direction of master/slave transfers.
+0 - selects an AXI IIC receive
+1 - selects an AXI IIC transmit
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TXAK": {"access": "read-write",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This bit specifies the value driven onto
+the sda line during acknowledge cycles for both master and slave recievers.
+0 - acknowledge
+1 - not-acknowledge
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RSTA": {"access": "read-write",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Writing a 1 to this bit generates a repeated START 
+condition on the bus if the AXI IIC bus interface is the current bus
+master. Attempting a repeated START at the wrong time, if the bus is
+owned by another master, results in a loss of arbitration. This bit is reset
+when the repeated start occurs. This bit must be set prior to writing the
+new address to the TX_FIFO or DTR
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"GC_EN": {"access": "read-write",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Setting this bit High allows the AXI IIC to respond to a general call address.
+0 - General Call Disabled
+1 - General Call Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810752,
+},
+"SR": {"description": "Status Register",
+"address_offset": "0x104",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"ABGC": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This bit is set to 1 when another master has issued a general call and
+the general call enable bit is set to 1, CR(6) = 1.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"AAS": {"access": "read-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "When the address on the IIC bus matches the slave address in the Address register (ADR), the IIC bus interface
+is being addressed as a slave and switches to slave mode. If 10-bit addressing is selected this device only responds to a 10-bit
+address or general call if enabled. This bit is cleared when a stop
+condition is detected or a repeated start occurs.
+0 - indicates not being addressed as a slave
+1 - indicates being addressed as a slave
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"BB": {"access": "read-only",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This bit indicates the status of the IIC bus. This bit is set
+when a START condition is detected and cleared when a STOP
+condition is detected.
+0 - indicates the bus is idle
+1 - indicates the bus is busy
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ARW": {"access": "read-only",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "When the IIC bus interface has been addressed as a slave (AAS is set), 
+this bit indicates the value of the read/write bit sent by the master.
+This bit is only valid when a complete transfer has occurred and
+no other transfers have been initiated.
+0 - indicates master writing to slave
+1 - indicates master reading from slave
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Full": {"access": "read-only",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This bit is set High when the transmit FIFO is full.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RX_FIFO_Full": {"access": "read-only",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This bit is set High when the receive FIFO is full.
+This bit is set only when all 16 locations in the FIFO are full,
+regardless of the compare value field of the RX_FIFO_PIRQ register.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RX_FIFO_Empty": {"access": "read-only",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This is set High when the receive FIFO is empty.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Empty": {"access": "read-only",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This is set High when the transmit FIFO is empty.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810756,
+},
+"TX_FIFO": {"description": "Transmit FIFO Register",
+"address_offset": "0x108",
+"access": "write-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"D7_D0": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "If the dynamic stop bit is used and the AXI IIC is a master receiver,
+the value is the number of bytes to receive.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Start": {"access": "write-only",
+"bit_offset": "8",
+"bit_range": "",
+"bit_width": "1",
+"desc": "The dynamic start bit can be used to send a start or repeated start sequence on the
+IIC bus. A start sequence is generated if the MSMS = 0, a
+repeated start sequence is generated if the MSMS = 1.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Stop": {"access": "write-only",
+"bit_offset": "9",
+"bit_range": "",
+"bit_width": "1",
+"desc": "The dynamic stop bit can be used to send an IIC stop
+sequence on the IIC bus after the last byte has been transmitted or received.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810760,
+},
+"RX_FIFO": {"description": "Recieve FIFO Register",
+"address_offset": "0x10C",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"D7_D0": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "IIC Receive Data
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810764,
+},
+"ADR": {"description": "Slave Address Register",
+"address_offset": "0x110",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Slave_Address": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "7",
+"desc": "Address used by the IIC bus interface when in slave mode.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810768,
+},
+"TX_FIFO_OCY": {"description": "Transmit FIFO Occupency Register",
+"address_offset": "0x114",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Occupancy_Value": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "Bit[3] is the MSB. A binary value of 1001 indicates that
+10 locations are full in the FIFO
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810772,
+},
+"RX_FIFO_OCY": {"description": "Recieve FIFO Occupency Register",
+"address_offset": "0x118",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Occupancy_Value": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "Bit[3] is the MSB. A binary value of 1001 indicates that
+10 locations are full in the FIFO
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810776,
+},
+"TEN_ADR": {"description": "Slave Ten Bit Address Register",
+"address_offset": "0x11C",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"MSB_of_Slave_Address": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "3",
+"desc": "Three MSBs of the 10-bit address used by the AXI IIC bus interface when in slave mode.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810780,
+},
+"RX_FIFO_PIRQ": {"description": "Recieve FIFO Programmable Depth Interrupt Register",
+"address_offset": "0x120",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Compare_Value": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "Bit[3] is the MSB. A binary value of 1001 implies that when
+10 locations in the receive FIFO are filled, the receive FIFO
+interrupt is set.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810784,
+},
+"GPO": {"description": "General Purpose Output Register",
+"address_offset": "0x124",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"General_Purpose_Outputs": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "The LSB (Bit[0]) is the first bit populated
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810788,
+},
+"TSUSTA": {"description": "Timing Parameter TSUSTA Register",
+"address_offset": "0x128",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TSUSTA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Setup time for a repeated START condition.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810792,
+},
+"TSUSTO": {"description": "Timing Parameter TSUSTO Register",
+"address_offset": "0x12C",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TSUSTO": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Setup time for a repeated STOP condition.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810796,
+},
+"THDSTA": {"description": "Timing Parameter THDSTA Register",
+"address_offset": "0x130",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"THDSTA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Hold time for a repeated START condition.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810800,
+},
+"TSUDAT": {"description": "Timing Parameter TSUDAT Register",
+"address_offset": "0x134",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TSUDAT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Data Setup time
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810804,
+},
+"TBUF": {"description": "Timing Parameter TBUF Register",
+"address_offset": "0x138",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TBUF": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Bus free time between a STOP and START condition
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810808,
+},
+"THIGH": {"description": "Timing Parameter THIGH Register",
+"address_offset": "0x13C",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"THIGH": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "High Period of the scl clock.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810812,
+},
+"TLOW": {"description": "Timing Parameter TLOW Register",
+"address_offset": "0x140",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TLOW": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Low Period of scl clock.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810816,
+},
+"THDDAT": {"description": "Timing Parameter THDDAT Register",
+"address_offset": "0x144",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"THDDAT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Data Hold time
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810820,
+},
+},
+"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_ethernet_0": {},
+"ps7_globaltimer_0": {},
+"ps7_gpio_0": {},
+"ps7_gpv_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_qspi_0": {},
+"ps7_qspi_linear_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_sd_0": {},
+"ps7_slcr_0": {},
+"ps7_uart_0": {},
+"ps7_usb_0": {},
+"ps7_xadc_0": {},
+}]. Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.076
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa ps7_cortexa9_0], Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.090
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa ps7_cortexa9_0], Result: [null, {"axi_iic_0_S_AXI": {"name": "axi_iic_0",
+"base": "0x41600000",
+"high": "0x4160FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ethernet_0": {"name": "ps7_ethernet_0",
+"base": "0xE000B000",
+"high": "0xE000BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpio_0": {"name": "ps7_gpio_0",
+"base": "0xE000A000",
+"high": "0xE000AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_0": {"name": "ps7_qspi_0",
+"base": "0xE000D000",
+"high": "0xE000DFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_linear_0": {"name": "ps7_qspi_linear_0",
+"base": "0xFC000000",
+"high": "0xFCFFFFFF",
+"size": "16777216",
+"slaveintf": "",
+"type": "FLASH",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_sd_0": {"name": "ps7_sd_0",
+"base": "0xE0100000",
+"high": "0xE0100FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_0": {"name": "ps7_uart_0",
+"base": "0xE0000000",
+"high": "0xE0000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_usb_0": {"name": "ps7_usb_0",
+"base": "0xE0002000",
+"high": "0xE0002FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x1FFFFFFF",
+"size": "535822336",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.091
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa ps7_cortexa9_0 C_DEBUG_ENABLED], Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.093
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa ps7_cortexa9_0 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.094
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.100
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.101
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.103
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.104
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.106
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.107
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa ps7_cortexa9_0 C_FREQ], Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.114
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa ps7_cortexa9_0 C_FREQ], Result: [null, ]. Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.115
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.117
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Result: [null, 650000000]. Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.118
+!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa], Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.128
+!MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa], Result: [null, {"ps7_cortexa9_0": {"bscan": "",
+"index": "0",
+},
+"ps7_cortexa9_1": {"bscan": "",
+"index": "1",
+},
+}]. Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.130
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa ps7_cortexa9_1], Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.153
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa ps7_cortexa9_1], Result: [null, {"axi_iic_0": {"GIE": {"description": "Global Interrupt Enable Register",
+"address_offset": "0x1c",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"GIE": {"access": "read-write",
+"bit_offset": "31",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Global Interrupt Enable
+0 - All Interrupts disabled; no interrupt (even if unmasked in IER) possible from AXI IIC core
+1 - Unmasked AXI IIC core interrupts are passed to processor
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810524,
+},
+"ISR": {"description": "Interrupt Status Register",
+"address_offset": "0x020",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"int0": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt0 - Arbitration Lost
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int1": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt1 - Transmit Error/Slave Transmit Complete
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int2": {"access": "read-write",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt2 - Transmit FIFO Empty
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int3": {"access": "read-write",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt3 - Recieve FIFO FULL
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int4": {"access": "read-write",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt4 - IIC Bus is Not Busy
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int5": {"access": "read-write",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt5 - Addressed As Slave
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int6": {"access": "read-write",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt6 - Not Addessed As Slave
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int7": {"access": "read-write",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt7 - Transmit FIFO Half Empty
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810528,
+},
+"IER": {"description": "Interrupt Enable Register",
+"address_offset": "0x028",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"int0": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt0 - Arbitration Lost
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int1": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt1 - Transmit Error/Slave Transmit Complete
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int2": {"access": "read-write",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt2 - Transmit FIFO Empty
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int3": {"access": "read-write",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt3 - Recieve FIFO FULL
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int4": {"access": "read-write",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt4 - IIC Bus is Not Busy
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int5": {"access": "read-write",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt5 - Addressed As Slave
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int6": {"access": "read-write",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt6 - Not Addessed As Slave
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int7": {"access": "read-write",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt7 - Transmit FIFO Half Empty
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810536,
+},
+"SOFTR": {"description": "Soft Reset Register",
+"address_offset": "0x040",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"RKEY": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "Reset Key - Firmware must write a value of 0xA to this field to
+            cause a soft reset of the Interrupt registers of AXI IIC controller.
+            Writing any other value results in an AXI transaction
+            acknowledgement with SLVERR and no reset occurs.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810560,
+},
+"CR": {"description": "Control Register",
+"address_offset": "0x100",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"EN": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This bit must be set before any other CR bits have any effect
+0 - resets and disables the AXI IIC controller but not the registers or FIFOs
+1 - enables the AXI IIC controller
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Reset": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This bit must be set to flush the FIFO if either (a) arbitration is lost or (b) if a transmit error occurs
+0 - transmit FIFO normal operation
+1 - resets the transmit FIFO
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"MSMS": {"access": "read-write",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "When this bit is changed from 0 to 1, the
+AXI IIC bus interface generates a START condition in master mode. When
+this bit is cleared, a STOP condition is generated and the AXI IIC bus
+interface switches to slave mode. When this bit is cleared by the
+hardware, because arbitration for the bus has been lost, a STOP
+condition is not generated
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX": {"access": "read-write",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This bit selects the direction of master/slave transfers.
+0 - selects an AXI IIC receive
+1 - selects an AXI IIC transmit
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TXAK": {"access": "read-write",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This bit specifies the value driven onto
+the sda line during acknowledge cycles for both master and slave recievers.
+0 - acknowledge
+1 - not-acknowledge
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RSTA": {"access": "read-write",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Writing a 1 to this bit generates a repeated START 
+condition on the bus if the AXI IIC bus interface is the current bus
+master. Attempting a repeated START at the wrong time, if the bus is
+owned by another master, results in a loss of arbitration. This bit is reset
+when the repeated start occurs. This bit must be set prior to writing the
+new address to the TX_FIFO or DTR
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"GC_EN": {"access": "read-write",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Setting this bit High allows the AXI IIC to respond to a general call address.
+0 - General Call Disabled
+1 - General Call Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810752,
+},
+"SR": {"description": "Status Register",
+"address_offset": "0x104",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"ABGC": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This bit is set to 1 when another master has issued a general call and
+the general call enable bit is set to 1, CR(6) = 1.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"AAS": {"access": "read-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "When the address on the IIC bus matches the slave address in the Address register (ADR), the IIC bus interface
+is being addressed as a slave and switches to slave mode. If 10-bit addressing is selected this device only responds to a 10-bit
+address or general call if enabled. This bit is cleared when a stop
+condition is detected or a repeated start occurs.
+0 - indicates not being addressed as a slave
+1 - indicates being addressed as a slave
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"BB": {"access": "read-only",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This bit indicates the status of the IIC bus. This bit is set
+when a START condition is detected and cleared when a STOP
+condition is detected.
+0 - indicates the bus is idle
+1 - indicates the bus is busy
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ARW": {"access": "read-only",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "When the IIC bus interface has been addressed as a slave (AAS is set), 
+this bit indicates the value of the read/write bit sent by the master.
+This bit is only valid when a complete transfer has occurred and
+no other transfers have been initiated.
+0 - indicates master writing to slave
+1 - indicates master reading from slave
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Full": {"access": "read-only",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This bit is set High when the transmit FIFO is full.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RX_FIFO_Full": {"access": "read-only",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This bit is set High when the receive FIFO is full.
+This bit is set only when all 16 locations in the FIFO are full,
+regardless of the compare value field of the RX_FIFO_PIRQ register.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RX_FIFO_Empty": {"access": "read-only",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This is set High when the receive FIFO is empty.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Empty": {"access": "read-only",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This is set High when the transmit FIFO is empty.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810756,
+},
+"TX_FIFO": {"description": "Transmit FIFO Register",
+"address_offset": "0x108",
+"access": "write-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"D7_D0": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "If the dynamic stop bit is used and the AXI IIC is a master receiver,
+the value is the number of bytes to receive.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Start": {"access": "write-only",
+"bit_offset": "8",
+"bit_range": "",
+"bit_width": "1",
+"desc": "The dynamic start bit can be used to send a start or repeated start sequence on the
+IIC bus. A start sequence is generated if the MSMS = 0, a
+repeated start sequence is generated if the MSMS = 1.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Stop": {"access": "write-only",
+"bit_offset": "9",
+"bit_range": "",
+"bit_width": "1",
+"desc": "The dynamic stop bit can be used to send an IIC stop
+sequence on the IIC bus after the last byte has been transmitted or received.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810760,
+},
+"RX_FIFO": {"description": "Recieve FIFO Register",
+"address_offset": "0x10C",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"D7_D0": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "IIC Receive Data
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810764,
+},
+"ADR": {"description": "Slave Address Register",
+"address_offset": "0x110",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Slave_Address": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "7",
+"desc": "Address used by the IIC bus interface when in slave mode.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810768,
+},
+"TX_FIFO_OCY": {"description": "Transmit FIFO Occupency Register",
+"address_offset": "0x114",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Occupancy_Value": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "Bit[3] is the MSB. A binary value of 1001 indicates that
+10 locations are full in the FIFO
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810772,
+},
+"RX_FIFO_OCY": {"description": "Recieve FIFO Occupency Register",
+"address_offset": "0x118",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Occupancy_Value": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "Bit[3] is the MSB. A binary value of 1001 indicates that
+10 locations are full in the FIFO
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810776,
+},
+"TEN_ADR": {"description": "Slave Ten Bit Address Register",
+"address_offset": "0x11C",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"MSB_of_Slave_Address": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "3",
+"desc": "Three MSBs of the 10-bit address used by the AXI IIC bus interface when in slave mode.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810780,
+},
+"RX_FIFO_PIRQ": {"description": "Recieve FIFO Programmable Depth Interrupt Register",
+"address_offset": "0x120",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Compare_Value": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "Bit[3] is the MSB. A binary value of 1001 implies that when
+10 locations in the receive FIFO are filled, the receive FIFO
+interrupt is set.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810784,
+},
+"GPO": {"description": "General Purpose Output Register",
+"address_offset": "0x124",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"General_Purpose_Outputs": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "The LSB (Bit[0]) is the first bit populated
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810788,
+},
+"TSUSTA": {"description": "Timing Parameter TSUSTA Register",
+"address_offset": "0x128",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TSUSTA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Setup time for a repeated START condition.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810792,
+},
+"TSUSTO": {"description": "Timing Parameter TSUSTO Register",
+"address_offset": "0x12C",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TSUSTO": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Setup time for a repeated STOP condition.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810796,
+},
+"THDSTA": {"description": "Timing Parameter THDSTA Register",
+"address_offset": "0x130",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"THDSTA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Hold time for a repeated START condition.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810800,
+},
+"TSUDAT": {"description": "Timing Parameter TSUDAT Register",
+"address_offset": "0x134",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TSUDAT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Data Setup time
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810804,
+},
+"TBUF": {"description": "Timing Parameter TBUF Register",
+"address_offset": "0x138",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TBUF": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Bus free time between a STOP and START condition
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810808,
+},
+"THIGH": {"description": "Timing Parameter THIGH Register",
+"address_offset": "0x13C",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"THIGH": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "High Period of the scl clock.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810812,
+},
+"TLOW": {"description": "Timing Parameter TLOW Register",
+"address_offset": "0x140",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TLOW": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Low Period of scl clock.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810816,
+},
+"THDDAT": {"description": "Timing Parameter THDDAT Register",
+"address_offset": "0x144",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"THDDAT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Data Hold time
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1096810820,
+},
+},
+"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_ethernet_0": {},
+"ps7_globaltimer_0": {},
+"ps7_gpio_0": {},
+"ps7_gpv_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_qspi_0": {},
+"ps7_qspi_linear_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_sd_0": {},
+"ps7_slcr_0": {},
+"ps7_uart_0": {},
+"ps7_usb_0": {},
+"ps7_xadc_0": {},
+}]. Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.154
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa ps7_cortexa9_1], Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.167
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa ps7_cortexa9_1], Result: [null, {"axi_iic_0_S_AXI": {"name": "axi_iic_0",
+"base": "0x41600000",
+"high": "0x4160FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ethernet_0": {"name": "ps7_ethernet_0",
+"base": "0xE000B000",
+"high": "0xE000BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpio_0": {"name": "ps7_gpio_0",
+"base": "0xE000A000",
+"high": "0xE000AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_0": {"name": "ps7_qspi_0",
+"base": "0xE000D000",
+"high": "0xE000DFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_linear_0": {"name": "ps7_qspi_linear_0",
+"base": "0xFC000000",
+"high": "0xFCFFFFFF",
+"size": "16777216",
+"slaveintf": "",
+"type": "FLASH",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_sd_0": {"name": "ps7_sd_0",
+"base": "0xE0100000",
+"high": "0xE0100FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_0": {"name": "ps7_uart_0",
+"base": "0xE0000000",
+"high": "0xE0000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_usb_0": {"name": "ps7_usb_0",
+"base": "0xE0002000",
+"high": "0xE0002FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x1FFFFFFF",
+"size": "535822336",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.168
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa ps7_cortexa9_1 C_DEBUG_ENABLED], Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.170
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa ps7_cortexa9_1 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.171
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.176
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.177
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.183
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.184
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.186
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.186
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa ps7_cortexa9_1 C_FREQ], Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.192
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa ps7_cortexa9_1 C_FREQ], Result: [null, ]. Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.193
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.196
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Result: [null, 650000000]. Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.198
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa ps7_cortexa9_0], Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.201
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa ps7_cortexa9_0], Result: [null, axi_iic_0 ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_ethernet_0 ps7_globaltimer_0 ps7_gpio_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_qspi_0 ps7_qspi_linear_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_sd_0 ps7_slcr_0 ps7_uart_0 ps7_usb_0 ps7_xadc_0]. Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.202
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_files_on_hw C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa bit], Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.212
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_files_on_hw C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa bit], Result: [null, IMU.bit]. Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:08.215
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:09.842
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/sw/IMU/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-7: Build Project
+
+!ENTRY org.eclipse.tcf 4 0 2024-04-26 13:18:10.351
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:10.368
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:10.369
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:10.371
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/sw/IMU/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:10.372
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/sw/IMU/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:10.703
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:10.704
+!MESSAGE XSCT Command: [version -server], Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:10.704
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/sw/IMU/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "9.0",
+}]. Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-04-26 13:18:10.705
+!MESSAGE Generating MD5 hash for file: C:\02_PXL\SoC_PXL_2024\VHDL\IMU\vitis\IMU\export\IMU\sw\IMU\standalone_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:10.711
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/sw/IMU/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:10.716
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2023.2]. Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:10.716
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/sw/IMU/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:10.716
+!MESSAGE XSCT Command: [version], Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:10.717
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2023.2.0
+SW Build 0 on 2023-10-09-15:37:46
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.]. Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:10.720
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:10.730
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:10.731
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:10.746
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:10.751
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:10.756
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:10.757
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:10.772
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:10.773
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:10.781
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:10.782
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:10.796
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:10.799
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:10.813
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:10.814
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:10.829
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-10: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.151
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.152
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.155
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.160
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.161
+!MESSAGE XSCT Command: [version -server], Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.163
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2023.2]. Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.164
+!MESSAGE XSCT Command: [version], Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.164
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2023.2.0
+SW Build 0 on 2023-10-09-15:37:46
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.]. Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.164
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.173
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.174
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.187
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.189
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.193
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.195
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.208
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.209
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.215
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.215
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.228
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.229
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.236
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.237
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.249
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.250
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.258
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.259
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.272
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.273
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.279
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.279
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.292
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.293
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.305
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Result: [null, ]. Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.306
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.308
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.309
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.325
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.326
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.353
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:21.354
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:24.357
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:24.382
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:24.390
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:24.391
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:24.408
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:24.421
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:24.451
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:24.452
+!MESSAGE XSCT Command: [fpga -file C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST/_ide/bitstream/IMU.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:26.785
+!MESSAGE XSCT command with result: [fpga -file C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST/_ide/bitstream/IMU.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:26.812
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:26.821
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:26.823
+!MESSAGE XSCT Command: [loadhw -hw C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:26.912
+!MESSAGE XSCT command with result: [loadhw -hw C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, design_1_wrapper_0]. Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:26.913
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:26.915
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:26.916
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:26.923
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:26.924
+!MESSAGE XSCT Command: [source C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST/_ide/psinit/ps7_init.tcl], Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:26.935
+!MESSAGE XSCT command with result: [source C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:26.937
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:27.348
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:27.348
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:27.357
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:27.358
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:27.365
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:27.366
+!MESSAGE XSCT Command: [dow C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST/Debug/IMU_TEST.elf], Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:27.596
+!MESSAGE XSCT command with result: [dow C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST/Debug/IMU_TEST.elf], Result: [null, ]. Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:27.597
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:27.633
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:27.709
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:27.728
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:27.729
+!MESSAGE XSCT Command: [con], Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:18:27.752
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-2: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-04-26 13:18:27.756
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:09.860
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/sw/IMU/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:09.864
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/sw/IMU/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:09.865
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/sw/IMU/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:09.868
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/sw/IMU/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "9.0",
+}]. Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-04-26 13:20:09.869
+!MESSAGE Generating MD5 hash for file: C:\02_PXL\SoC_PXL_2024\VHDL\IMU\vitis\IMU\export\IMU\sw\IMU\standalone_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:09.869
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/sw/IMU/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:09.872
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/sw/IMU/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:15.128
+!MESSAGE XSCT Command: [disconnect tcfchan#2], Thread: Thread-161
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:15.146
+!MESSAGE XSCT command with result: [disconnect tcfchan#2], Result: [null, ]. Thread: Thread-161
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:16.145
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-0: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:16.150
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#3]. Thread: Worker-0: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:16.151
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:16.161
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-0: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:16.161
+!MESSAGE XSCT Command: [version -server], Thread: Worker-0: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:16.163
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2023.2]. Thread: Worker-0: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:16.163
+!MESSAGE XSCT Command: [version], Thread: Worker-0: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:16.164
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2023.2.0
+SW Build 0 on 2023-10-09-15:37:46
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.]. Thread: Worker-0: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:16.164
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:16.168
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-0: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:16.168
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-0: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:16.181
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-0: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:16.182
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:16.187
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-0: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:16.188
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-0: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:16.203
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-0: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:16.204
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:16.211
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-0: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:16.211
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-0: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:16.231
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-0: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:16.231
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:16.238
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-0: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:16.239
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-0: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:16.252
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-0: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:16.253
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:16.258
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-0: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:16.259
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-0: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:16.275
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-0: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:16.275
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:16.280
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA (closed)]. Thread: Worker-0: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:16.282
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA (closed)" && level==1}], Thread: Worker-0: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:19.296
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA (closed)" && level==1}], Result: [null, ]. Thread: Worker-0: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:22.296
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA (closed)" && level==1}], Thread: Worker-0: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:25.311
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA (closed)" && level==1}], Result: [null, ]. Thread: Worker-0: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.493
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.494
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#3]. Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.495
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.501
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.502
+!MESSAGE XSCT Command: [version -server], Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.503
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2023.2]. Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.504
+!MESSAGE XSCT Command: [version], Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.505
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2023.2.0
+SW Build 0 on 2023-10-09-15:37:46
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.]. Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.505
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.511
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.511
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.524
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.524
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.530
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.531
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.543
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.544
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.549
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.550
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.562
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.563
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.568
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.569
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.581
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.581
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.586
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.587
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.603
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.603
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.609
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.609
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.625
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.626
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.639
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Result: [null, ]. Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.640
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.641
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.642
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.649
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.650
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.677
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:45.678
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:48.681
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:48.700
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:48.705
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:48.705
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:48.718
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:48.720
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:48.746
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:48.747
+!MESSAGE XSCT Command: [fpga -file C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST/_ide/bitstream/IMU.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:51.071
+!MESSAGE XSCT command with result: [fpga -file C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST/_ide/bitstream/IMU.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:51.101
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:51.111
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:51.112
+!MESSAGE XSCT Command: [loadhw -hw C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:51.122
+!MESSAGE XSCT command with result: [loadhw -hw C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, design_1_wrapper_0]. Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:51.123
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:51.127
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:51.128
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:51.139
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:51.140
+!MESSAGE XSCT Command: [source C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST/_ide/psinit/ps7_init.tcl], Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:51.142
+!MESSAGE XSCT command with result: [source C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:51.143
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:51.542
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:51.543
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:51.550
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:51.551
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:51.564
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:51.565
+!MESSAGE XSCT Command: [dow C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST/Debug/IMU_TEST.elf], Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:51.787
+!MESSAGE XSCT command with result: [dow C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST/Debug/IMU_TEST.elf], Result: [null, ]. Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:51.788
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:51.820
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:51.870
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:51.879
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:51.880
+!MESSAGE XSCT Command: [con], Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-26 13:20:51.900
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-11: Launching Debugger_IMU_TEST-Default
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-04-26 13:20:51.902
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '2'
