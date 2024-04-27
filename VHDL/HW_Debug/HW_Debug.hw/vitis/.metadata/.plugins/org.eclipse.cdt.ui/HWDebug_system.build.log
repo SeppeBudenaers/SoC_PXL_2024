@@ -1,0 +1,14 @@
+14:35:09 **** Build of configuration Debug for project HWDebug_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 62950 C:/02_PXL/SoC_PXL_2024/VHDL/HW_Debug/HW_Debug.hw/vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm standalone_ps7_cortexa9_0 C:/02_PXL/SoC_PXL_2024/VHDL/HW_Debug/HW_Debug.hw/vitis/HWDebug_system/Debug/system.bif
+ECHO is off.
+ECHO is off.
+sdcard_gen --xpfm C:/02_PXL/SoC_PXL_2024/VHDL/HW_Debug/HW_Debug.hw/vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm --sys_config design_1_wrapper --bif C:/02_PXL/SoC_PXL_2024/VHDL/HW_Debug/HW_Debug.hw/vitis/HWDebug_system/Debug/system.bif --bitstream C:/02_PXL/SoC_PXL_2024/VHDL/HW_Debug/HW_Debug.hw/vitis/HWDebug/_ide/bitstream/design_1_wrapper.bit --elf C:/02_PXL/SoC_PXL_2024/VHDL/HW_Debug/HW_Debug.hw/vitis/HWDebug/Debug/HWDebug.elf,ps7_cortexa9_0
+ECHO is off.
+ECHO is off.
+creating BOOT.BIN using C:/02_PXL/SoC_PXL_2024/VHDL/HW_Debug/HW_Debug.hw/vitis/HWDebug/_ide/bitstream/design_1_wrapper.bit
+Running C:/Xilinx/Vitis/2023.2/bin/bootgen  -image C:/02_PXL/SoC_PXL_2024/VHDL/HW_Debug/HW_Debug.hw/vitis/HWDebug_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+14:35:15 Build Finished (took 5s.935ms)
+

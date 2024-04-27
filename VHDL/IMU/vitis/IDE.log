@@ -505,3 +505,4 @@ con
 ----------------End of Script----------------
 
 13:20:51 INFO  : Launch script is exported to file 'C:\02_PXL\SoC_PXL_2024\VHDL\IMU\vitis\IMU_TEST_system\_ide\scripts\debugger_imu_test-default.tcl'
+13:25:54 INFO  : Disconnected from the channel tcfchan#3.

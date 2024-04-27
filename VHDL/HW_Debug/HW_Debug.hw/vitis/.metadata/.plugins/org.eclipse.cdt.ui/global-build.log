@@ -1,0 +1,28 @@
+Nothing to build in platform 'design_1_wrapper'
+
+14:45:23 **** Incremental Build of configuration Debug for project HWDebug ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/02_PXL/SoC_PXL_2024/VHDL/HW_Debug/HW_Debug.hw/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:14:9: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+   14 |     int Status;
+      |         ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: HWDebug.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/02_PXL/SoC_PXL_2024/VHDL/HW_Debug/HW_Debug.hw/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "HWDebug.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: HWDebug.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size HWDebug.elf  |tee "HWDebug.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23289	   1160	  22600	  47049	   b7c9	HWDebug.elf
+'Finished building: HWDebug.elf.size'
+' '

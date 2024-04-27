@@ -1,0 +1,38 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "design_src": "SBD",
+      "device": "xc7z020clg400-1",
+      "name": "bd_384c",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "scoped": "true",
+      "synth_flow_mode": "None",
+      "tool_version": "2023.2"
+    },
+    "design_tree": {},
+    "interface_ports": {
+      "TRIG_IN": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:trigger:1.0",
+        "vlnv": "xilinx.com:interface:trigger_rtl:1.0"
+      },
+      "TRIG_OUT": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:trigger:1.0",
+        "vlnv": "xilinx.com:interface:trigger_rtl:1.0"
+      }
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I"
+      },
+      "probe0": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      }
+    }
+  }
+}
