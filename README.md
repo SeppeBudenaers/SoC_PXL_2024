@@ -15,7 +15,7 @@
 
 
 
-### [Code](https://github.com/SeppeBudenaers/SoC_PXL_2024/tree/main/VHDL/MotorControl/vitis/Car/src)
+### [Code](VHDL/MotorControl/vitis/car_test/src)
 
 
 
