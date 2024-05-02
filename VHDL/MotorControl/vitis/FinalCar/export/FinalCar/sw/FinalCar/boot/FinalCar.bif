@@ -1,0 +1,7 @@
+/*FinalCar*/
+the_ROM_image:
+{
+  [bootloader]<FinalCar/boot/fsbl.elf>
+   <bitstream> 
+  <elf,ps7_cortexa9_0>
+}

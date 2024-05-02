@@ -506,3 +506,12 @@ con
 
 13:20:51 INFO  : Launch script is exported to file 'C:\02_PXL\SoC_PXL_2024\VHDL\IMU\vitis\IMU_TEST_system\_ide\scripts\debugger_imu_test-default.tcl'
 13:25:54 INFO  : Disconnected from the channel tcfchan#3.
+08:50:02 DEBUG : Logs will be stored at 'C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IDE.log'.
+08:50:03 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\02_PXL\SoC_PXL_2024\VHDL\IMU\vitis\temp_xsdb_launch_script.tcl
+08:50:07 INFO  : Registering command handlers for Vitis TCF services
+08:50:07 INFO  : XSCT server has started successfully.
+08:50:07 INFO  : Platform repository initialization has completed.
+08:50:07 INFO  : plnx-install-location is set to ''
+08:50:11 INFO  : Successfully done setting XSCT server connection channel  
+08:50:11 INFO  : Successfully done query RDI_DATADIR 
+08:50:11 INFO  : Successfully done setting workspace for the tool. 

@@ -136,3 +136,12 @@ con
 14:47:04 INFO  : Disconnected from the channel tcfchan#4.
 14:47:04 INFO  : 'bpremove $bp_46_7_0' command is executed.
 14:47:04 INFO  : 'bpremove $bp_46_7_1' command is executed.
+13:30:58 DEBUG : Logs will be stored at 'C:/02_PXL/SoC_PXL_2024/VHDL/HW_Debug/HW_Debug.hw/vitis/IDE.log'.
+13:31:01 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\02_PXL\SoC_PXL_2024\VHDL\HW_Debug\HW_Debug.hw\vitis\temp_xsdb_launch_script.tcl
+13:31:15 INFO  : XSCT server has started successfully.
+13:31:15 INFO  : Successfully done setting XSCT server connection channel  
+13:31:15 INFO  : plnx-install-location is set to ''
+13:31:15 INFO  : Successfully done setting workspace for the tool. 
+13:33:04 INFO  : Registering command handlers for Vitis TCF services
+13:33:04 INFO  : Platform repository initialization has completed.
+13:33:13 INFO  : Successfully done query RDI_DATADIR 
