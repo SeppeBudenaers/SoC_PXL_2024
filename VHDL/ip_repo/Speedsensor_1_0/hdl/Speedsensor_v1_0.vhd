@@ -18,7 +18,6 @@ entity Speedsensor_v1_0 is
 		-- Users to add ports here
 		SpeedData : out std_logic_vector(31 downto 0);
 		DistanceData : out std_logic_vector(31 downto 0);
-		ResetData : in std_logic;
 		SpeedClockData : in std_logic;
 		ClockData : in std_logic;
 
@@ -62,7 +61,6 @@ architecture arch_imp of Speedsensor_v1_0 is
 		port (
 		SpeedCLK		: in std_logic;                       -- SensorPIN
 		clk_in			: in std_logic;                         -- 100 MHz
-		reset			: in std_logic;                          -- Reset the distance and speed
 		Distance		: out std_logic_vector(31 downto 0);  -- distance in cm
 		Speed			: out std_logic_vector(31 downto 0);      -- speed in cm/s
 		S_AXI_ACLK		: in std_logic;
@@ -100,7 +98,6 @@ Speedsensor_v1_0_S00_AXI_inst : Speedsensor_v1_0_S00_AXI
 	port map (
 		SpeedCLK	=> SpeedClockData,
 		clk_in		=> ClockData,
-		reset		=> ResetData,
 		Distance	=> DistanceData,
 		Speed		=> SpeedData,
 	

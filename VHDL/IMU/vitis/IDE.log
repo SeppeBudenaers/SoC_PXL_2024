@@ -515,3 +515,12 @@ con
 08:50:11 INFO  : Successfully done setting XSCT server connection channel  
 08:50:11 INFO  : Successfully done query RDI_DATADIR 
 08:50:11 INFO  : Successfully done setting workspace for the tool. 
+09:50:50 DEBUG : Logs will be stored at 'C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IDE.log'.
+09:50:50 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\02_PXL\SoC_PXL_2024\VHDL\IMU\vitis\temp_xsdb_launch_script.tcl
+09:50:52 INFO  : XSCT server has started successfully.
+09:50:52 INFO  : plnx-install-location is set to ''
+09:50:52 INFO  : Successfully done setting XSCT server connection channel  
+09:50:52 INFO  : Successfully done setting workspace for the tool. 
+09:50:53 INFO  : Platform repository initialization has completed.
+09:50:56 INFO  : Successfully done query RDI_DATADIR 
+09:50:56 INFO  : Registering command handlers for Vitis TCF services

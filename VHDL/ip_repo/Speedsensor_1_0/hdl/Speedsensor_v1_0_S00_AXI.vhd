@@ -130,7 +130,7 @@ architecture arch_imp of Speedsensor_v1_0_S00_AXI is
     Port (
             SpeedCLK: in std_logic;                       -- SensorPIN
             clk_in: in std_logic;                         -- 100 MHz
-            reset: in std_logic;                          -- Reset the distance and speed
+            Speedsensor_reset: in std_logic;                          -- Reset the distance and speed
             Distance: out std_logic_vector(31 downto 0);  -- distance in cm
             Speed: out std_logic_vector(31 downto 0)      -- speed in cm/s
            );
@@ -374,14 +374,7 @@ begin
 	    loc_addr := axi_araddr(ADDR_LSB + OPT_MEM_ADDR_BITS downto ADDR_LSB);
 	    case loc_addr is
 	      when b"00" =>
-	        
-			--adding if statement to check for the reset signal
-			-- if reg_data_out = "00000000000000000000000000000000" then
-			-- 	Reset_sig <= '0';
-			-- else
-			-- 	Reset_sig <= '1';
-			-- end if;
-			
+	        reg_data_out  <= (others => '0');
 	      when b"01" =>
 			reg_data_out <= (others => '0');
 	        reg_data_out <= Speed_sig;
@@ -417,7 +410,7 @@ begin
 	port map(
 		SpeedCLK => SpeedCLK,
 		clk_in => clk_in,
-		reset => slv_reg0(0),
+		Speedsensor_reset => slv_reg0(0),
 		Distance => Distance_sig,
 		Speed => Speed_sig
 	);

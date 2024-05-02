@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu May  2 10:19:53 2024
+# Process ID: 3532
+# Current directory: C:/02_PXL/SoC_PXL_2024/VHDL/ip_repo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19976 C:\02_PXL\SoC_PXL_2024\VHDL\ip_repo\edit_Speedsensor_v1_0.xpr
+# Log file: C:/02_PXL/SoC_PXL_2024/VHDL/ip_repo/vivado.log
+# Journal file: C:/02_PXL/SoC_PXL_2024/VHDL/ip_repo\vivado.jou
+# Running On: Wheatley, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 4, Host memory: 16969 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/02_PXL/SoC_PXL_2024/VHDL/ip_repo/edit_Speedsensor_v1_0.xpr
+update_compile_order -fileset sources_1

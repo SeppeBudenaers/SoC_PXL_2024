@@ -35,7 +35,7 @@ entity SpeedCounter is
   Port (
         SpeedCLK: in std_logic;                       -- SensorPIN
         clk_in: in std_logic;                         -- 100 MHz
-        reset: in std_logic;                          -- Reset the distance and speed
+        Speedsensor_reset: in std_logic;                          -- Reset the distance and speed
         Distance: out std_logic_vector(31 downto 0);  -- distance in cm
         Speed: out std_logic_vector(31 downto 0)      -- speed in cm/s
        );
@@ -52,7 +52,7 @@ signal speed_clk_sig : std_logic := '0';
         
 begin
   
-  process(clk_in, reset)
+  process(clk_in, Speedsensor_reset)
   begin
       
     if (rising_edge(clk_in))then
@@ -72,7 +72,7 @@ begin
             timer_sig <=(others => '0');    
         end if;
         
-        if (reset = '1') then
+        if (Speedsensor_reset = '1') then
             timer_sig <=(others => '0');
             distance_speed_sig <=(others => '0');
             distance_sig <=(others => '0');
