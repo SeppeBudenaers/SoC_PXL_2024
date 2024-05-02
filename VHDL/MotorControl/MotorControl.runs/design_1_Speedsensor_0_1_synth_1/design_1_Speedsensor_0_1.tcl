@@ -4,11 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-<<<<<<<< Updated upstream:VHDL/MotorControl/MotorControl.runs/design_1_Speedsensor_0_1_synth_1/design_1_Speedsensor_0_1.tcl
-  variable script "C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/design_1_Speedsensor_0_1_synth_1/design_1_Speedsensor_0_1.tcl"
-========
-  variable script "C:/02_PXL/SoC_PXL_2024/VHDL/IMU/IMU.runs/design_1_rst_ps7_0_50M_0_synth_1/design_1_rst_ps7_0_50M_0.tcl"
->>>>>>>> Stashed changes:VHDL/IMU/IMU.runs/design_1_rst_ps7_0_50M_0_synth_1/design_1_rst_ps7_0_50M_0.tcl
+  variable script "C:/XilinxDev/SOC/SeppeEnKobe/VHDL/MotorControl/MotorControl.runs/design_1_Speedsensor_0_1_synth_1/design_1_Speedsensor_0_1.tcl"
   variable category "vivado_synth"
 }
 
@@ -73,13 +69,8 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-<<<<<<<< Updated upstream:VHDL/MotorControl/MotorControl.runs/design_1_Speedsensor_0_1_synth_1/design_1_Speedsensor_0_1.tcl
 OPTRACE "design_1_Speedsensor_0_1_synth_1" START { ROLLUP_AUTO }
-========
-OPTRACE "design_1_rst_ps7_0_50M_0_synth_1" START { ROLLUP_AUTO }
->>>>>>>> Stashed changes:VHDL/IMU/IMU.runs/design_1_rst_ps7_0_50M_0_synth_1/design_1_rst_ps7_0_50M_0.tcl
 set_param project.vivado.isBlockSynthRun true
-set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 
@@ -87,36 +78,20 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-<<<<<<<< Updated upstream:VHDL/MotorControl/MotorControl.runs/design_1_Speedsensor_0_1_synth_1/design_1_Speedsensor_0_1.tcl
-set_property webtalk.parent_dir C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.cache/wt [current_project]
-set_property parent.project_path C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.xpr [current_project]
-========
-set_property webtalk.parent_dir C:/02_PXL/SoC_PXL_2024/VHDL/IMU/IMU.cache/wt [current_project]
-set_property parent.project_path C:/02_PXL/SoC_PXL_2024/VHDL/IMU/IMU.xpr [current_project]
->>>>>>>> Stashed changes:VHDL/IMU/IMU.runs/design_1_rst_ps7_0_50M_0_synth_1/design_1_rst_ps7_0_50M_0.tcl
+set_property webtalk.parent_dir C:/XilinxDev/SOC/SeppeEnKobe/VHDL/MotorControl/MotorControl.cache/wt [current_project]
+set_property parent.project_path C:/XilinxDev/SOC/SeppeEnKobe/VHDL/MotorControl/MotorControl.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part_repo_paths {C:/Users/kobed/AppData/Roaming/Xilinx/Vivado/2023.2/xhub/board_store/xilinx_board_store} [current_project]
 set_property board_part tul.com.tw:pynq-z2:part0:1.0 [current_project]
-<<<<<<<< Updated upstream:VHDL/MotorControl/MotorControl.runs/design_1_Speedsensor_0_1_synth_1/design_1_Speedsensor_0_1.tcl
-set_property ip_repo_paths c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/ip_repo [current_project]
+set_property ip_repo_paths c:/XilinxDev/SOC/SeppeEnKobe/VHDL/ip_repo [current_project]
 update_ip_catalog
-set_property ip_output_repo c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.cache/ip [current_project]
+set_property ip_output_repo c:/XilinxDev/SOC/SeppeEnKobe/VHDL/MotorControl/MotorControl.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.srcs/sources_1/bd/design_1/ip/design_1_Speedsensor_0_1/design_1_Speedsensor_0_1.xci
-========
-set_property ip_output_repo c:/02_PXL/SoC_PXL_2024/VHDL/IMU/IMU.cache/ip [current_project]
-set_property ip_cache_permissions {read write} [current_project]
-OPTRACE "Creating in-memory project" END { }
-OPTRACE "Adding files" START { }
-read_ip -quiet c:/02_PXL/SoC_PXL_2024/VHDL/IMU/IMU.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.xci
-set_property used_in_implementation false [get_files -all c:/02_PXL/SoC_PXL_2024/VHDL/IMU/IMU.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/02_PXL/SoC_PXL_2024/VHDL/IMU/IMU.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.xdc]
-set_property used_in_implementation false [get_files -all c:/02_PXL/SoC_PXL_2024/VHDL/IMU/IMU.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_ooc.xdc]
->>>>>>>> Stashed changes:VHDL/IMU/IMU.runs/design_1_rst_ps7_0_50M_0_synth_1/design_1_rst_ps7_0_50M_0.tcl
+read_ip -quiet C:/XilinxDev/SOC/SeppeEnKobe/VHDL/MotorControl/MotorControl.srcs/sources_1/bd/design_1/ip/design_1_Speedsensor_0_1/design_1_Speedsensor_0_1.xci
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -127,27 +102,17 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc dont_touch.xdc
-set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 OPTRACE "Configure IP Cache" START { }
 
-<<<<<<<< Updated upstream:VHDL/MotorControl/MotorControl.runs/design_1_Speedsensor_0_1_synth_1/design_1_Speedsensor_0_1.tcl
-set cacheID [config_ip_cache -export -no_bom  -dir C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/design_1_Speedsensor_0_1_synth_1 -new_name design_1_Speedsensor_0_1 -ip [get_ips design_1_Speedsensor_0_1]]
-========
-set cacheID [config_ip_cache -export -no_bom  -dir C:/02_PXL/SoC_PXL_2024/VHDL/IMU/IMU.runs/design_1_rst_ps7_0_50M_0_synth_1 -new_name design_1_rst_ps7_0_50M_0 -ip [get_ips design_1_rst_ps7_0_50M_0]]
->>>>>>>> Stashed changes:VHDL/IMU/IMU.runs/design_1_rst_ps7_0_50M_0_synth_1/design_1_rst_ps7_0_50M_0.tcl
+set cacheID [config_ip_cache -export -no_bom  -dir C:/XilinxDev/SOC/SeppeEnKobe/VHDL/MotorControl/MotorControl.runs/design_1_Speedsensor_0_1_synth_1 -new_name design_1_Speedsensor_0_1 -ip [get_ips design_1_Speedsensor_0_1]]
 
 OPTRACE "Configure IP Cache" END { }
 if { $cacheID == "" } {
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-<<<<<<<< Updated upstream:VHDL/MotorControl/MotorControl.runs/design_1_Speedsensor_0_1_synth_1/design_1_Speedsensor_0_1.tcl
 synth_design -top design_1_Speedsensor_0_1 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
-========
-synth_design -top design_1_rst_ps7_0_50M_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
->>>>>>>> Stashed changes:VHDL/IMU/IMU.runs/design_1_rst_ps7_0_50M_0_synth_1/design_1_rst_ps7_0_50M_0.tcl
 OPTRACE "synth_design" END { }
 OPTRACE "Write IP Cache" START { }
 
@@ -158,7 +123,6 @@ OPTRACE "Write IP Cache" START { }
 set_param constraints.enableBinaryConstraints false
 
 catch {
-<<<<<<<< Updated upstream:VHDL/MotorControl/MotorControl.runs/design_1_Speedsensor_0_1_synth_1/design_1_Speedsensor_0_1.tcl
  write_checkpoint -force -noxdef -rename_prefix design_1_Speedsensor_0_1_ design_1_Speedsensor_0_1.dcp
 
  set ipCachedFiles {}
@@ -177,26 +141,6 @@ catch {
 
  if { [get_msg_config -count -severity {CRITICAL WARNING}] == 0 } {
   config_ip_cache -add -dcp design_1_Speedsensor_0_1.dcp -move_files $ipCachedFiles   -synth_runtime $TIME_taken  -ip [get_ips design_1_Speedsensor_0_1]
-========
- write_checkpoint -force -noxdef -rename_prefix design_1_rst_ps7_0_50M_0_ design_1_rst_ps7_0_50M_0.dcp
-
- set ipCachedFiles {}
- write_verilog -force -mode synth_stub -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_rst_ps7_0_50M_0_stub.v
- lappend ipCachedFiles design_1_rst_ps7_0_50M_0_stub.v
-
- write_vhdl -force -mode synth_stub -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_rst_ps7_0_50M_0_stub.vhdl
- lappend ipCachedFiles design_1_rst_ps7_0_50M_0_stub.vhdl
-
- write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_rst_ps7_0_50M_0_sim_netlist.v
- lappend ipCachedFiles design_1_rst_ps7_0_50M_0_sim_netlist.v
-
- write_vhdl -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_rst_ps7_0_50M_0_sim_netlist.vhdl
- lappend ipCachedFiles design_1_rst_ps7_0_50M_0_sim_netlist.vhdl
- set TIME_taken [expr [clock seconds] - $TIME_start]
-
- if { [get_msg_config -count -severity {CRITICAL WARNING}] == 0 } {
-  config_ip_cache -add -dcp design_1_rst_ps7_0_50M_0.dcp -move_files $ipCachedFiles   -synth_runtime $TIME_taken  -ip [get_ips design_1_rst_ps7_0_50M_0]
->>>>>>>> Stashed changes:VHDL/IMU/IMU.runs/design_1_rst_ps7_0_50M_0_synth_1/design_1_rst_ps7_0_50M_0.tcl
  }
 OPTRACE "Write IP Cache" END { }
 }
@@ -204,16 +148,11 @@ if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"
 }
 
-<<<<<<<< Updated upstream:VHDL/MotorControl/MotorControl.runs/design_1_Speedsensor_0_1_synth_1/design_1_Speedsensor_0_1.tcl
 rename_ref -prefix_all design_1_Speedsensor_0_1_
-========
-rename_ref -prefix_all design_1_rst_ps7_0_50M_0_
->>>>>>>> Stashed changes:VHDL/IMU/IMU.runs/design_1_rst_ps7_0_50M_0_synth_1/design_1_rst_ps7_0_50M_0.tcl
 
 OPTRACE "write_checkpoint" START { CHECKPOINT }
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-<<<<<<<< Updated upstream:VHDL/MotorControl/MotorControl.runs/design_1_Speedsensor_0_1_synth_1/design_1_Speedsensor_0_1.tcl
 write_checkpoint -force -noxdef design_1_Speedsensor_0_1.dcp
 OPTRACE "write_checkpoint" END { }
 OPTRACE "synth reports" START { REPORT }
@@ -221,58 +160,32 @@ create_report "design_1_Speedsensor_0_1_synth_1_synth_report_utilization_0" "rep
 OPTRACE "synth reports" END { }
 
 if { [catch {
-  file copy -force C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/design_1_Speedsensor_0_1_synth_1/design_1_Speedsensor_0_1.dcp c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_1/design_1_Speedsensor_0_1.dcp
-========
-write_checkpoint -force -noxdef design_1_rst_ps7_0_50M_0.dcp
-OPTRACE "write_checkpoint" END { }
-OPTRACE "synth reports" START { REPORT }
-create_report "design_1_rst_ps7_0_50M_0_synth_1_synth_report_utilization_0" "report_utilization -file design_1_rst_ps7_0_50M_0_utilization_synth.rpt -pb design_1_rst_ps7_0_50M_0_utilization_synth.pb"
-OPTRACE "synth reports" END { }
-
-if { [catch {
-  file copy -force C:/02_PXL/SoC_PXL_2024/VHDL/IMU/IMU.runs/design_1_rst_ps7_0_50M_0_synth_1/design_1_rst_ps7_0_50M_0.dcp c:/02_PXL/SoC_PXL_2024/VHDL/IMU/IMU.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.dcp
->>>>>>>> Stashed changes:VHDL/IMU/IMU.runs/design_1_rst_ps7_0_50M_0_synth_1/design_1_rst_ps7_0_50M_0.tcl
+  file copy -force C:/XilinxDev/SOC/SeppeEnKobe/VHDL/MotorControl/MotorControl.runs/design_1_Speedsensor_0_1_synth_1/design_1_Speedsensor_0_1.dcp c:/XilinxDev/SOC/SeppeEnKobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_1/design_1_Speedsensor_0_1.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 status "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-<<<<<<<< Updated upstream:VHDL/MotorControl/MotorControl.runs/design_1_Speedsensor_0_1_synth_1/design_1_Speedsensor_0_1.tcl
-  write_verilog -force -mode synth_stub c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_1/design_1_Speedsensor_0_1_stub.v
-========
-  write_verilog -force -mode synth_stub c:/02_PXL/SoC_PXL_2024/VHDL/IMU/IMU.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_stub.v
->>>>>>>> Stashed changes:VHDL/IMU/IMU.runs/design_1_rst_ps7_0_50M_0_synth_1/design_1_rst_ps7_0_50M_0.tcl
+  write_verilog -force -mode synth_stub c:/XilinxDev/SOC/SeppeEnKobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_1/design_1_Speedsensor_0_1_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-<<<<<<<< Updated upstream:VHDL/MotorControl/MotorControl.runs/design_1_Speedsensor_0_1_synth_1/design_1_Speedsensor_0_1.tcl
-  write_vhdl -force -mode synth_stub c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_1/design_1_Speedsensor_0_1_stub.vhdl
-========
-  write_vhdl -force -mode synth_stub c:/02_PXL/SoC_PXL_2024/VHDL/IMU/IMU.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_stub.vhdl
->>>>>>>> Stashed changes:VHDL/IMU/IMU.runs/design_1_rst_ps7_0_50M_0_synth_1/design_1_rst_ps7_0_50M_0.tcl
+  write_vhdl -force -mode synth_stub c:/XilinxDev/SOC/SeppeEnKobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_1/design_1_Speedsensor_0_1_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-<<<<<<<< Updated upstream:VHDL/MotorControl/MotorControl.runs/design_1_Speedsensor_0_1_synth_1/design_1_Speedsensor_0_1.tcl
-  write_verilog -force -mode funcsim c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_1/design_1_Speedsensor_0_1_sim_netlist.v
-========
-  write_verilog -force -mode funcsim c:/02_PXL/SoC_PXL_2024/VHDL/IMU/IMU.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_sim_netlist.v
->>>>>>>> Stashed changes:VHDL/IMU/IMU.runs/design_1_rst_ps7_0_50M_0_synth_1/design_1_rst_ps7_0_50M_0.tcl
+  write_verilog -force -mode funcsim c:/XilinxDev/SOC/SeppeEnKobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_1/design_1_Speedsensor_0_1_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-<<<<<<<< Updated upstream:VHDL/MotorControl/MotorControl.runs/design_1_Speedsensor_0_1_synth_1/design_1_Speedsensor_0_1.tcl
-  write_vhdl -force -mode funcsim c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_1/design_1_Speedsensor_0_1_sim_netlist.vhdl
-========
-  write_vhdl -force -mode funcsim c:/02_PXL/SoC_PXL_2024/VHDL/IMU/IMU.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_sim_netlist.vhdl
->>>>>>>> Stashed changes:VHDL/IMU/IMU.runs/design_1_rst_ps7_0_50M_0_synth_1/design_1_rst_ps7_0_50M_0.tcl
+  write_vhdl -force -mode funcsim c:/XilinxDev/SOC/SeppeEnKobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_1/design_1_Speedsensor_0_1_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -282,52 +195,32 @@ if { [catch {
 
 
 if { [catch {
-<<<<<<<< Updated upstream:VHDL/MotorControl/MotorControl.runs/design_1_Speedsensor_0_1_synth_1/design_1_Speedsensor_0_1.tcl
-  file copy -force C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/design_1_Speedsensor_0_1_synth_1/design_1_Speedsensor_0_1.dcp c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_1/design_1_Speedsensor_0_1.dcp
-========
-  file copy -force C:/02_PXL/SoC_PXL_2024/VHDL/IMU/IMU.runs/design_1_rst_ps7_0_50M_0_synth_1/design_1_rst_ps7_0_50M_0.dcp c:/02_PXL/SoC_PXL_2024/VHDL/IMU/IMU.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.dcp
->>>>>>>> Stashed changes:VHDL/IMU/IMU.runs/design_1_rst_ps7_0_50M_0_synth_1/design_1_rst_ps7_0_50M_0.tcl
+  file copy -force C:/XilinxDev/SOC/SeppeEnKobe/VHDL/MotorControl/MotorControl.runs/design_1_Speedsensor_0_1_synth_1/design_1_Speedsensor_0_1.dcp c:/XilinxDev/SOC/SeppeEnKobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_1/design_1_Speedsensor_0_1.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 status "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-<<<<<<<< Updated upstream:VHDL/MotorControl/MotorControl.runs/design_1_Speedsensor_0_1_synth_1/design_1_Speedsensor_0_1.tcl
-  file rename -force C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/design_1_Speedsensor_0_1_synth_1/design_1_Speedsensor_0_1_stub.v c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_1/design_1_Speedsensor_0_1_stub.v
-========
-  file rename -force C:/02_PXL/SoC_PXL_2024/VHDL/IMU/IMU.runs/design_1_rst_ps7_0_50M_0_synth_1/design_1_rst_ps7_0_50M_0_stub.v c:/02_PXL/SoC_PXL_2024/VHDL/IMU/IMU.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_stub.v
->>>>>>>> Stashed changes:VHDL/IMU/IMU.runs/design_1_rst_ps7_0_50M_0_synth_1/design_1_rst_ps7_0_50M_0.tcl
+  file rename -force C:/XilinxDev/SOC/SeppeEnKobe/VHDL/MotorControl/MotorControl.runs/design_1_Speedsensor_0_1_synth_1/design_1_Speedsensor_0_1_stub.v c:/XilinxDev/SOC/SeppeEnKobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_1/design_1_Speedsensor_0_1_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-<<<<<<<< Updated upstream:VHDL/MotorControl/MotorControl.runs/design_1_Speedsensor_0_1_synth_1/design_1_Speedsensor_0_1.tcl
-  file rename -force C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/design_1_Speedsensor_0_1_synth_1/design_1_Speedsensor_0_1_stub.vhdl c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_1/design_1_Speedsensor_0_1_stub.vhdl
-========
-  file rename -force C:/02_PXL/SoC_PXL_2024/VHDL/IMU/IMU.runs/design_1_rst_ps7_0_50M_0_synth_1/design_1_rst_ps7_0_50M_0_stub.vhdl c:/02_PXL/SoC_PXL_2024/VHDL/IMU/IMU.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_stub.vhdl
->>>>>>>> Stashed changes:VHDL/IMU/IMU.runs/design_1_rst_ps7_0_50M_0_synth_1/design_1_rst_ps7_0_50M_0.tcl
+  file rename -force C:/XilinxDev/SOC/SeppeEnKobe/VHDL/MotorControl/MotorControl.runs/design_1_Speedsensor_0_1_synth_1/design_1_Speedsensor_0_1_stub.vhdl c:/XilinxDev/SOC/SeppeEnKobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_1/design_1_Speedsensor_0_1_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-<<<<<<<< Updated upstream:VHDL/MotorControl/MotorControl.runs/design_1_Speedsensor_0_1_synth_1/design_1_Speedsensor_0_1.tcl
-  file rename -force C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/design_1_Speedsensor_0_1_synth_1/design_1_Speedsensor_0_1_sim_netlist.v c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_1/design_1_Speedsensor_0_1_sim_netlist.v
-========
-  file rename -force C:/02_PXL/SoC_PXL_2024/VHDL/IMU/IMU.runs/design_1_rst_ps7_0_50M_0_synth_1/design_1_rst_ps7_0_50M_0_sim_netlist.v c:/02_PXL/SoC_PXL_2024/VHDL/IMU/IMU.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_sim_netlist.v
->>>>>>>> Stashed changes:VHDL/IMU/IMU.runs/design_1_rst_ps7_0_50M_0_synth_1/design_1_rst_ps7_0_50M_0.tcl
+  file rename -force C:/XilinxDev/SOC/SeppeEnKobe/VHDL/MotorControl/MotorControl.runs/design_1_Speedsensor_0_1_synth_1/design_1_Speedsensor_0_1_sim_netlist.v c:/XilinxDev/SOC/SeppeEnKobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_1/design_1_Speedsensor_0_1_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-<<<<<<<< Updated upstream:VHDL/MotorControl/MotorControl.runs/design_1_Speedsensor_0_1_synth_1/design_1_Speedsensor_0_1.tcl
-  file rename -force C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/design_1_Speedsensor_0_1_synth_1/design_1_Speedsensor_0_1_sim_netlist.vhdl c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_1/design_1_Speedsensor_0_1_sim_netlist.vhdl
-========
-  file rename -force C:/02_PXL/SoC_PXL_2024/VHDL/IMU/IMU.runs/design_1_rst_ps7_0_50M_0_synth_1/design_1_rst_ps7_0_50M_0_sim_netlist.vhdl c:/02_PXL/SoC_PXL_2024/VHDL/IMU/IMU.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_sim_netlist.vhdl
->>>>>>>> Stashed changes:VHDL/IMU/IMU.runs/design_1_rst_ps7_0_50M_0_synth_1/design_1_rst_ps7_0_50M_0.tcl
+  file rename -force C:/XilinxDev/SOC/SeppeEnKobe/VHDL/MotorControl/MotorControl.runs/design_1_Speedsensor_0_1_synth_1/design_1_Speedsensor_0_1_sim_netlist.vhdl c:/XilinxDev/SOC/SeppeEnKobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_1/design_1_Speedsensor_0_1_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -335,33 +228,17 @@ if { [catch {
 close [open .end.used_ip_cache.rst w]
 }; # end if cacheID 
 
-<<<<<<<< Updated upstream:VHDL/MotorControl/MotorControl.runs/design_1_Speedsensor_0_1_synth_1/design_1_Speedsensor_0_1.tcl
-if {[file isdir C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.ip_user_files/ip/design_1_Speedsensor_0_1]} {
+if {[file isdir C:/XilinxDev/SOC/SeppeEnKobe/VHDL/MotorControl/MotorControl.ip_user_files/ip/design_1_Speedsensor_0_1]} {
   catch { 
-    file copy -force c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_1/design_1_Speedsensor_0_1_stub.v C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.ip_user_files/ip/design_1_Speedsensor_0_1
+    file copy -force c:/XilinxDev/SOC/SeppeEnKobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_1/design_1_Speedsensor_0_1_stub.v C:/XilinxDev/SOC/SeppeEnKobe/VHDL/MotorControl/MotorControl.ip_user_files/ip/design_1_Speedsensor_0_1
   }
 }
 
-if {[file isdir C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.ip_user_files/ip/design_1_Speedsensor_0_1]} {
+if {[file isdir C:/XilinxDev/SOC/SeppeEnKobe/VHDL/MotorControl/MotorControl.ip_user_files/ip/design_1_Speedsensor_0_1]} {
   catch { 
-    file copy -force c:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_1/design_1_Speedsensor_0_1_stub.vhdl C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.ip_user_files/ip/design_1_Speedsensor_0_1
-========
-if {[file isdir C:/02_PXL/SoC_PXL_2024/VHDL/IMU/IMU.ip_user_files/ip/design_1_rst_ps7_0_50M_0]} {
-  catch { 
-    file copy -force c:/02_PXL/SoC_PXL_2024/VHDL/IMU/IMU.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_stub.v C:/02_PXL/SoC_PXL_2024/VHDL/IMU/IMU.ip_user_files/ip/design_1_rst_ps7_0_50M_0
-  }
-}
-
-if {[file isdir C:/02_PXL/SoC_PXL_2024/VHDL/IMU/IMU.ip_user_files/ip/design_1_rst_ps7_0_50M_0]} {
-  catch { 
-    file copy -force c:/02_PXL/SoC_PXL_2024/VHDL/IMU/IMU.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_stub.vhdl C:/02_PXL/SoC_PXL_2024/VHDL/IMU/IMU.ip_user_files/ip/design_1_rst_ps7_0_50M_0
->>>>>>>> Stashed changes:VHDL/IMU/IMU.runs/design_1_rst_ps7_0_50M_0_synth_1/design_1_rst_ps7_0_50M_0.tcl
+    file copy -force c:/XilinxDev/SOC/SeppeEnKobe/VHDL/MotorControl/MotorControl.gen/sources_1/bd/design_1/ip/design_1_Speedsensor_0_1/design_1_Speedsensor_0_1_stub.vhdl C:/XilinxDev/SOC/SeppeEnKobe/VHDL/MotorControl/MotorControl.ip_user_files/ip/design_1_Speedsensor_0_1
   }
 }
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]
-<<<<<<<< Updated upstream:VHDL/MotorControl/MotorControl.runs/design_1_Speedsensor_0_1_synth_1/design_1_Speedsensor_0_1.tcl
 OPTRACE "design_1_Speedsensor_0_1_synth_1" END { }
-========
-OPTRACE "design_1_rst_ps7_0_50M_0_synth_1" END { }
->>>>>>>> Stashed changes:VHDL/IMU/IMU.runs/design_1_rst_ps7_0_50M_0_synth_1/design_1_rst_ps7_0_50M_0.tcl

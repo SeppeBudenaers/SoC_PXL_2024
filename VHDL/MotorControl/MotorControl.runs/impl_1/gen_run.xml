@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1714120761">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1714641124">
   <File Type="ROUTE-PWR" Name="design_1_wrapper_power_routed.rpt"/>
   <File Type="PA-TCL" Name="design_1_wrapper.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="design_1_wrapper_power_summary_routed.pb"/>
@@ -144,17 +144,20 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_Speedsensor_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_timer_0_11"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_axi_gpio_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_processing_system7_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_rst_ps7_0_100M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_axi_timer_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_HC_SR04_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_Speedsensor_0_13"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_clk_wiz_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_HC_SR04_0_2"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_timer_0_11"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_axi_timer_0_12"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_axi_iic_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_axi_timer_0_10"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_Speedsensor_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_Speedsensor_0_12"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_Speedsensor_0_11"/>
 </GenRun>

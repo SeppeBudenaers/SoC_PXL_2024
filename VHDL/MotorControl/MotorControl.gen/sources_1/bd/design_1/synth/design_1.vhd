@@ -2,7 +2,7 @@
 --Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
---Date        : Fri Apr 26 10:25:36 2024
+--Date        : Thu May  2 11:08:52 2024
 --Host        : Beta running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -82,7 +82,6 @@ architecture STRUCTURE of Motor_0_imp_1K3L2D9 is
   port (
     SpeedData : out STD_LOGIC_VECTOR ( 31 downto 0 );
     DistanceData : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    ResetData : in STD_LOGIC;
     SpeedClockData : in STD_LOGIC;
     ClockData : in STD_LOGIC;
     s00_axi_aclk : in STD_LOGIC;
@@ -291,7 +290,6 @@ Speedsensor_0: component design_1_Speedsensor_0_1
      port map (
       ClockData => clk_1_1,
       DistanceData(31 downto 0) => NLW_Speedsensor_0_DistanceData_UNCONNECTED(31 downto 0),
-      ResetData => '0',
       SpeedClockData => SpeedClockData_0_1,
       SpeedData(31 downto 0) => NLW_Speedsensor_0_SpeedData_UNCONNECTED(31 downto 0),
       s00_axi_aclk => processing_system7_0_FCLK_CLK0,
@@ -443,7 +441,6 @@ architecture STRUCTURE of Motor_1_imp_1PETFNI is
   port (
     SpeedData : out STD_LOGIC_VECTOR ( 31 downto 0 );
     DistanceData : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    ResetData : in STD_LOGIC;
     SpeedClockData : in STD_LOGIC;
     ClockData : in STD_LOGIC;
     s00_axi_aclk : in STD_LOGIC;
@@ -652,7 +649,6 @@ Speedsensor_0: component design_1_Speedsensor_0_11
      port map (
       ClockData => clk_1_1,
       DistanceData(31 downto 0) => NLW_Speedsensor_0_DistanceData_UNCONNECTED(31 downto 0),
-      ResetData => '0',
       SpeedClockData => SpeedClockData_0_1,
       SpeedData(31 downto 0) => NLW_Speedsensor_0_SpeedData_UNCONNECTED(31 downto 0),
       s00_axi_aclk => processing_system7_0_FCLK_CLK0,
@@ -804,7 +800,6 @@ architecture STRUCTURE of Motor_2_imp_1RHXIUZ is
   port (
     SpeedData : out STD_LOGIC_VECTOR ( 31 downto 0 );
     DistanceData : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    ResetData : in STD_LOGIC;
     SpeedClockData : in STD_LOGIC;
     ClockData : in STD_LOGIC;
     s00_axi_aclk : in STD_LOGIC;
@@ -1013,7 +1008,6 @@ Speedsensor_0: component design_1_Speedsensor_0_12
      port map (
       ClockData => clk_1_1,
       DistanceData(31 downto 0) => NLW_Speedsensor_0_DistanceData_UNCONNECTED(31 downto 0),
-      ResetData => '0',
       SpeedClockData => SpeedClockData_0_1,
       SpeedData(31 downto 0) => NLW_Speedsensor_0_SpeedData_UNCONNECTED(31 downto 0),
       s00_axi_aclk => processing_system7_0_FCLK_CLK0,
@@ -1165,7 +1159,6 @@ architecture STRUCTURE of Motor_3_imp_1VLMAD4 is
   port (
     SpeedData : out STD_LOGIC_VECTOR ( 31 downto 0 );
     DistanceData : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    ResetData : in STD_LOGIC;
     SpeedClockData : in STD_LOGIC;
     ClockData : in STD_LOGIC;
     s00_axi_aclk : in STD_LOGIC;
@@ -1374,7 +1367,6 @@ Speedsensor_0: component design_1_Speedsensor_0_13
      port map (
       ClockData => clk_1_1,
       DistanceData(31 downto 0) => NLW_Speedsensor_0_DistanceData_UNCONNECTED(31 downto 0),
-      ResetData => '0',
       SpeedClockData => SpeedClockData_0_1,
       SpeedData(31 downto 0) => NLW_Speedsensor_0_SpeedData_UNCONNECTED(31 downto 0),
       s00_axi_aclk => processing_system7_0_FCLK_CLK0,

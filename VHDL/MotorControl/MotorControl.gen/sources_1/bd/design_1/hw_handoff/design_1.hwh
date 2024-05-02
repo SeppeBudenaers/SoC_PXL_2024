@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Apr 26 10:26:08 2024" VIVADOVERSION="2023.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu May  2 11:08:55 2024" VIVADOVERSION="2023.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="tul.com.tw:pynq-z2:part0:1.0" DEVICE="7z020" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -304,7 +304,7 @@
   </EXTERNALINTERFACES>
 
   <MODULES>
-    <MODULE COREREVISION="3" FULLNAME="/Motors/Motor_0/Speedsensor_0" HWVERSION="1.0" INSTANCE="Motors_Motor_0_Speedsensor_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Speedsensor" VLNV="xilinx.com:user:Speedsensor:1.0">
+    <MODULE COREREVISION="5" FULLNAME="/Motors/Motor_0/Speedsensor_0" HWVERSION="1.0" INSTANCE="Motors_Motor_0_Speedsensor_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Speedsensor" VLNV="xilinx.com:user:Speedsensor:1.0">
       <DOCUMENTS/>
       <ADDRESSBLOCKS>
         <ADDRESSBLOCK ACCESS="" INTERFACE="S00_AXI" NAME="S00_AXI_reg" RANGE="4096" USAGE="register"/>
@@ -324,7 +324,6 @@
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="31" NAME="DistanceData" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" NAME="ResetData" SIGIS="undef"/>
         <PORT DIR="I" NAME="SpeedClockData" SIGIS="undef" SIGNAME="External_Ports_SpeedClockData_0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="SpeedClockData_0"/>
@@ -1381,7 +1380,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="3" FULLNAME="/Motors/Motor_1/Speedsensor_0" HWVERSION="1.0" INSTANCE="Motors_Motor_1_Speedsensor_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Speedsensor" VLNV="xilinx.com:user:Speedsensor:1.0">
+    <MODULE COREREVISION="5" FULLNAME="/Motors/Motor_1/Speedsensor_0" HWVERSION="1.0" INSTANCE="Motors_Motor_1_Speedsensor_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Speedsensor" VLNV="xilinx.com:user:Speedsensor:1.0">
       <DOCUMENTS/>
       <ADDRESSBLOCKS>
         <ADDRESSBLOCK ACCESS="" INTERFACE="S00_AXI" NAME="S00_AXI_reg" RANGE="4096" USAGE="register"/>
@@ -1401,7 +1400,6 @@
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="31" NAME="DistanceData" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" NAME="ResetData" SIGIS="undef"/>
         <PORT DIR="I" NAME="SpeedClockData" SIGIS="undef" SIGNAME="External_Ports_SpeedClockData_1">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="SpeedClockData_1"/>
@@ -2458,7 +2456,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="3" FULLNAME="/Motors/Motor_2/Speedsensor_0" HWVERSION="1.0" INSTANCE="Motors_Motor_2_Speedsensor_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Speedsensor" VLNV="xilinx.com:user:Speedsensor:1.0">
+    <MODULE COREREVISION="5" FULLNAME="/Motors/Motor_2/Speedsensor_0" HWVERSION="1.0" INSTANCE="Motors_Motor_2_Speedsensor_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Speedsensor" VLNV="xilinx.com:user:Speedsensor:1.0">
       <DOCUMENTS/>
       <ADDRESSBLOCKS>
         <ADDRESSBLOCK ACCESS="" INTERFACE="S00_AXI" NAME="S00_AXI_reg" RANGE="4096" USAGE="register"/>
@@ -2478,7 +2476,6 @@
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="31" NAME="DistanceData" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" NAME="ResetData" SIGIS="undef"/>
         <PORT DIR="I" NAME="SpeedClockData" SIGIS="undef" SIGNAME="External_Ports_SpeedClockData_2">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="SpeedClockData_2"/>
@@ -3535,7 +3532,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="3" FULLNAME="/Motors/Motor_3/Speedsensor_0" HWVERSION="1.0" INSTANCE="Motors_Motor_3_Speedsensor_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Speedsensor" VLNV="xilinx.com:user:Speedsensor:1.0">
+    <MODULE COREREVISION="5" FULLNAME="/Motors/Motor_3/Speedsensor_0" HWVERSION="1.0" INSTANCE="Motors_Motor_3_Speedsensor_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Speedsensor" VLNV="xilinx.com:user:Speedsensor:1.0">
       <DOCUMENTS/>
       <ADDRESSBLOCKS>
         <ADDRESSBLOCK ACCESS="" INTERFACE="S00_AXI" NAME="S00_AXI_reg" RANGE="4096" USAGE="register"/>
@@ -3555,7 +3552,6 @@
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="31" NAME="DistanceData" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" NAME="ResetData" SIGIS="undef"/>
         <PORT DIR="I" NAME="SpeedClockData" SIGIS="undef" SIGNAME="External_Ports_SpeedClockData_3">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="SpeedClockData_3"/>

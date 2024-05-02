@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.runs/impl_1/design_1_wrapper.tcl"
+  variable script "C:/XilinxDev/SOC/SeppeEnKobe/VHDL/MotorControl/MotorControl.runs/impl_1/design_1_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -126,7 +126,7 @@ set rc [catch {
   set_param chipscope.maxJobs 2
   set_param runs.launchOptions { -jobs 11  }
   open_checkpoint design_1_wrapper_routed.dcp
-  set_property webtalk.parent_dir C:/XilinxDev/SOC/Seppe-en-Kobe/VHDL/MotorControl/MotorControl.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/XilinxDev/SOC/SeppeEnKobe/VHDL/MotorControl/MotorControl.cache/wt [current_project]
 set_property TOP design_1_wrapper [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }

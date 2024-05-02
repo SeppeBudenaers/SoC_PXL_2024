@@ -1,0 +1,27 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_1/ip/design_1_rst_ps7_0_100M_0/sim/design_1_rst_ps7_0_100M_0.vhd" \
+"../../../bd/design_1/ipshared/86d5/hdl/HC_SR04_v1_0_S00_AXI.vhd" \
+"../../../bd/design_1/ipshared/86d5/_1/HC_SR04_CORE1.vhd" \
+"../../../bd/design_1/ipshared/86d5/hdl/HC_SR04_v1_0.vhd" \
+"../../../bd/design_1/ip/design_1_HC_SR04_0_1/sim/design_1_HC_SR04_0_1.vhd" \
+"../../../bd/design_1/ip/design_1_HC_SR04_0_2/sim/design_1_HC_SR04_0_2.vhd" \
+"../../../bd/design_1/ip/design_1_axi_iic_0_0/sim/design_1_axi_iic_0_0.vhd" \
+"../../../bd/design_1/ipshared/dd40/hdl/Speedsensor_v1_0_S00_AXI.vhd" \
+"../../../bd/design_1/ipshared/dd40/hdl/Speed_Sensor.vhd" \
+"../../../bd/design_1/ipshared/dd40/hdl/Speedsensor_v1_0.vhd" \
+"../../../bd/design_1/ip/design_1_Speedsensor_0_1/sim/design_1_Speedsensor_0_1.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_0_0/sim/design_1_axi_gpio_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_timer_0_0/sim/design_1_axi_timer_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_Speedsensor_0_12/sim/design_1_Speedsensor_0_12.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_0_11/sim/design_1_axi_gpio_0_11.vhd" \
+"../../../bd/design_1/ip/design_1_axi_timer_0_11/sim/design_1_axi_timer_0_11.vhd" \
+"../../../bd/design_1/ip/design_1_Speedsensor_0_13/sim/design_1_Speedsensor_0_13.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_0_12/sim/design_1_axi_gpio_0_12.vhd" \
+"../../../bd/design_1/ip/design_1_axi_timer_0_12/sim/design_1_axi_timer_0_12.vhd" \
+"../../../bd/design_1/ip/design_1_Speedsensor_0_11/sim/design_1_Speedsensor_0_11.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_0_10/sim/design_1_axi_gpio_0_10.vhd" \
+"../../../bd/design_1/ip/design_1_axi_timer_0_10/sim/design_1_axi_timer_0_10.vhd" \
+"../../../bd/design_1/sim/design_1.vhd" \
+
+# Do not sort compile order
+nosort

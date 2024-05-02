@@ -2,11 +2,11 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
--- Date        : Fri Apr 19 16:20:40 2024
+-- Date        : Thu May  2 11:10:01 2024
 -- Host        : Beta running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub -rename_top design_1_Speedsensor_0_1 -prefix
---               design_1_Speedsensor_0_1_ design_1_Speedsensor_0_6_stub.vhdl
--- Design      : design_1_Speedsensor_0_6
+--               design_1_Speedsensor_0_1_ design_1_Speedsensor_0_11_stub.vhdl
+-- Design      : design_1_Speedsensor_0_11
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1
 -- --------------------------------------------------------------------------------
@@ -17,7 +17,6 @@ entity design_1_Speedsensor_0_1 is
   Port ( 
     SpeedData : out STD_LOGIC_VECTOR ( 31 downto 0 );
     DistanceData : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    ResetData : in STD_LOGIC;
     SpeedClockData : in STD_LOGIC;
     ClockData : in STD_LOGIC;
     s00_axi_aclk : in STD_LOGIC;
@@ -49,7 +48,7 @@ architecture stub of design_1_Speedsensor_0_1 is
 attribute syn_black_box : boolean;
 attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
-attribute black_box_pad_pin of stub : architecture is "SpeedData[31:0],DistanceData[31:0],ResetData,SpeedClockData,ClockData,s00_axi_aclk,s00_axi_aresetn,s00_axi_awaddr[3:0],s00_axi_awprot[2:0],s00_axi_awvalid,s00_axi_awready,s00_axi_wdata[31:0],s00_axi_wstrb[3:0],s00_axi_wvalid,s00_axi_wready,s00_axi_bresp[1:0],s00_axi_bvalid,s00_axi_bready,s00_axi_araddr[3:0],s00_axi_arprot[2:0],s00_axi_arvalid,s00_axi_arready,s00_axi_rdata[31:0],s00_axi_rresp[1:0],s00_axi_rvalid,s00_axi_rready";
+attribute black_box_pad_pin of stub : architecture is "SpeedData[31:0],DistanceData[31:0],SpeedClockData,ClockData,s00_axi_aclk,s00_axi_aresetn,s00_axi_awaddr[3:0],s00_axi_awprot[2:0],s00_axi_awvalid,s00_axi_awready,s00_axi_wdata[31:0],s00_axi_wstrb[3:0],s00_axi_wvalid,s00_axi_wready,s00_axi_bresp[1:0],s00_axi_bvalid,s00_axi_bready,s00_axi_araddr[3:0],s00_axi_arprot[2:0],s00_axi_arvalid,s00_axi_arready,s00_axi_rdata[31:0],s00_axi_rresp[1:0],s00_axi_rvalid,s00_axi_rready";
 attribute x_core_info : string;
 attribute x_core_info of stub : architecture is "Speedsensor_v1_0,Vivado 2023.2";
 begin

@@ -2,7 +2,7 @@
 --Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
---Date        : Fri Apr 26 10:25:37 2024
+--Date        : Thu May  2 11:08:53 2024
 --Host        : Beta running 64-bit major release  (build 9200)
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
@@ -85,6 +85,12 @@ architecture STRUCTURE of design_1_wrapper is
     Direction_1_tri_o : out STD_LOGIC_VECTOR ( 1 downto 0 );
     Direction_2_tri_o : out STD_LOGIC_VECTOR ( 1 downto 0 );
     Direction_3_tri_o : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    IIC_0_scl_i : in STD_LOGIC;
+    IIC_0_scl_o : out STD_LOGIC;
+    IIC_0_scl_t : out STD_LOGIC;
+    IIC_0_sda_i : in STD_LOGIC;
+    IIC_0_sda_o : out STD_LOGIC;
+    IIC_0_sda_t : out STD_LOGIC;
     SpeedClockData_0 : in STD_LOGIC;
     sonar_trig_0 : out STD_LOGIC;
     sonar_echo_0 : in STD_LOGIC;
@@ -97,13 +103,7 @@ architecture STRUCTURE of design_1_wrapper is
     PWM_1 : out STD_LOGIC;
     SpeedClockData_3 : in STD_LOGIC;
     SpeedClockData_2 : in STD_LOGIC;
-    SpeedClockData_1 : in STD_LOGIC;
-    IIC_0_scl_i : in STD_LOGIC;
-    IIC_0_scl_o : out STD_LOGIC;
-    IIC_0_scl_t : out STD_LOGIC;
-    IIC_0_sda_i : in STD_LOGIC;
-    IIC_0_sda_o : out STD_LOGIC;
-    IIC_0_sda_t : out STD_LOGIC
+    SpeedClockData_1 : in STD_LOGIC
   );
   end component design_1;
   component IOBUF is

@@ -4119,7 +4119,7 @@
             "components": {
               "Speedsensor_0": {
                 "vlnv": "xilinx.com:user:Speedsensor:1.0",
-                "ip_revision": "3",
+                "ip_revision": "5",
                 "xci_name": "design_1_Speedsensor_0_1",
                 "xci_path": "ip\\design_1_Speedsensor_0_1\\design_1_Speedsensor_0_1.xci",
                 "inst_hier_path": "Motors/Motor_0/Speedsensor_0"
@@ -4270,7 +4270,7 @@
             "components": {
               "Speedsensor_0": {
                 "vlnv": "xilinx.com:user:Speedsensor:1.0",
-                "ip_revision": "3",
+                "ip_revision": "5",
                 "xci_name": "design_1_Speedsensor_0_12",
                 "xci_path": "ip\\design_1_Speedsensor_0_12\\design_1_Speedsensor_0_12.xci",
                 "inst_hier_path": "Motors/Motor_2/Speedsensor_0"
@@ -4421,7 +4421,7 @@
             "components": {
               "Speedsensor_0": {
                 "vlnv": "xilinx.com:user:Speedsensor:1.0",
-                "ip_revision": "3",
+                "ip_revision": "5",
                 "xci_name": "design_1_Speedsensor_0_13",
                 "xci_path": "ip\\design_1_Speedsensor_0_13\\design_1_Speedsensor_0_13.xci",
                 "inst_hier_path": "Motors/Motor_3/Speedsensor_0"
@@ -4572,7 +4572,7 @@
             "components": {
               "Speedsensor_0": {
                 "vlnv": "xilinx.com:user:Speedsensor:1.0",
-                "ip_revision": "3",
+                "ip_revision": "5",
                 "xci_name": "design_1_Speedsensor_0_11",
                 "xci_path": "ip\\design_1_Speedsensor_0_11\\design_1_Speedsensor_0_11.xci",
                 "inst_hier_path": "Motors/Motor_1/Speedsensor_0"

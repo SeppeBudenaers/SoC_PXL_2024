@@ -2,11 +2,11 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
--- Date        : Fri Apr 19 16:20:40 2024
+-- Date        : Thu May  2 11:10:01 2024
 -- Host        : Beta running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim -rename_top design_1_Speedsensor_0_1 -prefix
---               design_1_Speedsensor_0_1_ design_1_Speedsensor_0_6_sim_netlist.vhdl
--- Design      : design_1_Speedsensor_0_6
+--               design_1_Speedsensor_0_1_ design_1_Speedsensor_0_11_sim_netlist.vhdl
+-- Design      : design_1_Speedsensor_0_11
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
 -- Device      : xc7z020clg400-1
@@ -18,10 +18,10 @@ use UNISIM.VCOMPONENTS.ALL;
 entity design_1_Speedsensor_0_1_SpeedCounter is
   port (
     D : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    SpeedClockData : in STD_LOGIC;
     ClockData : in STD_LOGIC;
     slv_reg0 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    SpeedClockData : in STD_LOGIC;
-    p_0_in_0 : in STD_LOGIC_VECTOR ( 1 downto 0 )
+    axi_araddr : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
 end design_1_Speedsensor_0_1_SpeedCounter;
 
@@ -248,6 +248,358 @@ architecture STRUCTURE of design_1_Speedsensor_0_1_SpeedCounter is
   attribute ADDER_THRESHOLD of \timer_sig_reg[4]_i_1\ : label is 11;
   attribute ADDER_THRESHOLD of \timer_sig_reg[8]_i_1\ : label is 11;
 begin
+\axi_rdata[0]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0AC0"
+    )
+        port map (
+      I0 => speed_sig(0),
+      I1 => distance_sig_reg(0),
+      I2 => axi_araddr(1),
+      I3 => axi_araddr(0),
+      O => D(0)
+    );
+\axi_rdata[10]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0AC0"
+    )
+        port map (
+      I0 => speed_sig(10),
+      I1 => distance_sig_reg(10),
+      I2 => axi_araddr(1),
+      I3 => axi_araddr(0),
+      O => D(10)
+    );
+\axi_rdata[11]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0AC0"
+    )
+        port map (
+      I0 => speed_sig(11),
+      I1 => distance_sig_reg(11),
+      I2 => axi_araddr(1),
+      I3 => axi_araddr(0),
+      O => D(11)
+    );
+\axi_rdata[12]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0AC0"
+    )
+        port map (
+      I0 => speed_sig(12),
+      I1 => distance_sig_reg(12),
+      I2 => axi_araddr(1),
+      I3 => axi_araddr(0),
+      O => D(12)
+    );
+\axi_rdata[13]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0AC0"
+    )
+        port map (
+      I0 => speed_sig(13),
+      I1 => distance_sig_reg(13),
+      I2 => axi_araddr(1),
+      I3 => axi_araddr(0),
+      O => D(13)
+    );
+\axi_rdata[14]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0AC0"
+    )
+        port map (
+      I0 => speed_sig(14),
+      I1 => distance_sig_reg(14),
+      I2 => axi_araddr(1),
+      I3 => axi_araddr(0),
+      O => D(14)
+    );
+\axi_rdata[15]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0AC0"
+    )
+        port map (
+      I0 => speed_sig(15),
+      I1 => distance_sig_reg(15),
+      I2 => axi_araddr(1),
+      I3 => axi_araddr(0),
+      O => D(15)
+    );
+\axi_rdata[16]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0AC0"
+    )
+        port map (
+      I0 => speed_sig(16),
+      I1 => distance_sig_reg(16),
+      I2 => axi_araddr(1),
+      I3 => axi_araddr(0),
+      O => D(16)
+    );
+\axi_rdata[17]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0AC0"
+    )
+        port map (
+      I0 => speed_sig(17),
+      I1 => distance_sig_reg(17),
+      I2 => axi_araddr(1),
+      I3 => axi_araddr(0),
+      O => D(17)
+    );
+\axi_rdata[18]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0AC0"
+    )
+        port map (
+      I0 => speed_sig(18),
+      I1 => distance_sig_reg(18),
+      I2 => axi_araddr(1),
+      I3 => axi_araddr(0),
+      O => D(18)
+    );
+\axi_rdata[19]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0AC0"
+    )
+        port map (
+      I0 => speed_sig(19),
+      I1 => distance_sig_reg(19),
+      I2 => axi_araddr(1),
+      I3 => axi_araddr(0),
+      O => D(19)
+    );
+\axi_rdata[1]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0AC0"
+    )
+        port map (
+      I0 => speed_sig(1),
+      I1 => distance_sig_reg(1),
+      I2 => axi_araddr(1),
+      I3 => axi_araddr(0),
+      O => D(1)
+    );
+\axi_rdata[20]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0AC0"
+    )
+        port map (
+      I0 => speed_sig(20),
+      I1 => distance_sig_reg(20),
+      I2 => axi_araddr(1),
+      I3 => axi_araddr(0),
+      O => D(20)
+    );
+\axi_rdata[21]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0AC0"
+    )
+        port map (
+      I0 => speed_sig(21),
+      I1 => distance_sig_reg(21),
+      I2 => axi_araddr(1),
+      I3 => axi_araddr(0),
+      O => D(21)
+    );
+\axi_rdata[22]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0AC0"
+    )
+        port map (
+      I0 => speed_sig(22),
+      I1 => distance_sig_reg(22),
+      I2 => axi_araddr(1),
+      I3 => axi_araddr(0),
+      O => D(22)
+    );
+\axi_rdata[23]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0AC0"
+    )
+        port map (
+      I0 => speed_sig(23),
+      I1 => distance_sig_reg(23),
+      I2 => axi_araddr(1),
+      I3 => axi_araddr(0),
+      O => D(23)
+    );
+\axi_rdata[24]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0AC0"
+    )
+        port map (
+      I0 => speed_sig(24),
+      I1 => distance_sig_reg(24),
+      I2 => axi_araddr(1),
+      I3 => axi_araddr(0),
+      O => D(24)
+    );
+\axi_rdata[25]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0AC0"
+    )
+        port map (
+      I0 => speed_sig(25),
+      I1 => distance_sig_reg(25),
+      I2 => axi_araddr(1),
+      I3 => axi_araddr(0),
+      O => D(25)
+    );
+\axi_rdata[26]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0AC0"
+    )
+        port map (
+      I0 => speed_sig(26),
+      I1 => distance_sig_reg(26),
+      I2 => axi_araddr(1),
+      I3 => axi_araddr(0),
+      O => D(26)
+    );
+\axi_rdata[27]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0AC0"
+    )
+        port map (
+      I0 => speed_sig(27),
+      I1 => distance_sig_reg(27),
+      I2 => axi_araddr(1),
+      I3 => axi_araddr(0),
+      O => D(27)
+    );
+\axi_rdata[28]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0AC0"
+    )
+        port map (
+      I0 => speed_sig(28),
+      I1 => distance_sig_reg(28),
+      I2 => axi_araddr(1),
+      I3 => axi_araddr(0),
+      O => D(28)
+    );
+\axi_rdata[29]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0AC0"
+    )
+        port map (
+      I0 => speed_sig(29),
+      I1 => distance_sig_reg(29),
+      I2 => axi_araddr(1),
+      I3 => axi_araddr(0),
+      O => D(29)
+    );
+\axi_rdata[2]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0AC0"
+    )
+        port map (
+      I0 => speed_sig(2),
+      I1 => distance_sig_reg(2),
+      I2 => axi_araddr(1),
+      I3 => axi_araddr(0),
+      O => D(2)
+    );
+\axi_rdata[30]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0AC0"
+    )
+        port map (
+      I0 => speed_sig(30),
+      I1 => distance_sig_reg(30),
+      I2 => axi_araddr(1),
+      I3 => axi_araddr(0),
+      O => D(30)
+    );
+\axi_rdata[31]_i_2\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0AC0"
+    )
+        port map (
+      I0 => speed_sig(31),
+      I1 => distance_sig_reg(31),
+      I2 => axi_araddr(1),
+      I3 => axi_araddr(0),
+      O => D(31)
+    );
+\axi_rdata[3]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0AC0"
+    )
+        port map (
+      I0 => speed_sig(3),
+      I1 => distance_sig_reg(3),
+      I2 => axi_araddr(1),
+      I3 => axi_araddr(0),
+      O => D(3)
+    );
+\axi_rdata[4]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0AC0"
+    )
+        port map (
+      I0 => speed_sig(4),
+      I1 => distance_sig_reg(4),
+      I2 => axi_araddr(1),
+      I3 => axi_araddr(0),
+      O => D(4)
+    );
+\axi_rdata[5]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0AC0"
+    )
+        port map (
+      I0 => speed_sig(5),
+      I1 => distance_sig_reg(5),
+      I2 => axi_araddr(1),
+      I3 => axi_araddr(0),
+      O => D(5)
+    );
+\axi_rdata[6]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0AC0"
+    )
+        port map (
+      I0 => speed_sig(6),
+      I1 => distance_sig_reg(6),
+      I2 => axi_araddr(1),
+      I3 => axi_araddr(0),
+      O => D(6)
+    );
+\axi_rdata[7]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0AC0"
+    )
+        port map (
+      I0 => speed_sig(7),
+      I1 => distance_sig_reg(7),
+      I2 => axi_araddr(1),
+      I3 => axi_araddr(0),
+      O => D(7)
+    );
+\axi_rdata[8]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0AC0"
+    )
+        port map (
+      I0 => speed_sig(8),
+      I1 => distance_sig_reg(8),
+      I2 => axi_araddr(1),
+      I3 => axi_araddr(0),
+      O => D(8)
+    );
+\axi_rdata[9]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0AC0"
+    )
+        port map (
+      I0 => speed_sig(9),
+      I1 => distance_sig_reg(9),
+      I2 => axi_araddr(1),
+      I3 => axi_araddr(0),
+      O => D(9)
+    );
 \distance_sig[0]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"4"
@@ -1219,358 +1571,6 @@ begin
       Q => distance_speed_sig_reg(9),
       R => \timer_sig[0]_i_1_n_0\
     );
-\reg_data_out_reg[0]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"4F44"
-    )
-        port map (
-      I0 => p_0_in_0(0),
-      I1 => distance_sig_reg(0),
-      I2 => p_0_in_0(1),
-      I3 => speed_sig(0),
-      O => D(0)
-    );
-\reg_data_out_reg[10]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"4F44"
-    )
-        port map (
-      I0 => p_0_in_0(0),
-      I1 => distance_sig_reg(10),
-      I2 => p_0_in_0(1),
-      I3 => speed_sig(10),
-      O => D(10)
-    );
-\reg_data_out_reg[11]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"4F44"
-    )
-        port map (
-      I0 => p_0_in_0(0),
-      I1 => distance_sig_reg(11),
-      I2 => p_0_in_0(1),
-      I3 => speed_sig(11),
-      O => D(11)
-    );
-\reg_data_out_reg[12]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"4F44"
-    )
-        port map (
-      I0 => p_0_in_0(0),
-      I1 => distance_sig_reg(12),
-      I2 => p_0_in_0(1),
-      I3 => speed_sig(12),
-      O => D(12)
-    );
-\reg_data_out_reg[13]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"4F44"
-    )
-        port map (
-      I0 => p_0_in_0(0),
-      I1 => distance_sig_reg(13),
-      I2 => p_0_in_0(1),
-      I3 => speed_sig(13),
-      O => D(13)
-    );
-\reg_data_out_reg[14]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"4F44"
-    )
-        port map (
-      I0 => p_0_in_0(0),
-      I1 => distance_sig_reg(14),
-      I2 => p_0_in_0(1),
-      I3 => speed_sig(14),
-      O => D(14)
-    );
-\reg_data_out_reg[15]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"4F44"
-    )
-        port map (
-      I0 => p_0_in_0(0),
-      I1 => distance_sig_reg(15),
-      I2 => p_0_in_0(1),
-      I3 => speed_sig(15),
-      O => D(15)
-    );
-\reg_data_out_reg[16]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"4F44"
-    )
-        port map (
-      I0 => p_0_in_0(0),
-      I1 => distance_sig_reg(16),
-      I2 => p_0_in_0(1),
-      I3 => speed_sig(16),
-      O => D(16)
-    );
-\reg_data_out_reg[17]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"4F44"
-    )
-        port map (
-      I0 => p_0_in_0(0),
-      I1 => distance_sig_reg(17),
-      I2 => p_0_in_0(1),
-      I3 => speed_sig(17),
-      O => D(17)
-    );
-\reg_data_out_reg[18]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"4F44"
-    )
-        port map (
-      I0 => p_0_in_0(0),
-      I1 => distance_sig_reg(18),
-      I2 => p_0_in_0(1),
-      I3 => speed_sig(18),
-      O => D(18)
-    );
-\reg_data_out_reg[19]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"4F44"
-    )
-        port map (
-      I0 => p_0_in_0(0),
-      I1 => distance_sig_reg(19),
-      I2 => p_0_in_0(1),
-      I3 => speed_sig(19),
-      O => D(19)
-    );
-\reg_data_out_reg[1]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"4F44"
-    )
-        port map (
-      I0 => p_0_in_0(0),
-      I1 => distance_sig_reg(1),
-      I2 => p_0_in_0(1),
-      I3 => speed_sig(1),
-      O => D(1)
-    );
-\reg_data_out_reg[20]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"4F44"
-    )
-        port map (
-      I0 => p_0_in_0(0),
-      I1 => distance_sig_reg(20),
-      I2 => p_0_in_0(1),
-      I3 => speed_sig(20),
-      O => D(20)
-    );
-\reg_data_out_reg[21]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"4F44"
-    )
-        port map (
-      I0 => p_0_in_0(0),
-      I1 => distance_sig_reg(21),
-      I2 => p_0_in_0(1),
-      I3 => speed_sig(21),
-      O => D(21)
-    );
-\reg_data_out_reg[22]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"4F44"
-    )
-        port map (
-      I0 => p_0_in_0(0),
-      I1 => distance_sig_reg(22),
-      I2 => p_0_in_0(1),
-      I3 => speed_sig(22),
-      O => D(22)
-    );
-\reg_data_out_reg[23]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"4F44"
-    )
-        port map (
-      I0 => p_0_in_0(0),
-      I1 => distance_sig_reg(23),
-      I2 => p_0_in_0(1),
-      I3 => speed_sig(23),
-      O => D(23)
-    );
-\reg_data_out_reg[24]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"4F44"
-    )
-        port map (
-      I0 => p_0_in_0(0),
-      I1 => distance_sig_reg(24),
-      I2 => p_0_in_0(1),
-      I3 => speed_sig(24),
-      O => D(24)
-    );
-\reg_data_out_reg[25]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"4F44"
-    )
-        port map (
-      I0 => p_0_in_0(0),
-      I1 => distance_sig_reg(25),
-      I2 => p_0_in_0(1),
-      I3 => speed_sig(25),
-      O => D(25)
-    );
-\reg_data_out_reg[26]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"4F44"
-    )
-        port map (
-      I0 => p_0_in_0(0),
-      I1 => distance_sig_reg(26),
-      I2 => p_0_in_0(1),
-      I3 => speed_sig(26),
-      O => D(26)
-    );
-\reg_data_out_reg[27]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"4F44"
-    )
-        port map (
-      I0 => p_0_in_0(0),
-      I1 => distance_sig_reg(27),
-      I2 => p_0_in_0(1),
-      I3 => speed_sig(27),
-      O => D(27)
-    );
-\reg_data_out_reg[28]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"4F44"
-    )
-        port map (
-      I0 => p_0_in_0(0),
-      I1 => distance_sig_reg(28),
-      I2 => p_0_in_0(1),
-      I3 => speed_sig(28),
-      O => D(28)
-    );
-\reg_data_out_reg[29]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"4F44"
-    )
-        port map (
-      I0 => p_0_in_0(0),
-      I1 => distance_sig_reg(29),
-      I2 => p_0_in_0(1),
-      I3 => speed_sig(29),
-      O => D(29)
-    );
-\reg_data_out_reg[2]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"4F44"
-    )
-        port map (
-      I0 => p_0_in_0(0),
-      I1 => distance_sig_reg(2),
-      I2 => p_0_in_0(1),
-      I3 => speed_sig(2),
-      O => D(2)
-    );
-\reg_data_out_reg[30]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"4F44"
-    )
-        port map (
-      I0 => p_0_in_0(0),
-      I1 => distance_sig_reg(30),
-      I2 => p_0_in_0(1),
-      I3 => speed_sig(30),
-      O => D(30)
-    );
-\reg_data_out_reg[31]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"4F44"
-    )
-        port map (
-      I0 => p_0_in_0(0),
-      I1 => distance_sig_reg(31),
-      I2 => p_0_in_0(1),
-      I3 => speed_sig(31),
-      O => D(31)
-    );
-\reg_data_out_reg[3]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"4F44"
-    )
-        port map (
-      I0 => p_0_in_0(0),
-      I1 => distance_sig_reg(3),
-      I2 => p_0_in_0(1),
-      I3 => speed_sig(3),
-      O => D(3)
-    );
-\reg_data_out_reg[4]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"4F44"
-    )
-        port map (
-      I0 => p_0_in_0(0),
-      I1 => distance_sig_reg(4),
-      I2 => p_0_in_0(1),
-      I3 => speed_sig(4),
-      O => D(4)
-    );
-\reg_data_out_reg[5]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"4F44"
-    )
-        port map (
-      I0 => p_0_in_0(0),
-      I1 => distance_sig_reg(5),
-      I2 => p_0_in_0(1),
-      I3 => speed_sig(5),
-      O => D(5)
-    );
-\reg_data_out_reg[6]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"4F44"
-    )
-        port map (
-      I0 => p_0_in_0(0),
-      I1 => distance_sig_reg(6),
-      I2 => p_0_in_0(1),
-      I3 => speed_sig(6),
-      O => D(6)
-    );
-\reg_data_out_reg[7]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"4F44"
-    )
-        port map (
-      I0 => p_0_in_0(0),
-      I1 => distance_sig_reg(7),
-      I2 => p_0_in_0(1),
-      I3 => speed_sig(7),
-      O => D(7)
-    );
-\reg_data_out_reg[8]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"4F44"
-    )
-        port map (
-      I0 => p_0_in_0(0),
-      I1 => distance_sig_reg(8),
-      I2 => p_0_in_0(1),
-      I3 => speed_sig(8),
-      O => D(8)
-    );
-\reg_data_out_reg[9]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"4F44"
-    )
-        port map (
-      I0 => p_0_in_0(0),
-      I1 => distance_sig_reg(9),
-      I2 => p_0_in_0(1),
-      I3 => speed_sig(9),
-      O => D(9)
-    );
 speed_clk_sig_reg: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
@@ -2408,40 +2408,9 @@ architecture STRUCTURE of design_1_Speedsensor_0_1_Speedsensor_v1_0_S00_AXI is
   signal \^s_axi_arready\ : STD_LOGIC;
   signal \^s_axi_awready\ : STD_LOGIC;
   signal \^s_axi_wready\ : STD_LOGIC;
-  signal SpeedPM_n_0 : STD_LOGIC;
-  signal SpeedPM_n_1 : STD_LOGIC;
-  signal SpeedPM_n_10 : STD_LOGIC;
-  signal SpeedPM_n_11 : STD_LOGIC;
-  signal SpeedPM_n_12 : STD_LOGIC;
-  signal SpeedPM_n_13 : STD_LOGIC;
-  signal SpeedPM_n_14 : STD_LOGIC;
-  signal SpeedPM_n_15 : STD_LOGIC;
-  signal SpeedPM_n_16 : STD_LOGIC;
-  signal SpeedPM_n_17 : STD_LOGIC;
-  signal SpeedPM_n_18 : STD_LOGIC;
-  signal SpeedPM_n_19 : STD_LOGIC;
-  signal SpeedPM_n_2 : STD_LOGIC;
-  signal SpeedPM_n_20 : STD_LOGIC;
-  signal SpeedPM_n_21 : STD_LOGIC;
-  signal SpeedPM_n_22 : STD_LOGIC;
-  signal SpeedPM_n_23 : STD_LOGIC;
-  signal SpeedPM_n_24 : STD_LOGIC;
-  signal SpeedPM_n_25 : STD_LOGIC;
-  signal SpeedPM_n_26 : STD_LOGIC;
-  signal SpeedPM_n_27 : STD_LOGIC;
-  signal SpeedPM_n_28 : STD_LOGIC;
-  signal SpeedPM_n_29 : STD_LOGIC;
-  signal SpeedPM_n_3 : STD_LOGIC;
-  signal SpeedPM_n_30 : STD_LOGIC;
-  signal SpeedPM_n_31 : STD_LOGIC;
-  signal SpeedPM_n_4 : STD_LOGIC;
-  signal SpeedPM_n_5 : STD_LOGIC;
-  signal SpeedPM_n_6 : STD_LOGIC;
-  signal SpeedPM_n_7 : STD_LOGIC;
-  signal SpeedPM_n_8 : STD_LOGIC;
-  signal SpeedPM_n_9 : STD_LOGIC;
   signal aw_en_i_1_n_0 : STD_LOGIC;
   signal aw_en_reg_n_0 : STD_LOGIC;
+  signal axi_araddr : STD_LOGIC_VECTOR ( 3 downto 2 );
   signal \axi_araddr[2]_i_1_n_0\ : STD_LOGIC;
   signal \axi_araddr[3]_i_1_n_0\ : STD_LOGIC;
   signal axi_arready0 : STD_LOGIC;
@@ -2453,9 +2422,7 @@ architecture STRUCTURE of design_1_Speedsensor_0_1_Speedsensor_v1_0_S00_AXI is
   signal axi_rvalid_i_1_n_0 : STD_LOGIC;
   signal axi_wready0 : STD_LOGIC;
   signal p_0_in : STD_LOGIC;
-  signal p_0_in_0 : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal reg_data_out : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal \reg_data_out_reg[31]_i_2_n_0\ : STD_LOGIC;
   signal \^s00_axi_bvalid\ : STD_LOGIC;
   signal \^s00_axi_rvalid\ : STD_LOGIC;
   signal slv_reg0 : STD_LOGIC_VECTOR ( 0 to 0 );
@@ -2467,72 +2434,6 @@ architecture STRUCTURE of design_1_Speedsensor_0_1_Speedsensor_v1_0_S00_AXI is
   attribute SOFT_HLUTNM of axi_awready_i_2 : label is "soft_lutpair0";
   attribute SOFT_HLUTNM of axi_rvalid_i_1 : label is "soft_lutpair1";
   attribute SOFT_HLUTNM of axi_wready_i_1 : label is "soft_lutpair0";
-  attribute XILINX_LEGACY_PRIM : string;
-  attribute XILINX_LEGACY_PRIM of \reg_data_out_reg[0]\ : label is "LD";
-  attribute XILINX_TRANSFORM_PINMAP : string;
-  attribute XILINX_TRANSFORM_PINMAP of \reg_data_out_reg[0]\ : label is "VCC:GE GND:CLR";
-  attribute XILINX_LEGACY_PRIM of \reg_data_out_reg[10]\ : label is "LD";
-  attribute XILINX_TRANSFORM_PINMAP of \reg_data_out_reg[10]\ : label is "VCC:GE GND:CLR";
-  attribute XILINX_LEGACY_PRIM of \reg_data_out_reg[11]\ : label is "LD";
-  attribute XILINX_TRANSFORM_PINMAP of \reg_data_out_reg[11]\ : label is "VCC:GE GND:CLR";
-  attribute XILINX_LEGACY_PRIM of \reg_data_out_reg[12]\ : label is "LD";
-  attribute XILINX_TRANSFORM_PINMAP of \reg_data_out_reg[12]\ : label is "VCC:GE GND:CLR";
-  attribute XILINX_LEGACY_PRIM of \reg_data_out_reg[13]\ : label is "LD";
-  attribute XILINX_TRANSFORM_PINMAP of \reg_data_out_reg[13]\ : label is "VCC:GE GND:CLR";
-  attribute XILINX_LEGACY_PRIM of \reg_data_out_reg[14]\ : label is "LD";
-  attribute XILINX_TRANSFORM_PINMAP of \reg_data_out_reg[14]\ : label is "VCC:GE GND:CLR";
-  attribute XILINX_LEGACY_PRIM of \reg_data_out_reg[15]\ : label is "LD";
-  attribute XILINX_TRANSFORM_PINMAP of \reg_data_out_reg[15]\ : label is "VCC:GE GND:CLR";
-  attribute XILINX_LEGACY_PRIM of \reg_data_out_reg[16]\ : label is "LD";
-  attribute XILINX_TRANSFORM_PINMAP of \reg_data_out_reg[16]\ : label is "VCC:GE GND:CLR";
-  attribute XILINX_LEGACY_PRIM of \reg_data_out_reg[17]\ : label is "LD";
-  attribute XILINX_TRANSFORM_PINMAP of \reg_data_out_reg[17]\ : label is "VCC:GE GND:CLR";
-  attribute XILINX_LEGACY_PRIM of \reg_data_out_reg[18]\ : label is "LD";
-  attribute XILINX_TRANSFORM_PINMAP of \reg_data_out_reg[18]\ : label is "VCC:GE GND:CLR";
-  attribute XILINX_LEGACY_PRIM of \reg_data_out_reg[19]\ : label is "LD";
-  attribute XILINX_TRANSFORM_PINMAP of \reg_data_out_reg[19]\ : label is "VCC:GE GND:CLR";
-  attribute XILINX_LEGACY_PRIM of \reg_data_out_reg[1]\ : label is "LD";
-  attribute XILINX_TRANSFORM_PINMAP of \reg_data_out_reg[1]\ : label is "VCC:GE GND:CLR";
-  attribute XILINX_LEGACY_PRIM of \reg_data_out_reg[20]\ : label is "LD";
-  attribute XILINX_TRANSFORM_PINMAP of \reg_data_out_reg[20]\ : label is "VCC:GE GND:CLR";
-  attribute XILINX_LEGACY_PRIM of \reg_data_out_reg[21]\ : label is "LD";
-  attribute XILINX_TRANSFORM_PINMAP of \reg_data_out_reg[21]\ : label is "VCC:GE GND:CLR";
-  attribute XILINX_LEGACY_PRIM of \reg_data_out_reg[22]\ : label is "LD";
-  attribute XILINX_TRANSFORM_PINMAP of \reg_data_out_reg[22]\ : label is "VCC:GE GND:CLR";
-  attribute XILINX_LEGACY_PRIM of \reg_data_out_reg[23]\ : label is "LD";
-  attribute XILINX_TRANSFORM_PINMAP of \reg_data_out_reg[23]\ : label is "VCC:GE GND:CLR";
-  attribute XILINX_LEGACY_PRIM of \reg_data_out_reg[24]\ : label is "LD";
-  attribute XILINX_TRANSFORM_PINMAP of \reg_data_out_reg[24]\ : label is "VCC:GE GND:CLR";
-  attribute XILINX_LEGACY_PRIM of \reg_data_out_reg[25]\ : label is "LD";
-  attribute XILINX_TRANSFORM_PINMAP of \reg_data_out_reg[25]\ : label is "VCC:GE GND:CLR";
-  attribute XILINX_LEGACY_PRIM of \reg_data_out_reg[26]\ : label is "LD";
-  attribute XILINX_TRANSFORM_PINMAP of \reg_data_out_reg[26]\ : label is "VCC:GE GND:CLR";
-  attribute XILINX_LEGACY_PRIM of \reg_data_out_reg[27]\ : label is "LD";
-  attribute XILINX_TRANSFORM_PINMAP of \reg_data_out_reg[27]\ : label is "VCC:GE GND:CLR";
-  attribute XILINX_LEGACY_PRIM of \reg_data_out_reg[28]\ : label is "LD";
-  attribute XILINX_TRANSFORM_PINMAP of \reg_data_out_reg[28]\ : label is "VCC:GE GND:CLR";
-  attribute XILINX_LEGACY_PRIM of \reg_data_out_reg[29]\ : label is "LD";
-  attribute XILINX_TRANSFORM_PINMAP of \reg_data_out_reg[29]\ : label is "VCC:GE GND:CLR";
-  attribute XILINX_LEGACY_PRIM of \reg_data_out_reg[2]\ : label is "LD";
-  attribute XILINX_TRANSFORM_PINMAP of \reg_data_out_reg[2]\ : label is "VCC:GE GND:CLR";
-  attribute XILINX_LEGACY_PRIM of \reg_data_out_reg[30]\ : label is "LD";
-  attribute XILINX_TRANSFORM_PINMAP of \reg_data_out_reg[30]\ : label is "VCC:GE GND:CLR";
-  attribute XILINX_LEGACY_PRIM of \reg_data_out_reg[31]\ : label is "LD";
-  attribute XILINX_TRANSFORM_PINMAP of \reg_data_out_reg[31]\ : label is "VCC:GE GND:CLR";
-  attribute XILINX_LEGACY_PRIM of \reg_data_out_reg[3]\ : label is "LD";
-  attribute XILINX_TRANSFORM_PINMAP of \reg_data_out_reg[3]\ : label is "VCC:GE GND:CLR";
-  attribute XILINX_LEGACY_PRIM of \reg_data_out_reg[4]\ : label is "LD";
-  attribute XILINX_TRANSFORM_PINMAP of \reg_data_out_reg[4]\ : label is "VCC:GE GND:CLR";
-  attribute XILINX_LEGACY_PRIM of \reg_data_out_reg[5]\ : label is "LD";
-  attribute XILINX_TRANSFORM_PINMAP of \reg_data_out_reg[5]\ : label is "VCC:GE GND:CLR";
-  attribute XILINX_LEGACY_PRIM of \reg_data_out_reg[6]\ : label is "LD";
-  attribute XILINX_TRANSFORM_PINMAP of \reg_data_out_reg[6]\ : label is "VCC:GE GND:CLR";
-  attribute XILINX_LEGACY_PRIM of \reg_data_out_reg[7]\ : label is "LD";
-  attribute XILINX_TRANSFORM_PINMAP of \reg_data_out_reg[7]\ : label is "VCC:GE GND:CLR";
-  attribute XILINX_LEGACY_PRIM of \reg_data_out_reg[8]\ : label is "LD";
-  attribute XILINX_TRANSFORM_PINMAP of \reg_data_out_reg[8]\ : label is "VCC:GE GND:CLR";
-  attribute XILINX_LEGACY_PRIM of \reg_data_out_reg[9]\ : label is "LD";
-  attribute XILINX_TRANSFORM_PINMAP of \reg_data_out_reg[9]\ : label is "VCC:GE GND:CLR";
 begin
   S_AXI_ARREADY <= \^s_axi_arready\;
   S_AXI_AWREADY <= \^s_axi_awready\;
@@ -2542,40 +2443,9 @@ begin
 SpeedPM: entity work.design_1_Speedsensor_0_1_SpeedCounter
      port map (
       ClockData => ClockData,
-      D(31) => SpeedPM_n_0,
-      D(30) => SpeedPM_n_1,
-      D(29) => SpeedPM_n_2,
-      D(28) => SpeedPM_n_3,
-      D(27) => SpeedPM_n_4,
-      D(26) => SpeedPM_n_5,
-      D(25) => SpeedPM_n_6,
-      D(24) => SpeedPM_n_7,
-      D(23) => SpeedPM_n_8,
-      D(22) => SpeedPM_n_9,
-      D(21) => SpeedPM_n_10,
-      D(20) => SpeedPM_n_11,
-      D(19) => SpeedPM_n_12,
-      D(18) => SpeedPM_n_13,
-      D(17) => SpeedPM_n_14,
-      D(16) => SpeedPM_n_15,
-      D(15) => SpeedPM_n_16,
-      D(14) => SpeedPM_n_17,
-      D(13) => SpeedPM_n_18,
-      D(12) => SpeedPM_n_19,
-      D(11) => SpeedPM_n_20,
-      D(10) => SpeedPM_n_21,
-      D(9) => SpeedPM_n_22,
-      D(8) => SpeedPM_n_23,
-      D(7) => SpeedPM_n_24,
-      D(6) => SpeedPM_n_25,
-      D(5) => SpeedPM_n_26,
-      D(4) => SpeedPM_n_27,
-      D(3) => SpeedPM_n_28,
-      D(2) => SpeedPM_n_29,
-      D(1) => SpeedPM_n_30,
-      D(0) => SpeedPM_n_31,
+      D(31 downto 0) => reg_data_out(31 downto 0),
       SpeedClockData => SpeedClockData,
-      p_0_in_0(1 downto 0) => p_0_in_0(1 downto 0),
+      axi_araddr(1 downto 0) => axi_araddr(3 downto 2),
       slv_reg0(0) => slv_reg0(0)
     );
 aw_en_i_1: unisim.vcomponents.LUT6
@@ -2607,7 +2477,7 @@ aw_en_reg: unisim.vcomponents.FDSE
       I0 => s00_axi_araddr(0),
       I1 => s00_axi_arvalid,
       I2 => \^s_axi_arready\,
-      I3 => p_0_in_0(0),
+      I3 => axi_araddr(2),
       O => \axi_araddr[2]_i_1_n_0\
     );
 \axi_araddr[3]_i_1\: unisim.vcomponents.LUT4
@@ -2618,7 +2488,7 @@ aw_en_reg: unisim.vcomponents.FDSE
       I0 => s00_axi_araddr(1),
       I1 => s00_axi_arvalid,
       I2 => \^s_axi_arready\,
-      I3 => p_0_in_0(1),
+      I3 => axi_araddr(3),
       O => \axi_araddr[3]_i_1_n_0\
     );
 \axi_araddr_reg[2]\: unisim.vcomponents.FDSE
@@ -2626,7 +2496,7 @@ aw_en_reg: unisim.vcomponents.FDSE
       C => s00_axi_aclk,
       CE => '1',
       D => \axi_araddr[2]_i_1_n_0\,
-      Q => p_0_in_0(0),
+      Q => axi_araddr(2),
       S => p_0_in
     );
 \axi_araddr_reg[3]\: unisim.vcomponents.FDSE
@@ -2634,7 +2504,7 @@ aw_en_reg: unisim.vcomponents.FDSE
       C => s00_axi_aclk,
       CE => '1',
       D => \axi_araddr[3]_i_1_n_0\,
-      Q => p_0_in_0(1),
+      Q => axi_araddr(3),
       S => p_0_in
     );
 axi_arready_i_1: unisim.vcomponents.LUT2
@@ -3048,367 +2918,6 @@ axi_wready_reg: unisim.vcomponents.FDRE
       Q => \^s_axi_wready\,
       R => p_0_in
     );
-\reg_data_out_reg[0]\: unisim.vcomponents.LDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => SpeedPM_n_31,
-      G => \reg_data_out_reg[31]_i_2_n_0\,
-      GE => '1',
-      Q => reg_data_out(0)
-    );
-\reg_data_out_reg[10]\: unisim.vcomponents.LDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => SpeedPM_n_21,
-      G => \reg_data_out_reg[31]_i_2_n_0\,
-      GE => '1',
-      Q => reg_data_out(10)
-    );
-\reg_data_out_reg[11]\: unisim.vcomponents.LDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => SpeedPM_n_20,
-      G => \reg_data_out_reg[31]_i_2_n_0\,
-      GE => '1',
-      Q => reg_data_out(11)
-    );
-\reg_data_out_reg[12]\: unisim.vcomponents.LDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => SpeedPM_n_19,
-      G => \reg_data_out_reg[31]_i_2_n_0\,
-      GE => '1',
-      Q => reg_data_out(12)
-    );
-\reg_data_out_reg[13]\: unisim.vcomponents.LDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => SpeedPM_n_18,
-      G => \reg_data_out_reg[31]_i_2_n_0\,
-      GE => '1',
-      Q => reg_data_out(13)
-    );
-\reg_data_out_reg[14]\: unisim.vcomponents.LDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => SpeedPM_n_17,
-      G => \reg_data_out_reg[31]_i_2_n_0\,
-      GE => '1',
-      Q => reg_data_out(14)
-    );
-\reg_data_out_reg[15]\: unisim.vcomponents.LDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => SpeedPM_n_16,
-      G => \reg_data_out_reg[31]_i_2_n_0\,
-      GE => '1',
-      Q => reg_data_out(15)
-    );
-\reg_data_out_reg[16]\: unisim.vcomponents.LDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => SpeedPM_n_15,
-      G => \reg_data_out_reg[31]_i_2_n_0\,
-      GE => '1',
-      Q => reg_data_out(16)
-    );
-\reg_data_out_reg[17]\: unisim.vcomponents.LDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => SpeedPM_n_14,
-      G => \reg_data_out_reg[31]_i_2_n_0\,
-      GE => '1',
-      Q => reg_data_out(17)
-    );
-\reg_data_out_reg[18]\: unisim.vcomponents.LDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => SpeedPM_n_13,
-      G => \reg_data_out_reg[31]_i_2_n_0\,
-      GE => '1',
-      Q => reg_data_out(18)
-    );
-\reg_data_out_reg[19]\: unisim.vcomponents.LDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => SpeedPM_n_12,
-      G => \reg_data_out_reg[31]_i_2_n_0\,
-      GE => '1',
-      Q => reg_data_out(19)
-    );
-\reg_data_out_reg[1]\: unisim.vcomponents.LDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => SpeedPM_n_30,
-      G => \reg_data_out_reg[31]_i_2_n_0\,
-      GE => '1',
-      Q => reg_data_out(1)
-    );
-\reg_data_out_reg[20]\: unisim.vcomponents.LDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => SpeedPM_n_11,
-      G => \reg_data_out_reg[31]_i_2_n_0\,
-      GE => '1',
-      Q => reg_data_out(20)
-    );
-\reg_data_out_reg[21]\: unisim.vcomponents.LDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => SpeedPM_n_10,
-      G => \reg_data_out_reg[31]_i_2_n_0\,
-      GE => '1',
-      Q => reg_data_out(21)
-    );
-\reg_data_out_reg[22]\: unisim.vcomponents.LDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => SpeedPM_n_9,
-      G => \reg_data_out_reg[31]_i_2_n_0\,
-      GE => '1',
-      Q => reg_data_out(22)
-    );
-\reg_data_out_reg[23]\: unisim.vcomponents.LDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => SpeedPM_n_8,
-      G => \reg_data_out_reg[31]_i_2_n_0\,
-      GE => '1',
-      Q => reg_data_out(23)
-    );
-\reg_data_out_reg[24]\: unisim.vcomponents.LDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => SpeedPM_n_7,
-      G => \reg_data_out_reg[31]_i_2_n_0\,
-      GE => '1',
-      Q => reg_data_out(24)
-    );
-\reg_data_out_reg[25]\: unisim.vcomponents.LDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => SpeedPM_n_6,
-      G => \reg_data_out_reg[31]_i_2_n_0\,
-      GE => '1',
-      Q => reg_data_out(25)
-    );
-\reg_data_out_reg[26]\: unisim.vcomponents.LDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => SpeedPM_n_5,
-      G => \reg_data_out_reg[31]_i_2_n_0\,
-      GE => '1',
-      Q => reg_data_out(26)
-    );
-\reg_data_out_reg[27]\: unisim.vcomponents.LDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => SpeedPM_n_4,
-      G => \reg_data_out_reg[31]_i_2_n_0\,
-      GE => '1',
-      Q => reg_data_out(27)
-    );
-\reg_data_out_reg[28]\: unisim.vcomponents.LDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => SpeedPM_n_3,
-      G => \reg_data_out_reg[31]_i_2_n_0\,
-      GE => '1',
-      Q => reg_data_out(28)
-    );
-\reg_data_out_reg[29]\: unisim.vcomponents.LDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => SpeedPM_n_2,
-      G => \reg_data_out_reg[31]_i_2_n_0\,
-      GE => '1',
-      Q => reg_data_out(29)
-    );
-\reg_data_out_reg[2]\: unisim.vcomponents.LDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => SpeedPM_n_29,
-      G => \reg_data_out_reg[31]_i_2_n_0\,
-      GE => '1',
-      Q => reg_data_out(2)
-    );
-\reg_data_out_reg[30]\: unisim.vcomponents.LDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => SpeedPM_n_1,
-      G => \reg_data_out_reg[31]_i_2_n_0\,
-      GE => '1',
-      Q => reg_data_out(30)
-    );
-\reg_data_out_reg[31]\: unisim.vcomponents.LDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => SpeedPM_n_0,
-      G => \reg_data_out_reg[31]_i_2_n_0\,
-      GE => '1',
-      Q => reg_data_out(31)
-    );
-\reg_data_out_reg[31]_i_2\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"E"
-    )
-        port map (
-      I0 => p_0_in_0(0),
-      I1 => p_0_in_0(1),
-      O => \reg_data_out_reg[31]_i_2_n_0\
-    );
-\reg_data_out_reg[3]\: unisim.vcomponents.LDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => SpeedPM_n_28,
-      G => \reg_data_out_reg[31]_i_2_n_0\,
-      GE => '1',
-      Q => reg_data_out(3)
-    );
-\reg_data_out_reg[4]\: unisim.vcomponents.LDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => SpeedPM_n_27,
-      G => \reg_data_out_reg[31]_i_2_n_0\,
-      GE => '1',
-      Q => reg_data_out(4)
-    );
-\reg_data_out_reg[5]\: unisim.vcomponents.LDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => SpeedPM_n_26,
-      G => \reg_data_out_reg[31]_i_2_n_0\,
-      GE => '1',
-      Q => reg_data_out(5)
-    );
-\reg_data_out_reg[6]\: unisim.vcomponents.LDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => SpeedPM_n_25,
-      G => \reg_data_out_reg[31]_i_2_n_0\,
-      GE => '1',
-      Q => reg_data_out(6)
-    );
-\reg_data_out_reg[7]\: unisim.vcomponents.LDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => SpeedPM_n_24,
-      G => \reg_data_out_reg[31]_i_2_n_0\,
-      GE => '1',
-      Q => reg_data_out(7)
-    );
-\reg_data_out_reg[8]\: unisim.vcomponents.LDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => SpeedPM_n_23,
-      G => \reg_data_out_reg[31]_i_2_n_0\,
-      GE => '1',
-      Q => reg_data_out(8)
-    );
-\reg_data_out_reg[9]\: unisim.vcomponents.LDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => SpeedPM_n_22,
-      G => \reg_data_out_reg[31]_i_2_n_0\,
-      GE => '1',
-      Q => reg_data_out(9)
-    );
 \slv_reg0[0]_i_1\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"FFFBFFFF00080000"
@@ -3503,7 +3012,6 @@ entity design_1_Speedsensor_0_1 is
   port (
     SpeedData : out STD_LOGIC_VECTOR ( 31 downto 0 );
     DistanceData : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    ResetData : in STD_LOGIC;
     SpeedClockData : in STD_LOGIC;
     ClockData : in STD_LOGIC;
     s00_axi_aclk : in STD_LOGIC;
@@ -3531,7 +3039,7 @@ entity design_1_Speedsensor_0_1 is
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of design_1_Speedsensor_0_1 : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of design_1_Speedsensor_0_1 : entity is "design_1_Speedsensor_0_6,Speedsensor_v1_0,{}";
+  attribute CHECK_LICENSE_TYPE of design_1_Speedsensor_0_1 : entity is "design_1_Speedsensor_0_11,Speedsensor_v1_0,{}";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of design_1_Speedsensor_0_1 : entity is "yes";
   attribute x_core_info : string;

@@ -2,11 +2,11 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-// Date        : Fri Apr 19 16:20:40 2024
+// Date        : Thu May  2 11:10:01 2024
 // Host        : Beta running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim -rename_top design_1_Speedsensor_0_12 -prefix
-//               design_1_Speedsensor_0_12_ design_1_Speedsensor_0_6_sim_netlist.v
-// Design      : design_1_Speedsensor_0_6
+//               design_1_Speedsensor_0_12_ design_1_Speedsensor_0_11_sim_netlist.v
+// Design      : design_1_Speedsensor_0_11
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
 // Device      : xc7z020clg400-1
@@ -15,19 +15,20 @@
 
 module design_1_Speedsensor_0_12_SpeedCounter
    (D,
+    SpeedClockData,
     ClockData,
     slv_reg0,
-    SpeedClockData,
-    p_0_in_0);
+    axi_araddr);
   output [31:0]D;
+  input SpeedClockData;
   input ClockData;
   input [0:0]slv_reg0;
-  input SpeedClockData;
-  input [1:0]p_0_in_0;
+  input [1:0]axi_araddr;
 
   wire ClockData;
   wire [31:0]D;
   wire SpeedClockData;
+  wire [1:0]axi_araddr;
   wire \distance_sig[0]_i_3_n_0 ;
   wire [31:0]distance_sig_reg;
   wire \distance_sig_reg[0]_i_2_n_0 ;
@@ -159,7 +160,6 @@ module design_1_Speedsensor_0_12_SpeedCounter
   wire \distance_speed_sig_reg[8]_i_1_n_5 ;
   wire \distance_speed_sig_reg[8]_i_1_n_6 ;
   wire \distance_speed_sig_reg[8]_i_1_n_7 ;
-  wire [1:0]p_0_in_0;
   wire [0:0]slv_reg0;
   wire speed_clk_sig;
   wire [31:0]speed_sig;
@@ -229,6 +229,262 @@ module design_1_Speedsensor_0_12_SpeedCounter
   wire [3:3]\NLW_distance_speed_sig_reg[28]_i_1_CO_UNCONNECTED ;
   wire [3:3]\NLW_timer_sig_reg[20]_i_1_CO_UNCONNECTED ;
 
+  LUT4 #(
+    .INIT(16'h0AC0)) 
+    \axi_rdata[0]_i_1 
+       (.I0(speed_sig[0]),
+        .I1(distance_sig_reg[0]),
+        .I2(axi_araddr[1]),
+        .I3(axi_araddr[0]),
+        .O(D[0]));
+  LUT4 #(
+    .INIT(16'h0AC0)) 
+    \axi_rdata[10]_i_1 
+       (.I0(speed_sig[10]),
+        .I1(distance_sig_reg[10]),
+        .I2(axi_araddr[1]),
+        .I3(axi_araddr[0]),
+        .O(D[10]));
+  LUT4 #(
+    .INIT(16'h0AC0)) 
+    \axi_rdata[11]_i_1 
+       (.I0(speed_sig[11]),
+        .I1(distance_sig_reg[11]),
+        .I2(axi_araddr[1]),
+        .I3(axi_araddr[0]),
+        .O(D[11]));
+  LUT4 #(
+    .INIT(16'h0AC0)) 
+    \axi_rdata[12]_i_1 
+       (.I0(speed_sig[12]),
+        .I1(distance_sig_reg[12]),
+        .I2(axi_araddr[1]),
+        .I3(axi_araddr[0]),
+        .O(D[12]));
+  LUT4 #(
+    .INIT(16'h0AC0)) 
+    \axi_rdata[13]_i_1 
+       (.I0(speed_sig[13]),
+        .I1(distance_sig_reg[13]),
+        .I2(axi_araddr[1]),
+        .I3(axi_araddr[0]),
+        .O(D[13]));
+  LUT4 #(
+    .INIT(16'h0AC0)) 
+    \axi_rdata[14]_i_1 
+       (.I0(speed_sig[14]),
+        .I1(distance_sig_reg[14]),
+        .I2(axi_araddr[1]),
+        .I3(axi_araddr[0]),
+        .O(D[14]));
+  LUT4 #(
+    .INIT(16'h0AC0)) 
+    \axi_rdata[15]_i_1 
+       (.I0(speed_sig[15]),
+        .I1(distance_sig_reg[15]),
+        .I2(axi_araddr[1]),
+        .I3(axi_araddr[0]),
+        .O(D[15]));
+  LUT4 #(
+    .INIT(16'h0AC0)) 
+    \axi_rdata[16]_i_1 
+       (.I0(speed_sig[16]),
+        .I1(distance_sig_reg[16]),
+        .I2(axi_araddr[1]),
+        .I3(axi_araddr[0]),
+        .O(D[16]));
+  LUT4 #(
+    .INIT(16'h0AC0)) 
+    \axi_rdata[17]_i_1 
+       (.I0(speed_sig[17]),
+        .I1(distance_sig_reg[17]),
+        .I2(axi_araddr[1]),
+        .I3(axi_araddr[0]),
+        .O(D[17]));
+  LUT4 #(
+    .INIT(16'h0AC0)) 
+    \axi_rdata[18]_i_1 
+       (.I0(speed_sig[18]),
+        .I1(distance_sig_reg[18]),
+        .I2(axi_araddr[1]),
+        .I3(axi_araddr[0]),
+        .O(D[18]));
+  LUT4 #(
+    .INIT(16'h0AC0)) 
+    \axi_rdata[19]_i_1 
+       (.I0(speed_sig[19]),
+        .I1(distance_sig_reg[19]),
+        .I2(axi_araddr[1]),
+        .I3(axi_araddr[0]),
+        .O(D[19]));
+  LUT4 #(
+    .INIT(16'h0AC0)) 
+    \axi_rdata[1]_i_1 
+       (.I0(speed_sig[1]),
+        .I1(distance_sig_reg[1]),
+        .I2(axi_araddr[1]),
+        .I3(axi_araddr[0]),
+        .O(D[1]));
+  LUT4 #(
+    .INIT(16'h0AC0)) 
+    \axi_rdata[20]_i_1 
+       (.I0(speed_sig[20]),
+        .I1(distance_sig_reg[20]),
+        .I2(axi_araddr[1]),
+        .I3(axi_araddr[0]),
+        .O(D[20]));
+  LUT4 #(
+    .INIT(16'h0AC0)) 
+    \axi_rdata[21]_i_1 
+       (.I0(speed_sig[21]),
+        .I1(distance_sig_reg[21]),
+        .I2(axi_araddr[1]),
+        .I3(axi_araddr[0]),
+        .O(D[21]));
+  LUT4 #(
+    .INIT(16'h0AC0)) 
+    \axi_rdata[22]_i_1 
+       (.I0(speed_sig[22]),
+        .I1(distance_sig_reg[22]),
+        .I2(axi_araddr[1]),
+        .I3(axi_araddr[0]),
+        .O(D[22]));
+  LUT4 #(
+    .INIT(16'h0AC0)) 
+    \axi_rdata[23]_i_1 
+       (.I0(speed_sig[23]),
+        .I1(distance_sig_reg[23]),
+        .I2(axi_araddr[1]),
+        .I3(axi_araddr[0]),
+        .O(D[23]));
+  LUT4 #(
+    .INIT(16'h0AC0)) 
+    \axi_rdata[24]_i_1 
+       (.I0(speed_sig[24]),
+        .I1(distance_sig_reg[24]),
+        .I2(axi_araddr[1]),
+        .I3(axi_araddr[0]),
+        .O(D[24]));
+  LUT4 #(
+    .INIT(16'h0AC0)) 
+    \axi_rdata[25]_i_1 
+       (.I0(speed_sig[25]),
+        .I1(distance_sig_reg[25]),
+        .I2(axi_araddr[1]),
+        .I3(axi_araddr[0]),
+        .O(D[25]));
+  LUT4 #(
+    .INIT(16'h0AC0)) 
+    \axi_rdata[26]_i_1 
+       (.I0(speed_sig[26]),
+        .I1(distance_sig_reg[26]),
+        .I2(axi_araddr[1]),
+        .I3(axi_araddr[0]),
+        .O(D[26]));
+  LUT4 #(
+    .INIT(16'h0AC0)) 
+    \axi_rdata[27]_i_1 
+       (.I0(speed_sig[27]),
+        .I1(distance_sig_reg[27]),
+        .I2(axi_araddr[1]),
+        .I3(axi_araddr[0]),
+        .O(D[27]));
+  LUT4 #(
+    .INIT(16'h0AC0)) 
+    \axi_rdata[28]_i_1 
+       (.I0(speed_sig[28]),
+        .I1(distance_sig_reg[28]),
+        .I2(axi_araddr[1]),
+        .I3(axi_araddr[0]),
+        .O(D[28]));
+  LUT4 #(
+    .INIT(16'h0AC0)) 
+    \axi_rdata[29]_i_1 
+       (.I0(speed_sig[29]),
+        .I1(distance_sig_reg[29]),
+        .I2(axi_araddr[1]),
+        .I3(axi_araddr[0]),
+        .O(D[29]));
+  LUT4 #(
+    .INIT(16'h0AC0)) 
+    \axi_rdata[2]_i_1 
+       (.I0(speed_sig[2]),
+        .I1(distance_sig_reg[2]),
+        .I2(axi_araddr[1]),
+        .I3(axi_araddr[0]),
+        .O(D[2]));
+  LUT4 #(
+    .INIT(16'h0AC0)) 
+    \axi_rdata[30]_i_1 
+       (.I0(speed_sig[30]),
+        .I1(distance_sig_reg[30]),
+        .I2(axi_araddr[1]),
+        .I3(axi_araddr[0]),
+        .O(D[30]));
+  LUT4 #(
+    .INIT(16'h0AC0)) 
+    \axi_rdata[31]_i_2 
+       (.I0(speed_sig[31]),
+        .I1(distance_sig_reg[31]),
+        .I2(axi_araddr[1]),
+        .I3(axi_araddr[0]),
+        .O(D[31]));
+  LUT4 #(
+    .INIT(16'h0AC0)) 
+    \axi_rdata[3]_i_1 
+       (.I0(speed_sig[3]),
+        .I1(distance_sig_reg[3]),
+        .I2(axi_araddr[1]),
+        .I3(axi_araddr[0]),
+        .O(D[3]));
+  LUT4 #(
+    .INIT(16'h0AC0)) 
+    \axi_rdata[4]_i_1 
+       (.I0(speed_sig[4]),
+        .I1(distance_sig_reg[4]),
+        .I2(axi_araddr[1]),
+        .I3(axi_araddr[0]),
+        .O(D[4]));
+  LUT4 #(
+    .INIT(16'h0AC0)) 
+    \axi_rdata[5]_i_1 
+       (.I0(speed_sig[5]),
+        .I1(distance_sig_reg[5]),
+        .I2(axi_araddr[1]),
+        .I3(axi_araddr[0]),
+        .O(D[5]));
+  LUT4 #(
+    .INIT(16'h0AC0)) 
+    \axi_rdata[6]_i_1 
+       (.I0(speed_sig[6]),
+        .I1(distance_sig_reg[6]),
+        .I2(axi_araddr[1]),
+        .I3(axi_araddr[0]),
+        .O(D[6]));
+  LUT4 #(
+    .INIT(16'h0AC0)) 
+    \axi_rdata[7]_i_1 
+       (.I0(speed_sig[7]),
+        .I1(distance_sig_reg[7]),
+        .I2(axi_araddr[1]),
+        .I3(axi_araddr[0]),
+        .O(D[7]));
+  LUT4 #(
+    .INIT(16'h0AC0)) 
+    \axi_rdata[8]_i_1 
+       (.I0(speed_sig[8]),
+        .I1(distance_sig_reg[8]),
+        .I2(axi_araddr[1]),
+        .I3(axi_araddr[0]),
+        .O(D[8]));
+  LUT4 #(
+    .INIT(16'h0AC0)) 
+    \axi_rdata[9]_i_1 
+       (.I0(speed_sig[9]),
+        .I1(distance_sig_reg[9]),
+        .I2(axi_araddr[1]),
+        .I3(axi_araddr[0]),
+        .O(D[9]));
   LUT2 #(
     .INIT(4'h4)) 
     \distance_sig[0]_i_1 
@@ -885,262 +1141,6 @@ module design_1_Speedsensor_0_12_SpeedCounter
         .D(\distance_speed_sig_reg[8]_i_1_n_6 ),
         .Q(distance_speed_sig_reg[9]),
         .R(\timer_sig[0]_i_1_n_0 ));
-  LUT4 #(
-    .INIT(16'h4F44)) 
-    \reg_data_out_reg[0]_i_1 
-       (.I0(p_0_in_0[0]),
-        .I1(distance_sig_reg[0]),
-        .I2(p_0_in_0[1]),
-        .I3(speed_sig[0]),
-        .O(D[0]));
-  LUT4 #(
-    .INIT(16'h4F44)) 
-    \reg_data_out_reg[10]_i_1 
-       (.I0(p_0_in_0[0]),
-        .I1(distance_sig_reg[10]),
-        .I2(p_0_in_0[1]),
-        .I3(speed_sig[10]),
-        .O(D[10]));
-  LUT4 #(
-    .INIT(16'h4F44)) 
-    \reg_data_out_reg[11]_i_1 
-       (.I0(p_0_in_0[0]),
-        .I1(distance_sig_reg[11]),
-        .I2(p_0_in_0[1]),
-        .I3(speed_sig[11]),
-        .O(D[11]));
-  LUT4 #(
-    .INIT(16'h4F44)) 
-    \reg_data_out_reg[12]_i_1 
-       (.I0(p_0_in_0[0]),
-        .I1(distance_sig_reg[12]),
-        .I2(p_0_in_0[1]),
-        .I3(speed_sig[12]),
-        .O(D[12]));
-  LUT4 #(
-    .INIT(16'h4F44)) 
-    \reg_data_out_reg[13]_i_1 
-       (.I0(p_0_in_0[0]),
-        .I1(distance_sig_reg[13]),
-        .I2(p_0_in_0[1]),
-        .I3(speed_sig[13]),
-        .O(D[13]));
-  LUT4 #(
-    .INIT(16'h4F44)) 
-    \reg_data_out_reg[14]_i_1 
-       (.I0(p_0_in_0[0]),
-        .I1(distance_sig_reg[14]),
-        .I2(p_0_in_0[1]),
-        .I3(speed_sig[14]),
-        .O(D[14]));
-  LUT4 #(
-    .INIT(16'h4F44)) 
-    \reg_data_out_reg[15]_i_1 
-       (.I0(p_0_in_0[0]),
-        .I1(distance_sig_reg[15]),
-        .I2(p_0_in_0[1]),
-        .I3(speed_sig[15]),
-        .O(D[15]));
-  LUT4 #(
-    .INIT(16'h4F44)) 
-    \reg_data_out_reg[16]_i_1 
-       (.I0(p_0_in_0[0]),
-        .I1(distance_sig_reg[16]),
-        .I2(p_0_in_0[1]),
-        .I3(speed_sig[16]),
-        .O(D[16]));
-  LUT4 #(
-    .INIT(16'h4F44)) 
-    \reg_data_out_reg[17]_i_1 
-       (.I0(p_0_in_0[0]),
-        .I1(distance_sig_reg[17]),
-        .I2(p_0_in_0[1]),
-        .I3(speed_sig[17]),
-        .O(D[17]));
-  LUT4 #(
-    .INIT(16'h4F44)) 
-    \reg_data_out_reg[18]_i_1 
-       (.I0(p_0_in_0[0]),
-        .I1(distance_sig_reg[18]),
-        .I2(p_0_in_0[1]),
-        .I3(speed_sig[18]),
-        .O(D[18]));
-  LUT4 #(
-    .INIT(16'h4F44)) 
-    \reg_data_out_reg[19]_i_1 
-       (.I0(p_0_in_0[0]),
-        .I1(distance_sig_reg[19]),
-        .I2(p_0_in_0[1]),
-        .I3(speed_sig[19]),
-        .O(D[19]));
-  LUT4 #(
-    .INIT(16'h4F44)) 
-    \reg_data_out_reg[1]_i_1 
-       (.I0(p_0_in_0[0]),
-        .I1(distance_sig_reg[1]),
-        .I2(p_0_in_0[1]),
-        .I3(speed_sig[1]),
-        .O(D[1]));
-  LUT4 #(
-    .INIT(16'h4F44)) 
-    \reg_data_out_reg[20]_i_1 
-       (.I0(p_0_in_0[0]),
-        .I1(distance_sig_reg[20]),
-        .I2(p_0_in_0[1]),
-        .I3(speed_sig[20]),
-        .O(D[20]));
-  LUT4 #(
-    .INIT(16'h4F44)) 
-    \reg_data_out_reg[21]_i_1 
-       (.I0(p_0_in_0[0]),
-        .I1(distance_sig_reg[21]),
-        .I2(p_0_in_0[1]),
-        .I3(speed_sig[21]),
-        .O(D[21]));
-  LUT4 #(
-    .INIT(16'h4F44)) 
-    \reg_data_out_reg[22]_i_1 
-       (.I0(p_0_in_0[0]),
-        .I1(distance_sig_reg[22]),
-        .I2(p_0_in_0[1]),
-        .I3(speed_sig[22]),
-        .O(D[22]));
-  LUT4 #(
-    .INIT(16'h4F44)) 
-    \reg_data_out_reg[23]_i_1 
-       (.I0(p_0_in_0[0]),
-        .I1(distance_sig_reg[23]),
-        .I2(p_0_in_0[1]),
-        .I3(speed_sig[23]),
-        .O(D[23]));
-  LUT4 #(
-    .INIT(16'h4F44)) 
-    \reg_data_out_reg[24]_i_1 
-       (.I0(p_0_in_0[0]),
-        .I1(distance_sig_reg[24]),
-        .I2(p_0_in_0[1]),
-        .I3(speed_sig[24]),
-        .O(D[24]));
-  LUT4 #(
-    .INIT(16'h4F44)) 
-    \reg_data_out_reg[25]_i_1 
-       (.I0(p_0_in_0[0]),
-        .I1(distance_sig_reg[25]),
-        .I2(p_0_in_0[1]),
-        .I3(speed_sig[25]),
-        .O(D[25]));
-  LUT4 #(
-    .INIT(16'h4F44)) 
-    \reg_data_out_reg[26]_i_1 
-       (.I0(p_0_in_0[0]),
-        .I1(distance_sig_reg[26]),
-        .I2(p_0_in_0[1]),
-        .I3(speed_sig[26]),
-        .O(D[26]));
-  LUT4 #(
-    .INIT(16'h4F44)) 
-    \reg_data_out_reg[27]_i_1 
-       (.I0(p_0_in_0[0]),
-        .I1(distance_sig_reg[27]),
-        .I2(p_0_in_0[1]),
-        .I3(speed_sig[27]),
-        .O(D[27]));
-  LUT4 #(
-    .INIT(16'h4F44)) 
-    \reg_data_out_reg[28]_i_1 
-       (.I0(p_0_in_0[0]),
-        .I1(distance_sig_reg[28]),
-        .I2(p_0_in_0[1]),
-        .I3(speed_sig[28]),
-        .O(D[28]));
-  LUT4 #(
-    .INIT(16'h4F44)) 
-    \reg_data_out_reg[29]_i_1 
-       (.I0(p_0_in_0[0]),
-        .I1(distance_sig_reg[29]),
-        .I2(p_0_in_0[1]),
-        .I3(speed_sig[29]),
-        .O(D[29]));
-  LUT4 #(
-    .INIT(16'h4F44)) 
-    \reg_data_out_reg[2]_i_1 
-       (.I0(p_0_in_0[0]),
-        .I1(distance_sig_reg[2]),
-        .I2(p_0_in_0[1]),
-        .I3(speed_sig[2]),
-        .O(D[2]));
-  LUT4 #(
-    .INIT(16'h4F44)) 
-    \reg_data_out_reg[30]_i_1 
-       (.I0(p_0_in_0[0]),
-        .I1(distance_sig_reg[30]),
-        .I2(p_0_in_0[1]),
-        .I3(speed_sig[30]),
-        .O(D[30]));
-  LUT4 #(
-    .INIT(16'h4F44)) 
-    \reg_data_out_reg[31]_i_1 
-       (.I0(p_0_in_0[0]),
-        .I1(distance_sig_reg[31]),
-        .I2(p_0_in_0[1]),
-        .I3(speed_sig[31]),
-        .O(D[31]));
-  LUT4 #(
-    .INIT(16'h4F44)) 
-    \reg_data_out_reg[3]_i_1 
-       (.I0(p_0_in_0[0]),
-        .I1(distance_sig_reg[3]),
-        .I2(p_0_in_0[1]),
-        .I3(speed_sig[3]),
-        .O(D[3]));
-  LUT4 #(
-    .INIT(16'h4F44)) 
-    \reg_data_out_reg[4]_i_1 
-       (.I0(p_0_in_0[0]),
-        .I1(distance_sig_reg[4]),
-        .I2(p_0_in_0[1]),
-        .I3(speed_sig[4]),
-        .O(D[4]));
-  LUT4 #(
-    .INIT(16'h4F44)) 
-    \reg_data_out_reg[5]_i_1 
-       (.I0(p_0_in_0[0]),
-        .I1(distance_sig_reg[5]),
-        .I2(p_0_in_0[1]),
-        .I3(speed_sig[5]),
-        .O(D[5]));
-  LUT4 #(
-    .INIT(16'h4F44)) 
-    \reg_data_out_reg[6]_i_1 
-       (.I0(p_0_in_0[0]),
-        .I1(distance_sig_reg[6]),
-        .I2(p_0_in_0[1]),
-        .I3(speed_sig[6]),
-        .O(D[6]));
-  LUT4 #(
-    .INIT(16'h4F44)) 
-    \reg_data_out_reg[7]_i_1 
-       (.I0(p_0_in_0[0]),
-        .I1(distance_sig_reg[7]),
-        .I2(p_0_in_0[1]),
-        .I3(speed_sig[7]),
-        .O(D[7]));
-  LUT4 #(
-    .INIT(16'h4F44)) 
-    \reg_data_out_reg[8]_i_1 
-       (.I0(p_0_in_0[0]),
-        .I1(distance_sig_reg[8]),
-        .I2(p_0_in_0[1]),
-        .I3(speed_sig[8]),
-        .O(D[8]));
-  LUT4 #(
-    .INIT(16'h4F44)) 
-    \reg_data_out_reg[9]_i_1 
-       (.I0(p_0_in_0[0]),
-        .I1(distance_sig_reg[9]),
-        .I2(p_0_in_0[1]),
-        .I3(speed_sig[9]),
-        .O(D[9]));
   FDRE #(
     .INIT(1'b0)) 
     speed_clk_sig_reg
@@ -1834,40 +1834,9 @@ module design_1_Speedsensor_0_12_Speedsensor_v1_0_S00_AXI
   wire S_AXI_AWREADY;
   wire S_AXI_WREADY;
   wire SpeedClockData;
-  wire SpeedPM_n_0;
-  wire SpeedPM_n_1;
-  wire SpeedPM_n_10;
-  wire SpeedPM_n_11;
-  wire SpeedPM_n_12;
-  wire SpeedPM_n_13;
-  wire SpeedPM_n_14;
-  wire SpeedPM_n_15;
-  wire SpeedPM_n_16;
-  wire SpeedPM_n_17;
-  wire SpeedPM_n_18;
-  wire SpeedPM_n_19;
-  wire SpeedPM_n_2;
-  wire SpeedPM_n_20;
-  wire SpeedPM_n_21;
-  wire SpeedPM_n_22;
-  wire SpeedPM_n_23;
-  wire SpeedPM_n_24;
-  wire SpeedPM_n_25;
-  wire SpeedPM_n_26;
-  wire SpeedPM_n_27;
-  wire SpeedPM_n_28;
-  wire SpeedPM_n_29;
-  wire SpeedPM_n_3;
-  wire SpeedPM_n_30;
-  wire SpeedPM_n_31;
-  wire SpeedPM_n_4;
-  wire SpeedPM_n_5;
-  wire SpeedPM_n_6;
-  wire SpeedPM_n_7;
-  wire SpeedPM_n_8;
-  wire SpeedPM_n_9;
   wire aw_en_i_1_n_0;
   wire aw_en_reg_n_0;
+  wire [3:2]axi_araddr;
   wire \axi_araddr[2]_i_1_n_0 ;
   wire \axi_araddr[3]_i_1_n_0 ;
   wire axi_arready0;
@@ -1879,9 +1848,7 @@ module design_1_Speedsensor_0_12_Speedsensor_v1_0_S00_AXI
   wire axi_rvalid_i_1_n_0;
   wire axi_wready0;
   wire p_0_in;
-  wire [1:0]p_0_in_0;
   wire [31:0]reg_data_out;
-  wire \reg_data_out_reg[31]_i_2_n_0 ;
   wire s00_axi_aclk;
   wire [1:0]s00_axi_araddr;
   wire s00_axi_aresetn;
@@ -1903,9 +1870,9 @@ module design_1_Speedsensor_0_12_Speedsensor_v1_0_S00_AXI
 
   design_1_Speedsensor_0_12_SpeedCounter SpeedPM
        (.ClockData(ClockData),
-        .D({SpeedPM_n_0,SpeedPM_n_1,SpeedPM_n_2,SpeedPM_n_3,SpeedPM_n_4,SpeedPM_n_5,SpeedPM_n_6,SpeedPM_n_7,SpeedPM_n_8,SpeedPM_n_9,SpeedPM_n_10,SpeedPM_n_11,SpeedPM_n_12,SpeedPM_n_13,SpeedPM_n_14,SpeedPM_n_15,SpeedPM_n_16,SpeedPM_n_17,SpeedPM_n_18,SpeedPM_n_19,SpeedPM_n_20,SpeedPM_n_21,SpeedPM_n_22,SpeedPM_n_23,SpeedPM_n_24,SpeedPM_n_25,SpeedPM_n_26,SpeedPM_n_27,SpeedPM_n_28,SpeedPM_n_29,SpeedPM_n_30,SpeedPM_n_31}),
+        .D(reg_data_out),
         .SpeedClockData(SpeedClockData),
-        .p_0_in_0(p_0_in_0),
+        .axi_araddr(axi_araddr),
         .slv_reg0(slv_reg0));
   LUT6 #(
     .INIT(64'hBFFFBF00BF00BF00)) 
@@ -1929,7 +1896,7 @@ module design_1_Speedsensor_0_12_Speedsensor_v1_0_S00_AXI
        (.I0(s00_axi_araddr[0]),
         .I1(s00_axi_arvalid),
         .I2(S_AXI_ARREADY),
-        .I3(p_0_in_0[0]),
+        .I3(axi_araddr[2]),
         .O(\axi_araddr[2]_i_1_n_0 ));
   LUT4 #(
     .INIT(16'hFB08)) 
@@ -1937,19 +1904,19 @@ module design_1_Speedsensor_0_12_Speedsensor_v1_0_S00_AXI
        (.I0(s00_axi_araddr[1]),
         .I1(s00_axi_arvalid),
         .I2(S_AXI_ARREADY),
-        .I3(p_0_in_0[1]),
+        .I3(axi_araddr[3]),
         .O(\axi_araddr[3]_i_1_n_0 ));
   FDSE \axi_araddr_reg[2] 
        (.C(s00_axi_aclk),
         .CE(1'b1),
         .D(\axi_araddr[2]_i_1_n_0 ),
-        .Q(p_0_in_0[0]),
+        .Q(axi_araddr[2]),
         .S(p_0_in));
   FDSE \axi_araddr_reg[3] 
        (.C(s00_axi_aclk),
         .CE(1'b1),
         .D(\axi_araddr[3]_i_1_n_0 ),
-        .Q(p_0_in_0[1]),
+        .Q(axi_araddr[3]),
         .S(p_0_in));
   (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT2 #(
@@ -2261,332 +2228,6 @@ module design_1_Speedsensor_0_12_Speedsensor_v1_0_S00_AXI
         .D(axi_wready0),
         .Q(S_AXI_WREADY),
         .R(p_0_in));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[0] 
-       (.CLR(1'b0),
-        .D(SpeedPM_n_31),
-        .G(\reg_data_out_reg[31]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(reg_data_out[0]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[10] 
-       (.CLR(1'b0),
-        .D(SpeedPM_n_21),
-        .G(\reg_data_out_reg[31]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(reg_data_out[10]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[11] 
-       (.CLR(1'b0),
-        .D(SpeedPM_n_20),
-        .G(\reg_data_out_reg[31]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(reg_data_out[11]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[12] 
-       (.CLR(1'b0),
-        .D(SpeedPM_n_19),
-        .G(\reg_data_out_reg[31]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(reg_data_out[12]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[13] 
-       (.CLR(1'b0),
-        .D(SpeedPM_n_18),
-        .G(\reg_data_out_reg[31]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(reg_data_out[13]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[14] 
-       (.CLR(1'b0),
-        .D(SpeedPM_n_17),
-        .G(\reg_data_out_reg[31]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(reg_data_out[14]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[15] 
-       (.CLR(1'b0),
-        .D(SpeedPM_n_16),
-        .G(\reg_data_out_reg[31]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(reg_data_out[15]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[16] 
-       (.CLR(1'b0),
-        .D(SpeedPM_n_15),
-        .G(\reg_data_out_reg[31]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(reg_data_out[16]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[17] 
-       (.CLR(1'b0),
-        .D(SpeedPM_n_14),
-        .G(\reg_data_out_reg[31]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(reg_data_out[17]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[18] 
-       (.CLR(1'b0),
-        .D(SpeedPM_n_13),
-        .G(\reg_data_out_reg[31]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(reg_data_out[18]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[19] 
-       (.CLR(1'b0),
-        .D(SpeedPM_n_12),
-        .G(\reg_data_out_reg[31]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(reg_data_out[19]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[1] 
-       (.CLR(1'b0),
-        .D(SpeedPM_n_30),
-        .G(\reg_data_out_reg[31]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(reg_data_out[1]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[20] 
-       (.CLR(1'b0),
-        .D(SpeedPM_n_11),
-        .G(\reg_data_out_reg[31]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(reg_data_out[20]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[21] 
-       (.CLR(1'b0),
-        .D(SpeedPM_n_10),
-        .G(\reg_data_out_reg[31]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(reg_data_out[21]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[22] 
-       (.CLR(1'b0),
-        .D(SpeedPM_n_9),
-        .G(\reg_data_out_reg[31]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(reg_data_out[22]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[23] 
-       (.CLR(1'b0),
-        .D(SpeedPM_n_8),
-        .G(\reg_data_out_reg[31]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(reg_data_out[23]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[24] 
-       (.CLR(1'b0),
-        .D(SpeedPM_n_7),
-        .G(\reg_data_out_reg[31]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(reg_data_out[24]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[25] 
-       (.CLR(1'b0),
-        .D(SpeedPM_n_6),
-        .G(\reg_data_out_reg[31]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(reg_data_out[25]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[26] 
-       (.CLR(1'b0),
-        .D(SpeedPM_n_5),
-        .G(\reg_data_out_reg[31]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(reg_data_out[26]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[27] 
-       (.CLR(1'b0),
-        .D(SpeedPM_n_4),
-        .G(\reg_data_out_reg[31]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(reg_data_out[27]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[28] 
-       (.CLR(1'b0),
-        .D(SpeedPM_n_3),
-        .G(\reg_data_out_reg[31]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(reg_data_out[28]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[29] 
-       (.CLR(1'b0),
-        .D(SpeedPM_n_2),
-        .G(\reg_data_out_reg[31]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(reg_data_out[29]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[2] 
-       (.CLR(1'b0),
-        .D(SpeedPM_n_29),
-        .G(\reg_data_out_reg[31]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(reg_data_out[2]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[30] 
-       (.CLR(1'b0),
-        .D(SpeedPM_n_1),
-        .G(\reg_data_out_reg[31]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(reg_data_out[30]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[31] 
-       (.CLR(1'b0),
-        .D(SpeedPM_n_0),
-        .G(\reg_data_out_reg[31]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(reg_data_out[31]));
-  LUT2 #(
-    .INIT(4'hE)) 
-    \reg_data_out_reg[31]_i_2 
-       (.I0(p_0_in_0[0]),
-        .I1(p_0_in_0[1]),
-        .O(\reg_data_out_reg[31]_i_2_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[3] 
-       (.CLR(1'b0),
-        .D(SpeedPM_n_28),
-        .G(\reg_data_out_reg[31]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(reg_data_out[3]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[4] 
-       (.CLR(1'b0),
-        .D(SpeedPM_n_27),
-        .G(\reg_data_out_reg[31]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(reg_data_out[4]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[5] 
-       (.CLR(1'b0),
-        .D(SpeedPM_n_26),
-        .G(\reg_data_out_reg[31]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(reg_data_out[5]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[6] 
-       (.CLR(1'b0),
-        .D(SpeedPM_n_25),
-        .G(\reg_data_out_reg[31]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(reg_data_out[6]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[7] 
-       (.CLR(1'b0),
-        .D(SpeedPM_n_24),
-        .G(\reg_data_out_reg[31]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(reg_data_out[7]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[8] 
-       (.CLR(1'b0),
-        .D(SpeedPM_n_23),
-        .G(\reg_data_out_reg[31]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(reg_data_out[8]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[9] 
-       (.CLR(1'b0),
-        .D(SpeedPM_n_22),
-        .G(\reg_data_out_reg[31]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(reg_data_out[9]));
   LUT6 #(
     .INIT(64'hFFFBFFFF00080000)) 
     \slv_reg0[0]_i_1 
@@ -2613,12 +2254,11 @@ module design_1_Speedsensor_0_12_Speedsensor_v1_0_S00_AXI
         .R(p_0_in));
 endmodule
 
-(* CHECK_LICENSE_TYPE = "design_1_Speedsensor_0_6,Speedsensor_v1_0,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "Speedsensor_v1_0,Vivado 2023.2" *) 
+(* CHECK_LICENSE_TYPE = "design_1_Speedsensor_0_11,Speedsensor_v1_0,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "Speedsensor_v1_0,Vivado 2023.2" *) 
 (* NotValidForBitStream *)
 module design_1_Speedsensor_0_12
    (SpeedData,
     DistanceData,
-    ResetData,
     SpeedClockData,
     ClockData,
     s00_axi_aclk,
@@ -2644,7 +2284,6 @@ module design_1_Speedsensor_0_12
     s00_axi_rready);
   output [31:0]SpeedData;
   output [31:0]DistanceData;
-  input ResetData;
   input SpeedClockData;
   input ClockData;
   (* x_interface_info = "xilinx.com:signal:clock:1.0 S00_AXI_CLK CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME S00_AXI_CLK, ASSOCIATED_BUSIF S00_AXI, ASSOCIATED_RESET s00_axi_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input s00_axi_aclk;

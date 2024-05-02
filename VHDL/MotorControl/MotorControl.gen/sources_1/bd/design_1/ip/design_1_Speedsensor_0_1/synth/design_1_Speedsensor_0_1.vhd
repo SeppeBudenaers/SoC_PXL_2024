@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:Speedsensor:1.0
--- IP Revision: 3
+-- IP Revision: 5
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -57,7 +57,6 @@ ENTITY design_1_Speedsensor_0_1 IS
   PORT (
     SpeedData : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     DistanceData : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-    ResetData : IN STD_LOGIC;
     SpeedClockData : IN STD_LOGIC;
     ClockData : IN STD_LOGIC;
     s00_axi_aclk : IN STD_LOGIC;
@@ -95,7 +94,6 @@ ARCHITECTURE design_1_Speedsensor_0_1_arch OF design_1_Speedsensor_0_1 IS
     PORT (
       SpeedData : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
       DistanceData : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-      ResetData : IN STD_LOGIC;
       SpeedClockData : IN STD_LOGIC;
       ClockData : IN STD_LOGIC;
       s00_axi_aclk : IN STD_LOGIC;
@@ -126,7 +124,7 @@ ARCHITECTURE design_1_Speedsensor_0_1_arch OF design_1_Speedsensor_0_1 IS
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF design_1_Speedsensor_0_1_arch : ARCHITECTURE IS "design_1_Speedsensor_0_1,Speedsensor_v1_0,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design_1_Speedsensor_0_1_arch: ARCHITECTURE IS "design_1_Speedsensor_0_1,Speedsensor_v1_0,{x_ipProduct=Vivado 2023.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=Speedsensor,x_ipVersion=1.0,x_ipCoreRevision=3,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=4}";
+  ATTRIBUTE CORE_GENERATION_INFO OF design_1_Speedsensor_0_1_arch: ARCHITECTURE IS "design_1_Speedsensor_0_1,Speedsensor_v1_0,{x_ipProduct=Vivado 2023.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=Speedsensor,x_ipVersion=1.0,x_ipCoreRevision=5,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=4}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER OF s00_axi_aclk: SIGNAL IS "XIL_INTERFACENAME S00_AXI_CLK, ASSOCIATED_BUSIF S00_AXI, ASSOCIATED_RESET s00_axi_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
@@ -163,7 +161,6 @@ BEGIN
     PORT MAP (
       SpeedData => SpeedData,
       DistanceData => DistanceData,
-      ResetData => ResetData,
       SpeedClockData => SpeedClockData,
       ClockData => ClockData,
       s00_axi_aclk => s00_axi_aclk,
