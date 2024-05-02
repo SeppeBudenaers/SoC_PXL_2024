@@ -790,3 +790,16 @@ con
 
 10:50:01 INFO  : Launch script is exported to file 'C:\XilinxDev\FinalCar\Car_system\_ide\scripts\debugger_car-default.tcl'
 10:57:40 INFO  : Disconnected from the channel tcfchan#12.
+19:54:24 DEBUG : Logs will be stored at 'C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/FinalCar/IDE.log'.
+19:54:26 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\02_PXL\SoC_PXL_2024\VHDL\MotorControl\FinalCar\temp_xsdb_launch_script.tcl
+19:54:34 INFO  : Registering command handlers for Vitis TCF services
+19:54:34 ERROR : Error encountered while initializing user repository paths
+Reason: No Platforms Found.
+
+
+19:54:34 INFO  : Platform repository initialization has completed.
+19:54:36 INFO  : XSCT server has started successfully.
+19:54:44 INFO  : plnx-install-location is set to ''
+19:54:44 INFO  : Successfully done setting XSCT server connection channel  
+19:54:44 INFO  : Successfully done query RDI_DATADIR 
+19:54:44 INFO  : Successfully done setting workspace for the tool. 
