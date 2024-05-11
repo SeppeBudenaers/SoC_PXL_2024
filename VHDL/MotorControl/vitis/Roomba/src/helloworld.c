@@ -25,17 +25,23 @@
 #include "xil_exception.h"
 #include "xil_printf.h"
 #include "speedsensor.h"
+#include "HC_SR04.h"
 #include "sleep.h"
+/*speed sensor defining*/
+#define SpeedSensor_0_adress XPAR_MOTORS_MOTOR_0_SPEEDSENSOR_0_S00_AXI_BASEADDR
+#define speedsensor_reset_offset 0
+#define speedsensor_speed_offset 4
+#define speedsensor_distance_offset 8
+
+/*Ultrasoon defining*/
+#define HC_SR04_L_adress XPAR_ULTRASONE_HC_SR04_0_S00_AXI_BASEADDR
+#define HC_SR04_R_adress XPAR_ULTRASONE_HC_SR04_1_S00_AXI_BASEADDR
+#define HC_SR04_distance_offset 0
 
 /*Correctly configure ZYNQ/, XPAR_AXI_TIMER_0_DEVICE_ID, XPAR_FABRIC_AXI_TIMER_0_INTERRUPT_INTR can be found in xparameters.h*/
 #define SCUGIC_DEVICE_ID XPAR_SCUGIC_0_DEVICE_ID
 #define AXI_TIMER_DEVICE_ID XPAR_MOTORS_MOTOR_0_AXI_TIMER_0_DEVICE_ID
 #define AXI_TIMER_IRPT_INTR XPAR_FABRIC_MOTORS_MOTOR_0_AXI_TIMER_0_INTERRUPT_INTR
-
-#define SpeedSensor_0_adress XPAR_MOTORS_MOTOR_0_SPEEDSENSOR_0_S00_AXI_BASEADDR
-#define speedsensor_reset_offset 0
-#define speedsensor_speed_offset 4
-#define speedsensor_distance_offset 8
 
 XTmrCtr xTmrCtr_Inst; // AXI Timer driver example
 XScuGic xScuGic_Inst; //Universal interrupt controller driver example
@@ -50,6 +56,8 @@ XScuGic xScuGic_Inst; //Universal interrupt controller driver example
 //Timer period (in nanoseconds)
 
 #define AXI_TIMER_PERIOD_NS 10000
+
+#define AXI_TIMER_PWM_HIGH_TIME_NS 5000
 
 //Timer interrupt callback
 
@@ -85,9 +93,9 @@ int xTmrCtr_Init(XTmrCtr *xTmrCtr_Ptr, u32 DeviceId)
     XTmrCtr_SetHandler(xTmrCtr_Ptr, xTmrCtr_Int_Handler, xTmrCtr_Ptr);
 
     // Timer 1 interrupt count
-    XTmrCtr_SetResetValue(xTmrCtr_Ptr, AXI_TIMER_CHANNEL_1, xTmr_US_To_RegValue(AXI_TIMER_PERIOD_NS));
+    XTmrCtr_SetResetValue(xTmrCtr_Ptr, AXI_TIMER_CHANNEL_1, AXI_TIMER_PERIOD_NS);
     // Timer 2 interrupt count
-    XTmrCtr_SetResetValue(xTmrCtr_Ptr, AXI_TIMER_CHANNEL_2, xTmr_US_To_RegValue(AXI_TIMER_PERIOD_NS));
+    XTmrCtr_SetResetValue(xTmrCtr_Ptr, AXI_TIMER_CHANNEL_2, AXI_TIMER_PERIOD_NS);
 
     // Timer interrupt is turned on
     XTmrCtr_SetOptions(xTmrCtr_Ptr, AXI_TIMER_CHANNEL_1, XTC_INT_MODE_OPTION | XTC_AUTO_RELOAD_OPTION);
@@ -154,20 +162,35 @@ int main()
     XTmrCtr_PwmDisable(&xTmrCtr_Inst);
     XTmrCtr_PwmEnable(&xTmrCtr_Inst);
 #endif
-    uint32_t speed;
-    uint32_t distance;
-    uint32_t duty = 5000;
+    uint32_t speed,distance,ultrasoon_L,ultrasoon_R;
+    uint8_t flag_speedup = 0;
+    uint32_t duty = 7000;
     while (1){
-        for (size_t i = 0; i < 10; i++)
-        {
-            speed = SPEEDSENSOR_mReadReg(SpeedSensor_0_adress,speedsensor_speed_offset);
-            distance = SPEEDSENSOR_mReadReg(SpeedSensor_0_adress,speedsensor_distance_offset);
-            xil_printf("Speed: %d\n\r",speed);
-            xil_printf("Distance: %d\n\r\n\r",distance);
-            sleep_A9(1);
+    	speed 		= SPEEDSENSOR_mReadReg(SpeedSensor_0_adress,speedsensor_speed_offset);
+    	distance 	= SPEEDSENSOR_mReadReg(SpeedSensor_0_adress,speedsensor_distance_offset);
+    	ultrasoon_L	= HC_SR04_mReadReg(HC_SR04_L_adress,HC_SR04_distance_offset);
+    	ultrasoon_R	= HC_SR04_mReadReg(HC_SR04_R_adress,HC_SR04_distance_offset);
+
+    	if(ultrasoon_R < 100 || ultrasoon_L < 100){
+    		XTmrCtr_PwmDisable(&xTmrCtr_Inst);
+    		XTmrCtr_PwmConfigure(&xTmrCtr_Inst, AXI_TIMER_PERIOD_NS, 5000); // maybe make this a define slow speed
+    		XTmrCtr_PwmEnable(&xTmrCtr_Inst);
+    		flag_speedup = 1;
+    	}
+    	else if(flag_speedup == 1){
+    		XTmrCtr_PwmDisable(&xTmrCtr_Inst);
+    		XTmrCtr_PwmConfigure(&xTmrCtr_Inst, AXI_TIMER_PERIOD_NS, 7000); // maybe make this a define fast speed
+    		XTmrCtr_PwmEnable(&xTmrCtr_Inst);
+    		flag_speedup = 0;
+    	}
+
+        if(ultrasoon_R < 40 || ultrasoon_L < 40){
+        	// need to turn
+        	// do we need to use MPU for turning.
         }
 
-        XTmrCtr_PwmDisable(&xTmrCtr_Inst);
+
+    	XTmrCtr_PwmDisable(&xTmrCtr_Inst);
         duty = (duty + 1000)%AXI_TIMER_PERIOD_NS;
         xil_printf("Duty : %d\n\r",duty);
         XTmrCtr_PwmConfigure(&xTmrCtr_Inst, AXI_TIMER_PERIOD_NS, duty);
@@ -178,8 +201,6 @@ int main()
         distance = SPEEDSENSOR_mReadReg(SpeedSensor_0_adress,speedsensor_distance_offset);
         xil_printf("reset distance distance:%d\n\r", distance);
         XTmrCtr_PwmEnable(&xTmrCtr_Inst);
-
-
     };
     return 0;
 }
