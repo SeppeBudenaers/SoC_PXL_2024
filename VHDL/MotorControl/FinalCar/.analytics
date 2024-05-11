@@ -64,3 +64,6 @@ timestamp=[2024-05-02 10:49:20], mode=BUILD, duration=0:00:01.521, duration_ms=1
 timestamp=[2024-05-02 19:54:31], mode=WORKBENCH_START, duration=0:00:15.502, duration_ms=15502, data={}
 timestamp=[2024-05-02 19:54:32], mode=WORKBENCH_UI_INIT, duration=0:00:01.248, duration_ms=1248, data={editors_count=5, platform_editors_count=0, projects_count=4, platform_projects_count=0, active_platform_editor=false, projects=Car,Car_system,FinalCar,RemoteSystemsTempFiles}
 timestamp=[2024-05-02 19:54:34], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.046, duration_ms=46, data={}
+timestamp=[2024-05-11 09:11:11], mode=WORKBENCH_START, duration=0:00:07.860, duration_ms=7860, data={}
+timestamp=[2024-05-11 09:11:11], mode=WORKBENCH_UI_INIT, duration=0:00:00.446, duration_ms=446, data={editors_count=0, platform_editors_count=0, projects_count=4, platform_projects_count=0, active_platform_editor=false, projects=Car,Car_system,FinalCar,RemoteSystemsTempFiles}
+timestamp=[2024-05-11 09:11:12], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.038, duration_ms=38, data={}
