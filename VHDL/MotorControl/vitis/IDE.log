@@ -528,3 +528,12 @@ con
 
 09:28:22 INFO  : Launch script is exported to file 'C:\02_PXL\SoC_PXL_2024\VHDL\MotorControl\vitis\Roomba_system\_ide\scripts\debugger_roomba-default.tcl'
 10:51:17 INFO  : Disconnected from the channel tcfchan#5.
+20:28:11 DEBUG : Logs will be stored at 'C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/IDE.log'.
+20:28:13 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\02_PXL\SoC_PXL_2024\VHDL\MotorControl\vitis\temp_xsdb_launch_script.tcl
+20:28:23 INFO  : Platform repository initialization has completed.
+20:28:24 INFO  : Registering command handlers for Vitis TCF services
+20:28:25 INFO  : XSCT server has started successfully.
+20:28:25 INFO  : Successfully done setting XSCT server connection channel  
+20:28:25 INFO  : plnx-install-location is set to ''
+20:28:33 INFO  : Successfully done setting workspace for the tool. 
+20:28:33 INFO  : Successfully done query RDI_DATADIR 

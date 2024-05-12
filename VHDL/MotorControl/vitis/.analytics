@@ -28,3 +28,6 @@ timestamp=[2024-05-11 09:24:46], mode=BUILD, duration=0:00:00.182, duration_ms=1
 timestamp=[2024-05-11 09:25:31], mode=PLATFORM_GENERATION, duration=0:00:21.646, duration_ms=21646, data={name=FinalFinalCar}
 timestamp=[2024-05-11 09:25:32], mode=BUILD, duration=0:00:01.087, duration_ms=1087, data={name=Roomba, configuration=Debug, clean_build=false}
 timestamp=[2024-05-11 09:26:30], mode=BUILD, duration=0:00:00.926, duration_ms=926, data={name=Roomba, configuration=Debug, clean_build=false}
+timestamp=[2024-05-11 20:28:20], mode=WORKBENCH_START, duration=0:00:16.813, duration_ms=16813, data={}
+timestamp=[2024-05-11 20:28:21], mode=WORKBENCH_UI_INIT, duration=0:00:01.978, duration_ms=1978, data={editors_count=1, platform_editors_count=0, projects_count=6, platform_projects_count=1, active_platform_editor=false, projects=FinalFinalCar,RemoteSystemsTempFiles,Roomba,Roomba_system,car_test,car_test_system}
+timestamp=[2024-05-11 20:28:23], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.294, duration_ms=294, data={}
