@@ -26,7 +26,7 @@
 #include "xil_printf.h"
 #include "speedsensor.h"
 #include "sleep.h"
-
+#include "AdressStruct.h"
 /*Correctly configure ZYNQ/, XPAR_AXI_TIMER_0_DEVICE_ID, XPAR_FABRIC_AXI_TIMER_0_INTERRUPT_INTR can be found in xparameters.h*/
 #define SCUGIC_DEVICE_ID XPAR_SCUGIC_0_DEVICE_ID
 #define AXI_TIMER_DEVICE_ID XPAR_MOTORS_MOTOR_0_AXI_TIMER_0_DEVICE_ID
