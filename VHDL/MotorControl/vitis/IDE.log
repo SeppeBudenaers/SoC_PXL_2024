@@ -537,3 +537,33 @@ con
 20:28:25 INFO  : plnx-install-location is set to ''
 20:28:33 INFO  : Successfully done setting workspace for the tool. 
 20:28:33 INFO  : Successfully done query RDI_DATADIR 
+18:15:20 DEBUG : Logs will be stored at 'C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/IDE.log'.
+18:15:21 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\02_PXL\SoC_PXL_2024\VHDL\MotorControl\vitis\temp_xsdb_launch_script.tcl
+18:15:33 INFO  : Registering command handlers for Vitis TCF services
+18:15:33 INFO  : Platform repository initialization has completed.
+18:15:36 INFO  : XSCT server has started successfully.
+18:15:46 INFO  : plnx-install-location is set to ''
+18:15:46 INFO  : Successfully done setting XSCT server connection channel  
+18:15:46 INFO  : Successfully done query RDI_DATADIR 
+18:15:46 INFO  : Successfully done setting workspace for the tool. 
+18:17:26 DEBUG : Logs will be stored at 'C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/IDE.log'.
+18:17:27 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\02_PXL\SoC_PXL_2024\VHDL\MotorControl\vitis\temp_xsdb_launch_script.tcl
+18:17:33 INFO  : XSCT server has started successfully.
+18:17:33 INFO  : plnx-install-location is set to ''
+18:17:33 INFO  : Successfully done setting XSCT server connection channel  
+18:17:33 INFO  : Successfully done setting workspace for the tool. 
+18:17:35 INFO  : Platform repository initialization has completed.
+18:17:36 INFO  : Successfully done query RDI_DATADIR 
+18:17:36 INFO  : Registering command handlers for Vitis TCF services
+19:27:09 DEBUG : Logs will be stored at 'C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/IDE.log'.
+19:27:11 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\02_PXL\SoC_PXL_2024\VHDL\MotorControl\vitis\temp_xsdb_launch_script.tcl
+19:27:20 INFO  : XSCT server has started successfully.
+19:27:20 INFO  : plnx-install-location is set to ''
+19:27:20 INFO  : Successfully done setting XSCT server connection channel  
+19:27:20 INFO  : Successfully done setting workspace for the tool. 
+19:27:25 INFO  : Platform repository initialization has completed.
+19:27:26 INFO  : Successfully done query RDI_DATADIR 
+19:27:28 INFO  : Registering command handlers for Vitis TCF services
+19:52:51 INFO  : Result from executing command 'getProjects': FinalFinalCar
+19:52:51 INFO  : Result from executing command 'getPlatforms': FinalFinalCar|C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/export/FinalFinalCar/FinalFinalCar.xpfm
+19:52:52 INFO  : Checking for BSP changes to sync application flags for project 'Roomba'...

@@ -1,4 +1,4 @@
-09:26:29 **** Incremental Build of configuration Debug for project Roomba ****
+19:52:56 **** Build of configuration Debug for project Roomba ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -8,22 +8,144 @@ make --no-print-directory main-build
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/export/FinalFinalCar/sw/FinalFinalCar/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
 ../src/helloworld.c: In function 'xTmrCtr_Init':
-../src/helloworld.c:70:17: warning: variable 'DutyCycle' set but not used [-Wunused-but-set-variable]
-   70 |     int Status, DutyCycle;
+../src/helloworld.c:78:17: warning: variable 'DutyCycle' set but not used [-Wunused-but-set-variable]
+   78 |     int Status, DutyCycle;
       |                 ^~~~~~~~~
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: Roomba.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/export/FinalFinalCar/sw/FinalFinalCar/standalone_ps7_cortexa9_0/bsplib/lib -o "Roomba.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: Roomba.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size Roomba.elf  |tee "Roomba.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  31711	   1968	  22656	  56335	   dc0f	Roomba.elf
-'Finished building: Roomba.elf.size'
-' '
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:170:41: error: assignment of read-only member 'DEVICE_ID'
+  170 |     ROOMBA.Motors[0].GPIO.AXI.DEVICE_ID = 0x00;
+      |                                         ^
+../src/helloworld.c:171:41: error: assignment of read-only member 'DEVICE_ID'
+  171 |     ROOMBA.Motors[1].GPIO.AXI.DEVICE_ID = 0x00;
+      |                                         ^
+../src/helloworld.c:172:41: error: assignment of read-only member 'DEVICE_ID'
+  172 |     ROOMBA.Motors[2].GPIO.AXI.DEVICE_ID = 0x00;
+      |                                         ^
+../src/helloworld.c:173:41: error: assignment of read-only member 'DEVICE_ID'
+  173 |     ROOMBA.Motors[3].GPIO.AXI.DEVICE_ID = 0x00;
+      |                                         ^
+../src/helloworld.c:175:44: error: assignment of read-only member 'AXI_BASEADDR'
+  175 |     ROOMBA.Motors[0].GPIO.AXI.AXI_BASEADDR = 0x00;
+      |                                            ^
+../src/helloworld.c:176:44: error: assignment of read-only member 'AXI_BASEADDR'
+  176 |     ROOMBA.Motors[1].GPIO.AXI.AXI_BASEADDR = 0x00;
+      |                                            ^
+../src/helloworld.c:177:44: error: assignment of read-only member 'AXI_BASEADDR'
+  177 |     ROOMBA.Motors[2].GPIO.AXI.AXI_BASEADDR = 0x00;
+      |                                            ^
+../src/helloworld.c:178:44: error: assignment of read-only member 'AXI_BASEADDR'
+  178 |     ROOMBA.Motors[3].GPIO.AXI.AXI_BASEADDR = 0x00;
+      |                                            ^
+../src/helloworld.c:180:42: error: assignment of read-only member 'Forward_offset'
+  180 |     ROOMBA.Motors[0].GPIO.Forward_offset = 0x00;
+      |                                          ^
+../src/helloworld.c:181:42: error: assignment of read-only member 'Forward_offset'
+  181 |     ROOMBA.Motors[1].GPIO.Forward_offset = 0x00;
+      |                                          ^
+../src/helloworld.c:182:42: error: assignment of read-only member 'Forward_offset'
+  182 |     ROOMBA.Motors[2].GPIO.Forward_offset = 0x00;
+      |                                          ^
+../src/helloworld.c:183:42: error: assignment of read-only member 'Forward_offset'
+  183 |     ROOMBA.Motors[3].GPIO.Forward_offset = 0x00;
+      |                                          ^
+../src/helloworld.c:185:43: error: assignment of read-only member 'Backward_offset'
+  185 |     ROOMBA.Motors[0].GPIO.Backward_offset = 0x00;
+      |                                           ^
+../src/helloworld.c:186:43: error: assignment of read-only member 'Backward_offset'
+  186 |     ROOMBA.Motors[1].GPIO.Backward_offset = 0x00;
+      |                                           ^
+../src/helloworld.c:187:43: error: assignment of read-only member 'Backward_offset'
+  187 |     ROOMBA.Motors[2].GPIO.Backward_offset = 0x00;
+      |                                           ^
+../src/helloworld.c:188:43: error: assignment of read-only member 'Backward_offset'
+  188 |     ROOMBA.Motors[3].GPIO.Backward_offset = 0x00;
+      |                                           ^
+../src/helloworld.c:191:48: error: assignment of read-only member 'DEVICE_ID'
+  191 |     ROOMBA.Motors[0].SpeedSensor.AXI.DEVICE_ID = 0x00;
+      |                                                ^
+../src/helloworld.c:192:48: error: assignment of read-only member 'DEVICE_ID'
+  192 |     ROOMBA.Motors[1].SpeedSensor.AXI.DEVICE_ID = 0x00;
+      |                                                ^
+../src/helloworld.c:193:48: error: assignment of read-only member 'DEVICE_ID'
+  193 |     ROOMBA.Motors[2].SpeedSensor.AXI.DEVICE_ID = 0x00;
+      |                                                ^
+../src/helloworld.c:194:48: error: assignment of read-only member 'DEVICE_ID'
+  194 |     ROOMBA.Motors[3].SpeedSensor.AXI.DEVICE_ID = 0x00;
+      |                                                ^
+../src/helloworld.c:196:51: error: assignment of read-only member 'AXI_BASEADDR'
+  196 |     ROOMBA.Motors[0].SpeedSensor.AXI.AXI_BASEADDR = 0x00;
+      |                                                   ^
+../src/helloworld.c:197:51: error: assignment of read-only member 'AXI_BASEADDR'
+  197 |     ROOMBA.Motors[1].SpeedSensor.AXI.AXI_BASEADDR = 0x00;
+      |                                                   ^
+../src/helloworld.c:198:51: error: assignment of read-only member 'AXI_BASEADDR'
+  198 |     ROOMBA.Motors[2].SpeedSensor.AXI.AXI_BASEADDR = 0x00;
+      |                                                   ^
+../src/helloworld.c:199:51: error: assignment of read-only member 'AXI_BASEADDR'
+  199 |     ROOMBA.Motors[3].SpeedSensor.AXI.AXI_BASEADDR = 0x00;
+      |                                                   ^
+../src/helloworld.c:201:56: error: assignment of read-only member 'Reset_register_offset'
+  201 |     ROOMBA.Motors[0].SpeedSensor.Reset_register_offset = 0x00;
+      |                                                        ^
+../src/helloworld.c:202:56: error: assignment of read-only member 'Reset_register_offset'
+  202 |     ROOMBA.Motors[1].SpeedSensor.Reset_register_offset = 0x00;
+      |                                                        ^
+../src/helloworld.c:203:56: error: assignment of read-only member 'Reset_register_offset'
+  203 |     ROOMBA.Motors[2].SpeedSensor.Reset_register_offset = 0x00;
+      |                                                        ^
+../src/helloworld.c:204:56: error: assignment of read-only member 'Reset_register_offset'
+  204 |     ROOMBA.Motors[3].SpeedSensor.Reset_register_offset = 0x00;
+      |                                                        ^
+../src/helloworld.c:206:59: error: assignment of read-only member 'Distance_register_offset'
+  206 |     ROOMBA.Motors[0].SpeedSensor.Distance_register_offset = 0x00;
+      |                                                           ^
+../src/helloworld.c:207:59: error: assignment of read-only member 'Distance_register_offset'
+  207 |     ROOMBA.Motors[1].SpeedSensor.Distance_register_offset = 0x00;
+      |                                                           ^
+../src/helloworld.c:208:59: error: assignment of read-only member 'Distance_register_offset'
+  208 |     ROOMBA.Motors[2].SpeedSensor.Distance_register_offset = 0x00;
+      |                                                           ^
+../src/helloworld.c:209:59: error: assignment of read-only member 'Distance_register_offset'
+  209 |     ROOMBA.Motors[3].SpeedSensor.Distance_register_offset = 0x00;
+      |                                                           ^
+../src/helloworld.c:211:56: error: assignment of read-only member 'Speed_register_offset'
+  211 |     ROOMBA.Motors[0].SpeedSensor.Speed_register_offset = 0x00;
+      |                                                        ^
+../src/helloworld.c:212:59: error: assignment of read-only member 'Distance_register_offset'
+  212 |     ROOMBA.Motors[1].SpeedSensor.Distance_register_offset = 0x00;
+      |                                                           ^
+../src/helloworld.c:213:59: error: assignment of read-only member 'Distance_register_offset'
+  213 |     ROOMBA.Motors[2].SpeedSensor.Distance_register_offset = 0x00;
+      |                                                           ^
+../src/helloworld.c:214:59: error: assignment of read-only member 'Distance_register_offset'
+  214 |     ROOMBA.Motors[3].SpeedSensor.Distance_register_offset = 0x00;
+      |                                                           ^
+../src/helloworld.c:217:44: error: assignment of read-only member 'DEVICE_ID'
+  217 |     ROOMBA.DistanceSensor[0].AXI.DEVICE_ID = 0x00;
+      |                                            ^
+../src/helloworld.c:218:44: error: assignment of read-only member 'DEVICE_ID'
+  218 |     ROOMBA.DistanceSensor[1].AXI.DEVICE_ID = 0x00;
+      |                                            ^
+../src/helloworld.c:220:47: error: assignment of read-only member 'AXI_BASEADDR'
+  220 |     ROOMBA.DistanceSensor[0].AXI.AXI_BASEADDR = 0x00;
+      |                                               ^
+../src/helloworld.c:221:47: error: assignment of read-only member 'AXI_BASEADDR'
+  221 |     ROOMBA.DistanceSensor[1].AXI.AXI_BASEADDR = 0x00;
+      |                                               ^
+../src/helloworld.c:223:46: error: assignment of read-only member 'Register_offset'
+  223 |     ROOMBA.DistanceSensor[0].Register_offset = 0x00;
+      |                                              ^
+../src/helloworld.c:224:46: error: assignment of read-only member 'Register_offset'
+  224 |     ROOMBA.DistanceSensor[1].Register_offset = 0x00;
+      |                                              ^
+../src/helloworld.c:228:14: warning: variable 'speed' set but not used [-Wunused-but-set-variable]
+  228 |     uint32_t speed,distance,ultrasoon_L,ultrasoon_R;
+      |              ^~~~~
+../src/helloworld.c:167:12: warning: variable 'ROOMBA' set but not used [-Wunused-but-set-variable]
+  167 |     Car_t  ROOMBA;
+      |            ^~~~~~
+make[1]: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+make: *** [makefile:34: all] Error 2
 
-09:26:30 Build Finished (took 916ms)
+19:52:57 Build Finished (took 1s.238ms)
 

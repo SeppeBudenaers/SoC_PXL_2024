@@ -27,6 +27,8 @@
 #include "speedsensor.h"
 #include "HC_SR04.h"
 #include "sleep.h"
+#include "AdressStruct.h"
+
 /*speed sensor defining*/
 #define SpeedSensor_0_adress XPAR_MOTORS_MOTOR_0_SPEEDSENSOR_0_S00_AXI_BASEADDR
 #define speedsensor_reset_offset 0
@@ -162,6 +164,67 @@ int main()
     XTmrCtr_PwmDisable(&xTmrCtr_Inst);
     XTmrCtr_PwmEnable(&xTmrCtr_Inst);
 #endif
+    Car_t  ROOMBA;
+
+    //GPIO motor
+    ROOMBA.Motors[0].GPIO.AXI.DEVICE_ID = 0x00;
+    ROOMBA.Motors[1].GPIO.AXI.DEVICE_ID = 0x00;
+    ROOMBA.Motors[2].GPIO.AXI.DEVICE_ID = 0x00;
+    ROOMBA.Motors[3].GPIO.AXI.DEVICE_ID = 0x00;
+
+    ROOMBA.Motors[0].GPIO.AXI.AXI_BASEADDR = 0x00;
+    ROOMBA.Motors[1].GPIO.AXI.AXI_BASEADDR = 0x00;
+    ROOMBA.Motors[2].GPIO.AXI.AXI_BASEADDR = 0x00;
+    ROOMBA.Motors[3].GPIO.AXI.AXI_BASEADDR = 0x00;
+    //denk niet dat we offset nodig hebben voor GPIO
+    ROOMBA.Motors[0].GPIO.Forward_offset = 0x00;
+    ROOMBA.Motors[1].GPIO.Forward_offset = 0x00;
+    ROOMBA.Motors[2].GPIO.Forward_offset = 0x00;
+    ROOMBA.Motors[3].GPIO.Forward_offset = 0x00;
+
+    ROOMBA.Motors[0].GPIO.Backward_offset = 0x00;
+    ROOMBA.Motors[1].GPIO.Backward_offset = 0x00;
+    ROOMBA.Motors[2].GPIO.Backward_offset = 0x00;
+    ROOMBA.Motors[3].GPIO.Backward_offset = 0x00;
+
+    // speed sensors
+    ROOMBA.Motors[0].SpeedSensor.AXI.DEVICE_ID = 0x00;
+    ROOMBA.Motors[1].SpeedSensor.AXI.DEVICE_ID = 0x00;
+    ROOMBA.Motors[2].SpeedSensor.AXI.DEVICE_ID = 0x00;
+    ROOMBA.Motors[3].SpeedSensor.AXI.DEVICE_ID = 0x00;
+
+    ROOMBA.Motors[0].SpeedSensor.AXI.AXI_BASEADDR = 0x00;
+    ROOMBA.Motors[1].SpeedSensor.AXI.AXI_BASEADDR = 0x00;
+    ROOMBA.Motors[2].SpeedSensor.AXI.AXI_BASEADDR = 0x00;
+    ROOMBA.Motors[3].SpeedSensor.AXI.AXI_BASEADDR = 0x00;
+
+    ROOMBA.Motors[0].SpeedSensor.Reset_register_offset = 0x00;
+    ROOMBA.Motors[1].SpeedSensor.Reset_register_offset = 0x00;
+    ROOMBA.Motors[2].SpeedSensor.Reset_register_offset = 0x00;
+    ROOMBA.Motors[3].SpeedSensor.Reset_register_offset = 0x00;
+
+    ROOMBA.Motors[0].SpeedSensor.Distance_register_offset = 0x00;
+    ROOMBA.Motors[1].SpeedSensor.Distance_register_offset = 0x00;
+    ROOMBA.Motors[2].SpeedSensor.Distance_register_offset = 0x00;
+    ROOMBA.Motors[3].SpeedSensor.Distance_register_offset = 0x00;
+
+    ROOMBA.Motors[0].SpeedSensor.Speed_register_offset = 0x00;
+    ROOMBA.Motors[1].SpeedSensor.Distance_register_offset = 0x00;
+    ROOMBA.Motors[2].SpeedSensor.Distance_register_offset = 0x00;
+    ROOMBA.Motors[3].SpeedSensor.Distance_register_offset = 0x00;
+
+    //Distance sensor
+    ROOMBA.DistanceSensor[0].AXI.DEVICE_ID = 0x00;
+    ROOMBA.DistanceSensor[1].AXI.DEVICE_ID = 0x00;
+
+    ROOMBA.DistanceSensor[0].AXI.AXI_BASEADDR = 0x00;
+    ROOMBA.DistanceSensor[1].AXI.AXI_BASEADDR = 0x00;
+
+    ROOMBA.DistanceSensor[0].Register_offset = 0x00;
+    ROOMBA.DistanceSensor[1].Register_offset = 0x00;
+
+
+
     uint32_t speed,distance,ultrasoon_L,ultrasoon_R;
     uint8_t flag_speedup = 0;
     uint32_t duty = 7000;
