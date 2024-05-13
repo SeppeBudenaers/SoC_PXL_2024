@@ -172,11 +172,14 @@ int main()
     Init_Car(&ROOMBA);
     
     while (1){
+        xil_printf("forward \n\r");
     	SetDirection(ROOMBA.Motors[0], Direction_forward);
     	SetDirection(ROOMBA.Motors[1], Direction_forward);
     	sleep_A9(10);
+        xil_printf("right \n\r");
     	turn(&ROOMBA, Turn_right);
     	sleep_A9(10);
+        xil_printf("left \n\r");
     	turn(&ROOMBA, Turn_left);
     	sleep_A9(10);
 

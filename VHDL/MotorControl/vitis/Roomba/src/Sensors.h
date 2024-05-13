@@ -86,9 +86,9 @@ uint8_t ConvertDirectionToByte(uint8_t direction){
 }
 
 void WriteToMotor(Motor_t motor, uint8_t direction){
-	xil_printf("yes\r\n");
-	XGpio_DiscreteSet(&motor.Xil_GPIO,1, 1);
-    xil_printf("debug\r\n");
+	XGpio_Initialize(&motor.Xil_GPIO, motor.GPIO.AXI.DEVICE_ID);
+	XGpio_SetDataDirection(&motor.Xil_GPIO,1, ~0x03);
+	XGpio_DiscreteWrite(&motor.Xil_GPIO,1, ConvertDirectionToByte(direction));
 }
 
 void SetDirection(Motor_t motor, uint8_t direction){

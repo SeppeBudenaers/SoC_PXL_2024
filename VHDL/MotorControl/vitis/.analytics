@@ -115,3 +115,21 @@ timestamp=[2024-05-13 16:59:14], mode=BUILD, duration=0:00:01.979, duration_ms=1
 timestamp=[2024-05-13 17:00:11], mode=BUILD, duration=0:00:00.768, duration_ms=768, data={name=Roomba, configuration=Debug, clean_build=false}
 timestamp=[2024-05-13 17:01:11], mode=BUILD, duration=0:00:01.250, duration_ms=1250, data={name=Roomba, configuration=Debug, clean_build=false}
 timestamp=[2024-05-13 17:03:20], mode=BUILD, duration=0:00:01.362, duration_ms=1362, data={name=Roomba, configuration=Debug, clean_build=false}
+timestamp=[2024-05-13 17:18:11], mode=WORKBENCH_START, duration=0:00:09.697, duration_ms=9697, data={}
+timestamp=[2024-05-13 17:18:12], mode=WORKBENCH_UI_INIT, duration=0:00:01.644, duration_ms=1644, data={editors_count=5, platform_editors_count=2, projects_count=6, platform_projects_count=1, active_platform_editor=false, projects=FinalFinalCar,RemoteSystemsTempFiles,Roomba,Roomba_system,car_test,car_test_system}
+timestamp=[2024-05-13 17:18:13], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.093, duration_ms=93, data={}
+timestamp=[2024-05-13 17:22:25], mode=PLATFORM_GENERATION, duration=0:00:16.940, duration_ms=16940, data={name=FinalFinalCar}
+timestamp=[2024-05-13 17:22:31], mode=BUILD, duration=0:00:01.763, duration_ms=1763, data={name=Roomba, configuration=Debug, clean_build=false}
+timestamp=[2024-05-13 17:22:36], mode=BUILD, duration=0:00:00.444, duration_ms=444, data={name=Roomba, configuration=Debug, clean_build=false}
+timestamp=[2024-05-13 17:24:19], mode=PLATFORM_GENERATION, duration=0:00:11.370, duration_ms=11370, data={name=FinalFinalCar}
+timestamp=[2024-05-13 17:24:20], mode=BUILD, duration=0:00:00.478, duration_ms=478, data={name=Roomba, configuration=Debug, clean_build=false}
+timestamp=[2024-05-13 18:15:32], mode=WORKBENCH_START, duration=0:00:09.564, duration_ms=9564, data={}
+timestamp=[2024-05-13 18:15:34], mode=WORKBENCH_UI_INIT, duration=0:00:01.596, duration_ms=1596, data={editors_count=1, platform_editors_count=0, projects_count=6, platform_projects_count=1, active_platform_editor=false, projects=FinalFinalCar,RemoteSystemsTempFiles,Roomba,Roomba_system,car_test,car_test_system}
+timestamp=[2024-05-13 18:15:34], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.058, duration_ms=58, data={}
+timestamp=[2024-05-13 18:16:56], mode=PLATFORM_GENERATION, duration=0:00:26.985, duration_ms=26985, data={name=FinalFinalCar}
+timestamp=[2024-05-13 18:17:02], mode=BUILD, duration=0:00:01.522, duration_ms=1522, data={name=Roomba, configuration=Debug, clean_build=false}
+timestamp=[2024-05-13 18:17:03], mode=BUILD, duration=0:00:00.352, duration_ms=352, data={name=Roomba, configuration=Debug, clean_build=true}
+timestamp=[2024-05-13 18:17:06], mode=BUILD, duration=0:00:02.284, duration_ms=2284, data={name=Roomba, configuration=Debug, clean_build=false}
+timestamp=[2024-05-13 18:19:47], mode=BUILD, duration=0:00:01.272, duration_ms=1272, data={name=Roomba, configuration=Debug, clean_build=false}
+timestamp=[2024-05-13 18:22:16], mode=BUILD, duration=0:00:01.308, duration_ms=1308, data={name=Roomba, configuration=Debug, clean_build=false}
+timestamp=[2024-05-13 18:24:40], mode=BUILD, duration=0:00:01.366, duration_ms=1366, data={name=Roomba, configuration=Debug, clean_build=false}
