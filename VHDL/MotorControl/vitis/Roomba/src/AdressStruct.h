@@ -1,5 +1,7 @@
 #include <stdint.h>
 #include "xparameters.h"
+#include <stdbool.h>
+#include "xgpio.h"
 
 typedef struct {
     uint8_t DEVICE_ID;
@@ -12,11 +14,14 @@ typedef struct{
     uint8_t Speed_register_offset;
     uint8_t Distance_register_offset;
     uint8_t Reset_register_offset;
+    uint32_t Speed;
+    uint32_t Distance;  
 } SpeedSensor_t;
 
 typedef struct{
     AXI_t AXI;
     uint8_t Register_offset;
+    uint32_t Distance;
 } DistanceSensor_t;
 
 typedef struct{
@@ -28,12 +33,22 @@ typedef struct{
 typedef struct{
     SpeedSensor_t SpeedSensor;
     GPIO_t GPIO;
+    XGpio * Xil_GPIO;
+    bool Forward;
+    bool Backward;
 } Motor_t;
 
 typedef struct{
     Motor_t Motors[4];
     DistanceSensor_t DistanceSensor[2];
+    bool SlowMode;
 } Car_t;
+
+
+void Init_motor(Motor_t motor){
+    XGpio_Initialize(motor.Xil_GPIO, motor.GPIO.AXI.DEVICE_ID);
+    XGpio_SetDataDirection(motor.Xil_GPIO, 2, 0x00);
+}
 
 void Init_Car(Car_t *Car)
 {
@@ -53,10 +68,10 @@ void Init_Car(Car_t *Car)
     Car->Motors[2].GPIO.Forward_offset = 0x00;
     Car->Motors[3].GPIO.Forward_offset = 0x00;
 
-    Car->Motors[0].GPIO.Backward_offset = 0x01;
-    Car->Motors[1].GPIO.Backward_offset = 0x01;
-    Car->Motors[2].GPIO.Backward_offset = 0x01;
-    Car->Motors[3].GPIO.Backward_offset = 0x01;
+    Car->Motors[0].GPIO.Backward_offset = 0x00;
+    Car->Motors[1].GPIO.Backward_offset = 0x00;
+    Car->Motors[2].GPIO.Backward_offset = 0x00;
+    Car->Motors[3].GPIO.Backward_offset = 0x00;
 
     // speed sensors
     Car->Motors[0].SpeedSensor.AXI.DEVICE_ID = XPAR_MOTORS_MOTOR_0_SPEEDSENSOR_0_DEVICE_ID;
@@ -93,4 +108,12 @@ void Init_Car(Car_t *Car)
 
     Car->DistanceSensor[0].Register_offset = 0x00;
     Car->DistanceSensor[1].Register_offset = 0x00;
+
+
+    //init gpio
+    for (size_t i = 0; i < 4; i++)
+    {
+        Init_motor(Car->Motors[i]);
+    }
+
 }

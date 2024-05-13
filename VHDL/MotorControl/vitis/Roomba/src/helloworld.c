@@ -16,7 +16,7 @@
  *   uartlite    Configurable only in HW design
  *   ps7_uart    115200 (configured by bootrom/bsp)
  */
-
+// #pragma once
 #include <stdio.h>
 #include "platform.h"
 #include "xparameters.h"
@@ -27,8 +27,11 @@
 #include "speedsensor.h"
 #include "HC_SR04.h"
 #include "sleep.h"
-#include "AdressStruct.h"
 
+
+#include <stdbool.h>
+#include "AdressStruct.h"
+#include "Sensors.h" 
 /*speed sensor defining*/
 #define SpeedSensor_0_adress XPAR_MOTORS_MOTOR_0_SPEEDSENSOR_0_S00_AXI_BASEADDR
 #define speedsensor_reset_offset 0
@@ -170,30 +173,34 @@ int main()
 
 
 
-    uint32_t speed,distance,ultrasoon_L,ultrasoon_R;
+ //   uint32_t speed,distance,ultrasoon_L,ultrasoon_R;
     uint8_t flag_speedup = 0;
     uint32_t duty = 7000;
 
     
     while (1){
-    	speed 		= SPEEDSENSOR_mReadReg(ROOMBA.Motors[0].SpeedSensor.AXI.AXI_BASEADDR,   ROOMBA.Motors[0].SpeedSensor.Speed_register_offset);
-    	distance 	= SPEEDSENSOR_mReadReg(ROOMBA.Motors[0].SpeedSensor.AXI.AXI_BASEADDR,   ROOMBA.Motors[0].SpeedSensor.Distance_register_offset);
-    	ultrasoon_L	= HC_SR04_mReadReg(ROOMBA.DistanceSensor[0].AXI.AXI_BASEADDR,           ROOMBA.DistanceSensor[0].Register_offset);
-    	ultrasoon_R	= HC_SR04_mReadReg(ROOMBA.DistanceSensor[1].AXI.AXI_BASEADDR,           ROOMBA.DistanceSensor[1].Register_offset);
-        
-        sleep_A9(10);
+        ReadallSensor(&ROOMBA);
+        if (IswithinDistance(&ROOMBA, 100)){
+            if(ROOMBA.SlowMode == 0){
+                ROOMBA.SlowMode = 1;
+            }
+            if(IswithinDistance(&ROOMBA, 40)){
+                turn(&ROOMBA, LeftOrRight(&ROOMBA));
+                ROOMBA.SlowMode = 0;
+            }
+        }
     	
-    	XTmrCtr_PwmDisable(&xTmrCtr_Inst);
-        duty = (duty + 1000)%AXI_TIMER_PERIOD_NS;
-        xil_printf("Duty : %d\n\r",duty);
-        XTmrCtr_PwmConfigure(&xTmrCtr_Inst, AXI_TIMER_PERIOD_NS, duty);
-        xil_printf("test2\n\r");
-        SPEEDSENSOR_mWriteReg(ROOMBA.Motors[0].SpeedSensor.AXI.AXI_BASEADDR, ROOMBA.Motors[0].SpeedSensor.Reset_register_offset, 0x01);
-        usleep_A9(10);
-        SPEEDSENSOR_mWriteReg(SpeedSensor_0_adress, speedsensor_reset_offset, 0x00);
-        distance = SPEEDSENSOR_mReadReg(SpeedSensor_0_adress,speedsensor_distance_offset);
-        xil_printf("reset distance distance:%d\n\r", distance);
-        XTmrCtr_PwmEnable(&xTmrCtr_Inst);
+    	// XTmrCtr_PwmDisable(&xTmrCtr_Inst);
+        // duty = (duty + 1000)%AXI_TIMER_PERIOD_NS;
+        // xil_printf("Duty : %d\n\r",duty);
+        // XTmrCtr_PwmConfigure(&xTmrCtr_Inst, AXI_TIMER_PERIOD_NS, duty);
+        // xil_printf("test2\n\r");
+        // SPEEDSENSOR_mWriteReg(ROOMBA.Motors[0].SpeedSensor.AXI.AXI_BASEADDR, ROOMBA.Motors[0].SpeedSensor.Reset_register_offset, 0x01);
+        // usleep_A9(10);
+        // SPEEDSENSOR_mWriteReg(SpeedSensor_0_adress, speedsensor_reset_offset, 0x00);
+        // distance = SPEEDSENSOR_mReadReg(SpeedSensor_0_adress,speedsensor_distance_offset);
+        // xil_printf("reset distance distance:%d\n\r", distance);
+        // XTmrCtr_PwmEnable(&xTmrCtr_Inst);
     };
     return 0;
 }
