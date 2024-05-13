@@ -33,7 +33,7 @@ typedef struct{
 typedef struct{
     SpeedSensor_t SpeedSensor;
     GPIO_t GPIO;
-    XGpio * Xil_GPIO;
+    XGpio Xil_GPIO;
     bool Forward;
     bool Backward;
 } Motor_t;
@@ -46,8 +46,14 @@ typedef struct{
 
 
 void Init_motor(Motor_t motor){
-    XGpio_Initialize(motor.Xil_GPIO, motor.GPIO.AXI.DEVICE_ID);
-    XGpio_SetDataDirection(motor.Xil_GPIO, 2, 0x00);
+	int status;
+    status = XGpio_Initialize(&motor.Xil_GPIO, motor.GPIO.AXI.DEVICE_ID);
+    //xil_printf("debug\r\n");
+    if (status != 0L) {
+    	xil_printf("Gpio Initialization Failed\r\n");
+    }
+    XGpio_SetDataDirection(&motor.Xil_GPIO,1, ~0x03);
+    //xil_printf("debug\r\n");
 }
 
 void Init_Car(Car_t *Car)
@@ -113,7 +119,8 @@ void Init_Car(Car_t *Car)
     //init gpio
     for (size_t i = 0; i < 4; i++)
     {
+    	//xil_printf("motor init %d\n\r",i);
         Init_motor(Car->Motors[i]);
     }
-
+    xil_printf("Initialization complete\n\r");
 }

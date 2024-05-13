@@ -170,37 +170,26 @@ int main()
     Car_t ROOMBA;
 
     Init_Car(&ROOMBA);
-
-
-
- //   uint32_t speed,distance,ultrasoon_L,ultrasoon_R;
-    uint8_t flag_speedup = 0;
-    uint32_t duty = 7000;
-
     
     while (1){
-        ReadallSensor(&ROOMBA);
-        if (IswithinDistance(&ROOMBA, 100)){
-            if(ROOMBA.SlowMode == 0){
-                ROOMBA.SlowMode = 1;
-            }
-            if(IswithinDistance(&ROOMBA, 40)){
-                turn(&ROOMBA, LeftOrRight(&ROOMBA));
-                ROOMBA.SlowMode = 0;
-            }
-        }
-    	
-    	// XTmrCtr_PwmDisable(&xTmrCtr_Inst);
-        // duty = (duty + 1000)%AXI_TIMER_PERIOD_NS;
-        // xil_printf("Duty : %d\n\r",duty);
-        // XTmrCtr_PwmConfigure(&xTmrCtr_Inst, AXI_TIMER_PERIOD_NS, duty);
-        // xil_printf("test2\n\r");
-        // SPEEDSENSOR_mWriteReg(ROOMBA.Motors[0].SpeedSensor.AXI.AXI_BASEADDR, ROOMBA.Motors[0].SpeedSensor.Reset_register_offset, 0x01);
-        // usleep_A9(10);
-        // SPEEDSENSOR_mWriteReg(SpeedSensor_0_adress, speedsensor_reset_offset, 0x00);
-        // distance = SPEEDSENSOR_mReadReg(SpeedSensor_0_adress,speedsensor_distance_offset);
-        // xil_printf("reset distance distance:%d\n\r", distance);
-        // XTmrCtr_PwmEnable(&xTmrCtr_Inst);
+    	SetDirection(ROOMBA.Motors[0], Direction_forward);
+    	SetDirection(ROOMBA.Motors[1], Direction_forward);
+    	sleep_A9(10);
+    	turn(&ROOMBA, Turn_right);
+    	sleep_A9(10);
+    	turn(&ROOMBA, Turn_left);
+    	sleep_A9(10);
+
+//    	ReadallSensor(&ROOMBA);
+//    	        if (IswithinDistance(&ROOMBA, 100)){
+//    	            if(ROOMBA.SlowMode == 0){
+//    	                ROOMBA.SlowMode = 1;
+//    	            }
+//    	            if(IswithinDistance(&ROOMBA, 40)){
+//    	                turn(&ROOMBA, LeftOrRight(&ROOMBA));
+//    	                ROOMBA.SlowMode = 0;
+//    	            }
+//    	        }
     };
     return 0;
 }
