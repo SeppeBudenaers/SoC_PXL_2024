@@ -22812,3 +22812,42 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.xilinx.sdx.core 1 0 2024-05-12 19:52:57.412
 !MESSAGE Build step failed, canceling full build chain.
+!SESSION 2024-05-13 12:57:48.038 -----------------------------------------------
+eclipse.buildId=2023.2
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2024-05-13 13:14:16.801
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-13 13:14:29.473
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-13 13:14:29.473
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-36
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-13 13:14:29.481
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-13 13:14:36.040
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-13 13:14:36.041
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-36
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-13 13:14:36.041
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-13 13:14:36.041
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-13 13:14:36.042
+!MESSAGE XSCT Command: [setws C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis], Thread: Thread-36
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-13 13:14:36.044
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/Vitis/2023.2/data]. Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-13 13:14:36.045
+!MESSAGE XSCT command with result: [setws C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis], Result: [null, ]. Thread: Thread-36
