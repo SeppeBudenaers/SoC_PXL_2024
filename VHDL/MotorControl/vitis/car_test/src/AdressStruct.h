@@ -1,27 +1,27 @@
 #include <stdint.h>
 
 typedef struct {
-    const uint8_t DEVICE_ID;
-    const uint32_t AXI_BASEADDR;
-    const uint32_t AXI_HIGHADDR;
+    uint8_t DEVICE_ID;
+    uint32_t AXI_BASEADDR;
+    uint32_t AXI_HIGHADDR;
 } AXI_t;
 
 typedef struct{
     AXI_t AXI;
-    const uint8_t Speed_register_offset;
-    const uint8_t Distance_register_offset;
-    const uint8_t Reset_register_offset;
+    uint8_t Speed_register_offset;
+    uint8_t Distance_register_offset;
+    uint8_t Reset_register_offset;
 } SpeedSensor_t;
 
 typedef struct{
     AXI_t AXI;
-    const uint8_t Register_offset;
+    uint8_t Register_offset;
 } DistanceSensor_t;
 
 typedef struct{
     AXI_t AXI;
-    const uint8_t Forward_offset;
-    const uint8_t Backward_offset;
+    uint8_t Forward_offset;
+    uint8_t Backward_offset;
 } GPIO_t;
 
 typedef struct{

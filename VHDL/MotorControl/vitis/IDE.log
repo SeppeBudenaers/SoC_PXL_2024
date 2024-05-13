@@ -567,12 +567,24 @@ con
 19:52:51 INFO  : Result from executing command 'getProjects': FinalFinalCar
 19:52:51 INFO  : Result from executing command 'getPlatforms': FinalFinalCar|C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/export/FinalFinalCar/FinalFinalCar.xpfm
 19:52:52 INFO  : Checking for BSP changes to sync application flags for project 'Roomba'...
-13:14:19 DEBUG : Logs will be stored at 'C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/IDE.log'.
-13:14:20 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\02_PXL\SoC_PXL_2024\VHDL\MotorControl\vitis\temp_xsdb_launch_script.tcl
-13:14:27 INFO  : Platform repository initialization has completed.
-13:14:27 INFO  : Registering command handlers for Vitis TCF services
-13:14:29 INFO  : XSCT server has started successfully.
-13:14:36 INFO  : Successfully done setting XSCT server connection channel  
-13:14:36 INFO  : plnx-install-location is set to ''
-13:14:36 INFO  : Successfully done query RDI_DATADIR 
-13:14:36 INFO  : Successfully done setting workspace for the tool. 
+13:14:32 DEBUG : Logs will be stored at 'C:/XilinxDev/SOC/SeppeEnKobe/VHDL/MotorControl/vitis/IDE.log'.
+13:22:27 DEBUG : Logs will be stored at 'C:/XilinxDev/vitis/IDE.log'.
+13:22:27 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\XilinxDev\vitis\temp_xsdb_launch_script.tcl
+13:22:29 INFO  : XSCT server has started successfully.
+13:22:29 INFO  : Successfully done setting XSCT server connection channel  
+13:22:29 INFO  : plnx-install-location is set to ''
+13:22:29 INFO  : Successfully done setting workspace for the tool. 
+13:22:30 ERROR : Error encountered while initializing user repository paths
+Reason: No Platforms Found.
+
+
+13:22:30 INFO  : Platform repository initialization has completed.
+13:22:48 INFO  : Successfully done query RDI_DATADIR 
+13:22:48 INFO  : Registering command handlers for Vitis TCF services
+13:24:14 INFO  : Result from executing command 'getProjects': FinalFinalCar
+13:24:14 INFO  : Result from executing command 'getPlatforms': 
+13:24:14 INFO  : Checking for BSP changes to sync application flags for project 'Roomba'...
+13:24:35 INFO  : Checking for BSP changes to sync application flags for project 'Roomba'...
+13:25:09 INFO  : Checking for BSP changes to sync application flags for project 'Roomba'...
+13:38:06 INFO  : Checking for BSP changes to sync application flags for project 'Roomba'...
+13:43:37 INFO  : Checking for BSP changes to sync application flags for project 'Roomba'...

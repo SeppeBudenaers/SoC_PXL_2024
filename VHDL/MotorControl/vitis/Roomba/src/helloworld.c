@@ -164,101 +164,31 @@ int main()
     XTmrCtr_PwmDisable(&xTmrCtr_Inst);
     XTmrCtr_PwmEnable(&xTmrCtr_Inst);
 #endif
-    Car_t  ROOMBA;
+    Car_t ROOMBA;
 
-    //GPIO motor
-    ROOMBA.Motors[0].GPIO.AXI.DEVICE_ID = 0x00;
-    ROOMBA.Motors[1].GPIO.AXI.DEVICE_ID = 0x00;
-    ROOMBA.Motors[2].GPIO.AXI.DEVICE_ID = 0x00;
-    ROOMBA.Motors[3].GPIO.AXI.DEVICE_ID = 0x00;
-
-    ROOMBA.Motors[0].GPIO.AXI.AXI_BASEADDR = 0x00;
-    ROOMBA.Motors[1].GPIO.AXI.AXI_BASEADDR = 0x00;
-    ROOMBA.Motors[2].GPIO.AXI.AXI_BASEADDR = 0x00;
-    ROOMBA.Motors[3].GPIO.AXI.AXI_BASEADDR = 0x00;
-    //denk niet dat we offset nodig hebben voor GPIO
-    ROOMBA.Motors[0].GPIO.Forward_offset = 0x00;
-    ROOMBA.Motors[1].GPIO.Forward_offset = 0x00;
-    ROOMBA.Motors[2].GPIO.Forward_offset = 0x00;
-    ROOMBA.Motors[3].GPIO.Forward_offset = 0x00;
-
-    ROOMBA.Motors[0].GPIO.Backward_offset = 0x00;
-    ROOMBA.Motors[1].GPIO.Backward_offset = 0x00;
-    ROOMBA.Motors[2].GPIO.Backward_offset = 0x00;
-    ROOMBA.Motors[3].GPIO.Backward_offset = 0x00;
-
-    // speed sensors
-    ROOMBA.Motors[0].SpeedSensor.AXI.DEVICE_ID = 0x00;
-    ROOMBA.Motors[1].SpeedSensor.AXI.DEVICE_ID = 0x00;
-    ROOMBA.Motors[2].SpeedSensor.AXI.DEVICE_ID = 0x00;
-    ROOMBA.Motors[3].SpeedSensor.AXI.DEVICE_ID = 0x00;
-
-    ROOMBA.Motors[0].SpeedSensor.AXI.AXI_BASEADDR = 0x00;
-    ROOMBA.Motors[1].SpeedSensor.AXI.AXI_BASEADDR = 0x00;
-    ROOMBA.Motors[2].SpeedSensor.AXI.AXI_BASEADDR = 0x00;
-    ROOMBA.Motors[3].SpeedSensor.AXI.AXI_BASEADDR = 0x00;
-
-    ROOMBA.Motors[0].SpeedSensor.Reset_register_offset = 0x00;
-    ROOMBA.Motors[1].SpeedSensor.Reset_register_offset = 0x00;
-    ROOMBA.Motors[2].SpeedSensor.Reset_register_offset = 0x00;
-    ROOMBA.Motors[3].SpeedSensor.Reset_register_offset = 0x00;
-
-    ROOMBA.Motors[0].SpeedSensor.Distance_register_offset = 0x00;
-    ROOMBA.Motors[1].SpeedSensor.Distance_register_offset = 0x00;
-    ROOMBA.Motors[2].SpeedSensor.Distance_register_offset = 0x00;
-    ROOMBA.Motors[3].SpeedSensor.Distance_register_offset = 0x00;
-
-    ROOMBA.Motors[0].SpeedSensor.Speed_register_offset = 0x00;
-    ROOMBA.Motors[1].SpeedSensor.Distance_register_offset = 0x00;
-    ROOMBA.Motors[2].SpeedSensor.Distance_register_offset = 0x00;
-    ROOMBA.Motors[3].SpeedSensor.Distance_register_offset = 0x00;
-
-    //Distance sensor
-    ROOMBA.DistanceSensor[0].AXI.DEVICE_ID = 0x00;
-    ROOMBA.DistanceSensor[1].AXI.DEVICE_ID = 0x00;
-
-    ROOMBA.DistanceSensor[0].AXI.AXI_BASEADDR = 0x00;
-    ROOMBA.DistanceSensor[1].AXI.AXI_BASEADDR = 0x00;
-
-    ROOMBA.DistanceSensor[0].Register_offset = 0x00;
-    ROOMBA.DistanceSensor[1].Register_offset = 0x00;
+    Init_Car(&ROOMBA);
 
 
 
     uint32_t speed,distance,ultrasoon_L,ultrasoon_R;
     uint8_t flag_speedup = 0;
     uint32_t duty = 7000;
+
+    
     while (1){
-    	speed 		= SPEEDSENSOR_mReadReg(SpeedSensor_0_adress,speedsensor_speed_offset);
-    	distance 	= SPEEDSENSOR_mReadReg(SpeedSensor_0_adress,speedsensor_distance_offset);
-    	ultrasoon_L	= HC_SR04_mReadReg(HC_SR04_L_adress,HC_SR04_distance_offset);
-    	ultrasoon_R	= HC_SR04_mReadReg(HC_SR04_R_adress,HC_SR04_distance_offset);
-
-    	if(ultrasoon_R < 100 || ultrasoon_L < 100){
-    		XTmrCtr_PwmDisable(&xTmrCtr_Inst);
-    		XTmrCtr_PwmConfigure(&xTmrCtr_Inst, AXI_TIMER_PERIOD_NS, 5000); // maybe make this a define slow speed
-    		XTmrCtr_PwmEnable(&xTmrCtr_Inst);
-    		flag_speedup = 1;
-    	}
-    	else if(flag_speedup == 1){
-    		XTmrCtr_PwmDisable(&xTmrCtr_Inst);
-    		XTmrCtr_PwmConfigure(&xTmrCtr_Inst, AXI_TIMER_PERIOD_NS, 7000); // maybe make this a define fast speed
-    		XTmrCtr_PwmEnable(&xTmrCtr_Inst);
-    		flag_speedup = 0;
-    	}
-
-        if(ultrasoon_R < 40 || ultrasoon_L < 40){
-        	// need to turn
-        	// do we need to use MPU for turning.
-        }
-
-
+    	speed 		= SPEEDSENSOR_mReadReg(ROOMBA.Motors[0].SpeedSensor.AXI.AXI_BASEADDR,   ROOMBA.Motors[0].SpeedSensor.Speed_register_offset);
+    	distance 	= SPEEDSENSOR_mReadReg(ROOMBA.Motors[0].SpeedSensor.AXI.AXI_BASEADDR,   ROOMBA.Motors[0].SpeedSensor.Distance_register_offset);
+    	ultrasoon_L	= HC_SR04_mReadReg(ROOMBA.DistanceSensor[0].AXI.AXI_BASEADDR,           ROOMBA.DistanceSensor[0].Register_offset);
+    	ultrasoon_R	= HC_SR04_mReadReg(ROOMBA.DistanceSensor[1].AXI.AXI_BASEADDR,           ROOMBA.DistanceSensor[1].Register_offset);
+        
+        sleep_A9(10);
+    	
     	XTmrCtr_PwmDisable(&xTmrCtr_Inst);
         duty = (duty + 1000)%AXI_TIMER_PERIOD_NS;
         xil_printf("Duty : %d\n\r",duty);
         XTmrCtr_PwmConfigure(&xTmrCtr_Inst, AXI_TIMER_PERIOD_NS, duty);
         xil_printf("test2\n\r");
-        SPEEDSENSOR_mWriteReg(SpeedSensor_0_adress, speedsensor_reset_offset, 0x01);
+        SPEEDSENSOR_mWriteReg(ROOMBA.Motors[0].SpeedSensor.AXI.AXI_BASEADDR, ROOMBA.Motors[0].SpeedSensor.Reset_register_offset, 0x01);
         usleep_A9(10);
         SPEEDSENSOR_mWriteReg(SpeedSensor_0_adress, speedsensor_reset_offset, 0x00);
         distance = SPEEDSENSOR_mReadReg(SpeedSensor_0_adress,speedsensor_distance_offset);
