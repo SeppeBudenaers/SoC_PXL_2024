@@ -3,6 +3,10 @@
 #include <stdbool.h>
 #include "xgpio.h"
 
+#define AXI_TIMER_PERIOD_NS 10000
+
+#define AXI_TIMER_PWM_HIGH_TIME_NS 6000
+
 typedef struct {
     uint8_t DEVICE_ID;
     uint32_t AXI_BASEADDR;
@@ -42,6 +46,9 @@ typedef struct{
     Motor_t Motors[4];
     DistanceSensor_t DistanceSensor[2];
     bool SlowMode;
+    uint32_t DesiredSpeed;
+    uint32_t AvgSpeed;
+    uint32_t duty;
 } Car_t;
 
 
@@ -115,6 +122,9 @@ void Init_Car(Car_t *Car)
     Car->DistanceSensor[0].Register_offset = 0x00;
     Car->DistanceSensor[1].Register_offset = 0x00;
 
+    Car->DesiredSpeed = 0;
+    Car->AvgSpeed = 0;
+    Car->duty = AXI_TIMER_PWM_HIGH_TIME_NS;
 
     //init gpio
     for (size_t i = 0; i < 4; i++)

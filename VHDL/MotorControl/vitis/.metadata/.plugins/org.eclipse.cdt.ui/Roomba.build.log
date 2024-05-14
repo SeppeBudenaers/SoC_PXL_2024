@@ -1,4 +1,4 @@
-18:24:39 **** Incremental Build of configuration Debug for project Roomba ****
+19:13:02 **** Incremental Build of configuration Debug for project Roomba ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -7,6 +7,11 @@ make --no-print-directory main-build
 'Building file: ../src/helloworld.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/export/FinalFinalCar/sw/FinalFinalCar/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:34:
+../src/Sensors.h: In function 'ReadallSensor':
+../src/Sensors.h:42:23: warning: assignment to 'uint32_t' {aka 'long unsigned int'} from 'uint32_t *' {aka 'long unsigned int *'} makes integer from pointer without a cast [-Wint-conversion]
+   42 |         Car->AvgSpeed = Car->AvgSpeed + &Car->Motors[i].SpeedSensor.Speed;
+      |                       ^
 ../src/helloworld.c: In function 'xTmrCtr_Init':
 ../src/helloworld.c:81:17: warning: variable 'DutyCycle' set but not used [-Wunused-but-set-variable]
    81 |     int Status, DutyCycle;
@@ -21,9 +26,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size Roomba.elf  |tee "Roomba.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  34943	   2032	  22656	  59631	   e8ef	Roomba.elf
+  35167	   2032	  22656	  59855	   e9cf	Roomba.elf
 'Finished building: Roomba.elf.size'
 ' '
 
-18:24:40 Build Finished (took 1s.350ms)
+19:13:04 Build Finished (took 1s.292ms)
 

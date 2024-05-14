@@ -32,15 +32,23 @@ void Read_Ultrasoon(DistanceSensor_t * DistanceSensor)
 
 void ReadallSensor(Car_t *Car)
 {
+
+    Car->AvgSpeed = 0;
+
     for (int i = 0; i < 4; i++)
     {
         Read_Speed(&Car->Motors[i].SpeedSensor);
         Read_Distance(&Car->Motors[i].SpeedSensor);
+        Car->AvgSpeed = Car->AvgSpeed + &Car->Motors[i].SpeedSensor.Speed;
     }
+
+    Car->AvgSpeed = (Car->AvgSpeed / 4);
+
     for (int i = 0; i < 2; i++)
     {
         Read_Ultrasoon(&Car->DistanceSensor[i]);
     }
+
 }
 
 bool IswithinDistance(Car_t *Car, uint32_t distance)
@@ -144,3 +152,15 @@ void turn(Car_t * Car, uint8_t direction){
 
 //01
 //23
+
+void AdapthSpeed(Car_t * Car,XTmrCtr * xTmrCtr_Inst){
+	XTmrCtr_PwmDisable(xTmrCtr_Inst);
+	if(Car->DesiredSpeed < Car->AvgSpeed){
+		Car->duty = (Car->duty + 100)%AXI_TIMER_PERIOD_NS;
+	}
+	else if (Car->DesiredSpeed > Car->AvgSpeed){
+		Car->duty = (Car->duty - 100)%AXI_TIMER_PERIOD_NS;
+	}
+	XTmrCtr_PwmConfigure(xTmrCtr_Inst, AXI_TIMER_PERIOD_NS, Car->duty);
+	XTmrCtr_PwmEnable(xTmrCtr_Inst);
+}

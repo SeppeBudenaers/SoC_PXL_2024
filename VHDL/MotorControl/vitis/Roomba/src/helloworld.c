@@ -60,9 +60,9 @@ XScuGic xScuGic_Inst; //Universal interrupt controller driver example
 
 //Timer period (in nanoseconds)
 
-#define AXI_TIMER_PERIOD_NS 10000
-
-#define AXI_TIMER_PWM_HIGH_TIME_NS 5000
+//#define AXI_TIMER_PERIOD_NS 10000
+//
+//#define AXI_TIMER_PWM_HIGH_TIME_NS 6000
 
 //Timer interrupt callback
 
@@ -172,27 +172,24 @@ int main()
     Init_Car(&ROOMBA);
     
     while (1){
-        xil_printf("forward \n\r");
-    	SetDirection(ROOMBA.Motors[0], Direction_forward);
-    	SetDirection(ROOMBA.Motors[1], Direction_forward);
-    	sleep_A9(10);
-        xil_printf("right \n\r");
-    	turn(&ROOMBA, Turn_right);
-    	sleep_A9(10);
-        xil_printf("left \n\r");
-    	turn(&ROOMBA, Turn_left);
-    	sleep_A9(10);
+    	ReadallSensor(&ROOMBA);
 
-//    	ReadallSensor(&ROOMBA);
-//    	        if (IswithinDistance(&ROOMBA, 100)){
-//    	            if(ROOMBA.SlowMode == 0){
-//    	                ROOMBA.SlowMode = 1;
-//    	            }
-//    	            if(IswithinDistance(&ROOMBA, 40)){
-//    	                turn(&ROOMBA, LeftOrRight(&ROOMBA));
-//    	                ROOMBA.SlowMode = 0;
-//    	            }
-//    	        }
+    	if(ROOMBA.DesiredSpeed != ROOMBA.AvgSpeed){
+    		AdapthSpeed(&ROOMBA,&xTmrCtr_Inst);
+    	}
+
+    	if (IswithinDistance(&ROOMBA, 100)){
+    		if(ROOMBA.SlowMode == 0){
+    			ROOMBA.SlowMode = 1;
+    			ROOMBA.DesiredSpeed = 2;
+    		}
+
+    		if(IswithinDistance(&ROOMBA, 40)){
+    			turn(&ROOMBA, LeftOrRight(&ROOMBA)); // need to turn with MPU
+    			ROOMBA.SlowMode = 0;
+    			ROOMBA.DesiredSpeed = 5;
+    		}
+    	}
     };
     return 0;
 }
