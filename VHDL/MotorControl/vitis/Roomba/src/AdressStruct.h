@@ -2,6 +2,7 @@
 #include "xparameters.h"
 #include <stdbool.h>
 #include "xgpio.h"
+#include "xiic.h"
 
 #define AXI_TIMER_PERIOD_NS 10000
 
@@ -42,15 +43,119 @@ typedef struct{
     bool Backward;
 } Motor_t;
 
+
+typedef struct{
+    int16_t Temperature;
+    int16_t Gyro_X;
+    int16_t Gyro_Y;
+    int16_t Gyro_Z;
+    int16_t Accel_X;
+    int16_t Accel_Y;
+    int16_t Accel_Z;
+    uint8_t Device_adress; //0x68
+    //init register adress 0x6B
+    //read register adress 0x3B
+    double pitch;
+    double roll;
+    double yaw;
+} MPU6050_t;
+
+
+
+
 typedef struct{
     Motor_t Motors[4];
     DistanceSensor_t DistanceSensor[2];
+    MPU6050_t IMU;
     bool SlowMode;
     uint32_t DesiredSpeed;
     uint32_t AvgSpeed;
     uint32_t duty;
 } Car_t;
 
+
+
+void getAngle(MPU6050_t * IMU, XTime looptime)
+{
+    IMU->yaw = IMU->yaw + (IMU->Gyro_Z * looptime ); 
+    IMU->pitch = IMU->pitch + IMU->Gyro_X;
+    IMU->roll  = IMU->roll  + IMU->Gyro_Y;
+}
+
+void imu_read(MPU6050_t * IMU){
+    
+    uint8_t Databuffer[14];
+    u8 MPU_read [] = {0x3B};
+    XIic_Send(XPAR_IIC_0_BASEADDR, IMU->Device_adress, (u8*)&MPU_read, 1, XIIC_REPEATED_START);
+    XIic_Recv(XPAR_IIC_0_BASEADDR, IMU->Device_adress, (u8*)Databuffer, 14, XIIC_STOP);
+    // if (&Databuffer == NULL){
+    //     xil_printf("I2C failed\n\r");
+    //     return;    
+    // }
+
+    IMU->Accel_X = IMU->Accel_X = (Databuffer[0] << 8) | Databuffer[1]; // 0x3B (ACCEL_XOUT_H) 0x3C (ACCEL_XOUT_L)
+    IMU->Accel_Y = (Databuffer[2] << 8) | Databuffer[3]; // 0x3D (ACCEL_YOUT_H) 0x3E (ACCEL_YOUT_L)
+    IMU->Accel_Z = (Databuffer[4] << 8) | Databuffer[5]; // 0x3F (ACCEL_ZOUT_H) 0x40 (ACCEL_ZOUT_L)
+
+    //read temperature data
+    IMU->Temperature = (Databuffer[6] << 8) | Databuffer[7]; // 0x41 (TEMP_OUT_H) 0x42 (TEMP_OUT_L)
+
+    //read gyroscope data
+    IMU->Gyro_X = (Databuffer[8] << 8) | Databuffer[9]; // 0x43 (GYRO_XOUT_H) 0x44 (GYRO_XOUT_L)
+    IMU->Gyro_Y = (Databuffer[10] << 8) | Databuffer[11]; // 0x45 (GYRO_YOUT_H) 0x46 (GYRO_YOUT_L)
+    IMU->Gyro_Z = (Databuffer[12] << 8) | Databuffer[13]; // 0x47 (GYRO_ZOUT_H) 0x48 (GYRO_ZOUT_L)
+
+//    //apply calibration
+//    IMU->Accel_X += -950;
+//    IMU->Accel_Y += -300;
+//    IMU->Accel_Z += 0;
+//
+//
+//    //apply calibration
+//    IMU->Gyro_X += 480;
+//    IMU->Gyro_Y += 170;
+//    IMU->Gyro_Z += 210;
+
+    //convert temperature
+
+    IMU->Temperature = (IMU->Temperature-1600) / 340 + 36.53;
+
+}
+
+void print_imu(MPU6050_t * IMU){
+    xil_printf("Temperature: %d\n\r", IMU->Temperature);
+    xil_printf("Gyro_X: %d\n\r", IMU->Gyro_X);
+    xil_printf("Gyro_Y: %d\n\r", IMU->Gyro_Y);
+    xil_printf("Gyro_Z: %d\n\r", IMU->Gyro_Z);
+    xil_printf("Accel_X: %d\n\r", IMU->Accel_X);
+    xil_printf("Accel_Y: %d\n\r", IMU->Accel_Y);
+    xil_printf("Accel_Z: %d\n\r", IMU->Accel_Z);
+}
+
+void i2c_init(MPU6050_t *IMU){
+
+
+    IMU->Device_adress = 0x68;
+    uint8_t * MPU_intialization[] = {0x6B,0};
+    XIic_Send(XPAR_IIC_0_BASEADDR, IMU->Device_adress, (uint8_t*)&MPU_intialization, sizeof(MPU_intialization), XIIC_STOP);
+    imu_read(IMU);
+    
+    
+    // if(IMU->Temperature > 0){
+    //     xil_printf("I2C initialized\n\r");
+    // }
+    // else{
+    //     xil_printf("I2C failed\n\r");
+    // }
+
+
+    xil_printf("I2C initialized\n\r");
+
+}
+
+
+
+ 
 
 void Init_motor(Motor_t motor){
 	int status;
@@ -132,5 +237,9 @@ void Init_Car(Car_t *Car)
     	//xil_printf("motor init %d\n\r",i);
         Init_motor(Car->Motors[i]);
     }
+
+    //init i2c
+    i2c_init(&Car->IMU);
+
     xil_printf("Initialization complete\n\r");
 }
