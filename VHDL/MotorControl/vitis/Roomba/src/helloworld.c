@@ -157,7 +157,7 @@ int main()
     Status = xScuGic_Init(&xScuGic_Inst, &xTmrCtr_Inst);
     if (Status != XST_SUCCESS)
     {
-        xil_printf("ScuGic Init Error!\n\r");
+    	xil_printf("ScuGic Init Error!\n\r");
     }
     // Both channels of AXI TIMER start working
     XTmrCtr_Start(&xTmrCtr_Inst, AXI_TIMER_CHANNEL_1);
@@ -170,11 +170,13 @@ int main()
     Car_t ROOMBA;
 
     Init_Car(&ROOMBA);
-    
+    SetDirection(ROOMBA.Motors[0],Direction_forward);
+    SetDirection(ROOMBA.Motors[1],Direction_forward);
+    SetDirection(ROOMBA.Motors[2],Direction_forward);
+    SetDirection(ROOMBA.Motors[3],Direction_forward);
     while (1){
     	ReadallSensor(&ROOMBA);
-
-    	if(ROOMBA.DesiredSpeed != ROOMBA.AvgSpeed){
+    	if(ROOMBA.DesiredSpeed  != ROOMBA.AvgSpeed){
     		AdapthSpeed(&ROOMBA,&xTmrCtr_Inst);
     	}
 
@@ -182,14 +184,21 @@ int main()
     		if(ROOMBA.SlowMode == 0){
     			ROOMBA.SlowMode = 1;
     			ROOMBA.DesiredSpeed = 2;
+    			xil_printf("Slow MODE \n\r");
     		}
 
-    		if(IswithinDistance(&ROOMBA, 40)){
+    		if(IswithinDistance(&ROOMBA, 20)){
     			turn(&ROOMBA, LeftOrRight(&ROOMBA)); // need to turn with MPU
     			ROOMBA.SlowMode = 0;
     			ROOMBA.DesiredSpeed = 5;
+    			SetDirection(ROOMBA.Motors[0],Direction_forward);
+    			SetDirection(ROOMBA.Motors[1],Direction_forward);
+    			SetDirection(ROOMBA.Motors[2],Direction_forward);
+    			SetDirection(ROOMBA.Motors[3],Direction_forward);
+    			xil_printf("Exit turn \n\r");
     		}
     	}
+    	usleep_A9(500000);
     };
     return 0;
 }

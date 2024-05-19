@@ -29,3 +29,5 @@ platform generate -domains standalone_ps7_cortexa9_0,zynq_fsbl
 platform generate -domains zynq_fsbl 
 platform generate -domains standalone_ps7_cortexa9_0 
 platform generate -domains standalone_ps7_cortexa9_0,zynq_fsbl 
+platform active {FinalFinalCar}
+platform generate -domains 

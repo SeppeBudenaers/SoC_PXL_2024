@@ -39,7 +39,7 @@ void ReadallSensor(Car_t *Car)
     {
         Read_Speed(&Car->Motors[i].SpeedSensor);
         Read_Distance(&Car->Motors[i].SpeedSensor);
-        Car->AvgSpeed = Car->AvgSpeed + &Car->Motors[i].SpeedSensor.Speed;
+        Car->AvgSpeed = Car->AvgSpeed + Car->Motors[i].SpeedSensor.Speed;
     }
 
     Car->AvgSpeed = (Car->AvgSpeed / 4);
@@ -65,7 +65,7 @@ bool IswithinDistance(Car_t *Car, uint32_t distance)
 
 bool LeftOrRight(Car_t *Car)
 {
-    if (Car->DistanceSensor[0].Distance < Car->DistanceSensor[1].Distance)
+    if (Car->DistanceSensor[0].Distance > Car->DistanceSensor[1].Distance)
     {
         return Turn_right;
     }
@@ -140,6 +140,7 @@ void turn(Car_t * Car, uint8_t direction){
         SetDirection(Car->Motors[1], Direction_forward);
         SetDirection(Car->Motors[2], Direction_backward);
         SetDirection(Car->Motors[3], Direction_forward);
+        xil_printf("Left \n\r");
 
     }else{
         //turn right
@@ -147,7 +148,9 @@ void turn(Car_t * Car, uint8_t direction){
         SetDirection(Car->Motors[1], Direction_backward);
         SetDirection(Car->Motors[2], Direction_forward);
         SetDirection(Car->Motors[3], Direction_backward);
+        xil_printf("Right \n\r");
     }
+    sleep(10);
 }
 
 //01
@@ -155,10 +158,10 @@ void turn(Car_t * Car, uint8_t direction){
 
 void AdapthSpeed(Car_t * Car,XTmrCtr * xTmrCtr_Inst){
 	XTmrCtr_PwmDisable(xTmrCtr_Inst);
-	if(Car->DesiredSpeed < Car->AvgSpeed){
+	if(Car->DesiredSpeed > Car->AvgSpeed){
 		Car->duty = (Car->duty + 100)%AXI_TIMER_PERIOD_NS;
 	}
-	else if (Car->DesiredSpeed > Car->AvgSpeed){
+	else if (Car->DesiredSpeed < Car->AvgSpeed){
 		Car->duty = (Car->duty - 100)%AXI_TIMER_PERIOD_NS;
 	}
 	XTmrCtr_PwmConfigure(xTmrCtr_Inst, AXI_TIMER_PERIOD_NS, Car->duty);

@@ -102,15 +102,15 @@ void Init_Car(Car_t *Car)
     Car->Motors[2].SpeedSensor.Reset_register_offset = 0x00;
     Car->Motors[3].SpeedSensor.Reset_register_offset = 0x00;
 
-    Car->Motors[0].SpeedSensor.Distance_register_offset = 0x04;
-    Car->Motors[1].SpeedSensor.Distance_register_offset = 0x04;
-    Car->Motors[2].SpeedSensor.Distance_register_offset = 0x04;
-    Car->Motors[3].SpeedSensor.Distance_register_offset = 0x04;
+    Car->Motors[0].SpeedSensor.Distance_register_offset = 0x08;
+    Car->Motors[1].SpeedSensor.Distance_register_offset = 0x08;
+    Car->Motors[2].SpeedSensor.Distance_register_offset = 0x08;
+    Car->Motors[3].SpeedSensor.Distance_register_offset = 0x08;
 
-    Car->Motors[0].SpeedSensor.Speed_register_offset = 0x08;
-    Car->Motors[1].SpeedSensor.Speed_register_offset = 0x08;
-    Car->Motors[2].SpeedSensor.Speed_register_offset = 0x08;
-    Car->Motors[3].SpeedSensor.Speed_register_offset = 0x08;
+    Car->Motors[0].SpeedSensor.Speed_register_offset = 0x04;
+    Car->Motors[1].SpeedSensor.Speed_register_offset = 0x04;
+    Car->Motors[2].SpeedSensor.Speed_register_offset = 0x04;
+    Car->Motors[3].SpeedSensor.Speed_register_offset = 0x04;
 
     //Distance sensor
     Car->DistanceSensor[0].AXI.DEVICE_ID = XPAR_ULTRASONE_HC_SR04_0_DEVICE_ID;
