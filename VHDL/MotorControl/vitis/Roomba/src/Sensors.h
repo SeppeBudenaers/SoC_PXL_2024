@@ -156,7 +156,7 @@ void turn(Car_t * Car, uint8_t direction){
 //01
 //23
 
-void AdapthSpeed(Car_t * Car,XTmrCtr * xTmrCtr_Inst){
+void AdaptSpeed(Car_t * Car,XTmrCtr * xTmrCtr_Inst){
 	XTmrCtr_PwmDisable(xTmrCtr_Inst);
 	if(Car->DesiredSpeed > Car->AvgSpeed){
 		Car->duty = (Car->duty + 100)%AXI_TIMER_PERIOD_NS;

@@ -177,7 +177,7 @@ int main()
     while (1){
     	ReadallSensor(&ROOMBA);
     	if(ROOMBA.DesiredSpeed  != ROOMBA.AvgSpeed){
-    		AdapthSpeed(&ROOMBA,&xTmrCtr_Inst);
+    		AdaptSpeed(&ROOMBA,&xTmrCtr_Inst);
     	}
 
     	if (IswithinDistance(&ROOMBA, 100)){
