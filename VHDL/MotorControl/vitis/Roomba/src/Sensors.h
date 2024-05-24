@@ -131,7 +131,7 @@ void SetDirection(Motor_t motor, uint8_t direction){
 
 
 
-void turn(Car_t * Car, uint8_t direction){
+void turn(Car_t * Car, uint8_t direction,XTmrCtr * xTmrCtr_Inst){
 
 
     if(direction == Turn_left){
@@ -150,7 +150,13 @@ void turn(Car_t * Car, uint8_t direction){
         SetDirection(Car->Motors[3], Direction_backward);
         xil_printf("Right \n\r");
     }
-    sleep(10);
+    for (int var = 0; var < 20; ++var) {
+    	ReadallSensor(Car);
+    	if(Car->DesiredSpeed  != Car->AvgSpeed){
+    		AdaptSpeed(Car,xTmrCtr_Inst);
+    	}
+    	usleep_A9(100000);
+	}
 }
 
 //01

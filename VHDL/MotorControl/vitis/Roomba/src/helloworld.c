@@ -188,7 +188,7 @@ int main()
     		}
 
     		if(IswithinDistance(&ROOMBA, 20)){
-    			turn(&ROOMBA, LeftOrRight(&ROOMBA)); // need to turn with MPU
+    			turn(&ROOMBA, LeftOrRight(&ROOMBA),&xTmrCtr_Inst); // need to turn with MPU
     			ROOMBA.SlowMode = 0;
     			ROOMBA.DesiredSpeed = 5;
     			SetDirection(ROOMBA.Motors[0],Direction_forward);
@@ -198,7 +198,7 @@ int main()
     			xil_printf("Exit turn \n\r");
     		}
     	}
-    	usleep_A9(500000);
+    	usleep_A9(200000);
     };
     return 0;
 }

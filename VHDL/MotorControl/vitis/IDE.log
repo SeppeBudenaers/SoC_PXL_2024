@@ -2661,3 +2661,278 @@ con
 19:12:08 INFO  : Checking for BSP changes to sync application flags for project 'Roomba'...
 19:13:02 INFO  : Checking for BSP changes to sync application flags for project 'Roomba'...
 19:22:49 INFO  : Disconnected from the channel tcfchan#5.
+08:53:54 DEBUG : Logs will be stored at 'C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/IDE.log'.
+08:53:54 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\02_PXL\SoC_PXL_2024\VHDL\MotorControl\vitis\temp_xsdb_launch_script.tcl
+08:53:57 INFO  : Platform repository initialization has completed.
+08:53:57 INFO  : Registering command handlers for Vitis TCF services
+08:53:57 INFO  : XSCT server has started successfully.
+08:53:57 INFO  : plnx-install-location is set to ''
+08:53:57 INFO  : Successfully done setting XSCT server connection channel  
+08:53:57 INFO  : Successfully done query RDI_DATADIR 
+08:53:57 INFO  : Successfully done setting workspace for the tool. 
+08:54:48 INFO  : Result from executing command 'getProjects': FinalFinalCar
+08:54:48 INFO  : Result from executing command 'getPlatforms': FinalFinalCar|C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/export/FinalFinalCar/FinalFinalCar.xpfm
+08:54:48 INFO  : Checking for BSP changes to sync application flags for project 'Roomba'...
+08:55:17 INFO  : Checking for BSP changes to sync application flags for project 'Roomba'...
+08:55:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:55:40 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+08:55:41 INFO  : 'jtag frequency' command is executed.
+08:55:41 INFO  : Context for 'APU' is selected.
+08:55:41 INFO  : System reset is completed.
+08:55:44 INFO  : 'after 3000' command is executed.
+08:55:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+08:55:46 INFO  : Device configured successfully with "C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/Roomba/_ide/bitstream/FinalFinalCar.bit"
+08:55:46 INFO  : Context for 'APU' is selected.
+08:55:46 INFO  : Hardware design and registers information is loaded from 'C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/export/FinalFinalCar/hw/FinalFinalCar.xsa'.
+08:55:46 INFO  : 'configparams force-mem-access 1' command is executed.
+08:55:46 INFO  : Context for 'APU' is selected.
+08:55:46 INFO  : Sourcing of 'C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/Roomba/_ide/psinit/ps7_init.tcl' is done.
+08:55:47 INFO  : 'ps7_init' command is executed.
+08:55:47 INFO  : 'ps7_post_config' command is executed.
+08:55:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:55:47 INFO  : The application 'C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/Roomba/Debug/Roomba.elf' is downloaded to processor 'ps7_cortexa9_0'.
+08:55:47 INFO  : 'configparams force-mem-access 0' command is executed.
+08:55:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/Roomba/_ide/bitstream/FinalFinalCar.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/export/FinalFinalCar/hw/FinalFinalCar.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/Roomba/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/Roomba/Debug/Roomba.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+08:55:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:55:47 INFO  : 'con' command is executed.
+08:55:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+08:55:47 INFO  : Launch script is exported to file 'C:\02_PXL\SoC_PXL_2024\VHDL\MotorControl\vitis\Roomba_system\_ide\scripts\debugger_roomba-default.tcl'
+08:56:08 INFO  : Disconnected from the channel tcfchan#2.
+08:56:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:56:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+08:56:18 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+08:56:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:56:46 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+08:56:46 INFO  : 'jtag frequency' command is executed.
+08:56:46 INFO  : Context for 'APU' is selected.
+08:56:46 INFO  : System reset is completed.
+08:56:49 INFO  : 'after 3000' command is executed.
+08:56:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+08:56:51 INFO  : Device configured successfully with "C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/Roomba/_ide/bitstream/FinalFinalCar.bit"
+08:56:51 INFO  : Context for 'APU' is selected.
+08:56:51 INFO  : Hardware design and registers information is loaded from 'C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/export/FinalFinalCar/hw/FinalFinalCar.xsa'.
+08:56:51 INFO  : 'configparams force-mem-access 1' command is executed.
+08:56:51 INFO  : Context for 'APU' is selected.
+08:56:51 INFO  : Sourcing of 'C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/Roomba/_ide/psinit/ps7_init.tcl' is done.
+08:56:52 INFO  : 'ps7_init' command is executed.
+08:56:52 INFO  : 'ps7_post_config' command is executed.
+08:56:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:56:52 INFO  : The application 'C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/Roomba/Debug/Roomba.elf' is downloaded to processor 'ps7_cortexa9_0'.
+08:56:52 INFO  : 'configparams force-mem-access 0' command is executed.
+08:56:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/Roomba/_ide/bitstream/FinalFinalCar.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/export/FinalFinalCar/hw/FinalFinalCar.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/Roomba/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/Roomba/Debug/Roomba.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+08:56:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:56:52 INFO  : 'con' command is executed.
+08:56:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+08:56:52 INFO  : Launch script is exported to file 'C:\02_PXL\SoC_PXL_2024\VHDL\MotorControl\vitis\Roomba_system\_ide\scripts\debugger_roomba-default.tcl'
+08:57:48 INFO  : Disconnected from the channel tcfchan#3.
+08:57:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:57:49 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+08:57:49 INFO  : 'jtag frequency' command is executed.
+08:57:49 INFO  : Context for 'APU' is selected.
+08:57:49 INFO  : System reset is completed.
+08:57:52 INFO  : 'after 3000' command is executed.
+08:57:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+08:57:54 INFO  : Device configured successfully with "C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/Roomba/_ide/bitstream/FinalFinalCar.bit"
+08:57:54 INFO  : Context for 'APU' is selected.
+08:57:54 INFO  : Hardware design and registers information is loaded from 'C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/export/FinalFinalCar/hw/FinalFinalCar.xsa'.
+08:57:54 INFO  : 'configparams force-mem-access 1' command is executed.
+08:57:54 INFO  : Context for 'APU' is selected.
+08:57:54 INFO  : Sourcing of 'C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/Roomba/_ide/psinit/ps7_init.tcl' is done.
+08:57:55 INFO  : 'ps7_init' command is executed.
+08:57:55 INFO  : 'ps7_post_config' command is executed.
+08:57:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:57:55 INFO  : The application 'C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/Roomba/Debug/Roomba.elf' is downloaded to processor 'ps7_cortexa9_0'.
+08:57:55 INFO  : 'configparams force-mem-access 0' command is executed.
+08:57:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/Roomba/_ide/bitstream/FinalFinalCar.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/export/FinalFinalCar/hw/FinalFinalCar.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/Roomba/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/Roomba/Debug/Roomba.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+08:57:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:57:55 INFO  : 'con' command is executed.
+08:57:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+08:57:55 INFO  : Launch script is exported to file 'C:\02_PXL\SoC_PXL_2024\VHDL\MotorControl\vitis\Roomba_system\_ide\scripts\debugger_roomba-default.tcl'
+09:11:54 INFO  : Checking for BSP changes to sync application flags for project 'Roomba'...
+09:13:13 INFO  : Checking for BSP changes to sync application flags for project 'Roomba'...
+09:15:45 INFO  : Checking for BSP changes to sync application flags for project 'Roomba'...
+09:15:52 INFO  : Disconnected from the channel tcfchan#4.
+09:15:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:16:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+09:16:11 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+09:16:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:16:58 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+09:16:58 INFO  : 'jtag frequency' command is executed.
+09:16:59 INFO  : Context for 'APU' is selected.
+09:16:59 INFO  : System reset is completed.
+09:17:02 INFO  : 'after 3000' command is executed.
+09:17:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+09:17:04 INFO  : Device configured successfully with "C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/Roomba/_ide/bitstream/FinalFinalCar.bit"
+09:17:04 INFO  : Context for 'APU' is selected.
+09:17:04 INFO  : Hardware design and registers information is loaded from 'C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/export/FinalFinalCar/hw/FinalFinalCar.xsa'.
+09:17:04 INFO  : 'configparams force-mem-access 1' command is executed.
+09:17:04 INFO  : Context for 'APU' is selected.
+09:17:04 INFO  : Sourcing of 'C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/Roomba/_ide/psinit/ps7_init.tcl' is done.
+09:17:04 INFO  : 'ps7_init' command is executed.
+09:17:04 INFO  : 'ps7_post_config' command is executed.
+09:17:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:17:05 INFO  : The application 'C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/Roomba/Debug/Roomba.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:17:05 INFO  : 'configparams force-mem-access 0' command is executed.
+09:17:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/Roomba/_ide/bitstream/FinalFinalCar.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/export/FinalFinalCar/hw/FinalFinalCar.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/Roomba/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/Roomba/Debug/Roomba.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:17:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:17:05 INFO  : 'con' command is executed.
+09:17:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+09:17:05 INFO  : Launch script is exported to file 'C:\02_PXL\SoC_PXL_2024\VHDL\MotorControl\vitis\Roomba_system\_ide\scripts\debugger_roomba-default.tcl'
+09:18:45 INFO  : Checking for BSP changes to sync application flags for project 'Roomba'...
+09:19:11 INFO  : Disconnected from the channel tcfchan#5.
+09:19:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:19:14 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+09:19:14 INFO  : 'jtag frequency' command is executed.
+09:19:14 INFO  : Context for 'APU' is selected.
+09:19:14 INFO  : System reset is completed.
+09:19:17 INFO  : 'after 3000' command is executed.
+09:19:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+09:19:20 INFO  : Device configured successfully with "C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/Roomba/_ide/bitstream/FinalFinalCar.bit"
+09:19:20 INFO  : Context for 'APU' is selected.
+09:19:20 INFO  : Hardware design and registers information is loaded from 'C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/export/FinalFinalCar/hw/FinalFinalCar.xsa'.
+09:19:20 INFO  : 'configparams force-mem-access 1' command is executed.
+09:19:20 INFO  : Context for 'APU' is selected.
+09:19:20 INFO  : Sourcing of 'C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/Roomba/_ide/psinit/ps7_init.tcl' is done.
+09:19:20 INFO  : 'ps7_init' command is executed.
+09:19:20 INFO  : 'ps7_post_config' command is executed.
+09:19:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:19:20 INFO  : The application 'C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/Roomba/Debug/Roomba.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:19:20 INFO  : 'configparams force-mem-access 0' command is executed.
+09:19:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/Roomba/_ide/bitstream/FinalFinalCar.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/export/FinalFinalCar/hw/FinalFinalCar.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/Roomba/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/Roomba/Debug/Roomba.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:19:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:19:20 INFO  : 'con' command is executed.
+09:19:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+09:19:20 INFO  : Launch script is exported to file 'C:\02_PXL\SoC_PXL_2024\VHDL\MotorControl\vitis\Roomba_system\_ide\scripts\debugger_roomba-default.tcl'
+09:49:16 INFO  : Disconnected from the channel tcfchan#6.

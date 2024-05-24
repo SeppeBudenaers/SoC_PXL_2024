@@ -3,6 +3,7 @@
 #include <stdbool.h>
 #include "xgpio.h"
 #include "xiic.h"
+#include "xtime_l.h"
 
 #define AXI_TIMER_PERIOD_NS 10000
 
@@ -239,7 +240,7 @@ void Init_Car(Car_t *Car)
     }
 
     //init i2c
-    i2c_init(&Car->IMU);
+    //i2c_init(&Car->IMU);
 
     xil_printf("Initialization complete\n\r");
 }
