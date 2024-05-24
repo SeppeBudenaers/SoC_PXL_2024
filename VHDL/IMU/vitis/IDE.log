@@ -524,3 +524,111 @@ con
 09:50:53 INFO  : Platform repository initialization has completed.
 09:50:56 INFO  : Successfully done query RDI_DATADIR 
 09:50:56 INFO  : Registering command handlers for Vitis TCF services
+15:34:00 DEBUG : Logs will be stored at 'C:/XilinxDev/SOC/SeppeEnKobe/VHDL/IMU/vitis/IDE.log'.
+15:34:01 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\XilinxDev\SOC\SeppeEnKobe\VHDL\IMU\vitis\temp_xsdb_launch_script.tcl
+15:34:04 ERROR : Error encountered while initializing user repository paths
+Reason: No Platforms Found.
+
+
+15:34:04 INFO  : Platform repository initialization has completed.
+15:34:04 INFO  : Registering command handlers for Vitis TCF services
+15:34:05 INFO  : XSCT server has started successfully.
+15:34:05 INFO  : Successfully done setting XSCT server connection channel  
+15:34:05 INFO  : plnx-install-location is set to ''
+15:34:07 INFO  : Successfully done setting workspace for the tool. 
+15:34:07 INFO  : Successfully done query RDI_DATADIR 
+15:34:25 INFO  : Result from executing command 'getProjects': IMU
+15:34:25 INFO  : Result from executing command 'getPlatforms': 
+15:34:26 INFO  : Checking for BSP changes to sync application flags for project 'IMU_TEST'...
+15:34:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:34:35 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:34:35 INFO  : 'jtag frequency' command is executed.
+15:34:35 INFO  : Context for 'APU' is selected.
+15:34:35 INFO  : System reset is completed.
+15:34:38 INFO  : 'after 3000' command is executed.
+15:34:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+15:34:40 INFO  : Device configured successfully with "C:/XilinxDev/SOC/SeppeEnKobe/VHDL/IMU/vitis/IMU_TEST/_ide/bitstream/IMU.bit"
+15:34:40 INFO  : Context for 'APU' is selected.
+15:34:40 INFO  : Hardware design and registers information is loaded from 'C:/XilinxDev/SOC/SeppeEnKobe/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa'.
+15:34:40 INFO  : 'configparams force-mem-access 1' command is executed.
+15:34:40 INFO  : Context for 'APU' is selected.
+15:34:40 INFO  : Sourcing of 'C:/XilinxDev/SOC/SeppeEnKobe/VHDL/IMU/vitis/IMU_TEST/_ide/psinit/ps7_init.tcl' is done.
+15:34:41 INFO  : 'ps7_init' command is executed.
+15:34:41 INFO  : 'ps7_post_config' command is executed.
+15:34:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:34:41 INFO  : The application 'C:/XilinxDev/SOC/SeppeEnKobe/VHDL/IMU/vitis/IMU_TEST/Debug/IMU_TEST.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:34:41 INFO  : 'configparams force-mem-access 0' command is executed.
+15:34:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/XilinxDev/SOC/SeppeEnKobe/VHDL/IMU/vitis/IMU_TEST/_ide/bitstream/IMU.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/XilinxDev/SOC/SeppeEnKobe/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/XilinxDev/SOC/SeppeEnKobe/VHDL/IMU/vitis/IMU_TEST/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/XilinxDev/SOC/SeppeEnKobe/VHDL/IMU/vitis/IMU_TEST/Debug/IMU_TEST.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:34:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:34:41 INFO  : 'con' command is executed.
+15:34:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:34:41 INFO  : Launch script is exported to file 'C:\XilinxDev\SOC\SeppeEnKobe\VHDL\IMU\vitis\IMU_TEST_system\_ide\scripts\debugger_imu_test-default.tcl'
+15:35:10 INFO  : Disconnected from the channel tcfchan#2.
+15:35:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:35:11 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:35:11 INFO  : 'jtag frequency' command is executed.
+15:35:13 INFO  : Context for 'APU' is selected.
+15:35:13 INFO  : System reset is completed.
+15:35:16 INFO  : 'after 3000' command is executed.
+15:35:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+15:35:19 INFO  : Device configured successfully with "C:/XilinxDev/SOC/SeppeEnKobe/VHDL/IMU/vitis/IMU_TEST/_ide/bitstream/IMU.bit"
+15:35:19 INFO  : Context for 'APU' is selected.
+15:35:19 INFO  : Hardware design and registers information is loaded from 'C:/XilinxDev/SOC/SeppeEnKobe/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa'.
+15:35:19 INFO  : 'configparams force-mem-access 1' command is executed.
+15:35:19 INFO  : Context for 'APU' is selected.
+15:35:19 INFO  : Sourcing of 'C:/XilinxDev/SOC/SeppeEnKobe/VHDL/IMU/vitis/IMU_TEST/_ide/psinit/ps7_init.tcl' is done.
+15:35:19 INFO  : 'ps7_init' command is executed.
+15:35:19 INFO  : 'ps7_post_config' command is executed.
+15:35:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:35:19 INFO  : The application 'C:/XilinxDev/SOC/SeppeEnKobe/VHDL/IMU/vitis/IMU_TEST/Debug/IMU_TEST.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:35:19 INFO  : 'configparams force-mem-access 0' command is executed.
+15:35:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/XilinxDev/SOC/SeppeEnKobe/VHDL/IMU/vitis/IMU_TEST/_ide/bitstream/IMU.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/XilinxDev/SOC/SeppeEnKobe/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/XilinxDev/SOC/SeppeEnKobe/VHDL/IMU/vitis/IMU_TEST/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/XilinxDev/SOC/SeppeEnKobe/VHDL/IMU/vitis/IMU_TEST/Debug/IMU_TEST.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:35:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:35:19 INFO  : 'con' command is executed.
+15:35:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:35:19 INFO  : Launch script is exported to file 'C:\XilinxDev\SOC\SeppeEnKobe\VHDL\IMU\vitis\IMU_TEST_system\_ide\scripts\debugger_imu_test-default.tcl'
+15:35:58 INFO  : Disconnected from the channel tcfchan#3.
