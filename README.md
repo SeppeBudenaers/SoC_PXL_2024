@@ -11,7 +11,7 @@
 ### [Video](https://www.youtube.com/shorts/eBlgeqNFo5I) 
 
 ## Motor + Speed sensor (WIP)
-### [Block design](https://github.com/SeppeBudenaers/SoC_PXL_2024/blob/main/VHDL/MotorControl.pdf)
+### [Block design](VHDL/MotorControl.pdf)
 
 
 
@@ -36,11 +36,11 @@
 
 
 
-## FULL Voiture (Not fimished)
+## FULL ROOMBA
 
-### Block design
+### [Block design](VHDL/MotorControl.pdf)
 
-### Code
+### [Code](VHDL/MotorControl/vitis/Roomba/src)
 
-### Video 
+### Video (WIP)
 
