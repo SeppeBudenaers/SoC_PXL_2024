@@ -48,7 +48,7 @@ void ReadallSensor(Car_t *Car)
     {
         Read_Ultrasoon(&Car->DistanceSensor[i]);
     }
-
+    imu_read(&Car->IMU);
 }
 
 bool IswithinDistance(Car_t *Car, uint32_t distance)

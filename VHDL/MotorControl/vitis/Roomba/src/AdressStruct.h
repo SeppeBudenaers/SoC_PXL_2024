@@ -240,7 +240,7 @@ void Init_Car(Car_t *Car)
     }
 
     //init i2c
-    //i2c_init(&Car->IMU);
+    i2c_init(&Car->IMU);
 
     xil_printf("Initialization complete\n\r");
 }

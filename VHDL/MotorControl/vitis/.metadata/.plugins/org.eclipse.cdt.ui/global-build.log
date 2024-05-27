@@ -1,6 +1,6 @@
 Nothing to build in platform 'FinalFinalCar'
 
-09:18:45 **** Incremental Build of configuration Debug for project Roomba ****
+14:53:28 **** Incremental Build of configuration Debug for project Roomba ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -45,6 +45,6 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size Roomba.elf  |tee "Roomba.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  39643	   2032	  22656	  64331	   fb4b	Roomba.elf
+  40255	   2032	  22656	  64943	   fdaf	Roomba.elf
 'Finished building: Roomba.elf.size'
 ' '

@@ -189,7 +189,7 @@ int main()
 
     		if(IswithinDistance(&ROOMBA, 20)){
     			turn(&ROOMBA, LeftOrRight(&ROOMBA),&xTmrCtr_Inst); // need to turn with MPU
-    			ROOMBA.SlowMode = 0;
+    			ROOMBA.DesiredSpeed = 2;
     			ROOMBA.DesiredSpeed = 5;
     			SetDirection(ROOMBA.Motors[0],Direction_forward);
     			SetDirection(ROOMBA.Motors[1],Direction_forward);
@@ -197,6 +197,26 @@ int main()
     			SetDirection(ROOMBA.Motors[3],Direction_forward);
     			xil_printf("Exit turn \n\r");
     		}
+    	}
+    	else{
+    		if(ROOMBA.SlowMode == 1){
+    			xil_printf("Exit slowmode \n\r");
+    			ROOMBA.DesiredSpeed = 5;
+    			ROOMBA.SlowMode =0;
+    		}
+    	}
+
+    	if(ROOMBA.IMU.Gyro_Y <= -4000){
+    		xil_printf("Picked Up %d \n\r",ROOMBA.IMU.Gyro_Y);
+    		SetDirection(ROOMBA.Motors[0],Direction_stop);
+    		SetDirection(ROOMBA.Motors[1],Direction_stop);
+    		SetDirection(ROOMBA.Motors[2],Direction_stop);
+    		SetDirection(ROOMBA.Motors[3],Direction_stop);
+    		sleep(10);
+    		SetDirection(ROOMBA.Motors[0],Direction_forward);
+    		SetDirection(ROOMBA.Motors[1],Direction_forward);
+    		SetDirection(ROOMBA.Motors[2],Direction_forward);
+    		SetDirection(ROOMBA.Motors[3],Direction_forward);
     	}
     	usleep_A9(200000);
     };
