@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/XilinxDev/SOC/SeppeEnKobe/VHDL/MotorControl/MotorControl.runs/impl_1'
+HD_PWD='C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/MotorControl.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

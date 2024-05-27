@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="IMU_TEST" location="C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST" platform="C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/IMU.xpfm" platformUID="xilinx:pynq-z2::0.0(custom)" systemProject="IMU_TEST_system" sysConfig="IMU" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="93ec52a333b6190bcb413caaeab062da">
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.688665168" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

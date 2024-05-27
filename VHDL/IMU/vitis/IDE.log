@@ -632,3 +632,135 @@ con
 
 15:35:19 INFO  : Launch script is exported to file 'C:\XilinxDev\SOC\SeppeEnKobe\VHDL\IMU\vitis\IMU_TEST_system\_ide\scripts\debugger_imu_test-default.tcl'
 15:35:58 INFO  : Disconnected from the channel tcfchan#3.
+10:30:46 DEBUG : Logs will be stored at 'C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IDE.log'.
+10:30:47 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\02_PXL\SoC_PXL_2024\VHDL\IMU\vitis\temp_xsdb_launch_script.tcl
+10:30:50 INFO  : XSCT server has started successfully.
+10:30:50 INFO  : Successfully done setting XSCT server connection channel  
+10:30:50 INFO  : plnx-install-location is set to ''
+10:30:50 INFO  : Successfully done setting workspace for the tool. 
+10:30:51 INFO  : Platform repository initialization has completed.
+10:30:52 INFO  : Registering command handlers for Vitis TCF services
+10:31:00 INFO  : Successfully done query RDI_DATADIR 
+10:31:18 INFO  : Result from executing command 'getProjects': IMU
+10:31:18 INFO  : Result from executing command 'getPlatforms': IMU|C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/IMU.xpfm
+10:31:19 INFO  : Checking for BSP changes to sync application flags for project 'IMU_TEST'...
+10:31:24 INFO  : Checking for BSP changes to sync application flags for project 'IMU_TEST'...
+10:31:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:31:49 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+10:31:49 INFO  : 'jtag frequency' command is executed.
+10:31:49 INFO  : Context for 'APU' is selected.
+10:31:49 INFO  : System reset is completed.
+10:31:52 INFO  : 'after 3000' command is executed.
+10:31:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+10:31:55 INFO  : Device configured successfully with "C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST/_ide/bitstream/IMU.bit"
+10:31:55 INFO  : Context for 'APU' is selected.
+10:31:55 INFO  : Hardware design and registers information is loaded from 'C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa'.
+10:31:55 INFO  : 'configparams force-mem-access 1' command is executed.
+10:31:55 INFO  : Context for 'APU' is selected.
+10:31:55 INFO  : Sourcing of 'C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST/_ide/psinit/ps7_init.tcl' is done.
+10:31:56 INFO  : 'ps7_init' command is executed.
+10:31:56 INFO  : 'ps7_post_config' command is executed.
+10:31:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:31:56 INFO  : The application 'C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST/Debug/IMU_TEST.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:31:56 INFO  : 'configparams force-mem-access 0' command is executed.
+10:31:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST/_ide/bitstream/IMU.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/hw/IMU.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST/Debug/IMU_TEST.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:31:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:31:56 INFO  : 'con' command is executed.
+10:31:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+10:31:56 INFO  : Launch script is exported to file 'C:\02_PXL\SoC_PXL_2024\VHDL\IMU\vitis\IMU_TEST_system\_ide\scripts\debugger_imu_test-default.tcl'
+10:32:43 INFO  : Hardware specification for platform project 'IMU' is updated.
+10:34:38 INFO  : Result from executing command 'getProjects': IMU
+10:34:38 INFO  : Result from executing command 'getPlatforms': IMU|C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/IMU.xpfm
+10:34:39 INFO  : Checking for BSP changes to sync application flags for project 'IMU_TEST'...
+10:34:44 INFO  : Updating application flags with new BSP settings...
+10:34:44 INFO  : Successfully updated application flags for project IMU_TEST.
+10:34:51 INFO  : Checking for BSP changes to sync application flags for project 'IMU_TEST'...
+10:34:57 INFO  : Disconnected from the channel tcfchan#2.
+10:34:58 INFO  : The hardware specification used by project 'IMU_TEST' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+10:34:58 INFO  : The file 'C:\02_PXL\SoC_PXL_2024\VHDL\IMU\vitis\IMU_TEST\_ide\bitstream\IMU.bit' stored in project is removed.
+10:34:59 INFO  : The updated bitstream files are copied from platform to folder 'C:\02_PXL\SoC_PXL_2024\VHDL\IMU\vitis\IMU_TEST\_ide\bitstream' in project 'IMU_TEST'.
+10:34:59 INFO  : The file 'C:\02_PXL\SoC_PXL_2024\VHDL\IMU\vitis\IMU_TEST\_ide\psinit\ps7_init.tcl' stored in project is removed.
+10:35:12 INFO  : The updated ps init files are copied from platform to folder 'C:\02_PXL\SoC_PXL_2024\VHDL\IMU\vitis\IMU_TEST\_ide\psinit' in project 'IMU_TEST'.
+10:35:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:35:16 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+10:35:16 INFO  : 'jtag frequency' command is executed.
+10:35:16 INFO  : Context for 'APU' is selected.
+10:35:16 INFO  : System reset is completed.
+10:35:19 INFO  : 'after 3000' command is executed.
+10:35:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+10:35:19 ERROR : couldn't open "C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST/_ide/bitstream/IMU.bit": no such file or directory
+10:35:19 ERROR : Exception occured while running Program Device.
+java.lang.RuntimeException: couldn't open "C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST/_ide/bitstream/IMU.bit": no such file or directory
+10:35:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+----------------End of Script----------------
+
+10:35:19 ERROR : couldn't open "C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST/_ide/bitstream/IMU.bit": no such file or directory
+10:35:35 INFO  : Build configuration of 'IMU_TEST_system' is updated to 'Release'
+10:35:35 INFO  : Build configuration of system project is automatically updated to 'Release'.
+10:35:37 INFO  : Checking for BSP changes to sync application flags for project 'IMU_TEST'...
+10:36:59 INFO  : Checking for BSP changes to sync application flags for project 'IMU_TEST'...
+11:28:26 DEBUG : Logs will be stored at 'C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IDE.log'.
+11:28:26 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\02_PXL\SoC_PXL_2024\VHDL\IMU\vitis\temp_xsdb_launch_script.tcl
+11:28:29 INFO  : XSCT server has started successfully.
+11:28:29 INFO  : plnx-install-location is set to ''
+11:28:29 INFO  : Successfully done setting XSCT server connection channel  
+11:28:29 INFO  : Successfully done setting workspace for the tool. 
+11:28:30 INFO  : Platform repository initialization has completed.
+11:28:30 INFO  : Successfully done query RDI_DATADIR 
+11:28:30 INFO  : Registering command handlers for Vitis TCF services
+11:28:51 INFO  : Hardware specification for platform project 'IMU' is updated.
+11:29:07 INFO  : Result from executing command 'getProjects': IMU
+11:29:07 INFO  : Result from executing command 'getPlatforms': IMU|C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/IMU.xpfm
+11:29:07 INFO  : Checking for BSP changes to sync application flags for project 'IMU_TEST'...
+11:29:10 INFO  : Updating application flags with new BSP settings...
+11:29:10 INFO  : Successfully updated application flags for project IMU_TEST.
+11:29:30 INFO  : Checking for BSP changes to sync application flags for project 'IMU_TEST'...
+11:29:35 INFO  : The hardware specification used by project 'IMU_TEST' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+11:29:36 INFO  : The file 'C:\02_PXL\SoC_PXL_2024\VHDL\IMU\vitis\IMU_TEST\_ide\bitstream\design_1_wrapper.bit' stored in project is removed.
+11:29:36 INFO  : The updated bitstream files are copied from platform to folder 'C:\02_PXL\SoC_PXL_2024\VHDL\IMU\vitis\IMU_TEST\_ide\bitstream' in project 'IMU_TEST'.
+11:29:36 INFO  : The file 'C:\02_PXL\SoC_PXL_2024\VHDL\IMU\vitis\IMU_TEST\_ide\psinit\ps7_init.tcl' stored in project is removed.
+11:29:41 INFO  : The updated ps init files are copied from platform to folder 'C:\02_PXL\SoC_PXL_2024\VHDL\IMU\vitis\IMU_TEST\_ide\psinit' in project 'IMU_TEST'.
+11:29:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:29:44 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+11:29:44 INFO  : 'jtag frequency' command is executed.
+11:29:44 INFO  : Context for 'APU' is selected.
+11:29:44 INFO  : System reset is completed.
+11:29:47 INFO  : 'after 3000' command is executed.
+11:29:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+11:29:47 ERROR : couldn't open "C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST/_ide/bitstream/design_1_wrapper.bit": no such file or directory
+11:29:47 ERROR : Exception occured while running Program Device.
+java.lang.RuntimeException: couldn't open "C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST/_ide/bitstream/design_1_wrapper.bit": no such file or directory
+11:29:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+----------------End of Script----------------
+
+11:29:47 ERROR : couldn't open "C:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU_TEST/_ide/bitstream/design_1_wrapper.bit": no such file or directory

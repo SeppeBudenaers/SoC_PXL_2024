@@ -2,6 +2,7 @@
 #include "HC_SR04.h"
 //#include "AdressStruct.h"
 #include <stdbool.h>
+#include "xtime_l.h"
 
 #define Turn_right 0
 #define Turn_left 1
@@ -49,6 +50,7 @@ void ReadallSensor(Car_t *Car)
         Read_Ultrasoon(&Car->DistanceSensor[i]);
     }
 
+    imu_read(&Car->IMU);
 }
 
 bool IswithinDistance(Car_t *Car, uint32_t distance)
@@ -150,6 +152,11 @@ void turn(Car_t * Car, uint8_t direction,XTmrCtr * xTmrCtr_Inst){
         SetDirection(Car->Motors[3], Direction_backward);
         xil_printf("Right \n\r");
     }
+    XTime tstart;
+    XTime tloop;
+    XTime tstop;
+    int count=0;
+    tloop = 0;
     for (int var = 0; var < 20; ++var) {
     	ReadallSensor(Car);
     	if(Car->DesiredSpeed  != Car->AvgSpeed){
@@ -164,12 +171,15 @@ void turn(Car_t * Car, uint8_t direction,XTmrCtr * xTmrCtr_Inst){
 
 void AdaptSpeed(Car_t * Car,XTmrCtr * xTmrCtr_Inst){
 	XTmrCtr_PwmDisable(xTmrCtr_Inst);
-	if(Car->DesiredSpeed > Car->AvgSpeed){
-		Car->duty = (Car->duty + 100)%AXI_TIMER_PERIOD_NS;
-	}
-	else if (Car->DesiredSpeed < Car->AvgSpeed){
-		Car->duty = (Car->duty - 100)%AXI_TIMER_PERIOD_NS;
-	}
+	int SpeedDiff = Car->DesiredSpeed - Car->AvgSpeed;
+	Car->duty = (Car->duty +(SpeedDiff * 100))%AXI_TIMER_PERIOD_NS;
 	XTmrCtr_PwmConfigure(xTmrCtr_Inst, AXI_TIMER_PERIOD_NS, Car->duty);
+	XTmrCtr_PwmEnable(xTmrCtr_Inst);
+}
+
+void SetSpeed(uint duty,XTmrCtr * xTmrCtr_Inst){
+	duty = duty%AXI_TIMER_PERIOD_NS;
+	XTmrCtr_PwmDisable(xTmrCtr_Inst);
+	XTmrCtr_PwmConfigure(xTmrCtr_Inst, AXI_TIMER_PERIOD_NS,duty);
 	XTmrCtr_PwmEnable(xTmrCtr_Inst);
 }

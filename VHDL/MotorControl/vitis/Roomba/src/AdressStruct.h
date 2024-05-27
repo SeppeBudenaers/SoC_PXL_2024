@@ -58,7 +58,7 @@ typedef struct{
     //read register adress 0x3B
     double pitch;
     double roll;
-    double yaw;
+    float yaw;
 } MPU6050_t;
 
 
@@ -85,7 +85,7 @@ void getAngle(MPU6050_t * IMU, XTime looptime)
 
 void imu_read(MPU6050_t * IMU){
     
-    uint8_t Databuffer[14];
+    u8 Databuffer[14];
     u8 MPU_read [] = {0x3B};
     XIic_Send(XPAR_IIC_0_BASEADDR, IMU->Device_adress, (u8*)&MPU_read, 1, XIIC_REPEATED_START);
     XIic_Recv(XPAR_IIC_0_BASEADDR, IMU->Device_adress, (u8*)Databuffer, 14, XIIC_STOP);
@@ -94,7 +94,7 @@ void imu_read(MPU6050_t * IMU){
     //     return;    
     // }
 
-    IMU->Accel_X = IMU->Accel_X = (Databuffer[0] << 8) | Databuffer[1]; // 0x3B (ACCEL_XOUT_H) 0x3C (ACCEL_XOUT_L)
+    IMU->Accel_X = (Databuffer[0] << 8) | Databuffer[1]; // 0x3B (ACCEL_XOUT_H) 0x3C (ACCEL_XOUT_L)
     IMU->Accel_Y = (Databuffer[2] << 8) | Databuffer[3]; // 0x3D (ACCEL_YOUT_H) 0x3E (ACCEL_YOUT_L)
     IMU->Accel_Z = (Databuffer[4] << 8) | Databuffer[5]; // 0x3F (ACCEL_ZOUT_H) 0x40 (ACCEL_ZOUT_L)
 
@@ -106,16 +106,16 @@ void imu_read(MPU6050_t * IMU){
     IMU->Gyro_Y = (Databuffer[10] << 8) | Databuffer[11]; // 0x45 (GYRO_YOUT_H) 0x46 (GYRO_YOUT_L)
     IMU->Gyro_Z = (Databuffer[12] << 8) | Databuffer[13]; // 0x47 (GYRO_ZOUT_H) 0x48 (GYRO_ZOUT_L)
 
-//    //apply calibration
-//    IMU->Accel_X += -950;
-//    IMU->Accel_Y += -300;
-//    IMU->Accel_Z += 0;
-//
-//
-//    //apply calibration
-//    IMU->Gyro_X += 480;
-//    IMU->Gyro_Y += 170;
-//    IMU->Gyro_Z += 210;
+    //apply calibration
+    IMU->Accel_X += -950;
+    IMU->Accel_Y += -300;
+    IMU->Accel_Z += 0;
+
+
+    //apply calibration
+    IMU->Gyro_X += 480;
+    IMU->Gyro_Y += 170;
+    IMU->Gyro_Z += 210;
 
     //convert temperature
 
@@ -142,12 +142,12 @@ void i2c_init(MPU6050_t *IMU){
     imu_read(IMU);
     
     
-    // if(IMU->Temperature > 0){
-    //     xil_printf("I2C initialized\n\r");
-    // }
-    // else{
-    //     xil_printf("I2C failed\n\r");
-    // }
+     if(IMU->Temperature > 0){
+         xil_printf("I2C initialized\n\r");
+     }
+     else{
+         xil_printf("I2C failed\n\r");
+     }
 
 
     xil_printf("I2C initialized\n\r");
@@ -240,7 +240,7 @@ void Init_Car(Car_t *Car)
     }
 
     //init i2c
-    //i2c_init(&Car->IMU);
+    i2c_init(&Car->IMU);
 
     xil_printf("Initialization complete\n\r");
 }

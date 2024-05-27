@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item key="sdx.custom.platform.repository.locations" value="C:\02_PXL\SoC_PXL_2024\VHDL\IMU\vitis\IMU\export\IMU;C:\XilinxDev\SOC\SeppeEnKobe\VHDL\IMU\vitis\IMU\export\IMU"/>
-	<item key="sdx.custom.platform.repository.last.directory.dialog.location" value="C:\XilinxDev\SOC\SeppeEnKobe\VHDL\IMU\vitis\IMU\export\IMU"/>
+	<item key="sdx.custom.platform.repository.locations" value="C:\XilinxDev\SOC\SeppeEnKobe\VHDL\IMU\vitis\IMU\export\IMU;C:\02_PXL\SoC_PXL_2024\VHDL\IMU\vitis\IMU\export\IMU"/>
+	<item key="sdx.custom.platform.repository.last.directory.dialog.location" value="C:\02_PXL\SoC_PXL_2024\VHDL\IMU\vitis\IMU\export\IMU"/>
 </section>

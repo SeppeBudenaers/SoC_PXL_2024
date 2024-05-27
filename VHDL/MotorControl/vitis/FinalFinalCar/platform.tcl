@@ -32,3 +32,8 @@ platform generate -domains standalone_ps7_cortexa9_0,zynq_fsbl
 platform active {FinalFinalCar}
 platform generate -domains 
 platform generate -domains standalone_ps7_cortexa9_0,zynq_fsbl 
+platform active {FinalFinalCar}
+platform config -updatehw {C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/design_1_wrapper.xsa}
+platform generate -domains standalone_ps7_cortexa9_0,zynq_fsbl 
+platform generate
+platform generate -domains standalone_ps7_cortexa9_0 

@@ -1,0 +1,34 @@
+2024-05-27T11:29:31.02307400255-11:29:31 **** Incremental Build of configuration new_config for project IMU_TEST ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-'Building file: ../src/helloworld.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/sw/IMU/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+000-../src/helloworld.c: In function 'main':
+000/IMU_TEST/src/helloworld.c58-1-1variable 'result' set but not used [-Wunused-but-set-variable]1-../src/helloworld.c:58:22: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+000-   58 |         unsigned int result;
+000-      |                      ^~~~~~
+000-'Finished building: ../src/helloworld.c'
+000-' '
+000-'Building file: ../src/platform.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/sw/IMU/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+000-'Finished building: ../src/platform.c'
+000-' '
+000-'Building target: IMU_TEST.elf'
+000-'Invoking: ARM v7 gcc linker'
+000-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/02_PXL/SoC_PXL_2024/VHDL/IMU/vitis/IMU/export/IMU/sw/IMU/standalone_ps7_cortexa9_0/bsplib/lib -o "IMU_TEST.elf"  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-'Finished building target: IMU_TEST.elf'
+000-' '
+000-'Invoking: ARM v7 Print Size'
+000-arm-none-eabi-size IMU_TEST.elf  |tee "IMU_TEST.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  53365	   2560	  22728	  78653	  1333d	IMU_TEST.elf
+000-'Finished building: IMU_TEST.elf.size'
+000-' '
+00255-
+11:29:32 Build Finished (took 1s.162ms)
+

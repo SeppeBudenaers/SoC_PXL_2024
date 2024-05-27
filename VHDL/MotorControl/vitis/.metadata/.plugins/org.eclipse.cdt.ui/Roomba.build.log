@@ -1,4 +1,4 @@
-09:18:45 **** Incremental Build of configuration Debug for project Roomba ****
+14:10:52 **** Incremental Build of configuration Release for project Roomba ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -6,12 +6,8 @@ a9-linaro-pre-build-step
 make --no-print-directory main-build
 'Building file: ../src/helloworld.c'
 'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/export/FinalFinalCar/sw/FinalFinalCar/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/export/FinalFinalCar/sw/FinalFinalCar/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
 In file included from ../src/helloworld.c:33:
-../src/AdressStruct.h: In function 'imu_read':
-../src/AdressStruct.h:97:18: warning: operation on 'IMU->Accel_X' may be undefined [-Wsequence-point]
-   97 |     IMU->Accel_X = IMU->Accel_X = (Databuffer[0] << 8) | Databuffer[1]; // 0x3B (ACCEL_XOUT_H) 0x3C (ACCEL_XOUT_L)
-      |     ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ../src/AdressStruct.h: In function 'i2c_init':
 ../src/AdressStruct.h:140:38: warning: initialization of 'uint8_t *' {aka 'unsigned char *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
   140 |     uint8_t * MPU_intialization[] = {0x6B,0};
@@ -19,15 +15,27 @@ In file included from ../src/helloworld.c:33:
 ../src/AdressStruct.h:140:38: note: (near initialization for 'MPU_intialization[0]')
 In file included from ../src/helloworld.c:34:
 ../src/Sensors.h: In function 'turn':
-../src/Sensors.h:156:17: warning: implicit declaration of function 'AdaptSpeed' [-Wimplicit-function-declaration]
-  156 |                 AdaptSpeed(Car,xTmrCtr_Inst);
+../src/Sensors.h:163:17: warning: implicit declaration of function 'AdaptSpeed' [-Wimplicit-function-declaration]
+  163 |                 AdaptSpeed(Car,xTmrCtr_Inst);
       |                 ^~~~~~~~~~
+../src/Sensors.h:158:9: warning: unused variable 'count' [-Wunused-variable]
+  158 |     int count=0;
+      |         ^~~~~
+../src/Sensors.h:157:11: warning: unused variable 'tstop' [-Wunused-variable]
+  157 |     XTime tstop;
+      |           ^~~~~
+../src/Sensors.h:156:11: warning: variable 'tloop' set but not used [-Wunused-but-set-variable]
+  156 |     XTime tloop;
+      |           ^~~~~
+../src/Sensors.h:155:11: warning: unused variable 'tstart' [-Wunused-variable]
+  155 |     XTime tstart;
+      |           ^~~~~~
 ../src/Sensors.h: At top level:
-../src/Sensors.h:165:6: warning: conflicting types for 'AdaptSpeed'; have 'void(Car_t *, XTmrCtr *)'
-  165 | void AdaptSpeed(Car_t * Car,XTmrCtr * xTmrCtr_Inst){
+../src/Sensors.h:172:6: warning: conflicting types for 'AdaptSpeed'; have 'void(Car_t *, XTmrCtr *)'
+  172 | void AdaptSpeed(Car_t * Car,XTmrCtr * xTmrCtr_Inst){
       |      ^~~~~~~~~~
-../src/Sensors.h:156:17: note: previous implicit declaration of 'AdaptSpeed' with type 'void(Car_t *, XTmrCtr *)'
-  156 |                 AdaptSpeed(Car,xTmrCtr_Inst);
+../src/Sensors.h:163:17: note: previous implicit declaration of 'AdaptSpeed' with type 'void(Car_t *, XTmrCtr *)'
+  163 |                 AdaptSpeed(Car,xTmrCtr_Inst);
       |                 ^~~~~~~~~~
 ../src/helloworld.c: In function 'xTmrCtr_Init':
 ../src/helloworld.c:81:17: warning: variable 'DutyCycle' set but not used [-Wunused-but-set-variable]
@@ -43,9 +51,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size Roomba.elf  |tee "Roomba.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  39643	   2032	  22656	  64331	   fb4b	Roomba.elf
+  40019	   2032	  22656	  64707	   fcc3	Roomba.elf
 'Finished building: Roomba.elf.size'
 ' '
 
-09:18:46 Build Finished (took 985ms)
+14:10:53 Build Finished (took 1s.474ms)
 

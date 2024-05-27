@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/XilinxDev/SOC/SeppeEnKobe/VHDL/MotorControl/MotorControl.srcs/constrs_1/new/Constraints.xdc rfile:../../../MotorControl.srcs/constrs_1/new/Constraints.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/MotorControl.srcs/constrs_1/new/Constraints.xdc rfile:../../../MotorControl.srcs/constrs_1/new/Constraints.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property IOSTANDARD LVCMOS33 [get_ports {arduino_a0_a5_tri_o[1]}]
 set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]

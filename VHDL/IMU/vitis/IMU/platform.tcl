@@ -22,3 +22,10 @@ platform generate -quick
 platform generate
 platform generate -domains standalone_ps7_cortexa9_0,zynq_fsbl 
 platform generate
+platform generate -domains standalone_ps7_cortexa9_0,zynq_fsbl 
+platform active {IMU}
+platform config -updatehw {C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/design_1_wrapper.xsa}
+platform generate -domains 
+platform active {IMU}
+platform config -updatehw {C:/02_PXL/SoC_PXL_2024/VHDL/IMU/IMU.xsa}
+platform generate -domains 

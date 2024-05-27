@@ -35,3 +35,10 @@ timestamp=[2024-05-21 15:34:04], mode=WORKBENCH_UI_INIT, duration=0:00:00.300, d
 timestamp=[2024-05-21 15:34:04], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.022, duration_ms=22, data={}
 timestamp=[2024-05-21 15:34:26], mode=PLATFORM_GENERATION, duration=0:00:17.916, duration_ms=17916, data={name=IMU}
 timestamp=[2024-05-21 15:34:28], mode=BUILD, duration=0:00:00.917, duration_ms=917, data={name=IMU_TEST, configuration=Debug, clean_build=false}
+timestamp=[2024-05-27 11:28:28], mode=WORKBENCH_START, duration=0:00:06.048, duration_ms=6048, data={}
+timestamp=[2024-05-27 11:28:29], mode=WORKBENCH_UI_INIT, duration=0:00:00.801, duration_ms=801, data={editors_count=4, platform_editors_count=3, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=IMU,IMU_TEST,IMU_TEST_system,RemoteSystemsTempFiles}
+timestamp=[2024-05-27 11:28:30], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.043, duration_ms=43, data={}
+timestamp=[2024-05-27 11:29:07], mode=PLATFORM_GENERATION, duration=0:00:11.453, duration_ms=11453, data={name=IMU}
+timestamp=[2024-05-27 11:29:11], mode=BUILD, duration=0:00:01.095, duration_ms=1095, data={name=IMU_TEST, configuration=new_config, clean_build=false}
+timestamp=[2024-05-27 11:29:30], mode=BUILD, duration=0:00:00.183, duration_ms=183, data={name=IMU_TEST, configuration=new_config, clean_build=true}
+timestamp=[2024-05-27 11:29:32], mode=BUILD, duration=0:00:01.175, duration_ms=1175, data={name=IMU_TEST, configuration=new_config, clean_build=false}

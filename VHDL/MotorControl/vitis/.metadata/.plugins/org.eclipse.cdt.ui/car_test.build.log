@@ -1,4 +1,4 @@
-15:39:29 **** Build of configuration Debug for project car_test ****
+14:09:51 **** Build of configuration Debug for project car_test ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -14,5 +14,5 @@ compilation terminated.
 make[1]: *** [src/subdir.mk:26: src/helloworld.o] Error 1
 make: *** [makefile:34: all] Error 2
 
-15:39:29 Build Finished (took 577ms)
+14:09:51 Build Finished (took 523ms)
 
