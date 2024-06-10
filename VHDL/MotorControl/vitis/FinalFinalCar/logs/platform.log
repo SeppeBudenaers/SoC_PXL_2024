@@ -14699,3 +14699,1282 @@ TRACE::2024-05-27.14:24:41::SCWMssOS::DEBUG:  swdes dump  C:/02_PXL/SoC_PXL_2024
 C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
 
 TRACE::2024-05-27.14:24:41::SCWMssOS::Sw design exists and opened at  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-05-28.09:59:19::SCWPlatform::Trying to open the hw design at C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:19::SCWPlatform::DSA given C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:19::SCWPlatform::DSA absoulate path C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:19::SCWPlatform::DSA directory C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw
+TRACE::2024-05-28.09:59:19::SCWPlatform:: Platform Path C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:19::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2024-05-28.09:59:19::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-05-28.09:59:21::SCWPlatform::Opened new HwDB with name design_1_wrapper_0
+TRACE::2024-05-28.09:59:21::SCWReader::Active system found as  FinalFinalCar
+TRACE::2024-05-28.09:59:21::SCWReader::Handling sysconfig FinalFinalCar
+TRACE::2024-05-28.09:59:21::SCWDomain::checking for install qemu data   : 
+TRACE::2024-05-28.09:59:21::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2023.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2024-05-28.09:59:21::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2023.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2024-05-28.09:59:21::SCWPlatform::Trying to open the hw design at C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:21::SCWPlatform::DSA given C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:21::SCWPlatform::DSA absoulate path C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:21::SCWPlatform::DSA directory C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw
+TRACE::2024-05-28.09:59:21::SCWPlatform:: Platform Path C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:21::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2024-05-28.09:59:21::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-05-28.09:59:21::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-05-28.09:59:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-28.09:59:21::SCWPlatform::Trying to open the hw design at C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:21::SCWPlatform::DSA given C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:21::SCWPlatform::DSA absoulate path C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:21::SCWPlatform::DSA directory C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw
+TRACE::2024-05-28.09:59:21::SCWPlatform:: Platform Path C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:21::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2024-05-28.09:59:21::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-05-28.09:59:21::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-05-28.09:59:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-28.09:59:21::SCWPlatform::Trying to open the hw design at C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:21::SCWPlatform::DSA given C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:21::SCWPlatform::DSA absoulate path C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:21::SCWPlatform::DSA directory C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw
+TRACE::2024-05-28.09:59:21::SCWPlatform:: Platform Path C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:21::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2024-05-28.09:59:21::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-05-28.09:59:21::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-05-28.09:59:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-28.09:59:21::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2024-05-28.09:59:21::SCWPlatform::Trying to open the hw design at C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:21::SCWPlatform::DSA given C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:21::SCWPlatform::DSA absoulate path C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:21::SCWPlatform::DSA directory C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw
+TRACE::2024-05-28.09:59:21::SCWPlatform:: Platform Path C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:21::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2024-05-28.09:59:21::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-05-28.09:59:21::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-05-28.09:59:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-28.09:59:21::SCWMssOS::Checking the sw design at  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-05-28.09:59:21::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-05-28.09:59:21::SCWMssOS::No sw design opened at  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-05-28.09:59:21::SCWMssOS::mss exists loading the mss file  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-05-28.09:59:21::SCWMssOS::Opened the sw design from mss  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-05-28.09:59:21::SCWMssOS::Adding the swdes entry C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2024-05-28.09:59:21::SCWMssOS::updating the scw layer about changes
+TRACE::2024-05-28.09:59:21::SCWMssOS::Opened the sw design.  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-05-28.09:59:21::SCWPlatform::Trying to open the hw design at C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:21::SCWPlatform::DSA given C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:21::SCWPlatform::DSA absoulate path C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:21::SCWPlatform::DSA directory C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw
+TRACE::2024-05-28.09:59:21::SCWPlatform:: Platform Path C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:21::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2024-05-28.09:59:21::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-05-28.09:59:21::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-05-28.09:59:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-28.09:59:21::SCWMssOS::Checking the sw design at  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-05-28.09:59:21::SCWMssOS::DEBUG:  swdes dump  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-05-28.09:59:21::SCWMssOS::Sw design exists and opened at  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-05-28.09:59:22::SCWMssOS:: library already available in sw design:  xilffs:5.1
+TRACE::2024-05-28.09:59:22::SCWPlatform::Trying to open the hw design at C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:22::SCWPlatform::DSA given C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:22::SCWPlatform::DSA absoulate path C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:22::SCWPlatform::DSA directory C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw
+TRACE::2024-05-28.09:59:22::SCWPlatform:: Platform Path C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:22::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2024-05-28.09:59:22::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-05-28.09:59:22::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-05-28.09:59:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-28.09:59:22::SCWMssOS::Checking the sw design at  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-05-28.09:59:22::SCWMssOS::DEBUG:  swdes dump  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-05-28.09:59:22::SCWMssOS::Sw design exists and opened at  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-05-28.09:59:22::SCWMssOS:: library already available in sw design:  xilrsa:1.7
+TRACE::2024-05-28.09:59:22::SCWMssOS::Saving the mss changes C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-05-28.09:59:22::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-05-28.09:59:22::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-05-28.09:59:22::SCWMssOS::Commit changes completed.
+TRACE::2024-05-28.09:59:22::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-05-28.09:59:22::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-05-28.09:59:22::SCWPlatform::Trying to open the hw design at C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:22::SCWPlatform::DSA given C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:22::SCWPlatform::DSA absoulate path C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:22::SCWPlatform::DSA directory C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw
+TRACE::2024-05-28.09:59:22::SCWPlatform:: Platform Path C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:22::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2024-05-28.09:59:22::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-05-28.09:59:22::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-05-28.09:59:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-28.09:59:22::SCWMssOS::Checking the sw design at  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-05-28.09:59:22::SCWMssOS::DEBUG:  swdes dump  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-05-28.09:59:22::SCWMssOS::Sw design exists and opened at  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-05-28.09:59:22::SCWReader::No isolation master present  
+TRACE::2024-05-28.09:59:22::SCWDomain::checking for install qemu data   : 
+TRACE::2024-05-28.09:59:22::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2023.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2024-05-28.09:59:22::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2023.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2024-05-28.09:59:22::SCWPlatform::Trying to open the hw design at C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:22::SCWPlatform::DSA given C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:22::SCWPlatform::DSA absoulate path C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:22::SCWPlatform::DSA directory C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw
+TRACE::2024-05-28.09:59:22::SCWPlatform:: Platform Path C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:22::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2024-05-28.09:59:22::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-05-28.09:59:22::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-05-28.09:59:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-28.09:59:22::SCWPlatform::Trying to open the hw design at C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:22::SCWPlatform::DSA given C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:22::SCWPlatform::DSA absoulate path C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:22::SCWPlatform::DSA directory C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw
+TRACE::2024-05-28.09:59:22::SCWPlatform:: Platform Path C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:22::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2024-05-28.09:59:22::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-05-28.09:59:22::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-05-28.09:59:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-28.09:59:22::SCWPlatform::Trying to open the hw design at C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:22::SCWPlatform::DSA given C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:22::SCWPlatform::DSA absoulate path C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:22::SCWPlatform::DSA directory C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw
+TRACE::2024-05-28.09:59:22::SCWPlatform:: Platform Path C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:22::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2024-05-28.09:59:22::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-05-28.09:59:22::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-05-28.09:59:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-28.09:59:22::SCWMssOS::Checking the sw design at  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-05-28.09:59:22::SCWMssOS::DEBUG:  swdes dump  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-05-28.09:59:22::SCWMssOS::No sw design opened at  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-05-28.09:59:22::SCWMssOS::mss exists loading the mss file  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-05-28.09:59:22::SCWMssOS::Opened the sw design from mss  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-05-28.09:59:22::SCWMssOS::Adding the swdes entry C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss with des name system_0
+TRACE::2024-05-28.09:59:22::SCWMssOS::updating the scw layer about changes
+TRACE::2024-05-28.09:59:22::SCWMssOS::Opened the sw design.  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-05-28.09:59:22::SCWMssOS::Saving the mss changes C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-05-28.09:59:22::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-05-28.09:59:22::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-05-28.09:59:22::SCWMssOS::Commit changes completed.
+TRACE::2024-05-28.09:59:22::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-05-28.09:59:22::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-05-28.09:59:22::SCWPlatform::Trying to open the hw design at C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:22::SCWPlatform::DSA given C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:22::SCWPlatform::DSA absoulate path C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:22::SCWPlatform::DSA directory C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw
+TRACE::2024-05-28.09:59:22::SCWPlatform:: Platform Path C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:22::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2024-05-28.09:59:22::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-05-28.09:59:22::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-05-28.09:59:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-28.09:59:22::SCWMssOS::Checking the sw design at  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-05-28.09:59:22::SCWMssOS::DEBUG:  swdes dump  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-05-28.09:59:22::SCWMssOS::Sw design exists and opened at  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-05-28.09:59:22::SCWReader::No isolation master present  
+LOG::2024-05-28.09:59:22::SCWPlatform::Started generating the artifacts platform FinalFinalCar
+TRACE::2024-05-28.09:59:22::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-05-28.09:59:22::SCWPlatform::Started generating the artifacts for system configuration FinalFinalCar
+LOG::2024-05-28.09:59:22::SCWSystem::Checking the domain zynq_fsbl
+LOG::2024-05-28.09:59:22::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2024-05-28.09:59:22::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2024-05-28.09:59:22::SCWDomain::Building the domain as part of full build :  zynq_fsbl
+TRACE::2024-05-28.09:59:22::SCWPlatform::Trying to open the hw design at C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:22::SCWPlatform::DSA given C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:22::SCWPlatform::DSA absoulate path C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:22::SCWPlatform::DSA directory C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw
+TRACE::2024-05-28.09:59:22::SCWPlatform:: Platform Path C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:22::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2024-05-28.09:59:22::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-05-28.09:59:22::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-05-28.09:59:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-28.09:59:22::SCWMssOS::Checking the sw design at  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-05-28.09:59:22::SCWMssOS::DEBUG:  swdes dump  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-05-28.09:59:22::SCWMssOS::Sw design exists and opened at  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-05-28.09:59:22::SCWBDomain::Completed writing the mss file at C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2024-05-28.09:59:22::SCWBDomain::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2024-05-28.09:59:22::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2024-05-28.09:59:22::SCWBDomain::System Command Ran  C:&  cd  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/zynq_fsbl& make -C  zynq_fsbl_bsp & make 
+TRACE::2024-05-28.09:59:22::SCWBDomain::make: Entering directory 'C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/zynq_fsbl/zynq_fsbl_bsp'
+
+TRACE::2024-05-28.09:59:22::SCWBDomain::make --no-print-directory seq_libs
+
+TRACE::2024-05-28.09:59:22::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_9/src"
+
+TRACE::2024-05-28.09:59:22::SCWBDomain::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+TRACE::2024-05-28.09:59:22::SCWBDomain::-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+TRACE::2024-05-28.09:59:22::SCWBDomain::ard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:23::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_12/src"
+
+TRACE::2024-05-28.09:59:23::SCWBDomain::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_12/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-e
+TRACE::2024-05-28.09:59:23::SCWBDomain::abi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=har
+TRACE::2024-05-28.09:59:23::SCWBDomain::d -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:23::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_2/src"
+
+TRACE::2024-05-28.09:59:23::SCWBDomain::make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-05-28.09:59:23::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-05-28.09:59:23::SCWBDomain::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:23::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_8/src"
+
+TRACE::2024-05-28.09:59:23::SCWBDomain::make -C ps7_cortexa9_0/libsrc/devcfg_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-05-28.09:59:23::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-05-28.09:59:23::SCWBDomain::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:23::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_9/src"
+
+TRACE::2024-05-28.09:59:23::SCWBDomain::make -C ps7_cortexa9_0/libsrc/dmaps_v2_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-05-28.09:59:23::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-05-28.09:59:23::SCWBDomain::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:23::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_19/src"
+
+TRACE::2024-05-28.09:59:23::SCWBDomain::make -C ps7_cortexa9_0/libsrc/emacps_v3_19/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-05-28.09:59:23::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-05-28.09:59:23::SCWBDomain::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:23::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_12/src"
+
+TRACE::2024-05-28.09:59:23::SCWBDomain::make -C ps7_cortexa9_0/libsrc/gpiops_v3_12/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-05-28.09:59:23::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-05-28.09:59:23::SCWBDomain::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:23::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_10/src"
+
+TRACE::2024-05-28.09:59:23::SCWBDomain::make -C ps7_cortexa9_0/libsrc/gpio_v4_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-05-28.09:59:23::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-05-28.09:59:23::SCWBDomain::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:23::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/HC_SR04_v1_0/src"
+
+TRACE::2024-05-28.09:59:23::SCWBDomain::make -C ps7_cortexa9_0/libsrc/HC_SR04_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-05-28.09:59:23::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-05-28.09:59:23::SCWBDomain::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:23::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/iic_v3_10/src"
+
+TRACE::2024-05-28.09:59:23::SCWBDomain::make -C ps7_cortexa9_0/libsrc/iic_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-05-28.09:59:23::SCWBDomain::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-05-28.09:59:23::SCWBDomain::tfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:24::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_11/src"
+
+TRACE::2024-05-28.09:59:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/qspips_v3_11/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-05-28.09:59:24::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-05-28.09:59:24::SCWBDomain::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:24::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/scugic_v5_2/src"
+
+TRACE::2024-05-28.09:59:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scugic_v5_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-05-28.09:59:24::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-05-28.09:59:24::SCWBDomain::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:24::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_5/src"
+
+TRACE::2024-05-28.09:59:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scutimer_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2024-05-28.09:59:24::SCWBDomain::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2024-05-28.09:59:24::SCWBDomain::startfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:24::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_5/src"
+
+TRACE::2024-05-28.09:59:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-05-28.09:59:24::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-05-28.09:59:24::SCWBDomain::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:24::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/sdps_v4_2/src"
+
+TRACE::2024-05-28.09:59:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/sdps_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-05-28.09:59:24::SCWBDomain::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-05-28.09:59:24::SCWBDomain::tfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:24::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/Speedsensor_v1_0/src"
+
+TRACE::2024-05-28.09:59:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/Speedsensor_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
+TRACE::2024-05-28.09:59:24::SCWBDomain::i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
+TRACE::2024-05-28.09:59:24::SCWBDomain::-nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:24::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/standalone_v9_0/src"
+
+TRACE::2024-05-28.09:59:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/standalone_v9_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2024-05-28.09:59:24::SCWBDomain::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2024-05-28.09:59:24::SCWBDomain::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:25::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/tmrctr_v4_11/src"
+
+TRACE::2024-05-28.09:59:25::SCWBDomain::make -C ps7_cortexa9_0/libsrc/tmrctr_v4_11/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-05-28.09:59:25::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-05-28.09:59:25::SCWBDomain::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:25::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_13/src"
+
+TRACE::2024-05-28.09:59:25::SCWBDomain::make -C ps7_cortexa9_0/libsrc/uartps_v3_13/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-05-28.09:59:25::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-05-28.09:59:25::SCWBDomain::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:26::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_8/src"
+
+TRACE::2024-05-28.09:59:26::SCWBDomain::make -C ps7_cortexa9_0/libsrc/usbps_v2_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-05-28.09:59:26::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-05-28.09:59:26::SCWBDomain::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:26::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_7/src"
+
+TRACE::2024-05-28.09:59:26::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xadcps_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-05-28.09:59:26::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-05-28.09:59:26::SCWBDomain::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:26::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v5_1/src"
+
+TRACE::2024-05-28.09:59:26::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilffs_v5_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-05-28.09:59:26::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-05-28.09:59:26::SCWBDomain::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:26::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/xilrsa_v1_7/src"
+
+TRACE::2024-05-28.09:59:26::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilrsa_v1_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-05-28.09:59:26::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-05-28.09:59:26::SCWBDomain::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:26::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/HC_SR04_v1_0/src"
+
+TRACE::2024-05-28.09:59:26::SCWBDomain::make -C ps7_cortexa9_0/libsrc/HC_SR04_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-05-28.09:59:26::SCWBDomain::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-05-28.09:59:26::SCWBDomain::tfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:26::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/Speedsensor_v1_0/src"
+
+TRACE::2024-05-28.09:59:26::SCWBDomain::make -C ps7_cortexa9_0/libsrc/Speedsensor_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2024-05-28.09:59:26::SCWBDomain::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2024-05-28.09:59:26::SCWBDomain::startfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:26::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/xilrsa_v1_7/src"
+
+TRACE::2024-05-28.09:59:26::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilrsa_v1_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-05-28.09:59:26::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-05-28.09:59:26::SCWBDomain::files -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:26::SCWBDomain::'Finished building libraries sequentially.'
+
+TRACE::2024-05-28.09:59:26::SCWBDomain::make -j 6 --no-print-directory par_libs
+
+TRACE::2024-05-28.09:59:26::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_9/src"
+
+TRACE::2024-05-28.09:59:26::SCWBDomain::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+TRACE::2024-05-28.09:59:26::SCWBDomain::-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+TRACE::2024-05-28.09:59:26::SCWBDomain::ard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:26::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_12/src"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_12/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-e
+TRACE::2024-05-28.09:59:27::SCWBDomain::abi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=har
+TRACE::2024-05-28.09:59:27::SCWBDomain::d -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_2/src"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-05-28.09:59:27::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-05-28.09:59:27::SCWBDomain::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_8/src"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::make -C ps7_cortexa9_0/libsrc/devcfg_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-05-28.09:59:27::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-05-28.09:59:27::SCWBDomain::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_9/src"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::make -C ps7_cortexa9_0/libsrc/dmaps_v2_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-05-28.09:59:27::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-05-28.09:59:27::SCWBDomain::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_19/src"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::make -C ps7_cortexa9_0/libsrc/emacps_v3_19/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-05-28.09:59:27::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-05-28.09:59:27::SCWBDomain::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_12/src"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::make -C ps7_cortexa9_0/libsrc/gpiops_v3_12/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-05-28.09:59:27::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-05-28.09:59:27::SCWBDomain::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_10/src"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::make -C ps7_cortexa9_0/libsrc/gpio_v4_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-05-28.09:59:27::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-05-28.09:59:27::SCWBDomain::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/HC_SR04_v1_0/src"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::make -C ps7_cortexa9_0/libsrc/HC_SR04_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-05-28.09:59:27::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-05-28.09:59:27::SCWBDomain::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/iic_v3_10/src"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::make -C ps7_cortexa9_0/libsrc/iic_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-05-28.09:59:27::SCWBDomain::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-05-28.09:59:27::SCWBDomain::tfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_11/src"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::make -C ps7_cortexa9_0/libsrc/qspips_v3_11/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-05-28.09:59:27::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-05-28.09:59:27::SCWBDomain::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/scugic_v5_2/src"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scugic_v5_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-05-28.09:59:27::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-05-28.09:59:27::SCWBDomain::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_5/src"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scutimer_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2024-05-28.09:59:27::SCWBDomain::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2024-05-28.09:59:27::SCWBDomain::startfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_5/src"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-05-28.09:59:27::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-05-28.09:59:27::SCWBDomain::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/sdps_v4_2/src"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::make -C ps7_cortexa9_0/libsrc/sdps_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-05-28.09:59:27::SCWBDomain::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-05-28.09:59:27::SCWBDomain::tfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/Speedsensor_v1_0/src"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::make -C ps7_cortexa9_0/libsrc/Speedsensor_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
+TRACE::2024-05-28.09:59:27::SCWBDomain::i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
+TRACE::2024-05-28.09:59:27::SCWBDomain::-nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/standalone_v9_0/src"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::make -C ps7_cortexa9_0/libsrc/standalone_v9_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2024-05-28.09:59:27::SCWBDomain::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2024-05-28.09:59:27::SCWBDomain::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/tmrctr_v4_11/src"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::make -C ps7_cortexa9_0/libsrc/tmrctr_v4_11/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-05-28.09:59:27::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-05-28.09:59:27::SCWBDomain::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_13/src"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::make -C ps7_cortexa9_0/libsrc/uartps_v3_13/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-05-28.09:59:27::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-05-28.09:59:27::SCWBDomain::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_8/src"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::make -C ps7_cortexa9_0/libsrc/usbps_v2_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-05-28.09:59:27::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-05-28.09:59:27::SCWBDomain::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_7/src"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xadcps_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-05-28.09:59:27::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-05-28.09:59:27::SCWBDomain::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v5_1/src"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilffs_v5_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-05-28.09:59:27::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-05-28.09:59:27::SCWBDomain::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/xilrsa_v1_7/src"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilrsa_v1_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-05-28.09:59:27::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-05-28.09:59:27::SCWBDomain::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_9/src"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2024-05-28.09:59:27::SCWBDomain::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2024-05-28.09:59:27::SCWBDomain:: -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_12/src"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_12/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2024-05-28.09:59:27::SCWBDomain::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2024-05-28.09:59:27::SCWBDomain::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_2/src"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2024-05-28.09:59:27::SCWBDomain::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2024-05-28.09:59:27::SCWBDomain::iles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_8/src"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::make -C ps7_cortexa9_0/libsrc/devcfg_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-05-28.09:59:27::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-05-28.09:59:27::SCWBDomain::files -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:27::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_9/src"
+
+TRACE::2024-05-28.09:59:28::SCWBDomain::make -C ps7_cortexa9_0/libsrc/dmaps_v2_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2024-05-28.09:59:28::SCWBDomain::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2024-05-28.09:59:28::SCWBDomain::iles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:28::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_19/src"
+
+TRACE::2024-05-28.09:59:28::SCWBDomain::make -C ps7_cortexa9_0/libsrc/emacps_v3_19/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-05-28.09:59:28::SCWBDomain::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-05-28.09:59:28::SCWBDomain::tfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:28::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_12/src"
+
+TRACE::2024-05-28.09:59:28::SCWBDomain::make -C ps7_cortexa9_0/libsrc/gpiops_v3_12/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-05-28.09:59:28::SCWBDomain::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-05-28.09:59:28::SCWBDomain::tfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:28::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_10/src"
+
+TRACE::2024-05-28.09:59:28::SCWBDomain::make -C ps7_cortexa9_0/libsrc/gpio_v4_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2024-05-28.09:59:28::SCWBDomain::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2024-05-28.09:59:28::SCWBDomain::iles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:28::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/iic_v3_10/src"
+
+TRACE::2024-05-28.09:59:28::SCWBDomain::make -C ps7_cortexa9_0/libsrc/iic_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+TRACE::2024-05-28.09:59:28::SCWBDomain::HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+TRACE::2024-05-28.09:59:28::SCWBDomain::les -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:28::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_11/src"
+
+TRACE::2024-05-28.09:59:28::SCWBDomain::make -C ps7_cortexa9_0/libsrc/qspips_v3_11/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-05-28.09:59:28::SCWBDomain::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-05-28.09:59:28::SCWBDomain::tfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:28::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v5_2/src"
+
+TRACE::2024-05-28.09:59:28::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scugic_v5_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-05-28.09:59:28::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-05-28.09:59:28::SCWBDomain::files -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:28::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_5/src"
+
+TRACE::2024-05-28.09:59:28::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scutimer_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-05-28.09:59:28::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-05-28.09:59:28::SCWBDomain::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:28::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_5/src"
+
+TRACE::2024-05-28.09:59:28::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-05-28.09:59:28::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-05-28.09:59:28::SCWBDomain::files -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:28::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v4_2/src"
+
+TRACE::2024-05-28.09:59:28::SCWBDomain::make -C ps7_cortexa9_0/libsrc/sdps_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+TRACE::2024-05-28.09:59:28::SCWBDomain::HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+TRACE::2024-05-28.09:59:28::SCWBDomain::les -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:28::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v9_0/src"
+
+TRACE::2024-05-28.09:59:28::SCWBDomain::make -C ps7_cortexa9_0/libsrc/standalone_v9_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-05-28.09:59:28::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-05-28.09:59:28::SCWBDomain::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:28::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/tmrctr_v4_11/src"
+
+TRACE::2024-05-28.09:59:28::SCWBDomain::make -C ps7_cortexa9_0/libsrc/tmrctr_v4_11/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-05-28.09:59:28::SCWBDomain::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-05-28.09:59:28::SCWBDomain::tfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:28::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_13/src"
+
+TRACE::2024-05-28.09:59:28::SCWBDomain::make -C ps7_cortexa9_0/libsrc/uartps_v3_13/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-05-28.09:59:28::SCWBDomain::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-05-28.09:59:28::SCWBDomain::tfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:28::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_8/src"
+
+TRACE::2024-05-28.09:59:28::SCWBDomain::make -C ps7_cortexa9_0/libsrc/usbps_v2_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2024-05-28.09:59:28::SCWBDomain::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2024-05-28.09:59:28::SCWBDomain::iles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:28::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_7/src"
+
+TRACE::2024-05-28.09:59:28::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xadcps_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-05-28.09:59:28::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-05-28.09:59:28::SCWBDomain::files -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:28::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v5_1/src"
+
+TRACE::2024-05-28.09:59:28::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilffs_v5_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-05-28.09:59:28::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-05-28.09:59:28::SCWBDomain::files -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:28::SCWBDomain::'Finished building libraries parallelly.'
+
+TRACE::2024-05-28.09:59:28::SCWBDomain::make --no-print-directory archive
+
+TRACE::2024-05-28.09:59:28::SCWBDomain::arm-none-eabi-ar -r  ps7_cortexa9_0/lib/libxil.a ps7_cortexa9_0/lib/HC_SR04.o ps7_cortexa9_0/lib/HC_SR04_selftest.o ps7_cortexa
+TRACE::2024-05-28.09:59:28::SCWBDomain::9_0/lib/Speedsensor.o ps7_cortexa9_0/lib/Speedsensor_selftest.o ps7_cortexa9_0/lib/_exit.o ps7_cortexa9_0/lib/_open.o ps7_corte
+TRACE::2024-05-28.09:59:28::SCWBDomain::xa9_0/lib/_sbrk.o ps7_cortexa9_0/lib/abort.o ps7_cortexa9_0/lib/asm_vectors.o ps7_cortexa9_0/lib/boot.o ps7_cortexa9_0/lib/clos
+TRACE::2024-05-28.09:59:28::SCWBDomain::e.o ps7_cortexa9_0/lib/cpputest_time.o ps7_cortexa9_0/lib/cpu_init.o ps7_cortexa9_0/lib/errno.o ps7_cortexa9_0/lib/fcntl.o ps7_
+TRACE::2024-05-28.09:59:28::SCWBDomain::cortexa9_0/lib/fstat.o ps7_cortexa9_0/lib/getentropy.o ps7_cortexa9_0/lib/getpid.o ps7_cortexa9_0/lib/inbyte.o ps7_cortexa9_0/l
+TRACE::2024-05-28.09:59:28::SCWBDomain::ib/isatty.o ps7_cortexa9_0/lib/kill.o ps7_cortexa9_0/lib/lseek.o ps7_cortexa9_0/lib/open.o ps7_cortexa9_0/lib/outbyte.o ps7_cor
+TRACE::2024-05-28.09:59:28::SCWBDomain::texa9_0/lib/print.o ps7_cortexa9_0/lib/putnum.o ps7_cortexa9_0/lib/read.o ps7_cortexa9_0/lib/sbrk.o ps7_cortexa9_0/lib/sleep.o 
+TRACE::2024-05-28.09:59:28::SCWBDomain::ps7_cortexa9_0/lib/time.o ps7_cortexa9_0/lib/translation_table.o ps7_cortexa9_0/lib/unlink.o ps7_cortexa9_0/lib/usleep.o ps7_co
+TRACE::2024-05-28.09:59:28::SCWBDomain::rtexa9_0/lib/vectors.o ps7_cortexa9_0/lib/write.o ps7_cortexa9_0/lib/xadcps.o ps7_cortexa9_0/lib/xadcps_g.o ps7_cortexa9_0/lib/
+TRACE::2024-05-28.09:59:28::SCWBDomain::xadcps_intr.o ps7_cortexa9_0/lib/xadcps_selftest.o ps7_cortexa9_0/lib/xadcps_sinit.o ps7_cortexa9_0/lib/xcoresightpsdcc.o ps7_c
+TRACE::2024-05-28.09:59:28::SCWBDomain::ortexa9_0/lib/xdevcfg.o ps7_cortexa9_0/lib/xdevcfg_g.o ps7_cortexa9_0/lib/xdevcfg_hw.o ps7_cortexa9_0/lib/xdevcfg_intr.o ps7_co
+TRACE::2024-05-28.09:59:28::SCWBDomain::rtexa9_0/lib/xdevcfg_selftest.o ps7_cortexa9_0/lib/xdevcfg_sinit.o ps7_cortexa9_0/lib/xdmaps.o ps7_cortexa9_0/lib/xdmaps_g.o ps
+TRACE::2024-05-28.09:59:28::SCWBDomain::7_cortexa9_0/lib/xdmaps_hw.o ps7_cortexa9_0/lib/xdmaps_selftest.o ps7_cortexa9_0/lib/xdmaps_sinit.o ps7_cortexa9_0/lib/xemacps.
+TRACE::2024-05-28.09:59:28::SCWBDomain::o ps7_cortexa9_0/lib/xemacps_bdring.o ps7_cortexa9_0/lib/xemacps_control.o ps7_cortexa9_0/lib/xemacps_g.o ps7_cortexa9_0/lib/xe
+TRACE::2024-05-28.09:59:28::SCWBDomain::macps_hw.o ps7_cortexa9_0/lib/xemacps_intr.o ps7_cortexa9_0/lib/xemacps_sinit.o ps7_cortexa9_0/lib/xgpio.o ps7_cortexa9_0/lib/x
+TRACE::2024-05-28.09:59:28::SCWBDomain::gpio_extra.o ps7_cortexa9_0/lib/xgpio_g.o ps7_cortexa9_0/lib/xgpio_intr.o ps7_cortexa9_0/lib/xgpio_selftest.o ps7_cortexa9_0/li
+TRACE::2024-05-28.09:59:28::SCWBDomain::b/xgpio_sinit.o ps7_cortexa9_0/lib/xgpiops.o ps7_cortexa9_0/lib/xgpiops_g.o ps7_cortexa9_0/lib/xgpiops_hw.o ps7_cortexa9_0/lib/
+TRACE::2024-05-28.09:59:28::SCWBDomain::xgpiops_intr.o ps7_cortexa9_0/lib/xgpiops_selftest.o ps7_cortexa9_0/lib/xgpiops_sinit.o ps7_cortexa9_0/lib/xiic.o ps7_cortexa9_
+TRACE::2024-05-28.09:59:28::SCWBDomain::0/lib/xiic_dyn_master.o ps7_cortexa9_0/lib/xiic_g.o ps7_cortexa9_0/lib/xiic_intr.o ps7_cortexa9_0/lib/xiic_l.o ps7_cortexa9_0/l
+TRACE::2024-05-28.09:59:28::SCWBDomain::ib/xiic_master.o ps7_cortexa9_0/lib/xiic_multi_master.o ps7_cortexa9_0/lib/xiic_options.o ps7_cortexa9_0/lib/xiic_selftest.o ps
+TRACE::2024-05-28.09:59:28::SCWBDomain::7_cortexa9_0/lib/xiic_sinit.o ps7_cortexa9_0/lib/xiic_slave.o ps7_cortexa9_0/lib/xiic_stats.o ps7_cortexa9_0/lib/xil-crt0.o ps7
+TRACE::2024-05-28.09:59:28::SCWBDomain::_cortexa9_0/lib/xil_assert.o ps7_cortexa9_0/lib/xil_cache.o ps7_cortexa9_0/lib/xil_clocking.o ps7_cortexa9_0/lib/xil_exception.
+TRACE::2024-05-28.09:59:28::SCWBDomain::o ps7_cortexa9_0/lib/xil_mem.o ps7_cortexa9_0/lib/xil_misc_psreset_api.o ps7_cortexa9_0/lib/xil_mmu.o ps7_cortexa9_0/lib/xil_pr
+TRACE::2024-05-28.09:59:28::SCWBDomain::intf.o ps7_cortexa9_0/lib/xil_sleepcommon.o ps7_cortexa9_0/lib/xil_sleeptimer.o ps7_cortexa9_0/lib/xil_spinlock.o ps7_cortexa9_
+TRACE::2024-05-28.09:59:28::SCWBDomain::0/lib/xil_testcache.o ps7_cortexa9_0/lib/xil_testio.o ps7_cortexa9_0/lib/xil_testmem.o ps7_cortexa9_0/lib/xil_util.o ps7_cortex
+TRACE::2024-05-28.09:59:28::SCWBDomain::a9_0/lib/xinterrupt_wrap.o ps7_cortexa9_0/lib/xl2cc_counter.o ps7_cortexa9_0/lib/xplatform_info.o ps7_cortexa9_0/lib/xpm_counte
+TRACE::2024-05-28.09:59:28::SCWBDomain::r.o ps7_cortexa9_0/lib/xpm_init.o ps7_cortexa9_0/lib/xqspips.o ps7_cortexa9_0/lib/xqspips_g.o ps7_cortexa9_0/lib/xqspips_hw.o p
+TRACE::2024-05-28.09:59:28::SCWBDomain::s7_cortexa9_0/lib/xqspips_options.o ps7_cortexa9_0/lib/xqspips_selftest.o ps7_cortexa9_0/lib/xqspips_sinit.o ps7_cortexa9_0/lib
+TRACE::2024-05-28.09:59:28::SCWBDomain::/xscugic.o ps7_cortexa9_0/lib/xscugic_g.o ps7_cortexa9_0/lib/xscugic_hw.o ps7_cortexa9_0/lib/xscugic_intr.o ps7_cortexa9_0/lib/
+TRACE::2024-05-28.09:59:28::SCWBDomain::xscugic_selftest.o ps7_cortexa9_0/lib/xscugic_sinit.o ps7_cortexa9_0/lib/xscutimer.o ps7_cortexa9_0/lib/xscutimer_g.o ps7_corte
+TRACE::2024-05-28.09:59:28::SCWBDomain::xa9_0/lib/xscutimer_selftest.o ps7_cortexa9_0/lib/xscutimer_sinit.o ps7_cortexa9_0/lib/xscuwdt.o ps7_cortexa9_0/lib/xscuwdt_g.o
+TRACE::2024-05-28.09:59:28::SCWBDomain:: ps7_cortexa9_0/lib/xscuwdt_selftest.o ps7_cortexa9_0/lib/xscuwdt_sinit.o ps7_cortexa9_0/lib/xsdps.o ps7_cortexa9_0/lib/xsdps_c
+TRACE::2024-05-28.09:59:28::SCWBDomain::ard.o ps7_cortexa9_0/lib/xsdps_g.o ps7_cortexa9_0/lib/xsdps_host.o ps7_cortexa9_0/lib/xsdps_options.o ps7_cortexa9_0/lib/xsdps_
+TRACE::2024-05-28.09:59:28::SCWBDomain::sinit.o ps7_cortexa9_0/lib/xtime_l.o ps7_cortexa9_0/lib/xtmrctr.o ps7_cortexa9_0/lib/xtmrctr_g.o ps7_cortexa9_0/lib/xtmrctr_int
+TRACE::2024-05-28.09:59:28::SCWBDomain::r.o ps7_cortexa9_0/lib/xtmrctr_l.o ps7_cortexa9_0/lib/xtmrctr_options.o ps7_cortexa9_0/lib/xtmrctr_selftest.o ps7_cortexa9_0/li
+TRACE::2024-05-28.09:59:28::SCWBDomain::b/xtmrctr_sinit.o ps7_cortexa9_0/lib/xtmrctr_stats.o ps7_cortexa9_0/lib/xuartps.o ps7_cortexa9_0/lib/xuartps_g.o ps7_cortexa9_0
+TRACE::2024-05-28.09:59:28::SCWBDomain::/lib/xuartps_hw.o ps7_cortexa9_0/lib/xuartps_intr.o ps7_cortexa9_0/lib/xuartps_options.o ps7_cortexa9_0/lib/xuartps_selftest.o 
+TRACE::2024-05-28.09:59:28::SCWBDomain::ps7_cortexa9_0/lib/xuartps_sinit.o ps7_cortexa9_0/lib/xusbps.o ps7_cortexa9_0/lib/xusbps_endpoint.o ps7_cortexa9_0/lib/xusbps_g
+TRACE::2024-05-28.09:59:28::SCWBDomain::.o ps7_cortexa9_0/lib/xusbps_hw.o ps7_cortexa9_0/lib/xusbps_intr.o ps7_cortexa9_0/lib/xusbps_sinit.o
+
+TRACE::2024-05-28.09:59:30::SCWBDomain::'Finished building libraries'
+
+TRACE::2024-05-28.09:59:30::SCWBDomain::make: Leaving directory 'C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/zynq_fsbl/zynq_fsbl_bsp'
+
+TRACE::2024-05-28.09:59:30::SCWBDomain::arm-none-eabi-gcc -o fsbl.elf fsbl_handoff.o fsbl_hooks.o image_mover.o main.o md5.o nand.o nor.o pcap.o ps7_init.o qspi.o rsa.
+TRACE::2024-05-28.09:59:30::SCWBDomain::o sd.o -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id
+TRACE::2024-05-28.09:59:30::SCWBDomain::=none -specs=Xilinx.spec  -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-
+TRACE::2024-05-28.09:59:30::SCWBDomain::group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group                                                  -Wl,--gc-sections -L
+TRACE::2024-05-28.09:59:30::SCWBDomain::zynq_fsbl_bsp/ps7_cortexa9_0/lib -L./ -Tlscript.ld
+
+LOG::2024-05-28.09:59:30::SCWSystem::Checking the domain standalone_ps7_cortexa9_0
+LOG::2024-05-28.09:59:30::SCWSystem::Not a boot domain 
+LOG::2024-05-28.09:59:30::SCWSystem::Started Processing the domain standalone_ps7_cortexa9_0
+TRACE::2024-05-28.09:59:30::SCWDomain::Generating domain artifcats
+TRACE::2024-05-28.09:59:30::SCWMssOS::Generating standalone artifcats
+TRACE::2024-05-28.09:59:30::SCWMssOS::Copying the qemu file from  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/resources/FinalFinalCar/standalone_ps7_cortexa9_0/qemu_args.txt To C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/export/FinalFinalCar/sw/FinalFinalCar/qemu/
+TRACE::2024-05-28.09:59:30::SCWMssOS::Copying the qemu file from  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/resources/FinalFinalCar/standalone_ps7_cortexa9_0/qemu_args.txt To C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/export/FinalFinalCar/sw/FinalFinalCar/standalone_ps7_cortexa9_0/qemu/
+TRACE::2024-05-28.09:59:30::SCWMssOS:: Copying the user libraries. 
+TRACE::2024-05-28.09:59:30::SCWPlatform::Trying to open the hw design at C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:30::SCWPlatform::DSA given C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:30::SCWPlatform::DSA absoulate path C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:30::SCWPlatform::DSA directory C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw
+TRACE::2024-05-28.09:59:30::SCWPlatform:: Platform Path C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:30::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2024-05-28.09:59:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-05-28.09:59:30::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-05-28.09:59:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-28.09:59:30::SCWMssOS::Checking the sw design at  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-05-28.09:59:30::SCWMssOS::DEBUG:  swdes dump  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-05-28.09:59:30::SCWMssOS::Sw design exists and opened at  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-05-28.09:59:30::SCWMssOS::Completed writing the mss file at C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp
+TRACE::2024-05-28.09:59:30::SCWMssOS::Mss edits present, copying mssfile into export location C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-05-28.09:59:30::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2024-05-28.09:59:30::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2024-05-28.09:59:30::SCWDomain::Building the domain as part of full build :  standalone_ps7_cortexa9_0
+TRACE::2024-05-28.09:59:30::SCWMssOS::doing bsp build ... 
+TRACE::2024-05-28.09:59:30::SCWMssOS::System Command Ran  C: & cd  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp & make 
+TRACE::2024-05-28.09:59:30::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2024-05-28.09:59:30::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_9/src"
+
+TRACE::2024-05-28.09:59:30::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+TRACE::2024-05-28.09:59:30::SCWMssOS::-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+TRACE::2024-05-28.09:59:30::SCWMssOS::ard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:31::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_12/src"
+
+TRACE::2024-05-28.09:59:31::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_12/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-e
+TRACE::2024-05-28.09:59:31::SCWMssOS::abi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=har
+TRACE::2024-05-28.09:59:31::SCWMssOS::d -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:31::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_2/src"
+
+TRACE::2024-05-28.09:59:31::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-05-28.09:59:31::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-05-28.09:59:31::SCWMssOS::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:31::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_8/src"
+
+TRACE::2024-05-28.09:59:31::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-05-28.09:59:31::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-05-28.09:59:31::SCWMssOS::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:31::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_9/src"
+
+TRACE::2024-05-28.09:59:31::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-05-28.09:59:31::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-05-28.09:59:31::SCWMssOS::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:31::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_19/src"
+
+TRACE::2024-05-28.09:59:31::SCWMssOS::make -C ps7_cortexa9_0/libsrc/emacps_v3_19/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-05-28.09:59:31::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-05-28.09:59:31::SCWMssOS::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:31::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_12/src"
+
+TRACE::2024-05-28.09:59:31::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpiops_v3_12/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-05-28.09:59:31::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-05-28.09:59:31::SCWMssOS::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:31::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_10/src"
+
+TRACE::2024-05-28.09:59:31::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpio_v4_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-05-28.09:59:31::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-05-28.09:59:31::SCWMssOS::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:31::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/HC_SR04_v1_0/src"
+
+TRACE::2024-05-28.09:59:31::SCWMssOS::make -C ps7_cortexa9_0/libsrc/HC_SR04_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-05-28.09:59:31::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-05-28.09:59:31::SCWMssOS::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:31::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/iic_v3_10/src"
+
+TRACE::2024-05-28.09:59:31::SCWMssOS::make -C ps7_cortexa9_0/libsrc/iic_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-05-28.09:59:31::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-05-28.09:59:31::SCWMssOS::tfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:31::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_11/src"
+
+TRACE::2024-05-28.09:59:31::SCWMssOS::make -C ps7_cortexa9_0/libsrc/qspips_v3_11/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-05-28.09:59:31::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-05-28.09:59:31::SCWMssOS::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:32::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scugic_v5_2/src"
+
+TRACE::2024-05-28.09:59:32::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v5_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-05-28.09:59:32::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-05-28.09:59:32::SCWMssOS::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:32::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_5/src"
+
+TRACE::2024-05-28.09:59:32::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2024-05-28.09:59:32::SCWMssOS::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2024-05-28.09:59:32::SCWMssOS::startfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:32::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_5/src"
+
+TRACE::2024-05-28.09:59:32::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-05-28.09:59:32::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-05-28.09:59:32::SCWMssOS::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:32::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/sdps_v4_2/src"
+
+TRACE::2024-05-28.09:59:32::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-05-28.09:59:32::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-05-28.09:59:32::SCWMssOS::tfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:32::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/Speedsensor_v1_0/src"
+
+TRACE::2024-05-28.09:59:32::SCWMssOS::make -C ps7_cortexa9_0/libsrc/Speedsensor_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
+TRACE::2024-05-28.09:59:32::SCWMssOS::i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
+TRACE::2024-05-28.09:59:32::SCWMssOS::-nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:32::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/standalone_v9_0/src"
+
+TRACE::2024-05-28.09:59:32::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v9_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2024-05-28.09:59:32::SCWMssOS::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2024-05-28.09:59:32::SCWMssOS::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:32::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/tmrctr_v4_11/src"
+
+TRACE::2024-05-28.09:59:32::SCWMssOS::make -C ps7_cortexa9_0/libsrc/tmrctr_v4_11/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-05-28.09:59:32::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-05-28.09:59:32::SCWMssOS::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:32::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_13/src"
+
+TRACE::2024-05-28.09:59:32::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_13/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-05-28.09:59:32::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-05-28.09:59:32::SCWMssOS::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_8/src"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::make -C ps7_cortexa9_0/libsrc/usbps_v2_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-05-28.09:59:33::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-05-28.09:59:33::SCWMssOS::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_7/src"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-05-28.09:59:33::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-05-28.09:59:33::SCWMssOS::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/HC_SR04_v1_0/src"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::make -C ps7_cortexa9_0/libsrc/HC_SR04_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-05-28.09:59:33::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-05-28.09:59:33::SCWMssOS::tfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/Speedsensor_v1_0/src"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::make -C ps7_cortexa9_0/libsrc/Speedsensor_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2024-05-28.09:59:33::SCWMssOS::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2024-05-28.09:59:33::SCWMssOS::startfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::'Finished building libraries sequentially.'
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::make -j 6 --no-print-directory par_libs
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_9/src"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+TRACE::2024-05-28.09:59:33::SCWMssOS::-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+TRACE::2024-05-28.09:59:33::SCWMssOS::ard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_12/src"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_12/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-e
+TRACE::2024-05-28.09:59:33::SCWMssOS::abi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=har
+TRACE::2024-05-28.09:59:33::SCWMssOS::d -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_2/src"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-05-28.09:59:33::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-05-28.09:59:33::SCWMssOS::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_8/src"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-05-28.09:59:33::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-05-28.09:59:33::SCWMssOS::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_9/src"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-05-28.09:59:33::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-05-28.09:59:33::SCWMssOS::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_19/src"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::make -C ps7_cortexa9_0/libsrc/emacps_v3_19/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-05-28.09:59:33::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-05-28.09:59:33::SCWMssOS::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_12/src"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpiops_v3_12/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-05-28.09:59:33::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-05-28.09:59:33::SCWMssOS::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_10/src"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpio_v4_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-05-28.09:59:33::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-05-28.09:59:33::SCWMssOS::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/HC_SR04_v1_0/src"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::make -C ps7_cortexa9_0/libsrc/HC_SR04_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-05-28.09:59:33::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-05-28.09:59:33::SCWMssOS::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/iic_v3_10/src"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::make -C ps7_cortexa9_0/libsrc/iic_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-05-28.09:59:33::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-05-28.09:59:33::SCWMssOS::tfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_11/src"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::make -C ps7_cortexa9_0/libsrc/qspips_v3_11/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-05-28.09:59:33::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-05-28.09:59:33::SCWMssOS::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scugic_v5_2/src"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v5_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-05-28.09:59:33::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-05-28.09:59:33::SCWMssOS::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_5/src"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2024-05-28.09:59:33::SCWMssOS::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2024-05-28.09:59:33::SCWMssOS::startfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_5/src"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-05-28.09:59:33::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-05-28.09:59:33::SCWMssOS::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/sdps_v4_2/src"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-05-28.09:59:33::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-05-28.09:59:33::SCWMssOS::tfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/Speedsensor_v1_0/src"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::make -C ps7_cortexa9_0/libsrc/Speedsensor_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
+TRACE::2024-05-28.09:59:33::SCWMssOS::i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
+TRACE::2024-05-28.09:59:33::SCWMssOS::-nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/standalone_v9_0/src"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v9_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2024-05-28.09:59:33::SCWMssOS::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2024-05-28.09:59:33::SCWMssOS::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/tmrctr_v4_11/src"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::make -C ps7_cortexa9_0/libsrc/tmrctr_v4_11/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-05-28.09:59:33::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-05-28.09:59:33::SCWMssOS::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_13/src"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_13/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-05-28.09:59:33::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-05-28.09:59:33::SCWMssOS::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:33::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_8/src"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::make -C ps7_cortexa9_0/libsrc/usbps_v2_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-05-28.09:59:34::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-05-28.09:59:34::SCWMssOS::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_7/src"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-05-28.09:59:34::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-05-28.09:59:34::SCWMssOS::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_9/src"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2024-05-28.09:59:34::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2024-05-28.09:59:34::SCWMssOS:: -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_12/src"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_12/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2024-05-28.09:59:34::SCWMssOS::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2024-05-28.09:59:34::SCWMssOS::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_2/src"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2024-05-28.09:59:34::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2024-05-28.09:59:34::SCWMssOS::iles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_8/src"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-05-28.09:59:34::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-05-28.09:59:34::SCWMssOS::files -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_9/src"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2024-05-28.09:59:34::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2024-05-28.09:59:34::SCWMssOS::iles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_19/src"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::make -C ps7_cortexa9_0/libsrc/emacps_v3_19/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-05-28.09:59:34::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-05-28.09:59:34::SCWMssOS::tfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_12/src"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpiops_v3_12/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-05-28.09:59:34::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-05-28.09:59:34::SCWMssOS::tfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_10/src"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpio_v4_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2024-05-28.09:59:34::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2024-05-28.09:59:34::SCWMssOS::iles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/iic_v3_10/src"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::make -C ps7_cortexa9_0/libsrc/iic_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+TRACE::2024-05-28.09:59:34::SCWMssOS::HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+TRACE::2024-05-28.09:59:34::SCWMssOS::les -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_11/src"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::make -C ps7_cortexa9_0/libsrc/qspips_v3_11/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-05-28.09:59:34::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-05-28.09:59:34::SCWMssOS::tfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v5_2/src"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v5_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-05-28.09:59:34::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-05-28.09:59:34::SCWMssOS::files -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_5/src"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-05-28.09:59:34::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-05-28.09:59:34::SCWMssOS::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_5/src"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v4_2/src"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-05-28.09:59:34::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-05-28.09:59:34::SCWMssOS::files -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+TRACE::2024-05-28.09:59:34::SCWMssOS::HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+TRACE::2024-05-28.09:59:34::SCWMssOS::les -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v9_0/src"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v9_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-05-28.09:59:34::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-05-28.09:59:34::SCWMssOS::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/tmrctr_v4_11/src"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::make -C ps7_cortexa9_0/libsrc/tmrctr_v4_11/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-05-28.09:59:34::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-05-28.09:59:34::SCWMssOS::tfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_13/src"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_13/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-05-28.09:59:34::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-05-28.09:59:34::SCWMssOS::tfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_8/src"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::make -C ps7_cortexa9_0/libsrc/usbps_v2_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2024-05-28.09:59:34::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2024-05-28.09:59:34::SCWMssOS::iles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_7/src"
+
+TRACE::2024-05-28.09:59:34::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-05-28.09:59:34::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-05-28.09:59:34::SCWMssOS::files -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-28.09:59:35::SCWMssOS::'Finished building libraries parallelly.'
+
+TRACE::2024-05-28.09:59:35::SCWMssOS::make --no-print-directory archive
+
+TRACE::2024-05-28.09:59:35::SCWMssOS::arm-none-eabi-ar -r  ps7_cortexa9_0/lib/libxil.a ps7_cortexa9_0/lib/HC_SR04.o ps7_cortexa9_0/lib/HC_SR04_selftest.o ps7_cortexa
+TRACE::2024-05-28.09:59:35::SCWMssOS::9_0/lib/Speedsensor.o ps7_cortexa9_0/lib/Speedsensor_selftest.o ps7_cortexa9_0/lib/_exit.o ps7_cortexa9_0/lib/_open.o ps7_corte
+TRACE::2024-05-28.09:59:35::SCWMssOS::xa9_0/lib/_sbrk.o ps7_cortexa9_0/lib/abort.o ps7_cortexa9_0/lib/asm_vectors.o ps7_cortexa9_0/lib/boot.o ps7_cortexa9_0/lib/clos
+TRACE::2024-05-28.09:59:35::SCWMssOS::e.o ps7_cortexa9_0/lib/cpputest_time.o ps7_cortexa9_0/lib/cpu_init.o ps7_cortexa9_0/lib/errno.o ps7_cortexa9_0/lib/fcntl.o ps7_
+TRACE::2024-05-28.09:59:35::SCWMssOS::cortexa9_0/lib/fstat.o ps7_cortexa9_0/lib/getentropy.o ps7_cortexa9_0/lib/getpid.o ps7_cortexa9_0/lib/inbyte.o ps7_cortexa9_0/l
+TRACE::2024-05-28.09:59:35::SCWMssOS::ib/isatty.o ps7_cortexa9_0/lib/kill.o ps7_cortexa9_0/lib/lseek.o ps7_cortexa9_0/lib/open.o ps7_cortexa9_0/lib/outbyte.o ps7_cor
+TRACE::2024-05-28.09:59:35::SCWMssOS::texa9_0/lib/print.o ps7_cortexa9_0/lib/putnum.o ps7_cortexa9_0/lib/read.o ps7_cortexa9_0/lib/sbrk.o ps7_cortexa9_0/lib/sleep.o 
+TRACE::2024-05-28.09:59:35::SCWMssOS::ps7_cortexa9_0/lib/time.o ps7_cortexa9_0/lib/translation_table.o ps7_cortexa9_0/lib/unlink.o ps7_cortexa9_0/lib/usleep.o ps7_co
+TRACE::2024-05-28.09:59:35::SCWMssOS::rtexa9_0/lib/vectors.o ps7_cortexa9_0/lib/write.o ps7_cortexa9_0/lib/xadcps.o ps7_cortexa9_0/lib/xadcps_g.o ps7_cortexa9_0/lib/
+TRACE::2024-05-28.09:59:35::SCWMssOS::xadcps_intr.o ps7_cortexa9_0/lib/xadcps_selftest.o ps7_cortexa9_0/lib/xadcps_sinit.o ps7_cortexa9_0/lib/xcoresightpsdcc.o ps7_c
+TRACE::2024-05-28.09:59:35::SCWMssOS::ortexa9_0/lib/xdevcfg.o ps7_cortexa9_0/lib/xdevcfg_g.o ps7_cortexa9_0/lib/xdevcfg_hw.o ps7_cortexa9_0/lib/xdevcfg_intr.o ps7_co
+TRACE::2024-05-28.09:59:35::SCWMssOS::rtexa9_0/lib/xdevcfg_selftest.o ps7_cortexa9_0/lib/xdevcfg_sinit.o ps7_cortexa9_0/lib/xdmaps.o ps7_cortexa9_0/lib/xdmaps_g.o ps
+TRACE::2024-05-28.09:59:35::SCWMssOS::7_cortexa9_0/lib/xdmaps_hw.o ps7_cortexa9_0/lib/xdmaps_selftest.o ps7_cortexa9_0/lib/xdmaps_sinit.o ps7_cortexa9_0/lib/xemacps.
+TRACE::2024-05-28.09:59:35::SCWMssOS::o ps7_cortexa9_0/lib/xemacps_bdring.o ps7_cortexa9_0/lib/xemacps_control.o ps7_cortexa9_0/lib/xemacps_g.o ps7_cortexa9_0/lib/xe
+TRACE::2024-05-28.09:59:35::SCWMssOS::macps_hw.o ps7_cortexa9_0/lib/xemacps_intr.o ps7_cortexa9_0/lib/xemacps_sinit.o ps7_cortexa9_0/lib/xgpio.o ps7_cortexa9_0/lib/x
+TRACE::2024-05-28.09:59:35::SCWMssOS::gpio_extra.o ps7_cortexa9_0/lib/xgpio_g.o ps7_cortexa9_0/lib/xgpio_intr.o ps7_cortexa9_0/lib/xgpio_selftest.o ps7_cortexa9_0/li
+TRACE::2024-05-28.09:59:35::SCWMssOS::b/xgpio_sinit.o ps7_cortexa9_0/lib/xgpiops.o ps7_cortexa9_0/lib/xgpiops_g.o ps7_cortexa9_0/lib/xgpiops_hw.o ps7_cortexa9_0/lib/
+TRACE::2024-05-28.09:59:35::SCWMssOS::xgpiops_intr.o ps7_cortexa9_0/lib/xgpiops_selftest.o ps7_cortexa9_0/lib/xgpiops_sinit.o ps7_cortexa9_0/lib/xiic.o ps7_cortexa9_
+TRACE::2024-05-28.09:59:35::SCWMssOS::0/lib/xiic_dyn_master.o ps7_cortexa9_0/lib/xiic_g.o ps7_cortexa9_0/lib/xiic_intr.o ps7_cortexa9_0/lib/xiic_l.o ps7_cortexa9_0/l
+TRACE::2024-05-28.09:59:35::SCWMssOS::ib/xiic_master.o ps7_cortexa9_0/lib/xiic_multi_master.o ps7_cortexa9_0/lib/xiic_options.o ps7_cortexa9_0/lib/xiic_selftest.o ps
+TRACE::2024-05-28.09:59:35::SCWMssOS::7_cortexa9_0/lib/xiic_sinit.o ps7_cortexa9_0/lib/xiic_slave.o ps7_cortexa9_0/lib/xiic_stats.o ps7_cortexa9_0/lib/xil-crt0.o ps7
+TRACE::2024-05-28.09:59:35::SCWMssOS::_cortexa9_0/lib/xil_assert.o ps7_cortexa9_0/lib/xil_cache.o ps7_cortexa9_0/lib/xil_clocking.o ps7_cortexa9_0/lib/xil_exception.
+TRACE::2024-05-28.09:59:35::SCWMssOS::o ps7_cortexa9_0/lib/xil_mem.o ps7_cortexa9_0/lib/xil_misc_psreset_api.o ps7_cortexa9_0/lib/xil_mmu.o ps7_cortexa9_0/lib/xil_pr
+TRACE::2024-05-28.09:59:35::SCWMssOS::intf.o ps7_cortexa9_0/lib/xil_sleepcommon.o ps7_cortexa9_0/lib/xil_sleeptimer.o ps7_cortexa9_0/lib/xil_spinlock.o ps7_cortexa9_
+TRACE::2024-05-28.09:59:35::SCWMssOS::0/lib/xil_testcache.o ps7_cortexa9_0/lib/xil_testio.o ps7_cortexa9_0/lib/xil_testmem.o ps7_cortexa9_0/lib/xil_util.o ps7_cortex
+TRACE::2024-05-28.09:59:35::SCWMssOS::a9_0/lib/xinterrupt_wrap.o ps7_cortexa9_0/lib/xl2cc_counter.o ps7_cortexa9_0/lib/xplatform_info.o ps7_cortexa9_0/lib/xpm_counte
+TRACE::2024-05-28.09:59:35::SCWMssOS::r.o ps7_cortexa9_0/lib/xpm_init.o ps7_cortexa9_0/lib/xqspips.o ps7_cortexa9_0/lib/xqspips_g.o ps7_cortexa9_0/lib/xqspips_hw.o p
+TRACE::2024-05-28.09:59:35::SCWMssOS::s7_cortexa9_0/lib/xqspips_options.o ps7_cortexa9_0/lib/xqspips_selftest.o ps7_cortexa9_0/lib/xqspips_sinit.o ps7_cortexa9_0/lib
+TRACE::2024-05-28.09:59:35::SCWMssOS::/xscugic.o ps7_cortexa9_0/lib/xscugic_g.o ps7_cortexa9_0/lib/xscugic_hw.o ps7_cortexa9_0/lib/xscugic_intr.o ps7_cortexa9_0/lib/
+TRACE::2024-05-28.09:59:35::SCWMssOS::xscugic_selftest.o ps7_cortexa9_0/lib/xscugic_sinit.o ps7_cortexa9_0/lib/xscutimer.o ps7_cortexa9_0/lib/xscutimer_g.o ps7_corte
+TRACE::2024-05-28.09:59:35::SCWMssOS::xa9_0/lib/xscutimer_selftest.o ps7_cortexa9_0/lib/xscutimer_sinit.o ps7_cortexa9_0/lib/xscuwdt.o ps7_cortexa9_0/lib/xscuwdt_g.o
+TRACE::2024-05-28.09:59:35::SCWMssOS:: ps7_cortexa9_0/lib/xscuwdt_selftest.o ps7_cortexa9_0/lib/xscuwdt_sinit.o ps7_cortexa9_0/lib/xsdps.o ps7_cortexa9_0/lib/xsdps_c
+TRACE::2024-05-28.09:59:35::SCWMssOS::ard.o ps7_cortexa9_0/lib/xsdps_g.o ps7_cortexa9_0/lib/xsdps_host.o ps7_cortexa9_0/lib/xsdps_options.o ps7_cortexa9_0/lib/xsdps_
+TRACE::2024-05-28.09:59:35::SCWMssOS::sinit.o ps7_cortexa9_0/lib/xtime_l.o ps7_cortexa9_0/lib/xtmrctr.o ps7_cortexa9_0/lib/xtmrctr_g.o ps7_cortexa9_0/lib/xtmrctr_int
+TRACE::2024-05-28.09:59:35::SCWMssOS::r.o ps7_cortexa9_0/lib/xtmrctr_l.o ps7_cortexa9_0/lib/xtmrctr_options.o ps7_cortexa9_0/lib/xtmrctr_selftest.o ps7_cortexa9_0/li
+TRACE::2024-05-28.09:59:35::SCWMssOS::b/xtmrctr_sinit.o ps7_cortexa9_0/lib/xtmrctr_stats.o ps7_cortexa9_0/lib/xuartps.o ps7_cortexa9_0/lib/xuartps_g.o ps7_cortexa9_0
+TRACE::2024-05-28.09:59:35::SCWMssOS::/lib/xuartps_hw.o ps7_cortexa9_0/lib/xuartps_intr.o ps7_cortexa9_0/lib/xuartps_options.o ps7_cortexa9_0/lib/xuartps_selftest.o 
+TRACE::2024-05-28.09:59:35::SCWMssOS::ps7_cortexa9_0/lib/xuartps_sinit.o ps7_cortexa9_0/lib/xusbps.o ps7_cortexa9_0/lib/xusbps_endpoint.o ps7_cortexa9_0/lib/xusbps_g
+TRACE::2024-05-28.09:59:35::SCWMssOS::.o ps7_cortexa9_0/lib/xusbps_hw.o ps7_cortexa9_0/lib/xusbps_intr.o ps7_cortexa9_0/lib/xusbps_sinit.o
+
+TRACE::2024-05-28.09:59:36::SCWMssOS::'Finished building libraries'
+
+TRACE::2024-05-28.09:59:36::SCWMssOS::Copying to export directory.
+TRACE::2024-05-28.09:59:36::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2024-05-28.09:59:36::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2024-05-28.09:59:36::SCWSystem::Completed Processing the domain standalone_ps7_cortexa9_0
+LOG::2024-05-28.09:59:36::SCWSystem::Completed Processing the sysconfig FinalFinalCar
+LOG::2024-05-28.09:59:36::SCWPlatform::Completed generating the artifacts for system configuration FinalFinalCar
+TRACE::2024-05-28.09:59:36::SCWPlatform::Started preparing the platform 
+TRACE::2024-05-28.09:59:36::SCWSystem::Writing the bif file for system config FinalFinalCar
+TRACE::2024-05-28.09:59:36::SCWSystem::dir created 
+TRACE::2024-05-28.09:59:36::SCWSystem::Writing the bif 
+TRACE::2024-05-28.09:59:36::SCWPlatform::Started writing the spfm file 
+TRACE::2024-05-28.09:59:36::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-05-28.09:59:36::SCWPlatform::Completed generating the platform
+TRACE::2024-05-28.09:59:36::SCWMssOS::Saving the mss changes C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-05-28.09:59:36::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-05-28.09:59:36::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-05-28.09:59:36::SCWMssOS::Commit changes completed.
+TRACE::2024-05-28.09:59:36::SCWMssOS::Saving the mss changes C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-05-28.09:59:36::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-05-28.09:59:36::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-05-28.09:59:36::SCWMssOS::Commit changes completed.
+TRACE::2024-05-28.09:59:36::SCWPlatform::Trying to open the hw design at C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:36::SCWPlatform::DSA given C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:36::SCWPlatform::DSA absoulate path C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:36::SCWPlatform::DSA directory C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw
+TRACE::2024-05-28.09:59:36::SCWPlatform:: Platform Path C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:36::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2024-05-28.09:59:36::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-05-28.09:59:36::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-05-28.09:59:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-28.09:59:36::SCWMssOS::Checking the sw design at  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-05-28.09:59:36::SCWMssOS::DEBUG:  swdes dump  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-05-28.09:59:36::SCWMssOS::Sw design exists and opened at  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-05-28.09:59:36::SCWPlatform::Trying to open the hw design at C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:36::SCWPlatform::DSA given C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:36::SCWPlatform::DSA absoulate path C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:36::SCWPlatform::DSA directory C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw
+TRACE::2024-05-28.09:59:36::SCWPlatform:: Platform Path C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:36::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2024-05-28.09:59:36::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-05-28.09:59:36::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-05-28.09:59:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-28.09:59:36::SCWMssOS::Checking the sw design at  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-05-28.09:59:36::SCWMssOS::DEBUG:  swdes dump  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-05-28.09:59:36::SCWMssOS::Sw design exists and opened at  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-05-28.09:59:36::SCWWriter::formatted JSON is {
+	"platformName":	"FinalFinalCar",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"FinalFinalCar",
+	"platHandOff":	"C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/FinalFinalCar.xsa",
+	"platIntHandOff":	"<platformDir>/hw/FinalFinalCar.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"FinalFinalCar",
+	"systems":	[{
+			"systemName":	"FinalFinalCar",
+			"systemDesc":	"FinalFinalCar",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"FinalFinalCar",
+			"sysActiveDom":	"standalone_ps7_cortexa9_0",
+			"sysDefaultDom":	"standalone_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.0",
+					"mssFile":	"",
+					"md5Digest":	"f130397239daf728d2f9e8abcc3740dc",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:5.1", "xilrsa:1.7"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_ps7_cortexa9_0",
+					"domainDispName":	"standalone_ps7_cortexa9_0",
+					"domainDesc":	"standalone_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/FinalFinalCar/standalone_ps7_cortexa9_0/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/FinalFinalCar/standalone_ps7_cortexa9_0/qemu",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.0",
+					"mssFile":	"",
+					"md5Digest":	"3ef1316b65258288acbbaae2cf71ab30",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-05-28.09:59:36::SCWPlatform::updated the xpfm file.
+TRACE::2024-05-28.09:59:37::SCWPlatform::Trying to open the hw design at C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:37::SCWPlatform::DSA given C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:37::SCWPlatform::DSA absoulate path C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:37::SCWPlatform::DSA directory C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw
+TRACE::2024-05-28.09:59:37::SCWPlatform:: Platform Path C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/hw/FinalFinalCar.xsa
+TRACE::2024-05-28.09:59:37::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2024-05-28.09:59:37::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-05-28.09:59:37::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-05-28.09:59:37::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-28.09:59:37::SCWMssOS::Checking the sw design at  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-05-28.09:59:37::SCWMssOS::DEBUG:  swdes dump  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-05-28.09:59:37::SCWMssOS::Sw design exists and opened at  C:/02_PXL/SoC_PXL_2024/VHDL/MotorControl/vitis/FinalFinalCar/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss

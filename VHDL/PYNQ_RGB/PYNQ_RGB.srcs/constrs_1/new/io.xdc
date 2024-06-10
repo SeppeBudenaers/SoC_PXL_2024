@@ -1,0 +1,6 @@
+set_property PACKAGE_PIN M15 [get_ports {arduino_a0_a5_tri_io[0]}]
+set_property PACKAGE_PIN G14 [get_ports {arduino_a0_a5_tri_io[1]}]
+set_property PACKAGE_PIN L14 [get_ports {arduino_a0_a5_tri_io[2]}]
+set_property PACKAGE_PIN N15 [get_ports {arduino_a0_a5_tri_io[3]}]
+set_property PACKAGE_PIN L15 [get_ports {arduino_a0_a5_tri_io[4]}]
+set_property PACKAGE_PIN G17 [get_ports {arduino_a0_a5_tri_io[5]}]

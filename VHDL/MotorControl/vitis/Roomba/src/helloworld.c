@@ -206,7 +206,7 @@ int main()
     		}
     	}
 
-    	if(ROOMBA.IMU.Gyro_Y <= -4000){
+    	if(ROOMBA.IMU.Gyro_Y <= -7000){
     		xil_printf("Picked Up %d \n\r",ROOMBA.IMU.Gyro_Y);
     		SetDirection(ROOMBA.Motors[0],Direction_stop);
     		SetDirection(ROOMBA.Motors[1],Direction_stop);
