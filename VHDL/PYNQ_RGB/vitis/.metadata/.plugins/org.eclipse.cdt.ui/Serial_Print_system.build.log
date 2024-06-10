@@ -1,0 +1,14 @@
+15:18:13 **** Build of configuration Debug for project Serial_Print_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 60189 C:/02_PXL/SoC_PXL_2024/VHDL/PYNQ_RGB/vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm standalone_ps7_cortexa9_0 C:/02_PXL/SoC_PXL_2024/VHDL/PYNQ_RGB/vitis/Serial_Print_system/Debug/system.bif
+ECHO is off.
+ECHO is off.
+sdcard_gen --xpfm C:/02_PXL/SoC_PXL_2024/VHDL/PYNQ_RGB/vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm --sys_config design_1_wrapper --bif C:/02_PXL/SoC_PXL_2024/VHDL/PYNQ_RGB/vitis/Serial_Print_system/Debug/system.bif --bitstream C:/02_PXL/SoC_PXL_2024/VHDL/PYNQ_RGB/vitis/Serial_Print/_ide/bitstream/design_1_wrapper.bit --elf C:/02_PXL/SoC_PXL_2024/VHDL/PYNQ_RGB/vitis/Serial_Print/Debug/Serial_Print.elf,ps7_cortexa9_0
+ECHO is off.
+ECHO is off.
+creating BOOT.BIN using C:/02_PXL/SoC_PXL_2024/VHDL/PYNQ_RGB/vitis/Serial_Print/_ide/bitstream/design_1_wrapper.bit
+Running C:/Xilinx/Vitis/2023.2/bin/bootgen  -image C:/02_PXL/SoC_PXL_2024/VHDL/PYNQ_RGB/vitis/Serial_Print_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+15:18:32 Build Finished (took 19s.75ms)
+

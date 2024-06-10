@@ -12,3 +12,9 @@ timestamp=[2024-06-10 14:45:23], mode=BUILD, duration=0:00:02.540, duration_ms=2
 timestamp=[2024-06-10 14:47:29], mode=BUILD, duration=0:00:01.528, duration_ms=1528, data={name=RGB, configuration=Debug, clean_build=false}
 timestamp=[2024-06-10 14:48:33], mode=BUILD, duration=0:00:01.855, duration_ms=1855, data={name=RGB, configuration=Debug, clean_build=false}
 timestamp=[2024-06-10 14:49:32], mode=BUILD, duration=0:00:06.988, duration_ms=6988, data={name=RGB, configuration=Debug, clean_build=false}
+timestamp=[2024-06-10 15:03:27], mode=WORKBENCH_START, duration=0:00:09.600, duration_ms=9600, data={}
+timestamp=[2024-06-10 15:03:29], mode=WORKBENCH_UI_INIT, duration=0:00:01.599, duration_ms=1599, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RGB,RGB_system,RemoteSystemsTempFiles,design_1_wrapper}
+timestamp=[2024-06-10 15:03:29], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.079, duration_ms=79, data={}
+timestamp=[2024-06-10 15:05:03], mode=APP_CREATION, duration=0:00:14.283, duration_ms=14283, data={name=Serial_Print, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=design_1_wrapper, application_type=application}
+timestamp=[2024-06-10 15:18:13], mode=BUILD, duration=0:00:05.178, duration_ms=5178, data={name=Serial_Print, configuration=Debug, clean_build=false}
+timestamp=[2024-06-10 15:18:32], mode=BUILD, duration=0:00:19.114, duration_ms=19114, data={name=Serial_Print_system, configuration=Debug, clean_build=false}
