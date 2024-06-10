@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include "sleep.h"
+#include "platform.h"
+#include "NeopixelFunctions.h"
+#define NEOPIXEL_DEVICE_ID    XPAR_AXI_NEOPIXEL_0_DEVICE_ID
+#define NEO_BASE            XPAR_AXI_NEOPIXEL_0_S00_AXI_BASEADDR
+
+typedef struct{
+    u16 red;
+    u16 green;
+    u16 blue;
+} rgb_t;
+
+int main()
+{
+    rgb_t rainbow[] = {
+        {255, 0, 0},    // Red
+        {255, 255, 0},  // Yellow
+        {0, 255, 0},    // Green
+        {0, 255, 255},  // Cyan
+        {0, 0, 255},    // Blue
+        {255, 0, 255}   // Magenta
+    };
+    int rainbowSize = sizeof(rainbow) / sizeof(rainbow[0]);
+    int currentIndex = 0;
+
+    init_platform();
+    while(1){
+        neo_set_px(0,0,rainbow[currentIndex].red, rainbow[currentIndex].green, rainbow[currentIndex].blue);
+        sleep_A9(100);
+
+        currentIndex++;
+        if(currentIndex >= rainbowSize){
+            currentIndex = 0;
+        }
+    }
+    cleanup_platform();
+    return 0;
+}
